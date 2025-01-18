@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?"  />
+</div>
+
 # 💫 About Me:
 🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
 
@@ -29,7 +33,3 @@
 
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?"  />
-</div>
