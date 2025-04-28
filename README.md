@@ -128,6 +128,8 @@ From,
 
 
   <summary><b>⚙️ GitHub Analytics</b></summary>
+
+  http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={AshrafMorningstar}&theme={radical}
 <a href="https://github.com/AshrafMorningstar">
    <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="AshrafMorningstar github stats" />
     <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/3-stats.svg" alt="AshrafMorningstar github stats" />
