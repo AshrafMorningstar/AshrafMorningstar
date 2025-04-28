@@ -119,7 +119,20 @@ From,
 <div align="center">
   
 ![Quote](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
+
+
+
+
  
+<!--- 2nd Section on GitHub Analytics -->
+
+
+  <summary><b>⚙️ GitHub Analytics</b></summary>
+<a href="https://github.com/AshrafMorningstar">
+   <img height="155em" src="https://raw.githubusercontent.com/sanjay-kv/github-card-template/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="Sanjay K V github stats" />
+    <img height="155em" src="https://raw.githubusercontent.com/sanjayviswa/github-card-template/master/profile-summary-card-output/github_dark/3-stats.svg" alt="Sanjay K V github stats" />
+<br>
+     
 </div>
 <!-- 
 <h2 align="center">📑 Random Quotes 📑</h2>
