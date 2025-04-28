@@ -135,6 +135,8 @@ From,
    <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="AshrafMorningstar github stats" />
     <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/3-stats.svg" alt="AshrafMorningstar github stats" />
 <br>
+
+![](https://raw.githubusercontent.com/vn7n24fzkq/github-profile-summary-cards-example/master/profile-summary-card-output/gotham/0-profile-details.svg)
      
 </div>
 <!-- 
