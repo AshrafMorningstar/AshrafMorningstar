@@ -129,8 +129,8 @@ From,
 
   <summary><b>⚙️ GitHub Analytics</b></summary>
 <a href="https://github.com/AshrafMorningstar">
-   <img height="155em" src="https://raw.githubusercontent.com/sanjay-kv/github-card-template/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="Sanjay K V github stats" />
-    <img height="155em" src="https://raw.githubusercontent.com/sanjayviswa/github-card-template/master/profile-summary-card-output/github_dark/3-stats.svg" alt="Sanjay K V github stats" />
+   <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/0-profile-details.svg" alt="AshrafMorningstar github stats" />
+    <img height="155em" src="https://raw.githubusercontent.com/AshrafMorningstar/github-card-template/master/profile-summary-card-output/github_dark/3-stats.svg" alt="AshrafMorningstar github stats" />
 <br>
      
 </div>
