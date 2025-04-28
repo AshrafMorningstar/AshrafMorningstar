@@ -123,15 +123,10 @@ From,
 
 
 
-![](https://raw.githubusercontent.com/AshrafMorningstar/github-profile-summary-cards-example/master/profile-summary-card-output/gotham/0-profile-details.svg)
-     
-</div>
-
+<!-- 
 <h2 align="center">📑 Random Quotes 📑</h2>
 <br>
 <div align="center">
-  
-![Quote](https://github-readme-quotes.herokuapp.com/quote?theme=onedark&animation=default&layout=default&font=default)
- 
+
 </div> -->
 ### By Ashraf Morningstar
