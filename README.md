@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?"  />
+  <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?"/>
 </div>
 
 # 💫 About Me:
