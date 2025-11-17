@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bookmark Manager</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search bookmarks...">
+        <button id="clearSearch">✕</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <button id="selectAll">Select All</button>
+      <button id="deselectAll">Deselect</button>
+      <button id="moveSelected">Move Selected</button>
+      <button id="deleteSelected">Delete</button>
+    </div>
+
+    <div class="folders-section">
+      <h3>Quick Folders</h3>
+      <div class="quick-folders">
+        <button class="folder-btn" data-folder="Favorites">⭐ Favorites</button>
+        <button class="folder-btn" data-folder="Reading List">📚 Reading</button>
+        <button class="folder-btn" data-folder="Work">💼 Work</button>
+        <button class="folder-btn" data-folder="Personal">🏠 Personal</button>
+      </div>
+    </div>
+
+    <div class="bookmarks-container">
+      <div id="bookmarksList" class="bookmarks-list"></div>
+    </div>
+
+    <div class="bulk-actions">
+      <select id="targetFolder">
+        <option value="">Select folder to move to...</option>
+      </select>
+      <button id="createFolder">Create New Folder</button>
+    </div>
+
+    <div class="stats">
+      <span id="bookmarkCount">0 bookmarks</span>
+      <span id="selectedCount">0 selected</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
