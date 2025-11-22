@@ -178,6 +178,251 @@ My journey is a testament to the power of self-education and the belief that **p
   <i>"The only limit to our realization of tomorrow will be our doubts of today."</i>
 </div>
 
+## 🌐 3D Tech Stack Globe
+
+<div align="center">
+
+![3D Tech Globe](https://github-readme-tech-stack.vercel.app/api?username=AshrafMorningstar&theme=dark&bg_color=0d1117&title_color=ce09ec&border_color=444)
+
+</div>
+## 🌐 3D Tech Stack Globe
+
+<div align="center">
+
+![3D Tech Globe](https://github-readme-tech-stack.vercel.app/api?username=AshrafMorningstar&theme=dark&bg_color=0d1117&title_color=ce09ec&border_color=444)
+
+</div>
+## 📊 3D Skill Radar
+
+<div align="center">
+
+![3D Skill Radar](https://skill-icons-rho.vercel.app/api?username=AshrafMorningstar&theme=dark&perline=10&skills=aws,azure,react,nodejs,vue,angular,typescript,python,java,go,rust,cpp,csharp,unity,unreal,tensorflow,pytorch,docker,kubernetes,git,github,blender,figma,adobe)
+
+</div>
+
+## 💻 3D Code Universe
+
+<div align="center">
+
+![Code Universe](https://github-readme-3d-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=radical)
+
+</div>
+
+## 🚀 3D Project Portfolio
+
+<div align="center">
+
+<div align="center">
+  <a href="https://github.com/AshrafMorningstar/awesome-project-1">
+    <img src="https://github-readme-3d-card.vercel.app/api?username=AshrafMorningstar&repo=awesome-project-1&theme=dark" alt="Project 1" width="400"/>
+  </a>
+  <a href="https://github.com/AshrafMorningstar/awesome-project-2">
+    <img src="https://github-readme-3d-card.vercel.app/api?username=AshrafMorningstar&repo=awesome-project-2&theme=dark" alt="Project 2" width="400"/>
+  </a>
+</div>
+
+</div>
+
+## 📈 3D Language Distribution
+
+<div align="center">
+
+![3D Language Chart](https://github-readme-3d-stats.vercel.app/api/top-langs/?username=AshrafMorningstar&layout=compact&theme=radical&langs_count=8)
+
+</div>
+
+## ✨ 3D Interactive Elements
+
+<div align="center">
+
+<!-- 3D Rotating Cube -->
+<div align="center">
+  <img src="https://readme-3d-cube.vercel.app/api?username=AshrafMorningstar&theme=dark" alt="3D Cube" width="300"/>
+</div>
+
+### 🎲 **Tech Dice Roll**
+<table>
+<tr>
+<td>
+
+**Frontend**
+- React ⚛️
+- Vue 🟢
+- Angular 🅰️
+- TypeScript 🔷
+
+</td>
+<td>
+
+**Backend**
+- Node.js 🟢
+- Python 🐍
+- Java ☕
+- Go 🦫
+
+</td>
+<td>
+
+**Specialties**
+- AI/ML 🤖
+- Game Dev 🎮
+- Cybersecurity 🛡️
+- Cloud ☁️
+
+</td>
+</tr>
+</table>
+
+</div>
+
+## 🎮 3D Digital Universe
+
+<div align="center">
+
+
+
+<table> <tr> <td width="50%">
+  
+pie title Tech Mastery
+    "Frontend" : 25
+    "Backend" : 25
+    "Game Dev" : 20
+    "AI/ML" : 15
+    "Cybersecurity" : 15
+<td width="50%">
+
+    graph LR
+    A[2004] --> B[2010]
+    B --> C[2015]
+    C --> D[2020]
+    D --> E[2024]
+    
+    style A fill:#ff9999
+    style B fill:#99ff99
+    style C fill:#9999ff
+    style D fill:#ffff99
+    style E fill:#ff99ff
+    
+  </td> </tr> </table></div> ```
+
+### 🌟 **3D Tech Ecosystem**
+
+```mermaid
+graph TB
+    subgraph "Frontend Universe"
+        A1[React] --> A2[Vue]
+        A2 --> A3[Angular]
+        A3 --> A4[TypeScript]
+    end
+    
+    subgraph "Backend Galaxy"
+        B1[Node.js] --> B2[Python]
+        B2 --> B3[Java]
+        B3 --> B4[Go]
+    end
+    
+    subgraph "Game Dev Cosmos"
+        C1[Unity] --> C2[Unreal]
+        C2 --> C3[OpenGL]
+        C3 --> C4[Blender]
+    end
+    
+    subgraph "AI Nebula"
+        D1[TensorFlow] --> D2[PyTorch]
+        D2 --> D3[OpenAI]
+        D3 --> D4[Computer Vision]
+    end
+    
+    A1 --> E[Cloud Architecture]
+    B1 --> E
+    C1 --> E
+    D1 --> E
+    
+    E --> F[🚀 Innovation]
+    
+    style A1 fill:#61dafb,stroke:#333
+    style B1 fill:#339933,stroke:#333
+    style C1 fill:#000000,stroke:#333
+    style D1 fill:#FF6F00,stroke:#333
+    style E fill:#ce09ec,stroke:#333,stroke-width:4px
+    style F fill:#00ff00,stroke:#333,stroke-width:4px
+</dev>
+
+
+
+
+
+
+
+## 🕰️ 3D Career Journey
+
+<div align="center">
+
+```mermaid
+timeline
+    title 20+ Years Tech Journey
+    section 2004-2010 : Foundation
+        Self-Taught Programming : Age 7
+        Graphic Design Mastery : Adobe Suite
+        First Open Source Contributions
+    section 2011-2015 : Growth
+        Enterprise Projects : Fortune 500
+        Game Development : Unity/Unreal
+        Cybersecurity : Ethical Hacking
+    section 2016-2020 : Mastery
+        AI/ML Engineering : TensorFlow
+        Cloud Architecture : AWS/Azure
+        Team Leadership : Meta/Google
+    section 2021-Present : Innovation
+        Quantum Computing Research
+        Blockchain Development
+        Next-Gen Cybersecurity
+
+</div> ```
+
+
+
+
+
+
+
+## 🎯 3D Coding Activity
+
+<div align="center">
+
+```mermaid
+graph TD
+    A[20+ Years Experience] --> B[Frontend Mastery]
+    A --> C[Backend Architecture]
+    A --> D[Game Development]
+    A --> E[AI/ML Engineering]
+    
+    B --> F[React • Vue • Angular]
+    C --> G[Node.js • .NET • Python]
+    D --> H[Unity • Unreal Engine]
+    E --> I[TensorFlow • PyTorch]
+    
+    style A fill:#ff6b6b,stroke:#333,stroke-width:4px
+    style B fill:#4ecdc4,stroke:#333,stroke-width:2px
+    style C fill:#45b7d1,stroke:#333,stroke-width:2px
+    style D fill:#96ceb4,stroke:#333,stroke-width:2px
+    style E fill:#feca57,stroke:#333,stroke-width:2px
+</div> ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end 
 ## 🎮 3D Digital Universe
 
 <div align="center">
