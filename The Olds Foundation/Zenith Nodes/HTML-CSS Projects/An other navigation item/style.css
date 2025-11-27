@@ -1,0 +1,150 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+* {
+  -webkit-font-smoothing: antialiased;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/*Main Colors*/
+/* Change base color for each links*/
+body {
+  background: #95a5a6;
+}
+
+#list {
+  width: 400px;
+  margin: 100px auto;
+}
+
+.link {
+  background: #34495e;
+  width: 400px;
+  height: 60px;
+  box-shadow: 1em 0px #2c3e50, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: block;
+  transition: box-shadow 0.4s ease, padding 0.25974s ease;
+}
+
+.link span {
+  display: block;
+  width: 80px;
+  height: 60px;
+  background: #eee;
+  float: left;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  margin: -1.48em auto;
+  text-align: center;
+  color: #34495e;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0.5em 0px #2c3e50, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+  transform: rotate(0deg);
+  transition: z-index 0s ease 0.25974s;
+}
+
+.link p:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 1em -1.7em;
+  background: #2c3e50;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.link p {
+  font-size: 1.4em;
+  width: 300px;
+  display: block;
+  float: left;
+  padding-left: 5em;
+  padding-top: 0;
+  margin: 0;
+  line-height: 2.7;
+  color: #eee;
+  font-family: helvetica;
+  transition: 0.4s ease;
+}
+
+.link:hover {
+  background: #16a085;
+  box-shadow: 1em 0px #1abc9c, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+  padding-right: 1em;
+}
+.link:hover span {
+  color: #16a085;
+  box-shadow: 0.5em 0px #1abc9c;
+  z-index: 0;
+}
+.link:hover p {
+  padding-left: 6em;
+  color: #ecf0f1;
+}
+.link:hover p:before {
+  background: #1abc9c;
+  margin: 1em -2.7em;
+  opacity: 1;
+}
+
+.link:nth-child(2):hover {
+  background: #27ae60;
+  box-shadow: 1em 0px #2ecc71, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.link:nth-child(2):hover span {
+  color: #27ae60;
+  box-shadow: 0.5em 0px #2ecc71;
+}
+.link:nth-child(2):hover p:before {
+  background: #2ecc71;
+}
+
+.link:nth-child(3):hover {
+  background: #2980b9;
+  box-shadow: 1em 0px #3498db, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.link:nth-child(3):hover span {
+  color: #2980b9;
+  box-shadow: 0.5em 0px #3498db;
+}
+.link:nth-child(3):hover p:before {
+  background: #3498db;
+}
+
+.link:nth-child(4):hover {
+  background: #d35400;
+  box-shadow: 1em 0px #e67e22, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.link:nth-child(4):hover span {
+  color: #d35400;
+  box-shadow: 0.5em 0px #e67e22;
+}
+.link:nth-child(4):hover p:before {
+  background: #e67e22;
+}
+
+.link:nth-child(5):hover {
+  background: #c0392b;
+  box-shadow: 1em 0px #e74c3c, inset 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.link:nth-child(5):hover span {
+  color: #c0392b;
+  box-shadow: 0.5em 0px #e74c3c;
+}
+.link:nth-child(5):hover p:before {
+  background: #e74c3c;
+}

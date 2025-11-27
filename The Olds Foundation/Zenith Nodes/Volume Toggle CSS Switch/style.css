@@ -1,0 +1,257 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+.volume {
+  --line: #fff;
+  --line-width: 6px;
+  --duration: .5s;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.volume input {
+  display: none;
+}
+.volume input + svg {
+  display: block;
+  fill: none;
+  stroke: var(--line);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: var(--line-width);
+  width: 108px;
+  height: 96px;
+}
+.volume input + svg path {
+  -webkit-animation: var(--name) var(--duration) ease forwards;
+          animation: var(--name) var(--duration) ease forwards;
+}
+.volume input + svg path:nth-child(2) {
+  stroke-dashoffset: 1px;
+}
+.volume input + svg path:nth-child(3) {
+  stroke-dashoffset: 1px;
+}
+.volume input:checked + svg path:nth-child(1) {
+  --name: shape;
+}
+.volume input:checked + svg path:nth-child(2) {
+  --name: small;
+}
+.volume input:checked + svg path:nth-child(3) {
+  --name: large;
+}
+.volume input:not(:checked) + svg path:nth-child(1) {
+  --name: shape-r;
+}
+.volume input:not(:checked) + svg path:nth-child(2) {
+  --name: small-r;
+}
+.volume input:not(:checked) + svg path:nth-child(3) {
+  --name: large-r;
+}
+
+@-webkit-keyframes small {
+  0%, 30% {
+    stroke-dasharray: 0 0 30px 64px;
+  }
+  40% {
+    stroke-dashoffset: 16px;
+  }
+  80%, 100% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dasharray: 0 43px 30px 64px;
+  }
+  100% {
+    stroke-dasharray: 0 39px 30px 64px;
+  }
+}
+
+@keyframes small {
+  0%, 30% {
+    stroke-dasharray: 0 0 30px 64px;
+  }
+  40% {
+    stroke-dashoffset: 16px;
+  }
+  80%, 100% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dasharray: 0 43px 30px 64px;
+  }
+  100% {
+    stroke-dasharray: 0 39px 30px 64px;
+  }
+}
+@-webkit-keyframes small-r {
+  0% {
+    stroke-dasharray: 0 39px 30px 64px;
+  }
+  0%, 40% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dashoffset: 16px;
+  }
+  70%, 100% {
+    stroke-dasharray: 0 0 30px 64px;
+  }
+}
+@keyframes small-r {
+  0% {
+    stroke-dasharray: 0 39px 30px 64px;
+  }
+  0%, 40% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dashoffset: 16px;
+  }
+  70%, 100% {
+    stroke-dasharray: 0 0 30px 64px;
+  }
+}
+@-webkit-keyframes large {
+  0%, 30% {
+    stroke-dasharray: 0 0 50px 84px;
+  }
+  40% {
+    stroke-dashoffset: 16px;
+  }
+  80%, 100% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dasharray: 0 82px 32px 84px;
+  }
+  100% {
+    stroke-dasharray: 0 78px 32px 84px;
+  }
+}
+@keyframes large {
+  0%, 30% {
+    stroke-dasharray: 0 0 50px 84px;
+  }
+  40% {
+    stroke-dashoffset: 16px;
+  }
+  80%, 100% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dasharray: 0 82px 32px 84px;
+  }
+  100% {
+    stroke-dasharray: 0 78px 32px 84px;
+  }
+}
+@-webkit-keyframes large-r {
+  0% {
+    stroke-dasharray: 0 78px 32px 84px;
+  }
+  0%, 40% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dashoffset: 16px;
+  }
+  70%, 100% {
+    stroke-dasharray: 0 0 50px 84px;
+  }
+}
+@keyframes large-r {
+  0% {
+    stroke-dasharray: 0 78px 32px 84px;
+  }
+  0%, 40% {
+    stroke-dashoffset: 1px;
+  }
+  70% {
+    stroke-dashoffset: 16px;
+  }
+  70%, 100% {
+    stroke-dasharray: 0 0 50px 84px;
+  }
+}
+@-webkit-keyframes shape {
+  0% {
+    stroke-dasharray: 60px 0 184px;
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dasharray: 63px 51px 184px;
+    stroke-dashoffset: 21px;
+  }
+  100% {
+    stroke-dasharray: 59px 47px 184px;
+    stroke-dashoffset: 17px;
+  }
+}
+@keyframes shape {
+  0% {
+    stroke-dasharray: 60px 0 184px;
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dasharray: 63px 51px 184px;
+    stroke-dashoffset: 21px;
+  }
+  100% {
+    stroke-dasharray: 59px 47px 184px;
+    stroke-dashoffset: 17px;
+  }
+}
+@-webkit-keyframes shape-r {
+  0% {
+    stroke-dasharray: 59px 47px 184px;
+    stroke-dashoffset: 17px;
+  }
+  100% {
+    stroke-dasharray: 60px 0 184px;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes shape-r {
+  0% {
+    stroke-dasharray: 59px 47px 184px;
+    stroke-dashoffset: 17px;
+  }
+  100% {
+    stroke-dasharray: 60px 0 184px;
+    stroke-dashoffset: 0;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #275EFE;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 24px;
+  bottom: 24px;
+}
+body .dribbble img {
+  display: block;
+  width: 76px;
+}

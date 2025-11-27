@@ -1,0 +1,18 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: cadetblue;
+}
+
+.swiper{
+    width: 80vw;
+    height:80vh;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,29 @@
+body{
+    transition: 0.5s ease-in-out;
+}
+#plate {
+    width: 370px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -25px;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

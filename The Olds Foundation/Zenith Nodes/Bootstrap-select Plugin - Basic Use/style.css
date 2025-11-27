@@ -1,0 +1,23 @@
+hr {
+  clear: both;
+  margin: -7px 0 15px;
+}
+
+div.wrapper {
+  padding: 20px 10px;
+}
+
+div.intro {
+  padding-left: 40px;
+}
+
+p.desc {
+  float: left;
+  text-align: right;
+  width: 200px;
+  padding: 5px 15px 0 0;
+  font-weight: 900;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

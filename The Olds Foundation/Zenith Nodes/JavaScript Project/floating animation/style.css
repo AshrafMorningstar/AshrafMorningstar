@@ -1,0 +1,85 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+body{
+  background:#311b92;
+  position:relative;
+}
+
+
+.share{
+  display:block;
+  width:60px;
+  height:60px;
+  background:#ff9100;
+  position:absolute;
+  top:300px;
+  left:50%;
+  z-index:999;
+  text-align:center;
+  overflow:hidden;
+  line-height:65px;
+  font-size:1.5em;
+  color:#fff;
+  -moz-box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+-webkit-box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+  border-radius:50px;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+.share:hover{
+  cursor:pointer;
+}
+
+.one, .two, .three{
+  position:absolute;
+  width:50px;
+  height:50px;
+  color:#fff;
+  border-radius:50px;
+  text-align:center;
+  line-height:49px;
+  font-size:1.5em;
+   top:300px;
+  left:50%;
+   -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  -webkit-box-shadow: 0px 3px 9px rgba(0,0,0,.2);
+box-shadow: 0px 3px 9px rgba(0,0,0,.2);
+  -webkit-transition:transform  .3s ease-in-out;
+  transition:transform .3s ease-in-out;
+}
+
+.one:hover, 
+.two:hover,
+.three:hover{
+  cursor:pointer;
+}
+
+.one i, .two i, .three i{
+  display:none;
+}
+
+
+.one{
+  background:#2196f3;
+}
+
+.two{
+  background:#00e5ff;
+}
+
+.three{
+  background:#6a1b9a;
+}

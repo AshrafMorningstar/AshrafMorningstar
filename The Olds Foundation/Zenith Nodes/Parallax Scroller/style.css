@@ -1,0 +1,43 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@-webkit-keyframes scroll {
+  from {
+    left: 0px;
+  }
+  50% {
+    left: -320px;
+  }
+  to {
+    left: -640px;
+  }
+}
+
+div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+}
+
+div#back {
+  -webkit-animation: scroll 30s infinite linear;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9f/Sky_back_layer.png);
+}
+
+div#middle {
+  -webkit-animation: scroll 15s infinite linear;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8b/Vegetation_%28middle_layer%29.png);
+}
+
+div#front {
+  -webkit-animation: scroll 7s infinite linear;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Ground_%28front_layer%29.png);
+}
+
+body {
+  background: #BC9447;
+}

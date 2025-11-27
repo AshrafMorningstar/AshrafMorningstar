@@ -1,0 +1,179 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  margin-top: 30px;
+}
+
+.button {
+  position: relative;
+  margin: 0 auto 15px;
+  display: block;
+  width: 450px;
+  height: 82px;
+  text-decoration: none;
+  background-color: #fafafa;
+  color: #131313;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 4px #e7e7e7, 0 6px 1px #d0d0d2;
+  -webkit-box-shadow: 0 4px #e7e7e7, 0 6px 1px #d0d0d2;
+  box-shadow: 0 4px #e7e7e7, 0 6px 1px #d0d0d2;
+}
+.button * {
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.button .title {
+  display: block;
+  padding: 20px 0 0 20px;
+  font-size: 1.25em;
+}
+.button .details {
+  display: block;
+  clear: both;
+  padding: 5px 0 20px 23px;
+  font-size: 0.85em;
+  color: #9a9ca2;
+}
+.button .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #9a9ca2;
+}
+.button .price strong {
+  display: inline-block;
+  height: 100%;
+  width: 36px;
+  line-height: 82px;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: #eee;
+  color: #ddd;
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 10px 10px 0;
+  text-shadow: 0 -1px #8d8f96;
+  -moz-box-shadow: 0 4px #d7d4d4;
+  -webkit-box-shadow: 0 4px #d7d4d4;
+  box-shadow: 0 4px #d7d4d4;
+}
+.button:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 100%;
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px 0 0 10px;
+  -moz-transition: all 0.075s linear;
+  -o-transition: all 0.075s linear;
+  -webkit-transition: all 0.075s linear;
+  transition: all 0.075s linear;
+}
+.button.blue:before {
+  background-color: #7daee9;
+  -moz-box-shadow: 0 4px #719dd2;
+  -webkit-box-shadow: 0 4px #719dd2;
+  box-shadow: 0 4px #719dd2;
+}
+.button.blue:hover:before {
+  background-color: #719dd2;
+  -moz-box-shadow: 0 4px #6085b3;
+  -webkit-box-shadow: 0 4px #6085b3;
+  box-shadow: 0 4px #6085b3;
+}
+.button.blue:active:before {
+  -moz-box-shadow: 0 2px #6085b3;
+  -webkit-box-shadow: 0 2px #6085b3;
+  box-shadow: 0 2px #6085b3;
+}
+.button.magenta:before {
+  background-color: #de7cb9;
+  -moz-box-shadow: 0 4px #c870a7;
+  -webkit-box-shadow: 0 4px #c870a7;
+  box-shadow: 0 4px #c870a7;
+}
+.button.magenta:hover:before {
+  background-color: #c870a7;
+  -moz-box-shadow: 0 4px #aa5f8e;
+  -webkit-box-shadow: 0 4px #aa5f8e;
+  box-shadow: 0 4px #aa5f8e;
+}
+.button.magenta:active:before {
+  -moz-box-shadow: 0 2px #aa5f8e;
+  -webkit-box-shadow: 0 2px #aa5f8e;
+  box-shadow: 0 2px #aa5f8e;
+}
+.button.green:before {
+  background-color: #7fd373;
+  -moz-box-shadow: 0 4px #72be68;
+  -webkit-box-shadow: 0 4px #72be68;
+  box-shadow: 0 4px #72be68;
+}
+.button.green:hover:before {
+  background-color: #72be68;
+  -moz-box-shadow: 0 4px #61a258;
+  -webkit-box-shadow: 0 4px #61a258;
+  box-shadow: 0 4px #61a258;
+}
+.button.green:active:before {
+  -moz-box-shadow: 0 2px #61a258;
+  -webkit-box-shadow: 0 2px #61a258;
+  box-shadow: 0 2px #61a258;
+}
+.button.red:before {
+  background-color: #f66d64;
+  -moz-box-shadow: 0 4px #dd625a;
+  -webkit-box-shadow: 0 4px #dd625a;
+  box-shadow: 0 4px #dd625a;
+}
+.button.red:hover:before {
+  background-color: #dd625a;
+  -moz-box-shadow: 0 4px #bc534d;
+  -webkit-box-shadow: 0 4px #bc534d;
+  box-shadow: 0 4px #bc534d;
+}
+.button.red:active:before {
+  -moz-box-shadow: 0 2px #bc534d;
+  -webkit-box-shadow: 0 2px #bc534d;
+  box-shadow: 0 2px #bc534d;
+}
+.button:hover {
+  -moz-box-shadow: 0 4px #e2e2e2, 0 6px 1px #ccccce;
+  -webkit-box-shadow: 0 4px #e2e2e2, 0 6px 1px #ccccce;
+  box-shadow: 0 4px #e2e2e2, 0 6px 1px #ccccce;
+}
+.button:hover .price strong {
+  background-color: #e9e9e9;
+  -moz-box-shadow: 0 4px #d3d0d0;
+  -webkit-box-shadow: 0 4px #d3d0d0;
+  box-shadow: 0 4px #d3d0d0;
+}
+.button:active {
+  top: 1px;
+  -moz-box-shadow: 0 2px #e2e2e2, 0 4px 1px #ccccce;
+  -webkit-box-shadow: 0 2px #e2e2e2, 0 4px 1px #ccccce;
+  box-shadow: 0 2px #e2e2e2, 0 4px 1px #ccccce;
+}
+.button:active .price strong {
+  background-color: #e9e9e9;
+  -moz-box-shadow: 0 2px #d3d0d0;
+  -webkit-box-shadow: 0 2px #d3d0d0;
+  box-shadow: 0 2px #d3d0d0;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

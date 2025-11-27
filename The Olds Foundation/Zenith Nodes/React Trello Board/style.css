@@ -1,0 +1,111 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#background-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1537903904737-13fc83b81be0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=33b9982bf937e3f1ae07013356dc7a5e&auto=format&fit=crop&w=1650&q=80);
+  position: fixed;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+.drop-area {
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 200px;
+  margin: 5px;
+  padding-bottom: 20px;
+  width: 33%;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.drop-area:hover {
+  width: 36%;
+}
+
+.item-container {
+  padding: 15px;
+  background: rgba(15, 89, 89, 0.7);
+  margin: 20px;
+  color: #fff;
+  font-weight: 100;
+  cursor: move;
+  cursor: grab;
+  border-radius: 4px;
+  transition: background 0.4s;
+}
+.item-container:hover {
+  background: rgba(15, 89, 89, 0.9);
+}
+
+h1 {
+  color: #FB6964;
+  padding: 20px 0 0 20px;
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+input {
+  border: 2px solid #FB6964;
+  display: block;
+  margin: 50px auto;
+  width: 500px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 25px;
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+  color: #000;
+  transition: all 0.5s ease;
+}
+input:focus, input:hover {
+  background: white;
+  border: 3px solid #FB6964;
+  width: 520px;
+  height: 55px;
+}
+
+.trash-drop {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #d93240;
+  background: rgba(217, 50, 64, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+.trash-drop:hover {
+  background: rgba(217, 50, 64, 0.2);
+  width: 210px;
+  height: 110px;
+}

@@ -1,0 +1,26 @@
+/* Reservation Details input type date and time css file for icon */
+
+/* Date input icon customization */
+input[type="date"].custom-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+  
+  input[type="time"].custom-time-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* Firefox and fallback appearance removal */
+  input[type="date"].custom-date-input,
+  input[type="time"].custom-time-input {
+    appearance: none;
+    -moz-appearance: none;
+  }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,252 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+body {
+  background: #2c3642;
+  color: #fff;
+}
+
+form {
+  position: relative;
+  border: 5px solid #59616C;
+  border-radius: 400px;
+  width: 400px;
+  height: 400px;
+  margin: 24px auto;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+label.progress-task {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  cursor: pointer;
+  font: 32px/345px sans-serif;
+  text-align: center;
+  color: transparent;
+}
+
+label.progress-task:before,
+label.progress-task:after {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: ' ';
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+label.progress-task:before {
+  border: 5px solid #59616c;
+  z-index: 1;
+}
+
+label.progress-task:after {
+  background: #2c3642;
+  border: 12px solid #2c3642;
+  position: absolute;
+}
+
+input[type=checkbox]:invalid ~ label.progress-task {
+  color: #fff;
+}
+
+input[type=checkbox]:invalid ~ label.progress-task:before {
+  border-color: #fdce7e;
+}
+
+input[type=checkbox]:invalid ~ label.progress-task:after {
+  content: '...';
+  color: #fdce7e;
+  font: bold 14px/15px 'entypo', sans-serif;
+  text-align: center;
+}
+
+input[type=checkbox]:invalid + label + input[type=checkbox]:invalid + label,
+input[type=checkbox]:invalid + label + input[type=checkbox]:invalid + label:after {
+  color: transparent;
+}
+
+input[type=checkbox]:invalid + label + input[type=checkbox]:invalid + label:before {
+  border-color: #59616c;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: '\2713';
+  color: #00D9d1;
+  font: bold 14px/24px 'entypo', sans-serif;
+  border-color: #00D9d1;
+  text-align: center;
+  background: #2c3642;
+}
+
+input[type=checkbox]:checked + label:after {
+  display: none;
+}
+
+#progress-task1 + label:before {
+  left: 190px;
+  top: -20px;
+}
+
+#progress-task1 + label:after {
+  left: 183px;
+  top: -27px;
+}
+
+#progress-task2 + label:before {
+  left: 354px;
+  top: 75px;
+}
+
+#progress-task2 + label:after {
+  left: 347px;
+  top: 69px;
+}
+
+#progress-task3 + label:before {
+  left: 354px;
+  top: 290px;
+}
+
+#progress-task3 + label:after {
+  left: 347px;
+  top: 284px;
+}
+
+#progress-task4 + label:before {
+  left: 190px;
+  top: 385px;
+}
+
+#progress-task4 + label:after {
+  left: 183px;
+  top: 378px;
+}
+
+#progress-task5 + label:before {
+  left: 14px;
+  top: 290px;
+}
+
+#progress-task5 + label:after {
+  left: 7px;
+  top: 284px;
+}
+
+#progress-task6 + label:before {
+  left: 14px;
+  top: 75px;
+}
+
+#progress-task6 + label:after {
+  left: 7px;
+  top: 69px;
+}
+
+progress {
+  position: absolute;
+  top: 320px;
+  left: 175px;
+  width: 64px;
+  height: 5px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-size: auto;
+  color: #00D9d1;
+  background: #59616c !important;
+}
+
+progress::-moz-progress-bar {
+  background: #00D9d1;
+}
+
+progress::-webkit-progress-value {
+  background: #00D9d1;
+}
+
+progress::-webkit-progress-bar {
+  background: #59616c;
+}
+
+label.progress-tasks-completed {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  font: 20px/455px sans-serif;
+  text-align: center;
+  color: #fdce7e;
+}
+
+label.progress-tasks-completed:before {
+  position: absolute;
+  top: 320px;
+  left: 175px;
+  background: -moz-linear-gradient(left, transparent 0, transparent 7px, #2c3642 8px, #2c3642 11px, transparent 11px, transparent 18px, #2c3642 19px, #2c3642 22px, transparent 22px, transparent 29px, #2c3642 30px, #2c3642 33px, transparent 33px, transparent 40px, #2c3642 41px, #2c3642 44px, transparent 44px, transparent 51px, #2c3642 52px, #2c3642 55px, transparent 55px, transparent 62px, #2c3642 63px, #2c3642 66px);
+  background: -webkit-linear-gradient(left, transparent 0, transparent 7px, #2c3642 8px, #2c3642 11px, transparent 11px, transparent 18px, #2c3642 19px, #2c3642 22px, transparent 22px, transparent 29px, #2c3642 30px, #2c3642 33px, transparent 33px, transparent 40px, #2c3642 41px, #2c3642 44px, transparent 44px, transparent 51px, #2c3642 52px, #2c3642 55px, transparent 55px, transparent 62px, #2c3642 63px, #2c3642 66px);
+  background: -o-linear-gradient(left, transparent 0, transparent 7px, #2c3642 8px, #2c3642 11px, transparent 11px, transparent 18px, #2c3642 19px, #2c3642 22px, transparent 22px, transparent 29px, #2c3642 30px, #2c3642 33px, transparent 33px, transparent 40px, #2c3642 41px, #2c3642 44px, transparent 44px, transparent 51px, #2c3642 52px, #2c3642 55px, transparent 55px, transparent 62px, #2c3642 63px, #2c3642 66px);
+  background: -ms-linear-gradient(left, transparent 0, transparent 7px, #2c3642 8px, #2c3642 11px, transparent 11px, transparent 18px, #2c3642 19px, #2c3642 22px, transparent 22px, transparent 29px, #2c3642 30px, #2c3642 33px, transparent 33px, transparent 40px, #2c3642 41px, #2c3642 44px, transparent 44px, transparent 51px, #2c3642 52px, #2c3642 55px, transparent 55px, transparent 62px, #2c3642 63px, #2c3642 66px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 7px, #2c3642 8px, #2c3642 11px, rgba(0, 0, 0, 0) 11px, rgba(0, 0, 0, 0) 18px, #2c3642 19px, #2c3642 22px, rgba(0, 0, 0, 0) 22px, rgba(0, 0, 0, 0) 29px, #2c3642 30px, #2c3642 33px, rgba(0, 0, 0, 0) 33px, rgba(0, 0, 0, 0) 40px, #2c3642 41px, #2c3642 44px, rgba(0, 0, 0, 0) 44px, rgba(0, 0, 0, 0) 51px, #2c3642 52px, #2c3642 55px, rgba(0, 0, 0, 0) 55px, rgba(0, 0, 0, 0) 62px, #2c3642 63px, #2c3642 66px);
+  width: 64px;
+  height: 5px;
+  content: ' ';
+  display: block;
+  z-index: 1;
+}
+
+label.progress-tasks-completed sup {
+  font-size: 12px;
+}
+
+.prog {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin: -5px 0 0 -5px;
+}
+
+.prog > #slice {
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  clip: rect(0, 410px, 410px, 205px);
+}
+
+.prog > #slice.gt50 {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.prog > #slice > .pie {
+  border: 5px solid #00D9d1;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  clip: rect(0, 205px, 410px, 0);
+  -moz-border-radius: 400px;
+  -webkit-border-radius: 400px;
+  border-radius: 400px;
+}
+
+.prog > #slice > .pie.fill {
+  -moz-transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important;
+  -o-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+}

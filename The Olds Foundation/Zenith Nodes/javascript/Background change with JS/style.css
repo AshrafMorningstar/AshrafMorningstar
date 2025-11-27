@@ -1,0 +1,42 @@
+html, body { height: 100% }
+
+body {
+  margin: 0 auto;
+  background: grey;
+  text-align: center;
+  background-image: url("https://25.media.tumblr.com/211b5f4f19038a3940a16c7bcd7c84de/tumblr_mq7at6uz641st5lhmo1_1280.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+input[type="file"] {
+  display: none
+}
+
+button {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 50px;
+  font-family: calibri light;
+  letter-spacing: 2px;
+  font-size: 25px;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+button:active {
+  background: #111;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

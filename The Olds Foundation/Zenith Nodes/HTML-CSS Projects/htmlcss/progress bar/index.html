@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - progress bar</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Progress Bar Example</title>
+
+    <style>
+      .progress-bar {
+        height: 24px;
+        width: 360px;
+        border-radius: 10px;
+        background-color: lightblue;
+        margin: 50px;
+      }
+
+      .progress-bar > div {
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, lightskyblue, blue);
+        background-size: 360px 100%;
+        transition: width 200ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress-bar">
+      <div></div>
+    </div>
+
+    <script>
+      setInterval(myTimer, 1000);
+
+      function myTimer() {
+        console.log("Interval event");
+        const pb = document.querySelector(".progress-bar > div");
+        let progress = parseInt(pb.style.width, 10);
+        console.log("Widht Before: " + progress);
+        if (progress < 100) {
+          progress = progress + 10;
+        } else {
+          progress = 0;
+        }
+        console.log("Widht After: " + progress);
+        pb.style.width = progress + "%";
+      }
+    </script>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

@@ -1,0 +1,235 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: FloralWhite;
+}
+
+img {
+  max-width: 20rem;
+  margin-left: 1rem;
+}
+
+.slider-container {
+  position: relative;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+#saiyan {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  user-select: none;
+  pointer-events: none;
+  width: 20rem;
+  visibility: hidden;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 3rem;
+}
+
+/* Slider *
+ * ====== */
+/* ## Slider main element */
+input[type=range] {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  width: 9.9em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.2em solid #242424;
+  background-color: #242424;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0 0 0 0 transparent;
+}
+input[type=range]:focus {
+  box-shadow: 0 0 0 0.1em #AAAAAA;
+}
+input[type=range]:hover {
+  box-shadow: 0 0 0 0.15em #6FC5F0;
+}
+
+/* ## Orientation tweak, with [orient] attribute in degrees */
+/* > I know it's not standard, but that's the cleaner way I was thinking of. */
+input[type=range][orient] {
+  /* > Would be cool heh :-) : */
+  transform: rotate(attr(orient));
+}
+
+input[type=range][orient="270deg"] {
+  transform: rotate(270deg);
+}
+
+/* ### all vertical ranges : */
+input[type=range][orient="270deg"] {
+  margin: 4.5em -4.5em;
+  display: inline-block;
+}
+input[type=range][orient="270deg"]::-webkit-slider-thumb {
+  cursor: ns-resize;
+}
+input[type=range][orient="270deg"]::-moz-range-thumb {
+  cursor: ns-resize;
+}
+input[type=range][orient="270deg"]::-ms-thumb {
+  cursor: ns-resize;
+}
+
+/* ## Slider components */
+/* ### Slider::-track */
+input[type=range]::-webkit-slider-runnable-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+input[type=range]::-moz-range-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+input[type=range]::-ms-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+
+/* ### Slider::-thumb */
+input[type=range]::-webkit-slider-thumb {
+  margin: 0.05em;
+  padding: 0;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 0.1em;
+  box-sizing: border-box;
+  border: none;
+  background-color: #6FC5F0;
+  box-shadow: -10em 0 0 0 #313131, -9em 0 0 0 #313131, -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B, -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC, -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC, -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0, 1em 0 0 0 #181818, 2em 0 0 0 #181818, 3em 0 0 0 #181818, 4em 0 0 0 #181818, 5em 0 0 0 #181818, 6em 0 0 0 #181818, 7em 0 0 0 #181818, 8em 0 0 0 #181818, 9em 0 0 0 #181818;
+  cursor: ew-resize;
+}
+input[type=range]::-moz-range-thumb {
+  margin: 0.05em;
+  padding: 0;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 0.1em;
+  box-sizing: border-box;
+  border: none;
+  background-color: #6FC5F0;
+  box-shadow: -10em 0 0 0 #313131, -9em 0 0 0 #313131, -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B, -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC, -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC, -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0, 1em 0 0 0 #181818, 2em 0 0 0 #181818, 3em 0 0 0 #181818, 4em 0 0 0 #181818, 5em 0 0 0 #181818, 6em 0 0 0 #181818, 7em 0 0 0 #181818, 8em 0 0 0 #181818, 9em 0 0 0 #181818;
+  cursor: ew-resize;
+}
+input[type=range]::-ms-thumb {
+  margin: 0.05em;
+  padding: 0;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 0.1em;
+  box-sizing: border-box;
+  border: none;
+  background-color: #6FC5F0;
+  box-shadow: -10em 0 0 0 #313131, -9em 0 0 0 #313131, -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B, -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC, -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC, -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0, 1em 0 0 0 #181818, 2em 0 0 0 #181818, 3em 0 0 0 #181818, 4em 0 0 0 #181818, 5em 0 0 0 #181818, 6em 0 0 0 #181818, 7em 0 0 0 #181818, 8em 0 0 0 #181818, 9em 0 0 0 #181818;
+  cursor: ew-resize;
+}
+
+/* ## Browser tweaks */
+/* ### webkit */
+input[type=range], input[type=range]::-webkit-slider-runnable-track, input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+footer {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  width: 8rem;
+  height: 4rem;
+  width: 4rem;
+  background-image: linear-gradient(245deg, #99a9ff 20%, #fcff00 48%, #b265ff 75%);
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: 140%;
+  animation: bg-animation 5s linear infinite;
+}
+
+footer:hover span {
+  transform-origin: center;
+  transform: scale(1.01) translate(-47%, -50%);
+}
+
+footer:hover div {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+footer > div {
+  background: black;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s linear;
+}
+
+footer > div > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: green;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-color: black;
+  background-image: linear-gradient(245deg, #99a9ff 20%, #fcff00 48%, #b265ff 75%);
+  transition: all 0.05s linear;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

@@ -1,0 +1,69 @@
+button {
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    background-color: #e01010;
+    color: #fff;
+    border: none;
+    padding: 4px;
+    width: 250px;
+    transition: all .5s ease-in-out;
+    font-size: 2.5vh;
+    cursor: pointer;
+    position: relative;
+    bottom: 2px;
+    height: 52px;
+    direction: rtl
+}
+
+button:hover {
+    background-color: #fff;
+    color: #e01010;
+    border: 1px solid #e01010;
+}
+
+.form {
+    position: relative;
+    right: 45px;
+    top: 41vh;
+    direction: rtl
+}
+
+input {
+font-family: 'Cairo', sans-serif, fontAwesome;
+    padding: 3px;
+    height: 44px;
+    width: 30%;
+    font-size: 3vh;
+    border: 1px solid #e01010;
+    color: #e01010;
+    outline: none;
+    font-weight: bold;
+    padding-right: 17px;
+    padding-left: 9px;
+    margin-bottom: 30px;
+    direction: rtl
+}
+
+::-webkit-input-placeholder {
+    color: #e01010; 
+    direction: rtl
+}
+:-moz-placeholder {
+    color: #e01010; 
+    direction: rtl
+}
+::-moz-placeholder { 
+    color: #e01010;
+    direction: rtl
+}
+
+div {
+    font-family: 'Cairo', sans-serif;
+    color: #e01010;
+    font-weight: bold;
+    font-size: 3vh;
+    direction: rtl
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

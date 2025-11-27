@@ -1,0 +1,180 @@
+<!--
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Ecommerce Website - HTML, CSS &amp; JavaScript (Cart)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+    <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+  </div>
+</div>
+
+<!-- cart items details -->
+
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/B3vYjvw/buy-1.jpg" alt="" />
+          <div>
+            <p>Red Printed T-Shirt</p>
+            <small>Price ₹500.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹500.00</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/qmSHWx7/buy-2.jpg" alt="" />
+          <div>
+            <p>HRX Shoes</p>
+            <small>Price ₹1500.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹1500.00</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/NyYtY31/buy-3.jpg" alt="" />
+          <div>
+            <p>Reebok Tracksuit</p>
+            <small>Price ₹1500.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹1500.00</td>
+    </tr>
+  </table>
+
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>₹3500.00</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>₹15.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>₹3515.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iso mobile phone.</p>
+        <div class="app-logo">
+          <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+          <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="" />
+        <p>
+          Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+          Sports Accessible to the Many.
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar</p>
+  </div>
+</div>
+
+<script>
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
+</script>
+<!-- partial -->
+  
+</body>
+</html>

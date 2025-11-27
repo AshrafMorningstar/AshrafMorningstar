@@ -1,0 +1,9 @@
+{
+  "name": "js-starter-mpbot",
+  "version": "0.1.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "license": "MIT"
+}

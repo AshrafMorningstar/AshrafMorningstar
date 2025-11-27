@@ -1,0 +1,115 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+*{  
+    margin: 0px;  
+    padding: 0px;  
+    box-sizing: border-box;  
+    background-color: indigo;  
+  }  
+  h1{  
+    text-align: center;  
+    color: white;  
+  }  
+  .carousel{  
+    width:50%;  
+    margin: auto;  
+    overflow: hidden;  
+  }  
+  .carouselContainer{  
+    display: flex;  
+  }  
+  .slides{  
+    width: 100%;  
+    height:390px;  
+  }  
+  .button{  
+    position: relative;  
+    transition: 0.1s ease-in;  
+  }  
+  #next{  
+    position: absolute;  
+    background-color: white;  
+    opacity: 0.5;  
+    top: 25%;  
+    right: 25%;  
+    width: 5%;  
+    height: 20%;  
+    z-index: 5;  
+  }  
+  #next:hover{  
+    opacity: 0.2;  
+  }  
+  #prev{position: absolute;  
+    background-color: white;  
+    opacity: 0.5;  
+    top: 25%;  
+    left: 25%;  
+    width: 5%;  
+    height: 20%;  
+    z-index: 5;  
+  }  
+  #prev:hover{  
+    opacity: 0.2;  
+  }  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: indigo;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+.carousel {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carouselContainer {
+    display: flex;
+}
+
+.slides {
+    width: 100%;
+    height: 390px;
+}
+
+.button {
+    position: relative;
+    transition: 0.1s ease-in;
+}
+#next {
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    top: 25%;
+    right: 25%;
+    width: 5%;
+    height: 20%;
+    z-index: 5;
+}
+
+#next:hover {
+    opacity: 0.2;
+}
+
+#prev {
+    position: absolute;
+    background-color: white;
+    opacity: 0.5;
+    top: 25%;
+    left: 25%;
+    width: 5%;
+    height: 20%;
+    z-index: 5;
+}
+
+#prev:hover {
+    opacity: 0.2;
+}

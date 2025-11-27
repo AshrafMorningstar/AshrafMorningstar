@@ -1,0 +1,209 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+#slider {
+  --active: #5628EE;
+  --balloon: var(--active);
+  --value: #fff;
+  --line: #CDD9ED;
+  touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 320px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--line);
+  position: relative;
+}
+#slider .noUi-connects .noUi-connect {
+  background: var(--active);
+}
+#slider .noUi-handle:before, #slider .noUi-handle:after {
+  border-radius: 20px;
+  transform: scale(var(--s));
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+#slider .noUi-handle:before {
+  --s: .5;
+  background: var(--active);
+}
+#slider .noUi-handle:after {
+  --s: .2;
+  background: #fff;
+}
+#slider .noUi-handle.noUi-active:before {
+  --s: 1;
+}
+#slider .noUi-handle.noUi-active:after {
+  --s: 1;
+}
+#slider .balloon {
+  --o: 0;
+  --s: 0;
+  --y: 0;
+  --r: 0deg;
+  width: 52px;
+  height: 68px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 5;
+  left: -26px;
+  bottom: 0;
+  transform-origin: 50% 100%;
+}
+#slider .balloon > div {
+  width: 52px;
+  height: 68px;
+  transform-origin: 50% 100%;
+  opacity: var(--o);
+  transform: scale(var(--s)) translate(0, var(--y)) rotate(var(--r));
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+#slider .balloon > div:before, #slider .balloon > div:after {
+  content: "";
+  display: block;
+}
+#slider .balloon > div:before {
+  width: 52px;
+  height: 52px;
+  border-radius: 60%;
+  border-bottom-left-radius: 480%;
+  border-bottom-right-radius: 480%;
+  border-top-left-radius: 480%;
+  transform: rotate(135deg);
+  background: var(--balloon);
+}
+#slider .balloon > div:after {
+  content: attr(data-value);
+  font-family: "Roboto", Arial;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--value);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+#slider .balloon > div svg {
+  display: block;
+  width: 8px;
+  height: 6px;
+  fill: var(--balloon);
+  position: absolute;
+  left: 22px;
+  bottom: 0;
+}
+#slider .balloon.active {
+  --o: 1;
+  --s: 1;
+  --y: -36px;
+}
+#slider * {
+  touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+#slider.noUi-state-tap .noUi-connect, #slider.noUi-state-tap .noUi-origin {
+  transition: transform 0.3s;
+}
+#slider .noUi-target {
+  position: relative;
+}
+#slider .noUi-base,
+#slider .noUi-connects {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#slider .noUi-origin,
+#slider .noUi-connect {
+  position: absolute;
+  will-change: transform;
+  transform-origin: 0 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#slider .noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 1px;
+}
+#slider .noUi-connects .noUi-connect {
+  width: 100%;
+  height: 100%;
+}
+#slider .noUi-handle {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  left: 12px;
+  top: -19px;
+}
+#slider .noUi-handle:before, #slider .noUi-handle:after {
+  content: "";
+  position: absolute;
+}
+#slider .noUi-handle:before {
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+}
+#slider .noUi-handle:after {
+  left: 2px;
+  top: 2px;
+  width: 36px;
+  height: 36px;
+}
+#slider .noUi-origin {
+  left: auto;
+  right: 0;
+  height: 0;
+  width: 10%;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Roboto", Arial;
+  justify-content: center;
+  align-items: center;
+  background: #F5F9FF;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+}
+body .dribbble img {
+  display: block;
+  height: 28px;
+}

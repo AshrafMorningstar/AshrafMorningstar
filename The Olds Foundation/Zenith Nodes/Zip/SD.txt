@@ -1,0 +1,12 @@
+/project-folder
+    /assets
+        /css
+            styles.css
+        /js
+            script.js
+    index.html
+    about.html
+    clock.html
+    date-time.html
+    youtube.html
+    google-search.html

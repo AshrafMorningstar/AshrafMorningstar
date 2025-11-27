@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color:  #909090;
+  }
+  .container {
+    background-color: #11141d;
+    width: min(90%, 31.25em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0.5em;
+    padding: 3em;
+  }
+  .container h1 {
+    color: rgb(255, 172, 28);
+  }
+  .container p {
+    color: #909090;
+    margin: 2em 0 0.5em 0;
+  }
+  .container textarea {
+    resize: none;
+    width: 100%;
+    background-color: #292c34;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: #ffffff;
+  }
+  .container button {
+    display: block;
+    background-color: rgb(255, 172, 28);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    margin: 1.5em auto 2em auto;
+    cursor: pointer;
+  }
+  p#result {
+    text-align: center;
+    color: rgb(0, 255, 0);
+    font-size: 1em;
+  }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

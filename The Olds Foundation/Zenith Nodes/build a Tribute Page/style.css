@@ -1,0 +1,22 @@
+body {
+    margin-top: 5%;
+}
+
+div {
+    overflow-wrap: break-word;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+figure {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

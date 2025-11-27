@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Assets/todo icon.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body class="bg-[#1f1f1f]">
+    <div id="container" class=" min-h-screen flex justify-center items-start md:items-center p-4 mb-10">
+      <div
+        class="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] bg-[#284038] rounded-xl shadow-2xl p-4"
+      >
+        <!-- heading section -->
+        <div class="flex flex-col sm:flex-row items-center justify-center mb-6">
+          <h1
+            class="text-white text-3xl sm:text-4xl text-center font-bold sm:text-left"
+          >
+            To-Do List
+          </h1>
+        </div>
+
+        <!-- input section -->
+        <div class="Row w-full flex flex-col gap-2 mb-4 px-5">
+          <div class="flex flex-col md:flex-row sm:flex-col gap-2 w-full">
+            <input
+              id="taskInput"
+              class="flex-1 px-4 py-2 rounded-xl text-lg font-semibold focus:outline-none"
+              type="text"
+              placeholder="What Need To Be Done?"
+            />
+            <!-- Desktop button -->
+            <button
+              id="addBtn"
+              class="hidden sm:block px-6 py-2 w-20 bg-sky-500 text-white text-[20px] font-bold rounded-xl hover:bg-sky-600 transition"
+            >
+              Add
+            </button>
+            <!-- Mobile button -->
+            <!-- <button
+              id="addBtnMobile"
+              class="sm:hidden px-2 py-2 w-25 bg-sky-500 text-white text-[20px] font-bold rounded-xl hover:bg-sky-600 transition"
+            >
+            <i class="fa-solid fa-user-plus"></i>
+            </button> -->
+          </div>
+
+          <span
+            id="textError"
+            class="text-l text-red-500 mt-1 ml-2"
+          ></span>
+        </div>
+
+        <!-- Existing list container -->
+        <div>
+          <div class="result max-h-[400px] overflow-y-auto pr-1">
+            <ul id="list_container" class="space-y-6"></ul>
+          </div>
+
+          <!-- Task counter and remove section -->
+          <div
+            id="taskFooter"
+            class="hidden flex sm:flex-row items-center justify-between gap-4 mt-2"
+          >
+            <div
+              class="bg-yellow-300 px-4 py-2 rounded text-xl font-semibold text-gray-800 text-center sm:text-left"
+            >
+              <span id="taskCount">0 of 0 tasks done</span>
+            </div>
+            <button
+              onclick="removeChecked()"
+              class="bg-sky-500 text-white px-4 py-2 font-semibold rounded hover:bg-sky-600 text-lg flex items-center gap-1 transition"
+            >
+              Remove checked ✖
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

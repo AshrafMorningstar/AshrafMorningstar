@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS file link -->
+     <link rel="stylesheet" href="style.css">
+
+    <!-- tailwindcss file link -->
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-Awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Site Icon -->
+     <link href="Assets/Image.png" rel="icon">
+
+    <!-- Site Title  -->
+    <title>Music Player</title>
+</head>
+<body class="bg-gray-400 min-h-screen flex items-center justify-center">
+
+    <!-- Main Wrapper -->
+    <div class="w-full max-w-[400px] md:max-w-[450px] bg-[#ebebeb] p-6 rounded-lg shadow-2xl text-center mx-4 my-8">
+  
+      <!-- Navigation Icons -->
+      <nav class="flex justify-between mb-6">
+        <div class="circle h-10 w-10 flex items-center justify-center rounded-full bg-white text-pink-500 shadow-md">
+          <i class="fa-solid fa-angles-left"></i>
+        </div>
+  
+        <div class="circle h-10 w-10 flex items-center justify-center rounded-full bg-white text-pink-500 shadow-md">
+          <i class="fa-solid fa-bars-progress"></i>
+        </div>
+      </nav>
+  
+      <!-- Song Image -->
+      <div class="flex justify-center">
+        <img id="songImage" class="w-48 h-48 md:w-56 md:h-56 rounded-full mb-6 border-8 border-white shadow-lg object-cover" src="" alt="Song Image">
+      </div>
+  
+      <!-- Song Title and Artist -->
+      <h1 id="songTitle" class="text-xl md:text-2xl font-bold mb-2">Song Title</h1>
+      <p id="singerName" class="text-lg md:text-xl font-semibold mb-6 text-gray-700">Singer Name</p>
+  
+      <!-- Audio Element -->
+      <audio id="song" src=""></audio>
+  
+      <!-- Progress Bar -->
+      <input id="progress" type="range" value="0" class="w-full h-2 rounded-full bg-pink-500 cursor-pointer mb-10">
+  
+      <!-- Controls -->
+      <div class="flex items-center justify-center space-x-8">
+        <!-- Backward Button -->
+        <div id="backwardBtn" class="h-16 w-16 flex items-center justify-center rounded-full bg-white text-pink-500 shadow-lg cursor-pointer hover:scale-110 transition">
+          <i class="fa-solid fa-backward text-3xl pr-1.5"></i>
+        </div>
+  
+        <!-- Play/Pause Button -->
+        <div onclick="PlayPause()" class="h-20 w-20 flex items-center justify-center rounded-full bg-pink-500 text-white shadow-lg cursor-pointer hover:scale-110 transition">
+          <i class="fa-solid fa-play text-4xl" id="ctrlIcon"></i>
+        </div>
+  
+        <!-- Forward Button -->
+        <div id="forwardBtn" class="h-16 w-16 flex items-center justify-center rounded-full bg-white text-pink-500 shadow-lg cursor-pointer hover:scale-110 transition">
+          <i class="fa-solid fa-forward text-3xl pl-1.5"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="w-full bg-[#FFEEA9] absolute bottom-0 text-center p-2 font-bold text-xl">This This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar</footer> -->
+
+   
+<!-- ========== Script Section Start Here ========== -->
+
+<script src="script.js"></script>
+
+<!-- ========= Script Section End Here ========== -->
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

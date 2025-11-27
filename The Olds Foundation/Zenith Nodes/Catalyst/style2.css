@@ -1,0 +1,177 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --lightPink: #fcb6d0;
+    --pink: #ff6f91;
+    --darkPink: #ff4f78;
+    --deepPink: #d9165a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--lightPink);
+}
+
+.wrapper {
+    position: relative;
+    width: 800px; /* Increased width */
+    height: 500px; /* Increased height */
+    background: var(--white);
+    border: 2px solid var(--deepPink);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--darkPink);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Fix positioning */
+}
+
+.wrapper .form-box {
+    width: 50%; /* Both forms take 50% */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.7s ease; /* Smooth transition */
+}
+
+.wrapper .form-box.login {
+    padding: 0 60px 0 40px;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 32px;
+    color: var(--deepPink);
+    text-align: center;
+}
+
+.form-box h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: var(--deepPink);
+}
+
+.form-box .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--deepPink);
+    transition: .5s;
+    padding-right: 23px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom-color: var(--pink);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--black);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    color: var(--pink);
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    background-color: var(--deepPink);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px rgba(255, 79, 120, 0.8);
+}
+
+.wrapper .info-text {
+    width: 50%; /* Ensures the text occupies the right side */
+    padding: 60px;
+    color: var(--white);
+}
+
+.wrapper .info-text h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.wrapper .info-text p {
+    font-size: 16px;
+}
+
+.wrapper .rotate-bg {
+    position: absolute;
+    top: -4px;
+    right: -100px; /* Adjusted position */
+    width: 850px;
+    height: 600px;
+    background: var(--darkPink);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    transition: 1.5s ease;
+}
+
+.wrapper.active .rotate-bg {
+    transform: rotate(0) skewY(0);
+}
+
+.wrapper .rotate-bg2 {
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: var(--lightPink);
+    transition: 1.5s ease;
+}
+
+.wrapper.active .rotate-bg2 {
+    transform: rotate(-11deg) skewY(-40deg);
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

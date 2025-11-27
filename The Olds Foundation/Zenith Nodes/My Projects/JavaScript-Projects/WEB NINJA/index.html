@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- added the fontAwesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>WEB NINJA</title>
+  </head>
+  <body class="p-0 m-0 bg-slate-950">
+    <!-- Navbar section start hear -->
+    <div id="Navbar">
+      <nav 
+        class="w-full h-14 bg-indigo-200 flex justify-between items-center px-4 md:px-4"
+      >
+        <div id="Logo" class="text-3xl text-indigo-700 font-bold">
+          WEB NINJA
+        </div>
+        <div id="Nav-Section">
+          <ul class="md:flex hidden font-semibold text-xl">
+            <li><a class="mx-[10px] cursor-pointer" href="#">Home</a></li>
+            <li><a class="mx-[10px] cursor-pointer" href="#">About Us</a></li>
+            <li><a class="mx-[10px] cursor-pointer" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div id="login-section">
+          <div
+            class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded cursor-pointer font-bold"
+          >
+            <a href="#">Login/Signup</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <a class="text-4xl" href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar section End hear -->
+
+    <!-- hero section/ main section start here -->
+    <main class="w-full h-auto">
+      <img
+        class="w-full hidden md:block"
+        src="Assets/image-1.jpg"
+        alt="display Image"
+      />
+      <img
+        class="w-full md:hidden"
+        src="Assets/image-2.jpg"
+        alt="display Image"
+      />
+    </main>
+    <!-- hero section/ main section End here -->
+
+    <!-- Our student section start here -->
+    <div
+      class="h-auto w-100 flex flex-wrap items-center text-center flex-col p-10">
+      <div
+        class="w-full h-auto flex flex-wrap items-center text-center flex-col">
+        <p class="text-indigo-800 font-bold text-3xl md:text-4xl">
+          "Pure Hardwork, No Shortcuts!"</p>
+      </div>
+      <div
+        class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-16"
+      ></div>
+        <!-- card section -->
+          <!-- card-1 -->
+      <div class="w-full flex flex-wrap justify-evenly">
+        <div class="w-46 mb-10 flex flex-col items-center">
+          <img class="w-36 h-36" src="Assets/card-1.png" />
+          <p class="text-white text-3xl font-bold mt-3">600+</p>
+          <p class="text-gray-500 text-3xl font-bold">Different Courses</p>
+        </div>
+        <!-- card-2 -->
+        <div class="w-46 mb-10 flex flex-col items-center">
+          <img class="w-36 h-36" src="Assets/card-2.png" />
+          <p class="text-white text-3xl font-bold">700,000+</p>
+          <p class="text-gray-500 text-3xl font-bold">Students Enrolled</p>
+        </div>
+        <!-- card-3 -->
+        <div class="w-46 mb-3 flex flex-col items-center">
+          <img class="w-36 h-36" src="Assets/card-3.png" />
+          <p class="text-white text-3xl font-bold">10,000+</p>
+          <p class="text-gray-500 text-3xl font-bold">Successfull Transition</p>
+        </div>
+      </div>
+    </div>
+    <!-- Our student section END here -->
+
+    <!--  Our Product Section Star here -->
+    <div class="h-auto w-100 flex flex-wrap items-center text-center flex-col p-10">
+      <!-- heading -->
+      <div
+        class="w-full h-auto flex flex-wrap items-center flex-col">
+        <p class="text-indigo-800 font-bold text-3xl md:4xl">
+          Our Product</p>
+      </div>
+      <!-- bottom line -->
+      <div
+        class="w-36 h-1 border-b-4 border-yellow-400 mt-2  rounded-2xl md:mt-4 mb-16"
+      ></div>
+        <!-- card section -->
+          <div class="w-[90%] h-auto flex flex-wrap justify-around">
+            <!-- first card -->
+            <div class="w-64 flex flex-col items-center mb-12 p-2">
+              <img  class="w-36 h-36"  src="Assets/card-4.png">
+              <p class="text-2xl font-bold text-white mb-2 mt-3">Web Ninja Lab</p>
+              <p class="text-xl font-bold text-gray-500">Supercharge your project development with our robuts lab.</p>
+            </div>
+
+            <!-- second card -->
+            <div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl  p-2">
+              <img  class="w-36 h-36"  src="Assets/card-5.png">
+              <p class="text-2xl font-bold text-white mb-2 mt-3">Job Portal</p>
+              <p class="text-xl font-bold text-gray-500"> Use exceptional templates for a stand-Out resume minus the sign up process.</p>
+            </div>
+
+            <!-- third card -->
+            <div class="w-64 flex flex-col items-center mb-12 p-2">
+              <img  class="w-36 h-36"  src="Assets/card-6.png">
+              <p class="text-2xl font-bold text-white mb-2 mt-3">Experience Protal</p>
+              <p class="text-xl font-bold text-gray-500">Web Ninja self-paces experiences portal priorities hands-on tranning with 570+ internship projects.</p>
+            </div>
+
+            <!-- fourth card -->
+            <div class="w-64 flex flex-col  items-center mb-12 border-white border-2 rounded-xl  p-1">
+              <img  class="w-52 h-40"  src="Assets/card-7.png">
+              <p class="text-2xl font-bold text-white mb-2 mt-3">Affiliate</p>
+              <p class="text-xl font-bold text-gray-500">Explore affiliate marketing opportunities with Wen Ninja and attain financial freedom.</p>
+            </div>
+
+            <!-- fifth card -->
+            <div class="w-64 flex flex-col items-center mb-12  p-2">
+              <img class="w-40 h-36" src="Assets/card-8.png">
+              <p class="text-2xl font-bold text-white mb-2 mt-3">Hall of Fame</p>
+              <p class="text-xl font-bold text-gray-500">Our student placements and 100k+ career transitions speak volumes about our courses.</p>
+            </div>
+    </div>
+      <!--  Our Product secrtion End Here -->
+
+
+      <!-- footer sectrion start here -->
+      <footer class="w-full bg-gray-900 px-4 text-white pt-8 flex flex-col  md:flex-row flex-wrap justify-between md:px-12">
+        <div>
+          <p class="text-4xl text-indigo-700 font-bold">Web Ninja</p>
+          <p class="my-4 text-xl font-bold">Email Us: vikramwebninja13@gmail.com</p>
+          <p class="my-4 text-xl font-bold">Contact Us: 9967319725</p>
+          <img class="w-48 h-48 mb-3 ml-14
+           md:ml-28" src="Assets/certificate.png">
+        </div>
+
+        <!-- details section in footer -->
+        <div class="my-3">
+          <h2 class="text-xl font -bold mt-4">WEB NINJA</h2>
+          <div class="w-28 h-1 border-2 border-yellow-400 relative inline-block  rounded-2xl my-2"></div>
+          <div>
+            <p>About Us</p>
+            <p>FAQs</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+
+        <div class="my-4">
+          <h2 class="text-xl font -bold mt-4">Products</h2>
+          <div class="w-28 h-1 border-2 border-yellow-400 relative inline-block   rounded-2xl my-2"></div>
+          <div>
+            <p>Web Ninja Lab</p>
+            <p>Job Protal</p>
+            <p>Experience Portal</p>
+            <p>Become an affiliate</p>
+            <p>Hall of fame</p>
+
+          </div>
+        </div>
+
+        <div class="my-4">
+          <h2 class="text-xl font -bold mt-4">Links</h2>
+          <div class="w-28 h-1 border-2 border-yellow-400 relative inline-block rounded-2xl my-2"></div>
+          <div>
+            <p>Discord Channel</p>
+            <p>Web Ninja Youtube</p>
+            <p>Careers</p>
+          </div>
+        </div>
+
+        <!-- copywrite  -->
+         <p class="text-white text-l md:text-xl font-bold mt-2 md:ml-96 mb-3" >Copyright &#169; 2024  <span class="bg-indigo-500 rounded px-2">WEB NINJA</span> BY 
+          <span class=" underline underline-offset-2">Vikram Suraj Pal.</span> All Rights Reserved.</p>
+      </footer>
+        <!-- footer sectrion End here -->
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);}
+
+.weather_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin: 20px;
+  font-weight: bold;
+  padding: 11px 22px;
+}
+
+.h_underline {
+  width: 250px;
+  background-color: #00ff0d;
+  border-radius: 20px;
+  height: 4px;
+  margin-top: 5px;
+  animation: blinking 1s infinite;
+
+}
+/* @keyframes blinking {
+  0% {
+    background-color: #d1068a;
+  }
+  50% {
+    background-color: rgb(0, 247, 255);
+  }
+  100% {
+    background-color: #565B8C;
+  }
+} */
+
+/* here start maine section */
+
+.container {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  column-rule: #ffff;
+  margin: 40px auto 0;
+  padding: 40px 40px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .search_bar {
+  border: none;
+  outline: none;
+  background: #ededed;
+  border-radius: 40px 0px 0px 40px;
+  color: #555;
+  padding: 10px 25px;
+  height: 50px;
+  flex: 1;
+  font-size: 20px;
+}
+
+.search .search_btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  color: white;
+  background: #727272;
+  border-radius: 0 40px 40px 0;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.weather_img {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather .temp {
+  font-size: 60px;
+  font-weight: 500;
+}
+.weather .city {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col .col_img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.col .title {
+  font-size: 20px;
+
+}
+
+.weather{
+  display: none;
+}
+
+.error{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .weather_heading {
+    font-size: 2.5rem;
+  }
+
+  .h_underline {
+    width: 150px;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+
+  .weather .temp {
+    font-size: 2.5rem;
+  }
+
+  .weather .city {
+    font-size: 2rem;
+  }
+
+  .details {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .col {
+    margin-bottom: 20px;
+  }
+
+  .search_bar {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .weather_heading {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .weather .temp {
+    font-size: 2rem;
+  }
+
+  .weather .city {
+    font-size: 1.75rem;
+  }
+
+  .humidity, .wind {
+    font-size: 1.5rem;
+  }
+
+  .col_img {
+    width: 30px;
+  }
+
+  .search_bar {
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  .search_btn {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .weather_heading {
+    font-size: 2rem;
+  }
+
+  .container {
+    max-height: fit-content;
+    padding: 20px 10px;
+  }
+
+  .weather .temp {
+    font-size: 2rem;
+  }
+
+  .weather .city {
+    font-size: 1.75rem;
+  }
+
+  .humidity, .wind {
+    font-size: 1.5rem;
+  }
+
+  .col_img {
+    width: 30px;
+  }
+
+  .search_bar {
+    width: 90%;
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  .search_btn {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

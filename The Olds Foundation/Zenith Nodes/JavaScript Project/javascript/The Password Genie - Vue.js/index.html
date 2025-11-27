@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - The Password Genie - Vue.js </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+    <section class="wrapper">   
+      <h1>The Password Genie</h1>
+      <div class="password-box">
+        <span id="password" class="password" v-on:click="copyToClipboard">{{ password }}</span>
+        <span class="regenerate-password" v-on:click="generatePassword"></span>
+        <span class="copy-password" v-on:click="copyToClipboard"></span>
+        <span class="tooltip" v-if="copied">Password copied successfuly!</span>
+      </div>
+      <form @keydown.enter.prevent="">
+        <div class="field-wrap">
+          <label>Strength</label>
+          <span class="range-value">{{strength.text}}</span>
+          <div class="range-slider_wrapper slider-strength" v-bind:class="strength.text">
+            <span class="slider-bar" v-bind:style="{ width: strength.score + '%' }"></span>
+            <input type="range" class="range-slider" min="0" max="100" v-model="strength.score" disabled>
+          </div>  
+        </div>
+        <div class="seperator"></div>
+        <div class="field-wrap">
+          <label>Length</label>
+          <span class="range-value">{{settings.length}}</span>
+          <div class="range-slider_wrapper">
+            <span class="slider-bar" v-bind:style="{ width: lengthThumbPosition + '%' }"></span>
+            <input type="range" class="range-slider" min="6" v-bind:max="settings.maxLength" v-model="settings.length">
+          </div>  
+        </div>
+        <div class="field-wrap">  
+          <label>Digits</label>
+          <span class="range-value">{{settings.digits}}</span>
+          <div class="range-slider_wrapper">
+            <span class="slider-bar"  v-bind:style="{ width: digitsThumbPosition + '%' }"></span>
+            <input type="range" class="range-slider" min="0" v-bind:max="settings.maxDigits" v-model="settings.digits">
+          </div>  
+        </div>
+        <div class="field-wrap">  
+          <label>Symbols</label>
+          <span class="range-value">{{settings.symbols}}</span>
+          <div class="range-slider_wrapper">
+            <span class="slider-bar"  v-bind:style="{ width: symbolsThumbPosition + '%' }"></span>
+            <input type="range" class="range-slider" min="0" v-bind:max="settings.maxSymbols" v-model="settings.symbols">
+          </div>  
+        </div>
+      </form>
+    </section>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

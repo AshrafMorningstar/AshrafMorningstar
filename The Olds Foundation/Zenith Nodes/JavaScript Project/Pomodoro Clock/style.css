@@ -1,0 +1,96 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+/* Work Mode Color */
+#pomodoro-clock-body {
+  background: -webkit-linear-gradient(left, rgba(212,106,106,0.2), rgba(212,106,106,0.5));
+  background: -o-linear-gradient(right, rgba(212,106,106,0.2), rgba(212,106,106,0.5));
+  background: -moz-linear-gradient(right, rgba(212,106,106,0.2), rgba(212,106,106,0.5));
+  background: linear-gradient(to right, rgba(212,106,106,0.2), rgba(212,106,106,0.5));
+}
+
+/* Break Mode Color */
+.break-mode-clock-body {
+  background: -webkit-linear-gradient(left, rgba(77,171,77,0.2), rgba(77,171,77,0.5)) !important;
+  background: -o-linear-gradient(right, rgba(77,171,77,0.2), rgba(77,171,77,0.5)) !important;
+  background: -moz-linear-gradient(right, rgba(77,171,77,0.2), rgba(77,171,77,0.5)) !important;
+  background: linear-gradient(to right, rgba(77,171,77,0.2), rgba(77,171,77,0.5)) !important;
+}
+
+#calculator-title {
+  font-family: 'Cormorant Garamond', serif;
+  padding-top: 1.5em;
+  margin-bottom:1em;
+}
+
+.time-setting {
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-size: 16px;
+}
+
+.slider {
+  height: 20px;
+}
+
+#timer {
+  color: darkslategray;
+  font-size: 72px;
+  margin-top: 80px;
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Lato', sans-serif;
+}
+
+/*.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}*/
+
+#timer-container {
+  position: relative;
+  height: 300px;
+  /*background-image: url(../image/pomodoro-timer.png);*/
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../image/pomodoro-timer.png);
+  background-position: center;
+  background-repeat: no-repeat;*/
+  padding: 15px;
+  /*margin-bottom: 1.5em;*/
+}
+
+#background-image {
+  position: absolute;
+  left: -135px;
+  top: -10px;
+  z-index: -1;
+
+  filter: blur(3px);
+  /*filter: hue-rotate(100deg);*/
+}
+
+.break-mode-img {
+  filter: blur(3px) hue-rotate(90deg) !important;
+}
+
+#inner-timer-control {
+  width: 200px;
+  color: grey;
+}
+
+footer {
+  margin-top: 1.5em;
+}
+
+/*414px is the device width of iphone 6 plus*/
+@media (min-width: 414px) {
+  #pomodoro-clock-body {
+    width: 414px;
+  }
+}

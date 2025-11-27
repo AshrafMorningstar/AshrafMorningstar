@@ -1,0 +1,189 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Molle:400i|Open+Sans);
+
+#about {
+	padding: 50px;
+	margin-top: -30px;
+}
+        
+#about h1 {
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+        
+body {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+        
+#button {
+	margin-bottom: 30px;
+}
+       
+#contact {
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+       
+#contact-button {
+	margin-right: 15px;
+}
+        
+#contact h1 {
+	padding-bottom: 90px;
+	font-weight: bold;
+}
+       
+.container {
+	margin: auto;
+}
+       
+.fa-ul li {
+	display: inline-block;
+	padding: 30px;
+}
+       
+#header-box {
+	background-color: rgba(34, 34, 34, 0.6);
+	margin-top: 200px;
+}
+        
+#home h1 {
+	font-family: 'Molle', cursive;
+}
+        
+#intro {
+	margin-top: 60px;
+}
+        
+.jumbotron {
+	background: url(https://res.cloudinary.com/dnalyjwkn/image/upload/v1475955451/photo2_lifxs3.jpg) no-repeat center center;
+	color: white;
+	min-height: 800px;
+}
+        
+.navbar {
+	margin: 0;
+}
+        
+.navbar-nav > li {
+	padding-right: 30px;
+}
+        
+textarea {
+	resize: none;
+}
+        
+#projects {
+	background-color: #f1f1f1;
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+        
+#projects h1 {
+	font-weight: bold;
+	padding: 30px;
+}
+        
+#projects img {
+	height: auto;
+	width: 100%;
+}
+        
+#skills {
+	border: 3px solid #f1f1f1;
+	border-radius: 20px;
+	margin-top: 50px;
+	padding: 10px;
+}
+        
+#social-media {
+	background-color: rgba(34, 34, 34, 34);
+	color: white;
+}
+        
+#social-media h1 {
+	font-weight: bold;
+}
+        
+#to-top {
+	padding-bottom: 30px;
+}
+
+/* Custom, iPhone Retina */       
+@media only screen and (min-width: 320px) {
+	#header-box {
+		margin-top: 75px;
+	}
+	#home h1 {
+		font-size: 4em;
+	}
+	.jumbotron {
+		min-height: 400px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	#header-box {
+		margin-top: 75px;
+	}
+	#home h1 {
+		font-size: 4em;
+	}
+	.jumbotron {
+		min-height: 400px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#header-box {
+		margin-top: 75px;
+	}
+	#home h1 {
+		font-size: 4em;
+	}
+	.jumbotron {
+		min-height: 400px;
+	}
+	#intro {
+		margin-top: 80px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */     
+@media (min-width: 992px) {
+	#header-box {
+		margin-top: 150px;
+	}
+	.#home h1 {
+		font-size: 6em;
+	}
+	.jumbotron {
+		min-height: 600px;
+	}
+	#intro {
+		margin-top: 90px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#header-box {
+		margin-top: 200px;
+	}
+	#home h1 {
+		font-size: 10em;
+	}
+	.jumbotron {
+		min-height: 800px;
+	}
+	#intro {
+		margin-top: 120px;
+	}
+}

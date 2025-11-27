@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+}
+#string{
+    height: 200px;
+    width: 100%;
+    /* background-color:cadetblue ; */
+}
+
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

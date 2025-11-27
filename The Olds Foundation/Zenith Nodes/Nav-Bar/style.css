@@ -1,0 +1,318 @@
+/* Basic Reset */
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Root Variables */
+  :root {
+    --hue: 223;
+    --bg: hsl(var(--hue), 10%, 90%);
+    --fg: hsl(var(--hue), 10%, 10%);
+    --focus: hsl(var(--hue), 90%, 50%);
+    --focus-t: hsla(var(--hue), 90%, 50%, 0);
+    --tab-bar-bg: hsl(0, 0%, 100%);
+    --trans-dur: 0.3s;
+    --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
+    font-size: calc(14px + (30 - 14) * (100vw - 280px) / (3840 - 280));
+  }
+  
+  /* Body Styles */
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    font: 1em/1.5 "Noto Sans", sans-serif;
+    height: 100vh;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+  }
+  
+  /* Tab Bar Styles */
+  .tab-bar {
+    background-color: var(--tab-bar-bg);
+    border-radius: 2em;
+    box-shadow: 0 0 0.75em hsla(var(--hue), 10%, 10%, 0.1);
+    margin: auto;
+    width: calc(100% - 1.5em);
+    max-width: 27em;
+    transition: background-color var(--trans-dur), box-shadow var(--trans-dur);
+  }
+  
+  .tab-bar__tabs {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .tab-bar__tab {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .tab-bar__tab-icon,
+  .tab-bar__tab-name {
+    display: block;
+    pointer-events: none;
+    transition: opacity var(--trans-dur) var(--trans-timing), transform var(--trans-dur) var(--trans-timing);
+  }
+  
+  .tab-bar__tab-icon {
+    margin: auto;
+    overflow: visible;
+    width: 1.5em;
+    height: auto;
+  }
+  
+  .tab-bar__tab-icon circle,
+  .tab-bar__tab-icon path,
+  .tab-bar__tab-icon polygon,
+  .tab-bar__tab-icon rect {
+    transition: fill calc(var(--trans-dur) / 2) var(--trans-timing), opacity calc(var(--trans-dur) / 2) var(--trans-timing), stroke calc(var(--trans-dur) / 2) var(--trans-timing), transform var(--trans-dur) var(--trans-timing);
+  }
+  
+  .tab-bar__tab-icon--home .tab-bar__tab-icon-1 {
+    transform-origin: 12px 24px;
+  }
+  
+  .tab-bar__tab-icon--videos .tab-bar__tab-icon-3 {
+    fill: var(--tab-bar-bg);
+    stroke: var(--tab-bar-bg);
+  }
+  
+  .tab-bar__tab-icon--books .tab-bar__tab-icon-2,
+  .tab-bar__tab-icon--books .tab-bar__tab-icon-3 {
+    transform-origin: 12px 21px;
+  }
+  
+  .tab-bar__tab-name {
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 1;
+    top: calc(100% - 0.5rem);
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .tab-bar__tab-link {
+    color: var(--fg);
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 5.5em;
+    transition: color calc(var(--trans-dur) / 2);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .tab-bar__tab-link:hover,
+  .tab-bar__tab-link:focus-visible {
+    color: var(--focus);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] {
+    color: var(--focus);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon {
+    transform: translateY(-50%);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon circle,
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon path,
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon polygon,
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon rect {
+    fill: var(--focus);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-name {
+    opacity: 1;
+    transform: translateY(-200%);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--home .tab-bar__tab-icon-1 {
+    animation: home-bounce calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--videos .tab-bar__tab-icon-1 {
+    animation: video-move-1 calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--videos .tab-bar__tab-icon-2 {
+    animation: video-move-2 calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--videos .tab-bar__tab-icon-3 {
+    animation: video-fade-slide calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+    opacity: 1;
+    fill: var(--tab-bar-bg);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--books .tab-bar__tab-icon-1 {
+    animation: books-move calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--books .tab-bar__tab-icon-2 {
+    animation: books-scale-left calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--books .tab-bar__tab-icon-3 {
+    animation: books-scale-right calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .tab-bar__tab-link[aria-current="page"] .tab-bar__tab-icon--profile .tab-bar__tab-icon-1 {
+    animation: profile-head-bob calc(var(--trans-dur) * 2.5) cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: hsl(var(--hue), 10%, 30%);
+      --fg: hsl(var(--hue), 10%, 90%);
+      --focus: hsl(var(--hue), 90%, 60%);
+      --focus-t: hsla(var(--hue), 90%, 60%, 0);
+      --tab-bar-bg: hsl(var(--hue), 10%, 10%);
+    }
+  
+    .tab-bar {
+      box-shadow: 0 0 0.75em hsla(var(--hue), 10%, 10%, 0.3);
+    }
+  }
+  
+  /* Reduced Motion */
+  @media (prefers-reduced-motion) {
+    .tab-bar__tab .tab-bar__tab-icon {
+      animation: none;
+    }
+  }
+  
+  /* Keyframes */
+  @keyframes home-bounce {
+    from, to {
+      transform: scale(1, 1) translateY(0);
+    }
+    20% {
+      transform: scale(1.5, 0.75) translateY(0);
+    }
+    40% {
+      transform: scale(0.8, 1.2) translateY(-4px);
+    }
+    60% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    80% {
+      transform: scale(0.95, 1.05) translateY(0);
+    }
+  }
+  
+  @keyframes video-move-1 {
+    from, to {
+      transform: translate(0, 0);
+    }
+    20%, 80% {
+      transform: translate(0, 4px);
+    }
+  }
+
+  @keyframes video-move-2 {
+    from, to {
+      transform: translate(1px, 9px);
+    }
+    20%, 80% {
+      transform: translate(1px, 5px);
+    }
+  }
+  
+  @keyframes video-fade-slide {
+    from {
+      animation-timing-function: steps(1, end);
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    40% {
+      animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+      opacity: 1;
+      stroke: hsla(0, 0%, 0%, 0);
+      transform: translate(-4px, 0);
+    }
+    60%, to {
+      opacity: 1;
+      stroke: var(--tab-bar-bg);
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes books-move {
+    from, 60%, to {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-1px);
+    }
+    40% {
+      transform: translateY(0.5px);
+    }
+  }
+  
+  @keyframes books-scale-left {
+    from, to {
+      transform: skewY(0);
+    }
+    20% {
+      transform: skewY(-16deg);
+    }
+    40% {
+      transform: skewY(12deg);
+    }
+    60% {
+      transform: skewY(-8deg);
+    }
+    80% {
+      transform: skewY(4deg);
+    }
+  }
+  
+  @keyframes books-scale-right {
+    from, to {
+      transform: skewY(0);
+    }
+    20% {
+      transform: skewY(16deg);
+    }
+    40% {
+      transform: skewY(-12deg);
+    }
+    60% {
+      transform: skewY(8deg);
+    }
+    80% {
+      transform: skewY(-4deg);
+    }
+  }
+  
+  @keyframes profile-head-bob {
+    from, to {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(4px);
+    }
+    40% {
+      transform: translateX(-3px);
+    }
+    60% {
+      transform: translateX(2px);
+    }
+    80% {
+      transform: translateX(-1px);
+    }
+  }
+  
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

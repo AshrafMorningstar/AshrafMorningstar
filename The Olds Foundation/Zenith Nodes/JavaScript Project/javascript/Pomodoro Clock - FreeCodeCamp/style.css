@@ -1,0 +1,72 @@
+@media only screen and (max-device-width: 400px) {
+    body {
+        background-image: url("https://unsplash.com/photos/Tmz8FThN_BE/download?force=true");
+      width: auto;
+      height: 550px;
+      background-size: cover;
+    }
+}
+
+body {
+  background: url("https://unsplash.com/photos/Tmz8FThN_BE/download?force=true");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Pacifico', cursive;
+}
+
+.header {  
+  color: red;  
+  text-shadow: 2px 2px 3px floralwhite;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: red;
+  color: floralwhite;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 44%;
+}
+
+h2 {  
+  text-shadow: 2px 2px 3px floralwhite, 1px 1px white;
+}
+
+span {
+  font-size: 1.6em;
+  text-shadow: 2px 2px 3px floralwhite, 1px 1px white;
+}
+
+p {
+  font-size: 1.3em;
+  margin-top: 15px;
+  margin-bottom: -30px;
+  color: floralwhite;
+  text-shadow: 2px 2px 3px black, 1px 1px grey;
+}
+
+button {
+  background-color: red;
+  color: floralwhite;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 12px;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.tomato {
+  background-image: url("http://pngimg.com/uploads/tomato/tomato_PNG12599.png");
+  background-size: contain;
+  width: 280px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,178 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: radial-gradient(circle, #0f0c29, #302b63, #24243e); /* Space-themed gradient */
+    font-family: 'Orbitron', sans-serif; /* Sci-fi font */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main Calculator Wrapper */
+.calc-wrapper {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(20, 20, 20, 0.85); /* Semi-transparent dark background */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.4); /* Cyan glow */
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(0, 255, 255, 0.2); /* Subtle border */
+}
+
+/* Display Section */
+.calc-display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#displayResult {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.85); /* Darker transparent background */
+    border: 2px solid #00ffff; /* Neon cyan border */
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 28px;
+    text-align: right;
+    color: #00ffff; /* Neon cyan text */
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon glow */
+    font-weight: bold;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    gap: 15px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 15px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 18px;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Transparent border */
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); /* Transparent button background */
+    color: #fff; /* White text */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle glow */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Stronger glow on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.btn:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Operator Buttons */
+.operator {
+    background: rgba(255, 69, 0, 0.3); /* Transparent neon orange */
+    color: #ff4500; /* Neon orange text */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6); /* Neon glow */
+}
+
+.operator:hover {
+    background: rgba(255, 69, 0, 0.5); /* Brighter orange on hover */
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8); /* Stronger glow */
+}
+
+/* Special Buttons */
+.special {
+    background: rgba(169, 169, 169, 0.3); /* Transparent gray */
+    color: #d3d3d3; /* Light gray text */
+    box-shadow: 0 0 15px rgba(169, 169, 169, 0.5); /* Subtle glow */
+}
+
+.special:hover {
+    background: rgba(169, 169, 169, 0.5); /* Brighter gray on hover */
+    box-shadow: 0 0 20px rgba(169, 169, 169, 0.8); /* Stronger glow */
+}
+
+/* Function Buttons */
+.function {
+    background: rgba(30, 144, 255, 0.3); /* Transparent neon blue */
+    color: #1e90ff; /* Neon blue text */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.6); /* Neon glow */
+}
+
+.function:hover {
+    background: rgba(30, 144, 255, 0.5); /* Brighter blue on hover */
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.8); /* Stronger glow */
+}
+
+/* Equals Button */
+.equals {
+    background: rgba(50, 205, 50, 0.3); /* Transparent neon green */
+    color: #32cd32; /* Neon green text */
+    grid-column: span 2; /* Spans two columns */
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.6); /* Neon glow */
+}
+
+.equals:hover {
+    background: rgba(50, 205, 50, 0.5); /* Brighter green on hover */
+    box-shadow: 0 0 20px rgba(50, 205, 50, 0.8); /* Stronger glow */
+}
+
+/* Input Field Styles */
+input {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    border: 3px solid #00ffff; /* Neon cyan border */
+    color: #00ffff; /* Neon cyan text */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space for better layout */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* Neon glow inside input field */
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+input:focus {
+    background: rgba(0, 255, 255, 0.3); /* Light up input field on focus */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7); /* Neon glow when focused */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator-container {
+        padding: 15px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #displayResult {
+        font-size: 20px;
+        height: 50px;
+    }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,92 @@
+body{
+  position:relative;
+}
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+.navbar-custom {
+  background-color:#c8ac96;
+  padding-left:20px;
+  padding-right:20px;
+  border:none;
+}
+.navbar-right li {
+  font-size:30px;
+}
+#about{
+  background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ),url("https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg") no-repeat center center fixed;
+  color:#fff;
+  height:1000px;
+}
+.aboutme{
+  padding-top:60px;
+}
+#about h3 {
+  padding-top:350px;
+  font-size:80px;
+  font-weight:bold;
+  font-family:'Berkshire Swash', cursive;
+}
+#about p {
+  font-size:30px;
+  padding-left:50px;
+}
+#portfolio {
+  height:880px;
+  padding-left:30px;
+  background-color:#81895C;
+}
+.navbar-default .navbar-nav > li > a{
+  color:#fff;
+}
+.p-cardo{
+  margin-top:50px;
+  height:500px;;
+  width:100%;
+  background-color:#fff;
+}
+.p-cardo-img {
+  width:100%;
+  height:250px;
+  transform:all 1s ease-in-out;
+}
+.p-cardo a{
+  margin-top:80px;
+}
+.p-cardo:hover > .p-cardo-img{
+  opacity:0.9;
+}
+#contact {
+  padding-top:30px;
+  height:200px;
+  background-color:#222;
+  color:#fff;
+}
+#contact img {
+  width:150px;
+}
+.socimed {
+  font-size:50px;
+  border:none;
+}
+.socimed:hover {
+  color: #fff;
+}
+.socimed:hover{
+  opacity:0.8;
+}
+@media (max-width:767px){
+  .navbar-fixed-top{
+    position:relative;
+    top:auto;
+  }
+  #contact,#portfolio {
+    display:table;
+    width:100%;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

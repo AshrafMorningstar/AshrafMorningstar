@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .contant_Hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #61434371;
+    z-index: 0;
+    opacity: 1;
+    transition: width 0.5s ease;
+  }
+
+  .contant_Hover:hover::before {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .Image_Hover img,
+  .contant_Hover span,
+  .contant_Hover button {
+    position: relative;
+    z-index: 2;
+  }
+
+  .Image_Hover {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .Image_Hover::before {
+    z-index: 1;
+  }
+
+  .Image_Hover img {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* code for Page Home Hero Section Coffee Mug shadow code */
+
+@layer base{
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115)
+  }
+
+  .img-shadow2{
+    filter: drop-shadow(10px 30px 15px #3030307a)
+  }
+}
+/* 
+.perspective-3d {
+  perspective: 1000px;
+} */
+.spin-shadow {
+  border-top-color: transparent !important;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

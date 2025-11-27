@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1a1a1a, #4a4a4a);
+}
+
+.calculator-container {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+    width: 100%;
+    max-width: 400px;
+}
+
+.display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#displayResult {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    color: #333;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    gap: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.operator {
+    background: rgba(255, 165, 0, 0.9);
+    color: white;
+}
+
+.operator:hover {
+    background: rgba(255, 165, 0, 1);
+}
+
+.special {
+    background: rgba(169, 169, 169, 0.9);
+    color: white;
+}
+
+.special:hover {
+    background: rgba(169, 169, 169, 1);
+}
+
+.function {
+    background: rgba(100, 149, 237, 0.9);
+    color: white;
+}
+
+.function:hover {
+    background: rgba(100, 149, 237, 1);
+}
+
+.equals {
+    background: rgba(50, 205, 50, 0.9);
+    color: white;
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background: rgba(50, 205, 50, 1);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator-container {
+        padding: 10px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #displayresult {
+        font-size: 20px;
+        height: 50px;
+    }
+} 
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

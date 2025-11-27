@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding-top: 100px;
+  background-color: #363958;
+}
+
+.submit-area {
+	padding: 30px;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px gray;
+  color: white;
+  background-color: royalblue;
+}
+
+#account-area {
+	margin-top: 5%;
+}
+
+.deposit {
+	background-color: slateblue;
+}
+
+.withdraw {
+	background-color: lightsalmon;
+}
+
+.balance {
+	background-color: tomato;
+}
+
+.status {
+	margin: 0 20px;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

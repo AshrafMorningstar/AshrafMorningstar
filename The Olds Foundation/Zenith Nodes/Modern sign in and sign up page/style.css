@@ -1,0 +1,250 @@
+/* Color Declarations */
+:root {
+	--color-white: #FFFFFF;
+	--color-primary: rgb(7,32,74);
+	--color-accent1: #EEF5F3;
+	--color-accent2: #88908E;
+	--color-accent3: #E1EAE7;
+	--color-accent4: #223331;
+  }
+  
+  /* Fonts */
+  body {
+	font-family: 'Montserrat', sans-serif;
+  }
+  
+  .secondary-font {
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Helper margins */
+  .small-margin-b {
+	margin-bottom: 2rem;
+  }
+  
+  .medium-margin-b {
+	margin-bottom: 4rem;
+  }
+  
+  .large-margin-b {
+	margin-bottom: 8rem;
+  }
+  
+  /* Some small adjustments */
+  *,
+  *::before,
+  *::after {
+	box-sizing: border-box;
+  }
+  
+  html {
+	font-size: 62.5%;
+  }
+  
+  body {
+	font-size: 1.6rem;
+	font-weight: 200;
+	min-height: 100vh;
+  }
+  
+  /* Styling */
+  .main-page {
+	display: flex;
+	flex: 1;
+	align-items: stretch;
+	justify-content: space-between;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .form {
+	padding: var(--medium-margin-b) 0;
+	border-style: solid;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	width: 45rem;
+  }
+  
+  .form__legend {
+	text-align: center;
+	padding: 0 .5rem;
+  }
+  
+  .form__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .form__group {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .form__input {
+	display: block;
+	width: 100%;
+	max-width: 45rem;
+	background-color: var(--color-accent1);
+	border: none;
+	outline: none;
+	height: 5rem;
+	border-radius: 2rem;
+	padding: 0 1.5rem;
+	transition: background .3s;
+	color: var(--color-accent2);
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+  }
+  
+  .form__input-half {
+	display: inline-block;
+	width: 48.5%;
+  }
+  
+  .form__input-checkbox:checked {
+	filter: invert(100%) hue-rotate(118deg) brightness(1.2);
+  }
+  
+  .form__input::placeholder {
+	font-size: 1.6rem;
+	font-weight: 400;
+	opacity: .75;
+  }
+  
+  .form__input:focus,
+  .form__input:active {
+	background: var(--color-white);
+	border: 1px solid var(--color-accent3);
+  }
+  
+  .switch {
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-primary);
+	padding: 0 2rem;
+	color: var(--color-white);
+  }
+  
+  .switch__header {
+	margin-bottom: var(--medium-margin-b);
+  }
+  
+  .switch__text-container {
+	text-align: center;
+  }
+  
+  .login, .signup {
+	display: flex;
+	opacity: 1;
+	flex-basis: 0;
+	flex-shrink: 1;
+	flex-grow: 1;
+	padding: 2rem 4rem;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: auto;
+  }
+  
+  .login__header,
+  .signup__header {
+	margin-bottom: 0;
+  }
+  
+  .login__byline,
+  .signup__byline {
+	margin-bottom: var(--medium-margin-b);
+  }
+  
+  .social-media__container {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: var(--medium-margin-b);
+  }
+  
+  .social-media__icon:not(:last-child) {
+	margin-right: 1rem;
+  }
+  
+  .header {
+	text-align: center;
+	font-weight: 200;
+  }
+  
+  .icon {
+	cursor: pointer;
+  }
+  
+  .btn {
+	width: 23.5rem;
+	min-height: 5.5rem;
+	background-color: var(--color-primary);
+	border-radius: 3rem;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-white);
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	text-align: center;
+	margin: 3.2rem 0;
+	transition: .3s;
+  }
+  
+  .btn:hover,
+  .btn:active {
+	/* background-color: lighten(var(--color-primary), 51%); */
+	background-color: #7a7ddb;
+  }
+  
+  .btn-white {
+	background-color: var(--color-white);
+	color: black;
+	box-shadow: 0 12px 24px rgba(var(--color-accent4), .13);
+  }
+  
+  .btn-white:hover,
+  .btn-white:active {
+	background-color: var(--color-white);
+	color: var(--color-primary);
+	box-shadow: none;
+  }
+  
+  .hide-view {
+	opacity: 0;
+	flex-basis: 0;
+	flex-shrink: 1;
+	flex-grow: 0.000001;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .signup.hide-view {
+	transform: translateX(-50vw);
+  }
+  
+  .login.hide-view {
+	transform: translateX(50vw);
+  }
+  
+  .smooth {
+	transition: transform .3s linear, opacity .3s ease-in-out, flex-grow .9s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

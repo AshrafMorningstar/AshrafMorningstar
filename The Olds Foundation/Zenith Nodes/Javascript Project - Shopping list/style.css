@@ -1,0 +1,97 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Lalezar");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #2552AC;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  line-height: 1.5;
+}
+
+.shoppingList {
+  background-color: #F1F4F6;
+  color: black;
+  width: 70%;
+  margin: 3em auto 0;
+  padding: 2em 0 0;
+  text-align: center;
+}
+.shoppingList img {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  width: 50px;
+}
+.shoppingList h1, .shoppingList p {
+  padding: 0.5em 1em 1em;
+  margin: 0;
+}
+.shoppingList ul {
+  padding: 0;
+}
+.shoppingList li {
+  list-style: none;
+  padding: 1em 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 18px;
+}
+.shoppingList li:nth-child(even) {
+  background-color: #5AC8D8;
+}
+
+.addItemsForm {
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  display: none;
+}
+.addItemsForm input[type=text] {
+  padding: 2em;
+  margin: 0;
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+#addtolistBtn, #clearItems, .addBtn {
+  border: none;
+  font-family: "Lalezar", cursive;
+  font-size: 1.5rem;
+  background-color: #597FCA;
+  padding: 1em;
+  color: white;
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+#addtolistBtn:hover, #clearItems:hover, .addBtn:hover {
+  background-color: #3a64b6;
+}
+
+.addBtn {
+  margin: 0 auto;
+  display: block;
+  padding: 1em 0;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+#clearItems {
+  margin: 0.5em auto;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

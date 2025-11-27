@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex ;
+    gap: 50px;
+}
+
+.boy-container{
+    background-color: blueviolet;
+    width: 250px;
+    height: 300px;
+    border: 5px solid rgb(72, 72, 72);
+    border-top-left-radius:120px ;
+    border-top-right-radius:120px ;
+
+}
+.girl-container{
+    background-color: rgb(43, 131, 226);
+    width: 250px;
+    height: 300px;
+    border: 5px solid rgb(72, 72, 72);
+    border-bottom-left-radius:120px ;
+    border-bottom-right-radius:120px ;
+}
+
+
+.boy-img{
+    width: 150px;
+    height: 150px;
+    /* border: 5px solid white; */
+    border-radius: 50%;
+    position: absolute;
+    left: 52px;
+    top: 220px;
+}
+.girl-img{
+    width: 150px;
+    height: 150px;
+    /* border: 5px solid white; */
+    border-radius: 50%;
+    position: absolute;
+    left: 350px;
+    bottom: 220px;
+}
+img{
+    height: 141px;
+    width: 142px;
+    border-radius: 50%;
+}
+
+.boy-details{
+    margin-top: 15%;
+}
+.girl-details{
+    margin-top: 35%;
+}
+h1{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.boy-container p{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    margin: 15px;
+    text-align: start;
+}
+.girl-details  p{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    margin: 15px;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

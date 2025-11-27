@@ -1,0 +1,211 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900);
+
+h1, p { margin-bottom: 1.25em; max-width: 700px; }
+h1 { font-family: Merriweather; font-weight: 900; }
+p { font-size: 0.8rem; line-height: 1.75em; }
+
+html {
+        background: #000;
+        font-size: 140%;
+        line-height: 1.7em;
+}
+
+body {
+        background-color: #eee;
+        color: #444;
+        font-family: 'Source Sans Pro';
+        font-size: inherit;
+        font-weight: 400;
+        min-height: 1000px;
+        padding: 100px 0 0;
+        transition: background-color 350ms ease-in-out;
+}
+
+body.sticky { background-color: #eee; }
+
+.wrapper {
+        background: #fafafa;
+        margin: auto;
+        padding: 0 30px;
+        max-width: 1140px;
+}
+
+.site-nav {
+        background: transparent;
+        box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0),0px 1px 8px 0px rgba(0, 0, 0, 0);
+        min-height: 80px;
+        transition: background-color 220ms ease-in, box-shadow 80ms ease-in;
+}
+
+.site-nav .wrapper { background: #fafafa; height: 40px; padding: 20px 30px; transition: background-color 100ms ease-in-out; }
+
+nav ul { display: block; float: left; list-style: none; margin: 0; padding: 0; width: 100%; }
+
+.site-nav li { display: block; float: left; height: 100%; line-height: 100%; margin: 0 20px 10px 0; }
+
+.site-nav a {
+        border-bottom: 5px solid transparent;
+        color: #666;
+        display: block;
+        font-family: 'Source Sans Pro';
+        font-weight: 200;
+        font-size: 1.05rem;
+        height: 43px;
+        line-height: 45px;
+        padding: 0 2px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 200ms ease-out;
+        outline-width: 0;
+}
+
+.sticky .site-nav a {
+  color: #888;
+}
+
+.site-nav a:focus,
+.site-nav a:hover,
+.site-nav a.active:focus,
+.site-nav a.active:hover,
+.site-nav .wrapper:hover a.active:focus,
+.site-nav .wrapper:hover a.active:hover,
+.pages a:focus,
+.pages a:hover,
+.pages a.current:focus,
+.pages a.current:hover {
+        border-color: #CF0404;
+        border-width: 2px;
+        color: #444;
+        position: relative;
+        top: -1px;
+}
+
+.site-nav .wrapper:hover a {
+        color: transparent;
+        text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.site-nav .wrapper:hover a:focus,
+.site-nav .wrapper:hover a:hover,
+.site-nav .wrapper:hover a.active,
+.site-nav .wrapper:hover a.active:focus,
+.site-nav .wrapper:hover a.active:hover {
+        color: #333;
+        text-shadow: none;
+}
+
+.site-nav .wrapper:hover a.active {
+        color: transparent;
+        text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.site-nav a.active,
+.pages a.current {
+        border-color: #333 ;
+        border-width: 2px;
+        color: #444; 
+        font-weight: 400;
+}
+
+.site-nav a:active,
+.site-nav a.active:active,
+.pages a:active,
+.pages a.current:active {
+        border-color: #CF0404;
+        border-width: 4px;
+        top: 1px;
+}
+
+.sticky .site-header { margin-bottom: 80px; }
+
+.sticky .site-nav {
+	background: rgba(255,255,255,.8);
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.1),0px 1px 8px 0px rgba(0, 0, 0, .6);
+	margin: -180px 0 0;
+	position:fixed;
+	width:100%;
+	z-index: 1000;
+}
+
+.sticky .site-nav .wrapper {
+	background: rgba(250, 250, 250, 0.75);
+}
+
+.site-nav li.search-trigger-container {
+  float: right;
+}
+
+#search-trigger {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  display: block;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-indent: -9999em;
+  top: -2px;
+  transition: background-color 250ms ease-out, box-shadow 200ms ease-out, transform 200ms linear;
+  width: 44px;
+}
+
+#search-trigger:before {
+  background-color: inherit;
+  border: 3px solid #333;
+  border-radius: 50%;
+  content: ' ';
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: border-color 200ms ease-out;
+  width: 16px;
+}
+
+#search-trigger:after {
+  background: #333;
+  border-radius: 2px;
+  bottom: 14px;
+  content: ' ';
+  display: block;
+  height: 3px;
+  left: 8px;
+  position: absolute;
+  transform: rotate(-45deg);
+  transition: background 200ms ease-out;
+  width: 12px;
+}
+
+#search-trigger:focus,
+#search-trigger:hover {
+  background-color: #404040;
+  transform: scale(1);
+}
+
+#search-trigger:hover:before {
+  border-color: #fff;
+}
+
+#search-trigger:hover:after {
+  background-color: #fff;
+}
+
+#search-trigger:active {
+  box-shadow: 0 0 2px -2px rgba(0,0,0,.3);
+  transform: scale(.9);
+}
+
+.content {
+          min-height: 1140px;
+          padding-top: 30px;
+}

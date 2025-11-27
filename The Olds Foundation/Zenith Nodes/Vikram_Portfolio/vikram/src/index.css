@@ -1,0 +1,14 @@
+ /*~ google font link */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*~ tailwind import link */
+@import "tailwindcss";
+
+/*~ BOdy Color change   */
+body {
+    background-color: #5C4033; /* Replace with the equivalent color for bg-darkBrown */
+  }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

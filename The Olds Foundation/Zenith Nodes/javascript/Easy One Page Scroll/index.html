@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Easy One Page Scroll</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=Exo:700' rel='stylesheet' type='text/css'>
+   
+ <div id="nav-wrap">
+       <div id="scroller-anchor"></div> 
+       <div id="nav">
+            <ul class="clearfix">
+                <li class="nav-btn active" data-row-id="row1">Link#1</li>
+                <li class="nav-btn" data-row-id="row2">Link#2</li>
+                <li class="nav-btn" data-row-id="row3">Link#3</li>
+                <li class="nav-btn" data-row-id="row4">Link#4</li>
+                <li class="nav-btn" data-row-id="row5">Link#5</li>
+                <li class="nav-btn" data-row-id="row6">Link#6</li>
+                <div id="nav-indicator"></div>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="content-wrap">    
+    	<h1>Easy One Page Scroll</h1>
+        <h2>A Pen by <a href="http://www.andrecortellini.com" target="_blank"><span>André Cortellini</span></a></h2>
+        
+    	<div class="row row-nav" data-height="100" id="row1">Row#1 <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row row-nav" data-height="200" id="row2">Row#2 <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row row-nav" data-height="280" id="row3">Row#3 <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row" data-height="180"><span>*Row Skip</span> <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row row-nav" data-height="400" id="row4">Row#4 <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row row-nav" data-height="50" id="row5">Row#5 <div class="row-btn"><div class="circle"></div></div></div>
+        <div class="row row-nav" data-height="300" id="row6">Row#6 <div class="row-btn"><div class="circle"></div></div></div>
+        
+        <div id="top">Top</div>
+    </div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

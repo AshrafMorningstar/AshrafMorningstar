@@ -1,0 +1,78 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: rgb(235, 235, 235);
+    min-height: 100vh;
+    display: flex;
+}
+.container > div{
+    flex-grow: 1;
+}
+.container .preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-box{
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.controls{
+    padding: 1em;
+}
+.controls-box{
+    background-color: rgb(26, 25, 25);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    color: #fff;
+    margin-bottom: 1em;
+}
+label{
+    display: block;
+    margin-bottom: .5em;
+}
+input[type="range"], input[type="color"]{
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.text-right{
+    text-align: right;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: rgb(5, 83, 230);
+    padding: .75em 1em;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.codes.controls-box{
+    margin-top: 1em;
+}
+.codes .code{
+    color:rgb(230, 88, 5)
+}

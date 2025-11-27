@@ -1,0 +1,94 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body{
+			margin: 0px;
+			background: #222;
+		}
+h1{
+  color:#fff;
+}
+.container{
+      position: absolute;
+      top:50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+}
+		.clock{
+			margin: 200px 500px;
+			width: 250px;
+			height: 250px;
+			border:2px solid rgba(255,255,255,0.5) ;
+			position: relative;
+			transform: rotate(-90deg);
+			border-radius: 100%;
+		}
+		.time{
+			color: #fff;
+			position: absolute;
+			transform: rotate(90deg);
+			/*now use margin to the time */
+		}
+		.line{
+			position: absolute;
+			width: 100px;
+			height: 5px;
+			background: red;
+			top: calc(50% - 2.5px);
+			left: calc(50% - 0px);
+			transform-origin: 0% 50%;
+			transform: rotate(90deg);
+		}
+		.mid{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			border-radius: 100%;
+			top:50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			z-index: 10;
+		}
+
+		#seconds{
+			background: green;
+			transform:rotate(180deg);
+		}
+		#minutes{
+			background: blue;
+			transform:rotate(270deg);
+		}
+		#hours{
+			background: red;
+			transform:rotate(0deg);
+			/*time 12 start*/
+		}
+
+		
+
+		.time-12{
+			top:50%;
+			right:0%;
+			margin-top: -10px;
+		}
+		
+		.time-3{
+			bottom:0%;
+			left:50%;
+			margin-left: -4px;
+		}
+		.time-6{
+			top:50%;
+			left:0%;
+			margin-top: -8px;
+			margin-left: 4px;
+		}
+
+		.time-9{
+			top:0%;
+			left:50%;
+			margin-left: -4px;
+		}

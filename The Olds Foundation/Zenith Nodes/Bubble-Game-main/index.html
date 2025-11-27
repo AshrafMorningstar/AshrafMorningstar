@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file link -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- tailwind css file link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container" class="min-h-screen  px-4 full bg-[#556b2f] flex justify-center items-center">
+        <div id="contain" class=" w-full max-w-6xl h-[90vh] bg-white rounded-xl overflow-hidden">
+            <!-- this is a contain-top  -->
+            <div id="contan-top" class="bg-[#323a24] w-full h-[100px] flex  items-center px-3 sm:px-[11%]  py-4 sm:py-0 gap-3 sm:gap-0 sm:items-center  justify-around text-white">
+                     
+                <!-- this is for Hit Element div -->
+                <div id="element" class="flex gap-4 items-center">
+                    <h2 id="Elem-heading" class="text-lg sm:text-xl md:text-2xl font-bold">Hit</h2> 
+                    <div id="hitVal" class="bg-white rounded-xl text-[#6da707] px-3 py-1 text-lg sm:text-xl md:text-2xl font-bold">7</div>
+                </div>
+
+                <!-- this is for Timer Element div -->
+                <div id="element" class="flex gap-[20px] items-center">
+                    <h2 id="Elem-heading" class="text-lg sm:text-xl md:text-2xl font-bold">Timer</h2>
+                    <div id="timerVal" class="bg-white rounded-xl text-[#6da707] px-4 py-1 text-lg sm:text-xl md:text-2xl font-bold">60</div>
+                </div>
+
+                <!-- this is for score Element div -->
+                <div id="element" class="flex gap-[20px] items-center">
+                    <h2 id="Elem-heading" class="text-lg sm:text-xl md:text-2xl font-bold">Score</h2>
+                    <div id="scoreVal" class=" bg-white rounded-xl text-[#6da707] px-4 py-1 text-lg sm:text-xl md:text-2xl font-bold">0</div>
+                </div>
+            </div>
+
+            <!-- this is a contain-bottom -->
+            <div id="contain-bottom" class="w-full h-[calc(100%-100px)] p-4 sm:p-6 md:p-10 flex flex-col gap-4 flex-wrap items-center justify-center overflow-hidden block visible opacity-100">
+            </div>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

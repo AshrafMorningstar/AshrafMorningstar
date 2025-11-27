@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- font-Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- this is title icone -->
+   <link rel="icon" href="./Assets/icon-image.png">
+  <!-- this is Title  -->
+  <title>Quote Generator</title>
+</head>
+<body>
+
+
+  <!-- main section -->
+
+  <div class="quote-box">
+    <h1 class="title">Quote Of The Day</h1>
+    <blockquote id="quote">loading...</blockquote>
+    <span id="author">loading...</span>
+
+    <div>
+      <button onclick=" getQuote(apiUrl)">New Quote</button>
+      <button onclick="tweet()"><i class="fa-brands fa-twitter twiter-icon"></i>Twiter</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

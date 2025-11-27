@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+#game {
+  background-color: white;
+  width: 300px;
+  height: 325px;
+  margin: auto;
+  padding: 5px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+#canvas-container {
+  background-color: grey;
+}
+
+button {
+  display: block;
+  width: 85px;
+  float: right;
+}
+
+#response {
+  padding-right: 10px;
+}
+
+#game, #inputLabel {
+  height: 100%;
+  min-height: 250px;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

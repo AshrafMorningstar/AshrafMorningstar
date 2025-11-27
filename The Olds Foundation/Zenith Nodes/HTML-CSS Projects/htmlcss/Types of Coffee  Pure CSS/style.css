@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Lora");
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  background: #252C32;
+  display: grid;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 500px;
+  height: 700px;
+}
+
+.bar {
+  position: absolute;
+  height: 85%;
+  width: 2px;
+  left: 7%;
+  top: 7.5%;
+  background: #F4E8DA;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  left: -5px;
+  border: 1px solid #F4E8DA;
+  box-shadow: 0px 0px 7px #f4e8da;
+}
+
+.top {
+  background: #5B4644;
+  top: -1%;
+}
+
+.middle {
+  background: #87624F;
+  top: 38%;
+}
+
+.bottom {
+  background: #DAB7A3;
+  bottom: -1%;
+}
+
+.bold {
+  color: #87624F;
+  position: absolute;
+  top: -7%;
+  left: -17px;
+}
+
+.creamy {
+  color: #DAB7A3;
+  position: absolute;
+  bottom: -7%;
+  left: -27px;
+}
+
+.info {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  left: 43%;
+}
+
+.coffee-cups {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 3%;
+}
+
+.handle {
+  position: absolute;
+  height: 20px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50% 30%;
+  left: 95%;
+  top: 10%;
+  z-index: -1;
+  border: 2px solid #F4E8DA;
+}
+
+.cup {
+  position: absolute;
+  width: 70px;
+  height: 55px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 20%;
+}
+
+.cup-small {
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 23%;
+}
+
+.cup-long {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 10% 10% 50% 50%;
+  left: 22%;
+}
+
+.doppio {
+  top: 5%;
+  background: linear-gradient(to bottom, #252C32 40%, #5B4644 40%, #87624F 70%);
+}
+
+.americano {
+  top: 18.5%;
+  background: linear-gradient(to bottom, #252C32 13%, #859FB5 13%, #859FB5 50%, #87624F 50%);
+}
+
+.macchiato {
+  top: 35%;
+  background: linear-gradient(to bottom, #252C32 20%, #F4E8DA 20%, #F4E8DA 40%, #87624F 40%);
+}
+
+.flatwhite {
+  top: 50%;
+  background: linear-gradient(to bottom, #252C32 10%, #F4E8DA 10%, #DAB7A3 60%, #87624F 65%, #5B4644 90%);
+}
+
+.cappuccino {
+  top: 64%;
+  background: linear-gradient(to bottom, #F4E8DA 50%, #DAB7A3 50%, #DAB7A3 55%, #87624F 60%);
+}
+
+.latte {
+  top: 81%;
+  background: linear-gradient(to bottom, #252C32 5%, #F4E8DA 5%, #F4E8DA 30%, #DAB7A3 30%, #DAB7A3 70%, #87624F 70%);
+}
+
+h1 {
+  color: #F4E8DA;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+p {
+  color: #F4E8DA;
+  font-family: "Lora", serif;
+  text-transform: none;
+  font-size: 0.7em;
+  letter-spacing: 0.5px;
+  margin-top: -5px;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  position: absolute;
+}
+
+.first {
+  top: 7%;
+}
+
+.second {
+  top: 21%;
+}
+
+.third {
+  top: 36%;
+}
+
+.fourth {
+  top: 52%;
+}
+
+.fifth {
+  top: 65%;
+}
+
+.sixth {
+  top: 83%;
+}
+
+.small {
+  margin-left: 20px;
+  margin-top: -1px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.key {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+}
+
+.espresso {
+  background: #5B4644;
+  position: absolute;
+  left: 17%;
+}
+
+.milk {
+  background: #DAB7A3;
+  position: absolute;
+  left: 40%;
+}
+
+.foam {
+  background: #F4E8DA;
+  position: absolute;
+  left: 63%;
+}
+
+.water {
+  background: #859FB5;
+  position: absolute;
+  left: 83%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #EA7996;
+}
+footer p {
+  text-transform: uppercase;
+  color: #DAB7A3;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+}
+footer a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #859FB5;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

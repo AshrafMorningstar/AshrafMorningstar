@@ -1,0 +1,166 @@
+/* 
+
+p{color: yellow; font-size: 19px; text-align: left; background-color: black; padding: 19px; border-radius: 5px;}
+h1{color: blue; font-size: 39px; text-align: center; background-color: white; padding: 29px; border-radius: 19px;}
+h2{color: green; font-size: 25px; text-align: center; background-color: lightgray; padding: 15px; border-radius: 8px;}
+h3{color: red; font-size: 29px; text-align: center; background-color: lightyellow; padding: 19px; border-radius: 5px;}  
+h4{color: purple; font-size: 18px; text-align: center; background-color: lightblue; padding: 8px; border-radius: 4px;}
+h5{color: orange; font-size: 16px; text-align: center; background-color: lightgreen; padding: 6px; border-radius: 3px;} 
+h6{color: pink; font-size: 14px; text-align: center; background-color: lightcoral; padding: 4px; border-radius: 2px;}
+h7{color: brown; font-size: 12px; text-align: center; background-color: lightcyan; padding: 2px; border-radius: 1px;}
+h8{color: gray; font-size: 19px; text-align: center; background-color: lightgoldenrodyellow; padding: 1px; border-radius: 9px;}
+h9{color: teal; font-size: 8px; text-align: center; background-color: lightpink; padding: 9px; border-radius: 9px;}
+h10{color: navy; font-size: 6px; text-align: center; background-color: lightseagreen; padding: 9px; border-radius: 9px;}
+h11{color: olive; font-size: 4px; text-align: center; background-color: lightsalmon; padding: 9px; border-radius: 9px;}
+h12{color: maroon; font-size: 2px; text-align: center; background-color: lightsteelblue; padding: 9px; border-radius: 9px;}
+h13{color: silver; font-size: 1px; text-align: center; background-color: lightyellow; padding: 9px; border-radius: 9px;}
+h14{color: black; font-size: 9px; text-align: center; background-color: lightgray; padding: 9px; border-radius: 9px;}
+h15{color: white; font-size: 9px; text-align: center; background-color: lightblue; padding: 9px; border-radius: 9px;}
+h16{color: red; font-size: 9px; text-align: center; background-color: lightgreen; padding: 9px; border-radius: 9px;}
+h17{color: blue; font-size: 9px; text-align: center; background-color: lightcoral; padding: 9px; border-radius: 9px;}
+h18{color: green; font-size: 9px; text-align: center; background-color: lightcyan; padding: 9px; border-radius: 9px;}
+h19{color: yellow; font-size: 9px; text-align: center; background-color: lightgoldenrodyellow; padding: 9px; border-radius: 9px;}
+h20{color: purple; font-size: 9px; text-align: center; background-color: lightpink; padding: 9px; border-radius: 9px;}
+h21{color: orange; font-size: 9px; text-align: center; background-color: lightseagreen; padding: 9px; border-radius: 9px;}
+h22{color: pink; font-size: 9px; text-align: center; background-color: lightsalmon; padding: 9px; border-radius: 9px;}
+h23{color: brown; font-size: 9px; text-align: center; background-color: lightsteelblue; padding: 9px; border-radius: 9px;}
+h24{color: gray; font-size: 9px; text-align: center; background-color: lightyellow; padding: 9px; border-radius: 9px;}
+h25{color: teal; font-size: 9px; text-align: center; background-color: lightgray; padding: 9px; border-radius: 9px;}
+h26{color: navy; font-size: 9px; text-align: center; background-color: lightblue; padding: 9px; border-radius: 9px;}
+h27{color: olive; font-size: 9px; text-align: center; background-color: lightgreen; padding: 9px; border-radius: 9px;}
+h28{color: maroon; font-size: 9px; text-align: center; background-color: lightcoral; padding: 9px; border-radius: 9px;}
+h29{color: silver; font-size: 9px; text-align: center; background-color: lightcyan; padding: 9px; border-radius: 9px;}
+h30{color: black; font-size: 9px; text-align: center; background-color: lightgoldenrodyellow; padding: 9px; border-radius: 9px;}
+h31{color: white; font-size: 9px; text-align: center; background-color: lightpink; padding: 9px; border-radius: 9px;}
+h32{color: red; font-size: 9px; text-align: center; background-color: lightseagreen; padding: 9px; border-radius: 9px;}
+h33{color: blue; font-size: 9px; text-align: center; background-color: lightsalmon; padding: 9px; border-radius: 9px;}
+body {background-color: rebeccapurple; font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center;
+height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+overflow: hidden; transition: background-color 0.5s ease; color: white; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+-webkit-text-stroke: 1px black; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+background-clip: text;  text-fill-color: transparent; background-image: url(logo.jpg); background-size: cover; 
+a {color: white; text-decoration: none; font-size: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+a:hover {text-decoration: underline; color: lightblue;}
+h1:hover {text-decoration: underline; color: lightblue;}
+
+ 
+.para{
+  color: yellow;
+  font-size: 19px;
+  text-align: left;
+  background-color: black;
+  padding: 19px;
+  border-radius: 5px;
+
+}
+
+.para:hover{
+    font-size: 56px;
+    color: red;
+  text-decoration: underline;
+  color: lightblue;
+    background-color: black;
+    padding: 19px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+        text-fill-color: transparent;
+    background-image: url(logo.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+} 
+
+p{
+  color: yellow;
+  font-size: 19px;
+  text-align: left;
+  background-color: black;
+  padding: 19px;
+  border-radius: 5px;
+
+  animation-duration: 3s;
+    animation-name: n1;
+
+
+   transition: all 0.5s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: url(logo.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  transition: background-color 0.5s ease;
+  color: white;
+  font-size: 20px;}
+
+  @keyframes n1 {
+    0% {color: red;}
+    25% {color: blue;}
+    50% {color: green;}
+    75% {color: yellow;}
+    100% {color: purple;}
+
+
+    from {transform: translateY(0);}
+    to {transform: translateY(-20px);}
+
+    from {transform: translateX(0);}
+    to {transform: translateX(20px);}
+
+
+    from {transform: translateZ(0);}
+    to {transform: translateZ(20px);}
+    from {margin-left: 0;}
+    to {margin-left: 300px;}
+    
+    from {margin-right: 0;}
+    to {margin-right: 300px;}
+
+    from {margin-top: 0;}
+    to {margin-top: 300px;}
+    from {opacity: 1;}
+    to {opacity: 0.5;}  
+
+    from {font-size: 19px;}
+    to {font-size: 56px;}   
+
+    from {margin-inline-start: auto;}
+    to {margin-inline-start: auto;}
+
+    from {margin-top: auto;}
+    to {margin-right: auto;}
+}
+  p:hover{
+    font-size: 56px;
+    color: red;
+    text-decoration: underline;  */
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

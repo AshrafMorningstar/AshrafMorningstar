@@ -1,0 +1,179 @@
+body{
+  background-color: lightblue;
+}
+.txt{
+  width: max-content;
+  margin: 160px auto 64px;
+  position: relative;
+}
+h1{
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: #808080;
+}
+.cover{
+/*   background-color: yellow; */
+  font-size: 210%;
+  width: 100%;
+  background-color: lightblue;
+  font-weight: bold;
+  position: relative;
+  height: 40px;
+  margin: -63px auto;
+  animation: rev 3.3s 1.1s steps(21) forwards;
+}
+.cover b{
+  color: #808080;
+  animation: blink 11s forwards;
+  user-select: none;
+}
+.form{
+  text-align: center;
+}
+.form hr{
+  width: 380px;
+  color: #808080;
+  border: 1px solid #808080;
+  animation: out 0.15s 6.2s linear forwards;
+}
+.form i{
+  font-size: 190%;
+  color: transparent;
+  animation: check 2s 6.3s linear forwards;
+}
+@keyframes rev{
+  0%{width: 100%; margin-right: 0;}
+  100%{width: 0%; margin-right: 0;}
+}
+@keyframes blink{
+  /*Before*/
+  0%{opacity: 1;}
+  2.5%{opacity: 0;}
+  5%{opacity: 1;}
+  7.5%{opacity: 0;}
+  10%{opacity: 1;}			
+  11.5%{opacity: 0.4;}
+
+  /*Typing*/
+  11.75%{opacity: 1;}
+  41.75%{opacity: 1;}
+
+  /*After*/
+  42.5%{opacity: 0;}
+  45%{opacity: 1;}
+  47.5%{opacity: 0;}
+  50%{opacity: 1;}
+  52.5%{opacity: 0;}
+  55%{opacity: 1;}
+  57.5%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes out{
+  0%{width: 360px; border: 1px solid #808080;}
+  95%{width: 17.5px; border: 1px solid #808080;}
+  100%{width: 0px; border: 1px solid rgba(0, 0, 0, 0);}
+}
+@keyframes check{
+  0%{opacity: 0; transform: translateY(30px); color: #00e673;}
+  10%{opacity: 1; transform: translateY(0px); color: #00e673;}
+  67%{opacity: 1; transform: translateY(0px); color: #00e673;}
+  100%{opacity: 1; transform: translateY(0px); color: #808080;}
+}
+.float{
+  background-color: rgba(255, 255, 255, 0.39);
+  font-family: monospace;
+  margin: 39.5px auto;
+/*   box-shadow: -3.6px 3.6px 25px rgba(0, 0, 0, 0.5); */
+  max-width: 850px;
+  min-width: 350px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  animation: 0.6s flt linear forwards;
+  font-size: 155%;
+  border-radius: 15px;
+}
+@keyframes flt{
+  0%{opacity: 0; transform: translateY(50px);}
+  100%{opacity: 1; transform: translateY(0px);}
+}
+.float a{
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #505050;
+  border: 2px solid transparent;
+  width: 70px;
+  transition: 0.2s ease-in-out;
+/*   box-shadow: -3px 3px 2.3px rgba(0, 0, 0, 0.3); */
+}
+a b{
+  display: none;
+}
+.float a:hover{
+  border-bottom: 2px solid #808080;
+  width: 129px;
+}
+.float a:hover i{
+  font-weight: normal;
+}
+.float a:hover:last-child i{
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {  
+  h1{
+    font-size: 30px;
+  }
+  [class*="btn"] {
+    font-size: 180%;
+    width: 97%;
+    text-align: center;
+  }
+  [class*="float"] {
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-around;
+    width: 85%;
+    min-width: 350px;
+    line-height: 70px;
+  }
+  .float i{
+    position: fixed;
+    left: 30px;
+    margin-top: 19px;
+  }
+  .float a{
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.39);
+    border: 3px solid transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .float a:hover{
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.39);
+    background-color: lightblue;
+  }
+  .float a i{
+    font-weight: bold;
+  }
+  .float a:hover i{
+    font-weight: bold;
+  }
+  a b{
+    display: inline;
+  }
+  .txt{
+    margin: 70px auto 64px;
+  }
+}
+
+
+/* AshrafMorningstar */
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

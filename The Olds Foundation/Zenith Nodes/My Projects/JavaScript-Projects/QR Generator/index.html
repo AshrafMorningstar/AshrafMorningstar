@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- this is for icon link -->
+     <link rel="icon" href="Assets/qr-code Icon.png">
+
+    <!-- fontAwesome icon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>QR Generator</title>
+  </head>
+  <body>
+    <div
+      class="container flex justify-center items-center flex-col rounded-2xl h-screen w-screen"
+    >
+      <main
+        class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[60%] lg:w-[40%] xl:w-[32%]"
+      >
+        <!-- heading div -->
+        <div class="heading flex flex-col justify-center items-center">
+          <h1
+            class="heading-title text-4xl font-semibold text-center text-purple-900"
+          >
+            Barcode Generator
+          </h1>
+          <div
+            class="h_underline w-[250px] h-[3px] bg-green-600 mt-2 rounded-2xl"
+          ></div>
+        </div>
+
+        <!-- main contain -->
+        <div class="contain text-center">
+          <div
+            class="qrInputBox flex flex-col justify-center items-center my-5"
+          >
+            <input
+              class="qrInput flex flex-col px-2 py-1 w-full md:w-[80%] my-1 rounded-xl text-xl focus:outline-none border border-4 border-slate-700"
+              type="text"
+              id="qrText"
+              name="qrCode"
+              placeholder="Write Text Or URL"
+            />
+            <span
+              id="textError"
+              class="text-xl my-1 text-red-800 font-semibold"
+            ></span>
+          </div>
+
+          <!-- this div is for only img -->
+          <div
+            id="qrBox"
+            class="show-img rounded-2xl w-[80%] md:w-[60%] lg:w-[45%] rounded-2xl overflow-hidden transition-all duration-100 flex justify-center items-center"
+          >
+            <img
+              id="qrImg"
+              class="qrimg mb-3 w-full max-w-full h-auto"
+              src=""
+            />
+          </div>
+
+          <input
+            class="qrBtn text-3xl bg-[#725E40] hover:bg-[#8D7050] text-white font-bold px-8 py-2 rounded-2xl mb-10 w-fit"
+            type="button"
+            id="generate"
+            value="Generate"
+          />
+        </div>
+
+        <!-- this div belong to download and share button -->
+        <div
+          class="btns flex md:flex-row justify-between items-center gap-4 mx-10 mt-4"
+        >
+          <!-- this is for download button -->
+          <i
+            class="fa-solid fa-download btn text-[30px] font-bold dark:text-black hover:text-gray-700 border border-4 border-black hover:border-gray-700 rounded-2xl w-[55px] h-[55px] p-2"
+            id="downloadBtn"
+            onclick="downloadQRCode()"
+          ></i>
+
+          <!-- this is for share button -->
+          <i
+            class="fa-solid fa-up-right-from-square btn text-[30px] font-bold dark:text-black hover:text-gray-600 border border-4 border-black hover:border-gray-700 rounded-2xl w-[55px] h-[55px] p-2"
+            id="shareBtn"
+          ></i>
+
+          <!-- Social Share Options (initially hidden) -->
+          <div id="shareOptions" class="hidden mt-2 space-x-6">
+            <a id="whatsappShare" href="#" target="_blank">
+              <i
+                class="fa-brands fa-whatsapp text-[40px] inline border border-4 border-black hover:border-gray-700 rounded-2xl w-[55px] h-[50px] px-2"
+              ></i>
+            </a>
+            <a id="twitterShare" href="#" target="_blank">
+              <i
+                class="fa-brands fa-square-x-twitter text-[40px] inline border border-4 border-black hover:border-gray-700 rounded-2xl w-[55px] h-[50px] px-2"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

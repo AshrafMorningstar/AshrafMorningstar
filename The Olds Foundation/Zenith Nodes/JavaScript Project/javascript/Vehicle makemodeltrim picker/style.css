@@ -1,0 +1,98 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a,
+    font, img, dl, dt, dd, ol, ul, li, legend, table, tbody, tr, th, td 
+    {margin:0px;padding:0px;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;list-style:none;}
+    a img {border: none;}
+    ol li {list-style: decimal outside;}
+    fieldset {border:0;padding:0;}
+    
+    body { font-family: sans-serif; font-size: 1em; }
+    
+    div#container { width: 780px; margin: 0 auto; padding: 1em 0;  }
+    p { margin: 1em 0; max-width: 700px; }
+    h1 + p { margin-top: 0; }
+    
+    h1, h2 { font-family: Georgia, Times, serif; }
+    h1 { font-size: 2em; margin-bottom: .75em; }
+    h2 { font-size: 1.5em; margin: 2.5em 0 .5em; border-bottom: 1px solid #999; padding-bottom: 5px; }
+    h3 { font-weight: bold; }
+    
+    ul li { list-style: disc; margin-left: 1em; }
+    ol li { margin-left: 1.25em; }
+    
+    div.side-by-side { width: 100%; margin-bottom: 1em; }
+    div.side-by-side > div { float: left; width: 50%; }
+    div.side-by-side > div > em { margin-bottom: 10px; display: block; }
+    
+body, input{ font-family:"proxima-nova", "Proxima Nova";}
+
+    a { color: orange; text-decoration: underline; }
+.chzn-container-active .chzn-single {box-shadow        : none; border: 1px solid #aaa;}
+body{padding:100px; background:#57cbe5 url(https://s3.amazonaws.com/izapp-production-static/homepage/images/backgrounds/masthead_bg.png?1d5fcd3318fa) no-repeat center -100px;}
+#year_chzn .chzn-search input{display:none}
+#trim_chzn{display:none;}
+#year_chzn, #make_chzn, #model_chzn{}
+#year_chzn a{border-top-right-radius:0px; border-bottom-right-radius:0px;}
+#make_chzn a{border-radius:0px}
+#model_chzn a{border-top-left-radius:0px; border-bottom-left-radius:0px;}
+#trim_chzn a{border-top-left-radius:0px; border-bottom-left-radius:0px;}
+.square a{border-radius:0px !important;}
+.chzn-container-single .chzn-single{height:38px; line-height:38px;}
+.chzn-container-single .chzn-single div{width:16px;}
+.chzn-container-single .chzn-single div b {background-position: -2px 9px; height:35px;}
+.chzn-container-active.chzn-with-drop .chzn-single div b {background-position: -20px 9px;}
+
+
+.chzn-container-single{}
+.chzn-container-single .chzn-single{background:#fff; border-radius:2px; border:none; border-bottom:3px solid rgba(0,0,0,0.3); box-shadow: inset 1px 0px 0px 0px rgba(0, 0, 0, 0.1);}
+#year_chzn{box-shadow:none;}
+.chzn-container-active.chzn-with-drop .chzn-single{background:#fff; border:none; border-top:none; height:41px;}
+.chzn-container-single .chzn-drop{border-radius:0 0 2px 2px; border:none; box-shadow:none;}
+.chzn-container .chzn-results .highlighted{background:#22c6b8; border-radius:2px}
+
+input{border:0; border-bottom:3px solid rgba(0,0,0,0.3); border-radius:2px; height:38px; padding:0 10px; font-size:13px !important; width:65px; position:relative; top:-1px; outline: none; margin:0 10px 0 0;}
+
+.checkbox { height:41px; position: relative; display:inline; color:#aaa; padding:0 32px 0 0; top:-3px; margin:0 0 0 12px;}
+.checkbox input[type=checkbox]{display:none;}
+.checkbox .box { cursor: pointer; position: absolute; width: 25px; height: 25px;	top: 0;	right: 0; background: #fff; border-radius:2px; border-bottom:3px solid rgba(0,0,0,0.3);}
+.checkbox .box:after {
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #fff;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkbox .box:hover::after {
+	border-color:#ccc;
+}
+.checkbox input[type=checkbox]:checked + .box:after {
+  border-color:#22c6b8;
+}
+.checkbox input[type=checkbox]:checked + .box {
+	background:#fff;
+}
+.checkbox .text{position:relative; top:4px; cursor:pointer; font-size:14px;}
+
+a.button {background:#0bb4a6; color:#fff; display:inline-block; text-decoration:none; height:38px; line-height:40px; padding:0 25px; border-radius:2px; border-bottom:3px solid #07736a; font-size:14px; letter-spacing:0.08em; margin:0 0 0 16px;}
+a.button:hover{border-bottom:5px solid #07736a; position:relative; top:-2px; background:#0fbbad;}
+a.button:active{border-bottom:3px solid #07736a; position:relative; top:0px;}
+
+.form {height:55px;
+background-color: #5c5c5c;
+border-radius: 2px;
+margin: 0 0 0 -366px;
+position: absolute;
+top: 127px;
+left: 50%;padding:13px 14px 0 14px; }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

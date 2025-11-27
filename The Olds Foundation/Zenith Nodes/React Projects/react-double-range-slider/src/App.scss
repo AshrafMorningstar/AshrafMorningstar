@@ -1,0 +1,152 @@
+
+
+.range {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    span {
+        font-size: 20px;
+        text-transform: capitalize;
+        position: relative;
+        padding-left: 1%;
+        padding-bottom: 2%;
+    }
+
+    .container {
+        height: 60px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 2px solid rgb(231, 231, 231);
+        border-radius: 10px;
+        overflow: hidden;
+        .slider {
+            position: relative;
+            width: 100%;
+            .slider__track {
+                position: absolute;
+                overflow: hidden;
+                border-radius: 3px;
+                max-height: 2px;
+                height: 2px;
+                background: rgba(236, 236, 236, 1);
+                width: 100%;
+                z-index: 1;
+            }
+            .slider__range {
+                position: absolute;
+                overflow: hidden;
+                border-radius: 3px;
+                max-height: 2px;
+                height: 2px;
+                background-color: rgb(33, 162, 226);
+                z-index: 2;
+            }
+        }
+
+        .leftvalue {
+            position: absolute;
+            border: 1px solid rgb(113, 155, 255);
+            color: rgb(33, 162, 226);
+            border-radius: 40px;
+            cursor: pointer;
+            height: 15px;
+            width: auto;
+            pointer-events: all;
+            background: white;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            padding: 10px;
+            padding-left: 1%;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            span {
+                position: relative;
+                min-width: 20px;
+                height: 20px;
+                background-color: rgb(33, 162, 226);
+                border-radius: 50%;
+                margin-left: 5%;
+            }
+        }
+        .rightvalue {
+            position: absolute !important;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            border: 1px solid rgb(113, 155, 255);
+            color: rgb(33, 162, 226);
+            border-radius: 40px;
+            cursor: pointer;
+            height: 15px;
+            width: auto;
+            pointer-events: all;
+            background: white;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            padding: 10px;
+            font-size: 15px;
+            span {
+                position: relative;
+                min-width: 20px;
+                height: 20px;
+                background-color: rgb(33, 162, 226);
+                border-radius: 50%;
+                margin-right: 5%;
+            }
+        }
+
+        .thumb {
+            pointer-events: none;
+            position: absolute;
+            height: 0;
+            width: 100%;
+            outline: none;
+            z-index: 40;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                -webkit-tap-highlight-color: transparent;
+
+                background-color: transparent;
+                border-radius: 40px;
+                cursor: pointer;
+                height: 40px;
+                width: 80px;
+                pointer-events: all;
+                position: relative;
+            }
+
+            &::-moz-range-thumb {
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                height: 40px;
+                width: 80px;
+            
+                margin-top: 4px;
+                pointer-events: all;
+                position: relative;
+                background: transparent;
+            }
+
+            &.thumb--left {
+                z-index: 5;
+            }
+
+            &.thumb--right {
+                z-index: 6;
+            }
+        }
+    }
+}

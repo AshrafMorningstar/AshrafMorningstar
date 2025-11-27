@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" href="icon.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen p-0 sm:p-3">
+
+  <div class="w-full h-full sm:max-w-sm md:max-w-md overflow-hidden shadow-2xl bg-transparent calculator sm:rounded-2xl flex flex-col">
+    <!-- Header / Display -->
+    <div class="border-0 sm:border-4 sm:border-[#F89C7B] p-1 sm:p-3  text-white text-center sm:rounded-t-2xl">
+      <div class="text-right">
+        <p class="sum text-xl sm:text-2xl font-semibold"></p>
+        <p class="result text-xl sm:text-2xl font-bold">0</p>
+      </div>
+    </div>
+
+    <!-- Keypad -->
+    <div class="grid grid-cols-4 gap-1 sm:gap-2 p-2 sm:p-3 text-base sm:text-lg font-bold border-0 sm:border-4 sm:border-[#F89C7B] sm:rounded-b-2xl flex-grow">
+      <button class="bg-[#FBAB7A] text-white rounded-lg py-3 sm:py-2 col-span-2">AC</button>
+      <button class="bg-[#FBAB7A] text-white rounded-lg py-3 sm:py-2">(</button>
+      <button class="bg-[#FBAB7A] text-white rounded-lg py-3 sm:py-2">)</button>
+
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">π</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">e</button>
+      <button class="bg-[#FBAB7A] text-white rounded-lg py-3 sm:py-2">%</button>
+      <button class="bg-[#FBAB7A] text-white text-2xl rounded-lg py-3 sm:py-2">÷</button>
+
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">7</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">8</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">9</button>
+      <button class="bg-[#FBAB7A] text-white text-2xl rounded-lg py-3 sm:py-2">×</button>
+
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">4</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">5</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">6</button>
+      <button class="bg-[#FBAB7A] text-white text-2xl rounded-lg py-3 sm:py-2">−</button>
+
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">1</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">2</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">3</button>
+      <button class="bg-[#FBAB7A] text-white text-2xl rounded-lg py-3 sm:py-2">+</button>
+
+      <button class=" text-black bg-gray-100 rounded-lg py-3 sm:py-2">0</button>
+      <button class="bg-gray-100 text-black rounded-lg py-3 sm:py-2">.</button>
+      <button class="col-span-2 bg-pink-500 text-white text-2xl rounded-lg py-3 sm:py-2">=</button>
+
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">sin</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">cos</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">tan</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">log</button>
+
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">√</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2">^</button>
+      <button class="bg-sky-500 text-white rounded-lg py-3 sm:py-2 col-span-2">DEL</button>
+    </div>
+  </div>
+
+
+  <!-- ==========  script section start here ========== -->
+  <script src="script.js"></script>
+  <!-- ========= script section end here ========== -->
+  
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

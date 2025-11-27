@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- coding by @helpme_coder -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro timer using HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<div class="container">
+  <h1>Pomodoro Timer</h1>
+  
+  <div id="pomodoro">  
+    <img src="https://pngimg.com/uploads/tomato/tomato_PNG12592.png" style="width:350px; height:350px">
+    <div id="status"></div>
+    <div class="timerDisplay">25:00</div>
+    <button id="start-btn" class="btn">START</button>
+  </div>
+  
+  <div class="settings">
+    <div id="work">
+      <p>Work Duration</p>
+      <button class="btn-settings" id="work-plus">+</button>
+      <div><span id="work-min">25</span> mins</div>
+      <button class="btn-settings" id="work-minus">-</button>
+    </div>
+    
+    <button id="reset" class="btn">RESET</button>
+    
+    <div id="break">
+      <p>Break Duration</p>
+      <button class="btn-settings" id="break-plus">+</button>
+      <div><span id="break-min">5</span> mins</div>
+      <button class="btn-settings" id="break-minus">-</button>
+    </div>
+  </div>
+  
+  <p class="footer">Coded and designed by <a href="Ashraf Morningstar" target="blank">@helpme_coder</a></p
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

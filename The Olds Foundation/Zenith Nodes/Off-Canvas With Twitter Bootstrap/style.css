@@ -1,0 +1,45 @@
+@import url('https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css');
+
+.container {
+  margin-top: 40px; 
+}
+
+/* below is some code reused from https://codepen.io/ashraf_morningstar */
+
+.wrap {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;  
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.wrap.active {
+  left: 14em;
+}
+a.side-menu-link {
+  float: left;
+  display: block;
+  padding: 1em;
+}
+
+@media screen and (max-width: 48.063em) {
+  .js .oc {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: -14em;
+  }
+}
+
+@media screen and (min-width: 48.25em) {
+  a.side-menu-link {
+    display: none;
+  }
+  .wrap.active {
+    left: 0;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,275 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+:root {
+	--sz: 1vmin;
+	--bg-trick: #fff0;
+	--eqz: 0;
+}	
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	transition: all 0s ease 0s;
+	font-family: 'Gochi Hand', Arial, serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #3a3d44, #3b3e45, #383b42);
+}
+
+body:before, body:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: 
+		repeating-conic-gradient(#0002 0.000095%, #fff0 .0005%, #fff0 .005%, #fff0 .0005%), 
+		repeating-conic-gradient(#0002 0.00001%, #fff0 .00009%, #fff0 .00075%, #fff0 .000025%);
+	opacity: 0.75;
+	filter: blur(0.75px);
+	z-index: -1;
+}
+
+.content {
+	position: relative;
+	width: calc(var(--sz) * 50);
+	height: calc(var(--sz) * 20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content:before {
+	content: "";
+	position: absolute;
+	width: calc(var(--sz) * 50);
+	height: calc(var(--sz) * 50);
+	border: var(--sz) solid #ffffff;
+	border-radius: 155% 75%;
+	top: calc(var(--sz) * -13);
+	left: calc(var(--sz) * 3);
+	transform: rotate(8deg);
+	transform-origin: 0 0;
+	clip-path: polygon(0 0, 100% 0, 100% 21%, 0 41%);
+
+	clip-path: polygon(0 0, 100% 0, 99% 22%, 82% 28%, 20% 38%, 0 41%);
+	z-index: -5;
+	filter: drop-shadow(5px 5px 2px #0008);
+}
+
+.equalizer {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.equalizer:before, 
+.equalizer:after {
+	content: "";
+	background: radial-gradient(#fff0 calc(var(--sz) * 2.6), #fff calc(calc(var(--sz) * 2.6) + 1px));
+	width: calc(var(--sz) * 7);
+	position: absolute;
+	height: calc(var(--sz) * 7);
+	border-radius: 100%;
+	left: calc(var(--sz) * -0.95);
+	top: calc(var(--sz) * 6.3);
+	z-index: -5;
+	/* box-shadow: calc(var(--sz) * 47.65) calc(var(--sz) * -2.225) 0 calc(var(--sz) * -0.75) #333, calc(var(--sz) * 47.65) calc(var(--sz) * -2.2) 0 0 #FFF; */
+	filter: drop-shadow(5px 5px 2px #0008);
+}
+
+.equalizer:after {
+	left: calc(var(--sz) * 46.715);
+	top: calc(var(--sz) * 4.05);
+}
+
+
+/* Range Styles */
+
+input[type='range'] {
+	width: 100%;
+	height: calc(var(--sz) * 2);
+	position: absolute;
+	background: var(--bg-trick);
+	--bg-thumb: radial-gradient(#ff3a3a calc(var(--sz) * 2.35), #fff0 0 100%);
+	--bs-thumb: 0 0 0px calc(var(--sz) * 0.5) #3a3d44 inset;
+	transform: rotate(calc(var(--eqz) * 0.9deg));
+	transform-origin: 100% 50%;
+	filter: hue-rotate(calc(var(--eqz) * -2.25deg));
+}
+
+input[type='range']:focus,
+input[type=range]:focus::-webkit-slider-runnable-track {
+	outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+
+/*** Range Thumb***/
+
+input[type=range]::-webkit-slider-thumb {
+	width: calc(var(--sz) * 5);
+	height: calc(var(--sz) * 5);
+	border-radius: calc(var(--sz) * 5);
+	cursor: pointer;
+	margin-top: calc(var(--sz) * -1);
+	background: var(--bg-thumb);
+	box-shadow: var(--bs-thumb);
+}
+
+input[type=range]::-moz-range-thumb {
+	width: calc(var(--sz) * 5);
+	height: calc(var(--sz) * 5);
+	border-radius: calc(var(--sz) * 5);
+	cursor: pointer;
+	margin-top: calc(var(--sz) * -1);
+	background: var(--bg-thumb);
+	box-shadow: var(--bs-thumb);
+}
+
+
+/*** Range Track ***/
+
+input[type=range]::-webkit-slider-runnable-track {
+	background: #fff0;
+	height: calc(var(--sz) * 3.5);
+}
+
+input[type=range]::-moz-range-track {
+	background: #fff0;
+	height: calc(var(--sz) * 3.5);
+}
+
+
+.number {
+	position: absolute;
+	bottom: calc(var(--sz) * 14);
+	left: calc(var(--sz) * 20);
+	color: #fff;
+	font-size: calc(var(--sz) * 8);
+	z-index: 333;
+	font-family: 'Alarm Clock', Arial, serif;
+	transform: rotate(-3deg);
+	text-shadow: calc(var(--sz) * 0.25) calc(var(--sz) * 0.25) calc(var(--sz) * 0.25) #000;
+}
+
+.number:before {
+	counter-reset: variable var(--eqz);
+	content: counter(variable);
+	position: absolute;
+	text-align: center;
+	width: calc(var(--sz) * 15);
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#trick {
+	display: none;
+}
+
+label[for=trick] {
+	font-size: calc(var(--sz) * 3.5);
+	position: absolute;
+	bottom: calc(var(--sz) * 10);
+	--cc: #fff;
+	color: var(--cc);
+	cursor: pointer;
+	text-shadow: calc(var(--sz) * 0.25) calc(var(--sz) * 0.25) calc(var(--sz) * 0.25) #000;
+}
+
+#trick:checked + .content {
+	--bg-trick: #fff2;
+}
+
+label[for=trick]:hover {
+	--cc: #2196F3;
+} 
+
+label[for=trick]:before {
+	content: "SHOW";
+	margin-right: var(--sz);
+}
+
+input#trick:checked ~ label[for=trick] {
+	color: var(--cc);
+}
+
+input#trick:checked ~ label[for=trick]:before {
+	content: "HIDE";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type='range']:before, input[type='range']:after {
+	content: "this is the range input";
+	position: absolute;
+	left: calc(var(--sz) * 8);
+	font-size: calc(var(--sz) * 1.75);
+	color: #0000;
+	z-index: -1;
+}
+
+input[type='range']:after {
+	content: "slide to see the trick";
+	left: inherit;
+	right: calc(var(--sz) * 4.25);
+}
+
+
+
+input#trick:checked + .content input[type='range']:before, 
+input#trick:checked + .content  input[type='range']:after  {
+	color: #0008;
+}

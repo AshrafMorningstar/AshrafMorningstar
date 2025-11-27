@@ -1,0 +1,117 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    font-family: "poppins", sans-serif;  
+   }  
+   body {  
+    background-color: #1c1d1f;  
+   }
+
+.nav1 {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background-color: rgba(24, 21, 21, 0.705);
+align-items: center;
+}
+
+img {
+width: 400px;
+}
+
+.ul1 {
+display: flex;
+gap: 30px;
+font-size: 1.2em;
+padding-right: 20px;
+}
+
+.li1 {
+list-style: none;
+padding: 20px;
+width: 70px;
+text-align: center;
+border-radius: 30px;
+}.li1:hover {
+    background-color: rgb(52, 194, 52);
+    border-radius: 30px;
+    transition: 0.4s;
+    color: #fff;
+}
+.ul1 .li1 a {
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+}
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(24, 21, 21, 0.705);
+    align-items: center;
+}
+.ul1,
+.ul2 {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+.li1,
+.li2 {
+    list-style: none;
+    padding: 20px;
+    width: 70px;
+    text-align: center;
+    border-radius: 30px;
+}
+.li1:hover,
+.li2:hover {
+    background-color: rgb(52, 194, 52);
+    border-radius: 30px;
+    transition: 0.4s;
+    color: #fff;
+}
+.ul1 .li1 a,
+.ul2 .li2 a {
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+}
+.link-down {
+    text-decoration: none;
+    color: rgb(206, 216, 224);
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: rgb(36, 175, 36);
+    border-radius: 30px;
+}
+.link-down:hover {
+    color: #fff;
+}
+.other {  
+    background-color: #fff;  
+    width: 200px;  
+    height: 259px;  
+    float: right;  
+    position: relative;  
+    top: -20px;  
+    left: -20px;  
+    opacity: 0%;  
+    display: none;  
+   }  
+   .other li {  
+    padding: 20px;  
+    border-bottom: 2px solid rgb(170, 164, 164);  
+    list-style: none;  
+    text-align: center;  
+   }
+
+.other li a:hover {
+color: rgb(36, 175, 36);
+}
+.other li a {
+text-decoration: none;
+color: rgb(2, 2, 2);
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

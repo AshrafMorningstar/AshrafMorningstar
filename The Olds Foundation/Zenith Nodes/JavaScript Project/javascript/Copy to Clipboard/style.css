@@ -1,0 +1,66 @@
+/* Just to play with animations */
+.copiedtext {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-1em);
+    color: #000;
+    transition: all 0.5s;
+}
+.copied .copiedtext {
+    opacity: 1;
+    transform: translateY(-2em);
+} /* Some Generic styles */
+body {
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #444;
+    line-height: 1.6;
+}
+h1 {
+    margin: 1.75em auto 1.25em;
+}
+textarea,
+button {
+    font-size: 1em;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+textarea {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: 75px;
+    margin: 2em auto 1.5em;
+    background: #F2F2F6;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    resize: vertical;
+}
+[id="cleared"] {
+    margin-top: 4em;
+}
+textarea:focus {
+    border-color: #8fa423;
+}
+button {
+    position: relative;
+    padding: 8px 20px;
+    border: 0;
+    font-size: 0.835em;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    font-weight: bold;
+    color: #FFF;
+    background: #8fa423;
+    transition: background 0.275s;
+}
+button:hover,
+button:focus {
+    background: #74861A;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

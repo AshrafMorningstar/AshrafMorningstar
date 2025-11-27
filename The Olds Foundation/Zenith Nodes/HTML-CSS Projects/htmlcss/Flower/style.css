@@ -1,0 +1,60 @@
+body {
+  background-color: hsl(226, 62%, 10%);
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+div {
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  container-type: inline-size;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2em;
+  place-content: center;
+  rotate: 45deg;
+  translate: -.5em 0;
+  width: 100%;
+}
+b {
+  animation: animate 12s linear infinite alternate;
+  background: hsla(var(--deg), 80%, 50%, .5);
+  border-radius: 40cqi;
+  box-shadow: 0 0 0 .125cqi hsla(var(--deg), 80%, 90%, .5) inset;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  height: 40cqi;
+  mix-blend-mode: screen;
+  rotate: var(--deg);
+  transform-origin: calc(100% + .5em) 50%;
+  width: 50%;
+}
+b:nth-of-type(1) { --deg: 20deg; }
+b:nth-of-type(2) { --deg: 40deg; }
+b:nth-of-type(3) { --deg: 60deg; }
+b:nth-of-type(4) { --deg: 80deg; }
+b:nth-of-type(5) { --deg: 100deg; }
+b:nth-of-type(6) { --deg: 120deg; }
+b:nth-of-type(7) { --deg: 140deg; }
+b:nth-of-type(8) { --deg: 160deg; }
+b:nth-of-type(9) { --deg: 180deg; }
+b:nth-of-type(10) { --deg: 200deg; }
+b:nth-of-type(11) { --deg: 220deg; }
+b:nth-of-type(12) { --deg: 240deg; }
+b:nth-of-type(13) { --deg: 260deg; }
+b:nth-of-type(14) { --deg: 280deg; }
+b:nth-of-type(15) { --deg: 300deg; }
+b:nth-of-type(16) { --deg: 320deg; }
+b:nth-of-type(17) { --deg: 340deg; }
+b:nth-of-type(18) { --deg: 360deg; }
+
+@keyframes animate {
+  75% {
+    border-radius: 25cqi 2.5cqi;
+    transform-origin: calc(100% + 1.5em) 50%;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

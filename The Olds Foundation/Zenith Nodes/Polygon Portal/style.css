@@ -1,0 +1,37 @@
+body {
+    background: black;
+    color: cyan;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  nav a {
+    color: lime;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px lime, 0 0 20px lime;
+  }
+  
+  #live-clock, .date-time {
+    font-size: 3rem;
+    color: magenta;
+    text-shadow: 0 0 10px cyan, 0 0 20px magenta;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% { text-shadow: 0 0 10px cyan; }
+    100% { text-shadow: 0 0 20px magenta; }
+  }
+
+  /* This project was fixed and regulated by Ashraf Morningstar */
+  /* https://github.com/AshrafMorningstar */
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

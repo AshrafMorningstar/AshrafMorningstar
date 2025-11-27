@@ -1,0 +1,598 @@
+@-webkit-keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  75% {
+    transform: translate(3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes jitter {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  75% {
+    transform: translate(3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes flyin {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(30px, -40px) rotate(20deg) scale(0.9);
+  }
+  50% {
+    transform: translate(70px, -30px) rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: translate(360px, 20px) rotate(90deg) scale(0.6);
+  }
+}
+@keyframes flyin {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(30px, -40px) rotate(20deg) scale(0.9);
+  }
+  50% {
+    transform: translate(70px, -30px) rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: translate(360px, 20px) rotate(90deg) scale(0.6);
+  }
+}
+@-webkit-keyframes flyout {
+  0% {
+    transform: rotate(-90deg) scale(0.3);
+    margin-right: 350px;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    margin-right: 30px;
+  }
+}
+@keyframes flyout {
+  0% {
+    transform: rotate(-90deg) scale(0.3);
+    margin-right: 350px;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    margin-right: 30px;
+  }
+}
+@-webkit-keyframes ticker {
+  0% {
+    padding-left: 50px;
+    width: 200px;
+  }
+  100% {
+    width: 50px;
+    padding-left: 200px;
+  }
+}
+@keyframes ticker {
+  0% {
+    padding-left: 50px;
+    width: 200px;
+  }
+  100% {
+    width: 50px;
+    padding-left: 200px;
+  }
+}
+@-webkit-keyframes fadeinout {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fadeinout {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  25% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    display: none;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+body {
+  background: #ECEEF1;
+}
+
+a {
+  color: #D73825;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+h4 {
+  color: #222;
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+.darkgrey {
+  color: #9099A3;
+  font-size: 23px;
+}
+
+.row {
+  margin: 30px auto;
+  padding: 10px 0;
+  max-width: 940px;
+  position: relative;
+}
+
+.pre-docs {
+  position: absolute;
+  margin-top: 50px;
+  float: left;
+}
+.pre-docs .document {
+  float: left;
+}
+
+.post-doc {
+  float: right;
+  transform: rotate(-90deg) scale(0.3);
+  margin-right: 350px;
+}
+
+.document {
+  width: 100px;
+  height: 125px;
+  margin: 15px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.document span {
+  transition-property: border-width;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 20px;
+  border-color: #ddd rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) #ddd;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  border-style: solid;
+}
+.document em {
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  font-style: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.document:hover span {
+  border-width: 30px;
+}
+.document.doc {
+  background: #38405b;
+}
+.document.doc span {
+  border-color: #ECEEF1  #73798b        #73798b  #ECEEF1;
+}
+.document.pdf {
+  background: #dd4b39;
+}
+.document.pdf span {
+  border-color: #ECEEF1  #e78074        #e78074 #ECEEF1;
+}
+.document.html {
+  background: #38405b;
+  width: 150px;
+  height: 180px;
+}
+.document.html span {
+  border-color: #ECEEF1  #dd4b39     #dd4b39  #ECEEF1;
+}
+.document.html em {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.cloud {
+  height: 125px;
+  background: #fff;
+  width: 300px;
+  margin: 100px auto 0;
+  border-radius: 75px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.cloud:after {
+  display: inline-block;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  top: -65px;
+  left: 180px;
+  background: #fff;
+}
+.cloud:before {
+  display: inline-block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  top: -90px;
+  left: 50px;
+  background: #fff;
+}
+
+.copy {
+  position: relative;
+}
+.copy > div {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  max-width: 275px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.lines > div {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.lines .line {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: ticker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: ticker;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0;
+  -o-animation-duration: 1s;
+  -o-animation-name: ticker;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: ticker;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+}
+.lines .line:after {
+  border-top: 20px dotted #9099A3;
+  margin-left: -200px;
+  width: 600px;
+  height: 100px;
+  content: "";
+  display: inline-block;
+}
+.lines .line.post {
+  right: 100px;
+}
+.lines .line.pre {
+  left: 100px;
+}
+
+.button {
+  transition: all 0.3s;
+  width: auto;
+  background: #DD4A38;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 5px solid #9C3528;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 10px 0;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+.button:active {
+  transform: translate(0, 5px);
+  border-bottom-width: 0;
+}
+
+.cloud-processing.process .line-pre {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadeinout;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: fadeinout;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0;
+  -o-animation-duration: 1s;
+  -o-animation-name: fadeinout;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: fadeinout;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .line-post {
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: fadein;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 5s;
+  -o-animation-duration: 1s;
+  -o-animation-name: fadein;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .pre-docs .doc {
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-name: flyin;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-name: flyin;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0.5s;
+  -o-animation-duration: 0.8s;
+  -o-animation-name: flyin;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-duration: 0.8s;
+  animation-name: flyin;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .pre-docs .pdf {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: flyin;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: flyin;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0;
+  -o-animation-duration: 1s;
+  -o-animation-name: flyin;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: flyin;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .post-doc {
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: flyout;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 4s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: flyout;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 4s;
+  -o-animation-duration: 1s;
+  -o-animation-name: flyout;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  animation-name: flyout;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .cloud {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: jitter;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: jitter;
+  -moz-animation-iteration-count: 4;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1s;
+  -o-animation-name: jitter;
+  -o-animation-iteration-count: 4;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: jitter;
+  animation-iteration-count: 4;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .pre-text {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: fadeinout;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 4s;
+  -moz-animation-name: fadeinout;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 1s;
+  -o-animation-duration: 4s;
+  -o-animation-name: fadeinout;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  animation-name: fadeinout;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.cloud-processing.process .post-text {
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: fadein;
+  -moz-animation-iteration-count: linear;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 5s;
+  -o-animation-duration: 1s;
+  -o-animation-name: fadein;
+  -o-animation-iteration-count: linear;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-iteration-count: linear;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.clear {
+  clear: both;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

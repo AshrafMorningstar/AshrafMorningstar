@@ -1,0 +1,217 @@
+							MongoDB Notes
+
+
+
+how to open mongodb in cmd
+   first check the version of mongodb 
+             mongod --version
+   to excess the mongodb type
+      mongosh
+
+
+you will give the output like this 
+test:  this is show thats mean you r ready to write code in mongodb
+
+
+
+now start the lecture
+
+first check the data base 
+  this is command  to check and show the database
+
+ show dbs  /   show databases
+
+than for usig the database
+
+use {<database.name>} 
+eg:  use student
+
+than create collection of the database
+db.createCollection{<collection.Name>}
+eg: db.createCollection.Data
+
+after than to show the collection and database
+for databases --> show databases / show dbs
+for Collection --> show Collections
+
+This is for delete and drop
+for Collection--> db.{<Collection-Name>}.drop()  Eg:- db.Data.drop()
+for Database --> db.{<database-Name>}.drop() Eg:- db.dropDatabase()
+
+
+Now we eill insert the Data in collection
+
+for one data 
+syntax --> db.Data.insertOne ({'key1': 'Value', 'key2':'Value2'})
+Eg:-  db.Data.insertMany({'Name': 'Aayush Pal', Age:18})
+
+for multiple data 
+syntax --> db.Data.insertMany ([ {'key1': 'Value', 'key2':'Value2'}, {'key1': 'Value', 'key2':'Value2'}, {'key1': 'Value', 'key2':'Value2'}])
+
+Eg:- db.Data.insertMany([ {'Name': 'Aayush Pal', Age:18}, {'Name':'Sakshi Diwakar', Age:21}, {'Name':'Aman Gupta', Age:22} ])
+
+Finding Document in MongoDB
+
+Find()
+db.Collection_Name.find() ({key:value}) 
+
+findOne()
+db.Collection_Name.findOne() ({key:value})
+
+Eg --> 
+ students> db.Data.findOne({'Name': 'Vikram Pal'})
+{
+  _id: ObjectId('67a76cc0078aa40f524d7942'),
+  Name: 'Vikram Pal',
+  Age: 23
+}
+
+
+now we are adding a json file using mongo import  
+
+** This is for Import file 
+C:\Users\vikra>mongimport D:\mongo_Json\products.json -d shop -c products
+       // this is for json file formate
+
+C:\Users\vikra>mongimport D:\mongo_Json\products.json -d shop -c products --jsonArray
+	//this is for JsonArray formate file
+
+** This is for Export file 
+C:\Users\vikra>mongoexport -d shop -c products  D:\mongo_Json\productstest.json 
+
+Now we are Excess all file
+GO to the mongosh
+and give me comment show db
+next --> use shop
+next --> show collections
+next --> db.products.find() 
+
+
+** COMPARISON Operators 
+**  function:
+	($eq, $ne, $gt, $gte, $lt, $lte, $in, $nin)
+
+syntax:
+db.collection_Name.find({'fieldname':{$operator:value}})
+Example:
+ db.products.find({'Price':{$eq:699} });
+ db.products.find({'Price':{$ne:699} });
+ db.products.find({'Price':{$gt:699} });
+ db.products.find({'Price':{$gte:699} });
+ db.products.find({'Price':{$lt:699} });
+ db.products.find({'Price':{$lte:699} });
+ db.products.find({'Price':{$in:249,129,39} });
+ db.products.find({'Price':{$nin:249,129,39} });
+
+
+
+** Cursor Method 
+**  function:
+	 { count(), limit(), skip(), sort() }
+
+syntax:
+	db.products.find({'price': {$gt:500} }).count();
+	db.products.find({'price': {$gt:500} }).limit(5);
+	db.products.find({'price': {$gt:500} }).limit(5).skip(2);
+	db.products.find({'price': {$gt:500} }).limit(3).sort({price:1});
+		(1)for Assending and (-1)for Descending
+
+
+** Logical Operator 
+**  function:
+	 { $and, $or, $not, $nor }
+
+syntax:
+	{$and: [ {condition1}, {condition2}, ... ];
+	{ field: {$not: {operator:value} }};
+
+Example:
+	db.products.find({$and: [{'price': {$gt:600}}, {'name': 'Diamond Ring'}] })
+	db.products.find({$or: [{'price': {$gt:600}}, {'name': 'Diamond Ring'}] })
+	db.products.find({$nor: [{'price': {$gt:600}}, {'name': 'Diamond Ring'}] }).count();
+	db.products.find({$not: [{'price': {$neq:100}}, {'name': 'Diamond Ring'}] }).count();
+
+
+** Complex Expressions
+
+syntax:
+	{$expr:{operator:[field,value] }}
+
+Example:
+	db.products.find({$expr:{$gt:['$price',1340] }}
+
+
+
+** Complex Expressions
+
+Functions:
+	{ $exists, $type, $size}
+
+Syntax:
+	{field: {$exists:<boolean>}}
+	{field: {$type: '<bson-type>'}}
+	{field: {$size: <arry-length>}}
+
+
+Example: 
+	For Exists:
+		Shop> db.products.find({price: {$exists: true}}).count()
+		Shop> db.products.find({price: {$exists: true}, price: {$gt:1200} }).count()
+	For Type:
+		Shop> db.products.find({price: {$type: 'number'}}).count()
+		Shop> db.products.find({price: {$type: 'string'}}).count()
+	For Size: 
+		Shop> db.Comments.find({'comments': {$size: 4} })	
+		Shop> db.Comments.find({'comments': {$size: 2} }).count()
+
+** Projection
+Syntax:
+	=> db.collections.find( {}, {field1:1, field2:1})
+	=> TO Include specific fields, use projection with a valuie of 1 for the fields you 		want.
+	=> TO Exclude fields, use projection with A value of 0 for the fields you want to 
+		exclude.
+	=> You cannot Include and Exclude fields simultaneously in the same query 			projection.
+
+Example: 
+	Shop>  db.Comments.find({'comments': {$size:2}}, {comments:1, _id:0})
+	Shop>  db.Comments.find({'comments': {$size:2}}, {comments:1, author:1, _id:0})
+		this is for Exclude example
+
+
+** Embedded
+Syntax:
+	QWuery documents Inside embebbed documents using dot notation
+db.collection.find({"parent.child":value})
+
+Example:
+	Shop> db.Comments.find({'comments.user':'Lily'})
+	Shop> db.Comments.find({'metadata.views':{$gt:1000}}).count()
+	Shop> db.Comments.find({'comments.user': 'Henry', 'metadata.likes': {$gt:50} })
+
+more Syntax for Embedded
+ 	$all VS $elemMtch
+		=> The $all operator selects the documents where the value of a field is an 		   array that contains all the specified elements.
+	syntax:  {<filed>:{$all:[<value1>,<value2>..]}}
+		=> The $elemMtch operator matches documents that contain an array filed 		   with at least one element that matches all the specified query criteria.
+	 syntax:  {<field>:{$elemMatch:{<query1>,<query2>,...}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

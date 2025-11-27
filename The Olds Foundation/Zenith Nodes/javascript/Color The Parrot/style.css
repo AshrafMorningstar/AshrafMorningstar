@@ -1,0 +1,228 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+body {
+	background-color: #ffb64c;
+	padding: 0;
+}
+.box {
+	width: 80vw;
+	position: absolute;
+	transform: translate(-50%, 0);
+	top: 50px;
+	left: 50%;
+}
+.container {
+	width: 100%;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 2fr;
+	grid-template-columns: 1fr 2fr;
+	background-color: white;
+	padding: 30px;
+	border-radius: 15px;
+	position: relative;
+}
+.wrapper {
+	min-height: 220px;
+	min-width: 250px;
+	z-index: 1;
+	position: relative;
+	border-radius: 15px 15px 0 0;
+}
+a {
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: #202020;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 0;
+	margin: 30px 0;
+	border-radius: 5px;
+}
+.controls {
+	padding: 30px 10px 0 10px;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 20px;
+	align-items: center;
+	border-left: 2px dashed black;
+}
+.controls button {
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	background-color: #ffb64c;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+}
+.parrot {
+	background-color: #f03800;
+	height: 150px;
+	width: 80px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: -60px;
+	bottom: 0;
+	border-radius: 45px 15px;
+}
+.tail1 {
+	content: "";
+	position: absolute;
+	height: 60px;
+	width: 28px;
+	background-color: #cd0000;
+	border-radius: 0 0 20px 6px;
+	bottom: -45px;
+	z-index: -1;
+}
+.tail2 {
+	content: "";
+	position: absolute;
+	height: 60px;
+	width: 28px;
+	background-color: #cd0000;
+	border-radius: 0 0 30px 0px;
+	bottom: -30px;
+	left: 25px;
+	z-index: -1;
+}
+.wing {
+	background-color: #f03800;
+	height: 110px;
+	width: 60px;
+	border-radius: 50px 10px;
+	position: absolute;
+	left: -15px;
+	top: 50px;
+	overflow: hidden;
+	z-index: 1;
+}
+.wing-color1 {
+	position: absolute;
+	content: "";
+	background-color: #0095ff;
+	height: 60%;
+	width: 100%;
+	bottom: 0;
+}
+.wing-color2 {
+	height: 0;
+	width: 0;
+	border-top: 30px solid #ffb64c;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	position: absolute;
+	top: 44px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+.wing-color2-inner {
+	position: absolute;
+	content: "";
+	border-top: 25px solid #f03800;
+	border-left: 24px solid transparent;
+	border-right: 24px solid transparent;
+	position: absolute;
+	right: -24px;
+	bottom: 16px;
+}
+.eye-patch {
+	height: 60px;
+	width: 70%;
+	background-color: #deecf1;
+	border-radius: 50px 20px 20px 50px;
+	position: absolute;
+	right: -1px;
+	top: 0px;
+	z-index: 2;
+}
+.eye {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	background-color: #714c2f;
+	border-radius: 50%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 25px;
+}
+.beak-upper {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	background-color: #ffb64c;
+	z-index: -1;
+	right: -48px;
+	border-radius: 0 55px 5px 0;
+}
+.beak-lower {
+	position: absolute;
+	content: "";
+	background-color: #ff9100;
+	height: 25px;
+	width: 25px;
+	left: 11.5px;
+	bottom: -25px;
+	border-radius: 0 0 25px 0;
+}
+.feather {
+	background-color: #cd0000;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px 0 0 100px;
+	position: absolute;
+	z-index: -1;
+	left: -30px;
+}
+.leg {
+	background-color: #ff9100;
+	height: 35px;
+	width: 70px;
+	border-radius: 0 70px 10px 10px;
+	position: absolute;
+	z-index: -2;
+	bottom: 0;
+	left: 20px;
+}
+.branch {
+	background-color: #ffb64c;
+	height: 8px;
+	width: 210px;
+	position: absolute;
+	right: -55px;
+	bottom: -8px;
+	border-radius: 8px;
+}
+@media screen and (max-width: 750px) {
+	.box {
+		width: 95vw;
+	}
+	.container {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	.controls {
+		border: none;
+		border-top: 2px dashed black;
+	}
+	.controls button {
+		height: 35px;
+		font-size: 13px;
+	}
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

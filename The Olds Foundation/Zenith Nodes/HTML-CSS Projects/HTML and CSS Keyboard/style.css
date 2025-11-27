@@ -1,0 +1,92 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+::selection{background-color:none; color:inherit;}
+
+body{
+  background-color: #14B524; 
+}
+
+.cable{height:100px; width:10px; background-color:#000; margin:0 60%;}
+.keyboard{
+  width:800px; height: 320px;
+  background-color: #111;
+  margin: 0px auto;
+  border-radius: 9px;
+  padding: 30px;
+  color: #eee;
+}
+
+.logo{
+  width:40px; height:40px;
+  background-color:#CCC;
+  color: #222;
+  font-weight:300;
+  font-style: oblique;
+  font-size:30px;
+  line-height:40px;
+  text-align:center;
+  margin: -20px auto 10px auto;
+  border-radius:40px;
+}
+
+
+.lights{
+  float:right;
+  position:relative;
+  top:-45px;
+  right:8px;
+  padding:0;
+  margni:0;
+}
+.lights span{margin:0 20px 0 20px; padding:0; text-align: center;}
+.lights span:after{
+  content:"";
+  width:11px; height:8px;
+  top: 22px; margin-left:-9px;
+  background-color:#DBB921;
+  position:absolute;
+  border-radius: 3px;
+}
+
+.key{
+  width: 40px; height:40px;
+  display:block;
+  background-color:#333;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 29px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  margin-bottom:2px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+}
+
+.section-a{width:650px; height:260px; float:left;}
+.section-b{width:150px; height:260px; float:left;}
+
+.function{font-size: 12px; width:30px; height:30px; margin-bottom:15px;}
+.small{font-size:10px; line-height:13px; text-align: center; padding:0 5px; padding-top:2px; height:28px !important;}
+.space1{margin-right: 43px !important;}
+.space2{margin-right: 25px !important;}
+.dual {font-size: 14px; line-height: 20px; width:30px; }
+.backspace {width:84px; font-size: 12px;}
+.tab {width: 50px; line-height: 40px; font-size:13px;}
+.letter{width:30px;}
+.slash{width:64px;}
+.caps{width:70px; font-size:12px; line-height:18px;}
+.enter{width:92px; line-height:40px; text-align: center; padding-left:0;}
+.shift.left{width: 90px;line-height: 40px; font-size:13px;}
+.shift.right{width: 104px;line-height: 40px; font-size:13px;}
+.ctrl{width: 50px; line-height: 40px; font-size:13px;}
+.space{width:234px;}
+.arrows{position:relative; top:42px;}
+.sec-func .key{width: 32px; font-size:10px; text-align:left; line-height:40px; float:left;}
+.sec-func div.dual{line-height:20px;}
+.arrows .key{text-align: center; padding-left: 7px; margin-left:2px;}
+.hidden{visibility: hidden;}
+
+.key:hover{box-shadow:0px 0px 10px #14B524; z-index:1000;}

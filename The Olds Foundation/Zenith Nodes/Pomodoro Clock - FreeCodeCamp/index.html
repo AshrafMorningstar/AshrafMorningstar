@@ -1,0 +1,69 @@
+<!--
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock - FreeCodeCamp</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="text-center">
+  <br><br><br><br>
+  <div class="header">
+    <h1>Pomodoro Clock</h1>
+    <h3>Free Code Camp</h3>
+  </div>
+  
+  <!-- WORK and BREAK timers -->
+  <div id="timeDiv" class="row">    
+    <div class="col-md-3"></div>
+    
+    <div class="col-md-3 col-xs-6">
+    <h2>Work</h2>
+    <a href="#" class="btn" id="work25minus">-</a>
+      <span id="time25">25</span><p1>min</p1>
+    <a href="#" class="btn" id="work25plus">+</a>
+    </div>
+    
+    <div class="col-md-3 col-xs-6">
+    <h2>Break</h2>
+    <a href="#" class="btn" id="break5minus">-</a>
+    <span id="time5">5</span><p1>min</p1>
+    <a href="#" class="btn" id="break5plus">+</a>
+    </div>    
+    <div class="col-md-3"></div>    
+  </div>
+  
+  <!-- START, RESET and PAUSE button -->
+  <button id="startBtn">Start  <i class="fas fa-play"></i></button>
+  <button id="resetBtn">Reset <i class="fas fa-stopwatch"></i></button>
+  
+  
+  
+  <!-- TOMATO CLOCK -->
+  <div class="tomato">    
+    </br></br></br><br><br>
+    <p id="sessionTime">Session Time:</p>
+    <span id="countTime" style="font-size:7em;">25</span>  
+  </div>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

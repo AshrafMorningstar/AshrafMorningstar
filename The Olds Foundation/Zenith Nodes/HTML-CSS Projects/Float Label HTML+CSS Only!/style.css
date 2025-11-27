@@ -1,0 +1,73 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 300px;
+}
+form {
+  width: 600px;
+  margin: 2em auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+form legend {
+  font-size: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.float-label .control {
+  float: left;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-top: 23px;
+  padding-bottom: 10px;
+}
+.float-label .control.small {
+  width: 30%;
+  border-right: 1px solid #ddd;
+}
+.float-label .control.medium {
+  width: 70%;
+  padding-left: 10px;
+}
+.float-label .control:last-child {
+  border: 0;
+}
+.float-label input,
+.float-label textarea {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+.float-label input + label,
+.float-label textarea + label {
+  position: absolute;
+  top: 10px;
+  transition: top 0.7s ease, opacity 0.7s ease;
+  opacity: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ccc;
+}
+.float-label input:valid + label,
+.float-label textarea:valid + label {
+  opacity: 1;
+  top: 3px;
+}
+.float-label input:focus + label,
+.float-label textarea:focus + label {
+  color: #2c8efe;
+}

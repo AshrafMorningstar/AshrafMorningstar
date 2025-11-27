@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav1">
+        <div class="logo"><img src="LogoNew.png" alt="watches logo" /></div>
+        <ul class="ul1">
+            <li class="li1"><a href="">Home</a></li>
+            <li class="li1"><a href="">Services</a></li>
+            <li class="li1"><a href="">Contact</a></li>
+            <li class="li1"><a href="">About</a></li>
+        </ul>
+    </nav>
+    <nav class="nav2" onclick="over()">
+        <div class="logo"><img src="LogoNew.png" alt="watches logo" /></div>
+        <ul class="ul2">
+            <li class="li2"><a href="">Home</a></li>
+            <li class="li2"><a href="">Services</a></li>
+            <li class="li2"><a href="">Contact</a></li>
+            <li class="li2"><a href="">About</a></li>
+        </ul>
+        <a class="link-down" href="#" onmouseover="down()">Check Out more</a>
+    </nav>
+    <ul class="other" id="ul-down">
+        <li><a href="">CSS tricks</a></li>
+        <li><a href="">Pure CSS Hamburger Menu</a></li>
+        <li><a href="">HTML Portfolio</a></li>
+        <li><a href="">And More...</a></li>
+    </ul>
+    <script>  
+        function down() {  
+         document.getElementById("ul-down").style.opacity = "100%";  
+         document.getElementById("ul-down").style.display = "block";  
+        }
+     
+     function over() {
+     document.getElementById("ul-down").style.display = "none";
+     }
+     </script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

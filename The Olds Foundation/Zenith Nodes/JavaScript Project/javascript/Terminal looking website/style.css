@@ -1,0 +1,209 @@
+body{
+  background:url("http://www.deleteagency.com/assets/img/pattern.png"); 
+  background-color : black;
+  cursor: url("https://i.imgur.com/zkZbB5k.png"), auto;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: black; 
+}
+ ::-webkit-scrollbar-thumb {
+    background-color: green;
+}
+::selection {color:black;background:green;}
+::-moz-selection {color:black;background:green;}
+.buzz_wrapper{
+  position:relative;
+  width:700px;
+  margin:20px auto;
+  overflow:hidden;
+  padding:100px;
+}
+.scanline{
+  width:100%;
+  display:block;
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:5px;
+  opacity:0.1;
+}
+.buzz_wrapper span{
+  position:absolute;
+  -webkit-filter: blur(1px);
+  font-size:80px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrapper span:nth-child(1){
+  color:green;
+  margin-left:-2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper span{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+.buzz_wrapper .text{
+  -webkit-animation: jerkwhole 10s infinite;
+  position:relative;
+}
+@-webkit-keyframes jerkwhole {
+  30% {  }
+  40% { opacity:1; top:0; left:0;  -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
+  43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
+  65% { }
+}
+/*---------------------------*/
+
+.buzz_wrapper1{
+  position:relative;
+  width:700px;
+  padding:100px;
+}
+.scanline1{
+  width:100%;
+  display:block;
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:5px;
+  opacity:0.1;
+}
+.buzz_wrapper1 span1{
+  position:absolute;
+  -webkit-filter: blur(1px);
+  font-size:40px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrapper span1:nth-child(1){
+  color:green;
+  margin-left:-2px;
+  -webkit-filter: blur(2px);
+}
+.buzz_wrapper1 span1{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;/**/
+}
+.buzz_wrapper1 .text1{
+  -webkit-animation: jerkwhole 10s infinite;
+  position:relative;
+}
+textarea{
+  background-color: transparent;
+  color: green;
+  border: 0px solid green;
+  font-size: 2.5em;
+  margin-top: -15px;
+  text-decoration: none;
+-webkit-animation: blur 30ms infinite, jerk 50ms infinite;/**/
+  border-left:4px solid green;
+  cursor: url("https://i.imgur.com/sjCxccZ.jpg"), auto;
+  padding: 25px;
+  overflow:hidden;
+  /*display: none;*/
+  
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+/*----------------------*/
+
+.buzz_wrapper2{
+  position:relative;
+  width:700px;
+  margin-left: -50px; /*-25 voor aflopend effect*/
+  
+  overflow:hidden;
+  padding:50px;
+}
+.scanline2{
+  width:100%;
+  display:block;
+  
+  height:4px;
+  position:relative;
+  z-index:3;
+  margin-bottom:5px;
+  opacity:0.1;
+}
+.buzz_wrapper2 span2{
+  position:absolute;
+  -webkit-filter: blur(1px);
+  font-size:40px;
+  font-family:'Courier new', fixed;
+  font-weight:bold;
+}
+.buzz_wrappe2 span2:nth-child(1){
+  color:green;
+  margin-left:-2px;
+  -webkit-filter: blur(2px);
+}
+
+.buzz_wrapper2 span2{
+  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+}
+
+@-webkit-keyframes blur {
+  0%   { -webkit-filter: 1blur(1px); opacity:0.8;}
+  50% { -webkit-filter: blur(1px); opacity:1; }
+  100%{ -webkit-filter: blur(1px); opacity:0.8; }
+}
+@-webkit-keyframes jerk {
+  50% { left:1px; }
+  51% { left:0; }
+}
+@-webkit-keyframes jerkup {
+  50% { top:1px; }
+  51% { top:0; }
+}
+.buzz_wrapper2 .text2{
+  -webkit-animation: jerkwhole 10s infinite;
+  position:relative;
+}
+#but{
+  background-color: transparent;
+  color: green;
+  border: 0px solid green;
+  text-decoration: none;
+  -webkit-filter: blur(.9px);
+  font-size: 2em;
+  cursor: url("https://i.imgur.com/q21BHh4.png"), auto;
+ -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+   -webkit-animation: jerkwhole 10s infinite;
+}
+
+/*----------------------*/
+#msg3{
+  
+  width: 1000px;
+  font-size: 25px;
+}
+#msg4{
+
+  width: 1000px;
+  font-size: 25px;
+}
+#msg5{
+ 
+  width: 1000px;
+  font-size: 25px;
+  
+}
+#msg6{
+  
+  width: 1000px;
+  font-size: 25px;
+}
+#msg7{
+  
+  width: 1000px;
+  font-size: 25px;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

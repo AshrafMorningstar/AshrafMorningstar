@@ -1,0 +1,104 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body {
+  background: url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-11.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: fixed;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: Inconsolata;
+}
+
+#calc {
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/ca/f4/b2/caf4b278c7fb458ceca2db07b0c82c5e.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 200px;
+  height: 300px;
+  border: 5px inset #222;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0px 5px 10px 3px black;
+}
+
+#calc-display {
+  margin-bottom: 20px;
+  background: #111;
+  height: 20px;
+  padding: 5px;
+  outline: none;
+  border: 3px inset #333;
+  border-radius: 5px;
+  text-align: right;
+  font-family: Quicksand;
+  font-size: 14px;
+  color: lightgreen;
+}
+
+.keys {
+  cursor: pointer;
+  outline: none;
+  border: 2px outset #555;
+  background: linear-gradient(#444, #111);
+  color: white;
+  width: 35px;
+  height: 32px;
+  margin: 2px;
+  box-shadow: 0px 2px 2px 1px #111;
+  opacity: 0.92;
+}
+
+.keys:active {
+  border: 2px inset #555;
+  background: linear-gradient(#111, #444);
+  color: #aaa;
+}
+
+.bottom {
+  position: relative;
+  left: -2px;
+}
+
+#equals {
+  cursor: pointer;
+  outline: none;
+  border: 2px outset #555;
+  background: linear-gradient(#444, #111);
+  color: white;
+  width: 78px;
+  height: 32px;
+  margin-left: 3px;
+  margin-right: 4px;
+  box-shadow: 0px 2px 2px 1px #111;
+  opacity: 0.92;
+}
+
+#equals:active {
+  border: 2px inset #555;
+  background: linear-gradient(#111, #444);
+  color: #aaa;
+}
+
+div > h3 {
+  color: #aaa;
+  opacity: 0.56;
+  font-family: Quicksand;
+  letter-spacing: 3px;
+  text-shadow: 1px 4px #111;
+}
+
+.spacer {
+  padding: 50px;
+}

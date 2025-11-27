@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morningstar Construction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000, #333);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        canvas {
+            display: block;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Morningstar Construction Logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="https://source.unsplash.com/1600x900/?construction" alt="Construction Image">
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Morningstar Construction</h2>
+        <p>
+            Morningstar Construction is a leader in luxury real estate development, blending modern design with timeless elegance. 
+            Our projects are built with precision, innovation, and a commitment to excellence.
+        </p>
+    </section>
+
+    <canvas id="threejs-canvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Basic Three.js setup for a rotating 3D cube
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('threejs-canvas') });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

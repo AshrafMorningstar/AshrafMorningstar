@@ -1,0 +1,14 @@
+button{
+color:black;
+background-color:white;
+}
+button:hover{
+color:gold;
+background-color:black;
+}
+
+button{ color:black; 
+  background-color:white; transition:0.3s; }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

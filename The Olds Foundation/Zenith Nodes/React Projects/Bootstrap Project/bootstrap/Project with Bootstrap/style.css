@@ -1,0 +1,179 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+.my-jumbotron{
+   width: 100%;
+   height: 70vh;
+   background-image: url(https://images.unsplash.com/photo-1481887328591-3e277f9473dc?ixlib=rb-0.3.5&s=4ab09512f99b6002c0f3b229f9246bb9&auto=format&fit=crop&w=500&q=60);
+   background-size: cover;
+   background-position: center;
+}
+.my-jumbotron-slogan {
+   background: rgba(0, 0, 0, 0.4);
+}
+
+.my-mission-text::after {
+   content: "";
+   display: block;
+   border: 1px solid #ffc107;
+   width: 200px;
+   text-align: center;
+   margin: 30px auto;
+}
+
+.my-mission-background-icon {
+   height: 100px;
+   width: 100px;
+   border: 1px solid #ffc107;
+   border-radius: 50%;
+   padding: 0.4rem;
+   position: relative;
+}
+
+.my-mission-icon {
+   font-size: 2rem;
+   color: #ffc107;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+}
+
+.my-portfolio-text::after {
+   content: "";
+   display: block;
+   border: 1px solid #ffc107;
+   width: 200px;
+   text-align: center;
+   margin: 30px auto;
+}
+
+.my-portfolio-box {
+   position: relative;
+   max-width: 700px;
+}
+
+.my-portfolio-box-text {
+   width: 65%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+}
+
+.my-portfolio-box-title {
+   margin-bottom: 1.2rem;
+   letter-spacing: 5px;
+}
+
+.my-portfolio-box-img {
+   max-width: 700px;
+}
+
+.my-portfolio-img-overlay::after {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   content: "";
+   z-index: 0;
+   background: none repeat #6f42c1;
+   opacity: 0.6;
+}
+
+.separator {
+   position: relative;
+   overflow: hidden;
+   padding-bottom: 50px;
+   width: 100%;
+}
+
+.separator::before {
+   position: absolute;
+   content: "";
+   bottom: 100%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform-origin: 100% 110%;
+   transform: rotate(-1deg);
+   background: #6f42c1;
+}
+
+.separator::after {
+   position: absolute;
+   content: "";
+}
+
+.fa-quote-right {
+   color: #ffc107;
+   font-size: 2rem;
+}
+
+.my-card-main {
+   border: 1px solid #6f42c1;
+}
+
+.my-card-main:hover {
+   transform: scale(1.05);
+   -webkit-box-shadow: 0 20px 35px 0 rgba(111, 63, 193, 0.5);
+   box-shadow: 0 20px 35px 0 rgba(111, 63, 193, 0.5);
+}
+
+.my-team-text::after {
+   content: "";
+   display: block;
+   border: 1px solid #ffc107;
+   width: 200px;
+   text-align: center;
+   margin: 30px auto;
+}
+
+.my-team-img {
+   object-fit: cover;
+   width: 100px;
+   height: 100px;
+}
+
+.my-contact-text::after {
+   content: "";
+   display: block;
+   border: 1px solid #ffc107;
+   width: 200px;
+   text-align: center;
+   margin: 30px auto;
+}
+
+.my-contact-box {
+   max-width: 700px;
+   position: relative;
+}
+
+.my-contact-box-img {
+   max-width: 700px;
+}
+
+.my-contact-img-overlay:after {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   content: "";
+   z-index: 0;
+   background: none repeat #6f42c1;
+   opacity: .6;
+}
+.my-footer-header::after{
+   content: "";
+   display: block;
+   border: 1px solid #ffc107;
+   width: 100%;
+   text-align: center;
+   margin: 5px 0 10px 0;
+}

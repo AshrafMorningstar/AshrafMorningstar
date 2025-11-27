@@ -1,0 +1,137 @@
+/* Tip Calculator */
+.project-wrapper{
+    width : 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 0px;
+    padding-bottom:10px;
+  }
+
+.project-wrapper h1{
+    background-color: white;
+    border:1px solid green;
+    padding: 10px;
+    margin: 0px;
+    }
+  
+.project-wrapper h3{
+    background-color: white;
+    border:1px solid green;
+    padding: 10px;
+    margin:0px;
+    color: blue;
+  }
+
+/* Project 8 - Tip Calculator */
+/* Tip Calculator */
+.tip-calculator-placeholder{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tip-calculator-wrapper {
+  width: 80%;
+  background-color: rgba(64, 40, 119, 0.85);
+  border-radius: 20px;
+}
+
+.tip-calculator-header{
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(64, 6, 87);
+  padding-top: 20px;
+}
+
+.tip-calculator-header h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(194, 136, 28);
+  background-color: rgb(64, 6, 87);
+  border:none;
+}
+
+form p{
+  text-align: center;
+  color: rgb(236, 239, 245);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 5px 10px 25px;
+}
+
+#total-bill-amount,
+#number-of-people {
+  font-size: 18px;
+  color: rgb(10, 11, 12);
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 15px 15px 8px 8px;
+  text-align: center;
+}
+
+#number-of-people:focus,
+#total-bill-amount:focus {
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+  width: 60%;
+}
+
+#service-quality {
+  font-size: 18px;
+  padding: 10px 8px 15px 50px;
+  color: rgb(15, 16, 17);
+  width: 60%;
+  text-align: center;
+}
+
+#calculate {
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(3, 42, 65, 0.753);
+  width: 200px;
+  height: 50px;
+  color: rgb(207, 188, 9);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#answer p {
+  color: rgb(17, 20, 20);
+  font-size: 20px;
+  background-color: rgb(227, 229, 235);
+  padding: 10px;
+}
+
+#answer{
+  font-size: 30px;
+}
+
+#tip {
+  font-size: 25px;
+  color: rgb(194, 50, 6);
+}
+
+.error-message{
+  color: rgb(255, 0, 170);
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .tip-calculator-wrapper {
+    width: 100%;
+    
+  }.project-wrapper{
+    width : 100%;
+    margin-left: 0%;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,68 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+div {
+  background: #9e978e;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+}
+
+.top,
+.bottom {
+  height: 45px;
+  width: 90px;
+}
+
+.right,
+.left {
+  height: 90px;
+  width: 45px;
+}
+
+.top {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.right {
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.bottom {
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.left {
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+}
+
+.rotate {
+  -webkit-animation: 1s linear infinite rotate;
+          animation: 1s linear infinite rotate;
+  position: relative;
+  top: -45px;
+  transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

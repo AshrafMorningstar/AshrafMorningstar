@@ -1,0 +1,223 @@
+/* Set the colour and the position of the background and the elements */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .carAnimation {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    background-color: #83c5be;
+    border-radius:50%;
+  }
+
+  /* Create the road */
+  .road {
+    position: absolute;
+    background-color: #333;
+    border-radius:20px;
+    height:5px;
+    width:220px;
+    top:220px;
+    left:40px;
+    overflow:hidden;
+  }
+  
+  .road:before {
+    content:"";
+    position: absolute;
+    background-color: #83c5be;
+    width:30px;
+    height:5px;
+    border-radius:5px; 
+    animation: move 1s linear infinite reverse;
+  }
+  .road:after {
+    content:"";
+    position: absolute;
+    width:15px;
+    height:5px;
+    background-color: #333;
+    border-radius:5px; 
+    box-shadow: 27px 0 #333;
+    animation: move 1s linear infinite reverse;
+  }
+
+  /* Style the car */
+  .car {
+    position: absolute;
+    height:0;
+    width:90px;
+    border-right: 25px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 70px solid #333;
+    z-index:2;
+    top:140px;
+    left:75px;  
+  }
+  
+  .car:before {
+    content:"";
+    position: absolute;
+    background-color: #333;
+    width:70px;
+    height:40px;
+    left:60px;
+    top:30px;
+  }
+  
+  .car:after {
+    content:"";
+    position: absolute; 
+    background-color: #333;
+    width:10px;
+    height:35px;
+    border-radius:10px;
+    left:-22px;
+    top:20px;
+    transform: rotate(16deg);
+  }
+  
+  .colour {
+    position: absolute;
+    height:0;
+    width:80px;
+    border-right: 20px solid transparent;
+    border-left: 17.5px solid transparent;
+    border-bottom: 60px solid #e5383b;
+    top:5px;
+    left:-12px;
+  }
+  
+  .colour:before {
+    content:"";
+    position: absolute; 
+    background-color: #e5383b;
+    width:60px;
+    height:30px;
+    left:60px;
+    top:30px;
+  }
+  
+  .colour:after {
+    position: absolute;
+    content:"";
+    background-color: #f9c74f;
+    width:5px;
+    height:15px;
+    border: 3px solid #333;
+    left:122px;
+    top:44px;
+    box-shadow: 0px -19px #333;
+  }
+  
+  .windows {
+    position: absolute; 
+    height:0;
+    width:70px;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 28px solid #333;
+    top:8px;
+    left:4px;
+  }
+  
+  .windows:before {
+    content:"";
+    position: absolute;
+    height:0;
+    width:65px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 22px solid #aed9e0;
+    top:3px;
+    left:-2.5px;
+  }
+  
+  .windows:after {
+    content:"";
+    position: absolute;
+    width:5px;
+    height:25px;
+    background-color: #333;
+    left:45px;
+    box-shadow: -25px 0 #333;
+  }
+  
+  .leftWheel {
+    position: absolute;
+    width:35px;
+    height:15px;
+    border: 3px solid #333;
+    background-color: #d3d3d3;
+    border-radius: 30px 30px 0 0;
+    top:47px;
+    left:-5px;
+  }
+  
+  .rightWheel {
+    position: absolute;
+    width:35px;
+    height:15px;
+    border: 3px solid #333;
+    background-color: #d3d3d3;
+    border-radius: 30px 30px 0 0;
+    top:47px;
+    left:75px;
+  }
+  
+  .wheel {
+    position: absolute;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    background-color: #d3d3d3;
+    border: 8px solid #333;
+    box-shadow: inset 5px 5px #f5f3f4;
+    top:2px;
+    left:2px;
+    animation: spin .5s infinite linear;
+  }
+
+  /* Add some clouds */
+  .clouds {
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    width:35px;
+    height:10px;
+    border-radius: 20px;
+    top:100px;
+    left:100px;
+    z-index:1;
+    box-shadow: 130px 50px rgba(255,255,255,0.5), -100px 20px rgba(255,255,255,0.5);
+    animation: cloud 1.5s linear infinite reverse;
+  }
+
+ /* Add animation - For the road */
+ @keyframes move {  
+    from { left: -100px; }
+      to { left: 200px; }
+  }
+
+  /* Add animation - Make the wheels spin */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* To move the clouds */
+  @keyframes cloud {  
+    from{left:-150px;}
+    to{left: 400px;}
+  }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,30 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+import React from 'react';
+
+const Menu = ({ items }) => {
+  return (
+    <div className='section-center'>
+      {items.map((menuItem) => {
+        const { id, title, img, desc, price } = menuItem;
+        return (
+          <article key={id} className='menu-item'>
+            <img src={img} alt={title} className='photo' />
+            <div className='item-info'>
+              <header>
+                <h4>{title}</h4>
+                <h4 className='price'>${price}</h4>
+              </header>
+              <p className='item-text'>{desc}</p>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Menu;

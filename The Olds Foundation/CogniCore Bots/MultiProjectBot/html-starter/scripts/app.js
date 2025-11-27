@@ -1,0 +1,1 @@
+document.getElementById('sayhi').addEventListener('click',()=>alert('Hello from HTML Starter!'));

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MORNINGSTAR CALCULATOR</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form name="form">
+                <dev class="display">
+                    <input type="text" placeholder="0" name="displayresult">
+                </dev>
+                <div class="button">
+                    
+                    <div class="row">
+                        <input class="btn" type="button" name="b7" value="7" onclick="func(b7.value)">
+                        <input class="btn" type="button" name="b8" value="8" onclick="func(b8.value)">
+                        <input class="btn" type="button" name="b9" value="9" onclick="func(b9.value)">
+                        <input class="btn" type="button" name="plus" value="+" onclick="func(plus.value)">
+                    </div>
+
+                        <div class="row">
+                            <input class="btn" type="button" name="b4" value="4" onclick="func(b4.value)">
+                            <input class="btn" type="button" name="b5" value="5" onclick="func(b5.value)">
+                            <input class="btn" type="button" name="b6" value="6" onclick="func(b6.value)">
+                            <input class="btn" type="button" name="minus" value="-" onclick="func(minus.value)">
+                        </div>
+
+                        <div class="row">
+                            <input class="btn" type="button" name="b1" value="1" onclick="func(b1.value)">
+                            <input class="btn" type="button" name="b2" value="2" onclick="func(b2.value)">
+                            <input class="btn" type="button" name="b3" value="3" onclick="func(b3.value)">
+                            <input class="btn" type="button" name="mul" value="*" onclick="func(mul.value)">
+                        </div>
+
+                        <div class="row">
+                            <input class="btn" type="button" name="b0" value="0" onclick="func(b0.value)">
+                            <input class="btn" type="button" name="bd" value="." onclick="func(bd.value)">
+                            <input class="btn" type="button" name="divv" value="/" onclick="func(divv.value)">
+                            <input class="blue" type="button" value="=" onclick="displayResult.value=eval(displayResult.value)">
+                        </div>
+
+                        <div class="row">
+                            <input class="btn" type="button" name="clear" value="C" onclick="clearDisplay()">
+                            <input class="btn" type="button" name="delete" value="<-" onclick="deleteLast()">
+                            <input class="btn" type="button" name="percent" value="%" onclick="func(percent.value)">
+                            <input class="btn" type="button" name="sqrt" value="√" onclick="func(sqrt.value)">
+                        </div>
+                        
+                        <div class="row">
+                            <input class="btn" type="button" name="sin" value="sin" onclick="func(sin.value)">
+                            <input class="btn" type="button" name="cos" value="cos" onclick="func(cos.value)">
+                            <input class="btn" type="button" name="tan" value="tan" onclick="func(tan.value)">
+                            <input class="btn" type="button" name="log" value="log" onclick="func(log.value)">
+                        </div>
+
+                        <div class="row">
+                            <input class="btn" type="button" name="modulus" value="%" onclick="func(modulus.value)">
+                            <input class="btn" type="button" name="pi" value="π" onclick="func(pi.value)">
+                            <input class="btn" type="button" name="euler" value="e" onclick="func(euler.value)">
+                            <input class="btn" type="button" name="power" value="^" onclick="func(power.value)">
+                        </div>
+                </div>
+                
+            </div>
+            </form>
+
+        </div>
+        <script>
+            var displayResult = document.form.displayresult;
+            displayResult.value = "0";
+            
+            function func(value) {
+                var displayResult = document.form.displayresult;
+                if (displayResult.value == "0") {
+                    displayResult.value = value;
+                } else {
+                    displayResult.value += value;
+                }
+            }
+            function clearDisplay() {
+                document.form.displayresult.value = "0";
+
+
+            }
+            
+            {
+                var displayResult = document.form.displayresult;
+                try {
+                    displayResult.value = eval(displayResult.value);
+                } catch (e) {
+                    displayResult.value = "Error";
+                }
+            }
+            function clearDisplay() {
+                document.form.displayresult.value = "0";
+            }
+            function deleteLast() {
+                var displayResult = document.form.displayresult;
+                if (displayResult.value.length > 1) {
+                    displayResult.value = displayResult.value.slice(0, -1);
+                } else {
+                    displayResult.value = "0";
+                }
+            }
+            function calculate() {
+                var displayResult = document.form.displayresult;
+                try {
+                    displayResult.value = eval(displayResult.value);
+                } catch (e) {
+                    displayResult.value = "Error";
+                }
+            }
+            function clearDisplay() {
+                document.form.displayresult.value = "0";
+            }
+            function deleteLast() {
+                var displayResult = document.form.displayresult;
+                if (displayResult.value.length > 1) {
+                    displayResult.value = displayResult.value.slice(0, -1);
+                } else {
+                    displayResult.value = "0";
+                }
+            }
+            function calculate() {
+                var displayResult = document.form.displayresult;
+                try {
+                    displayResult.value = eval(displayResult.value);
+                } catch (e) {
+                    displayResult.value = "Error";
+                }
+            }
+            function clearDisplay() {
+                document.form.displayresult.value = "0";
+            }
+            function deleteLast() {
+                var displayResult = document.form.displayresult;
+                if (displayResult.value.length > 1) {
+                    displayResult.value = displayResult.value.slice(0, -1);
+                } else {
+                    displayResult.value = "0";
+                }
+            }
+            function calculate() {
+                var displayResult = document.form.displayresult;
+                try {
+                    displayResult.value = eval(displayResult.value);
+                } catch (e) {
+                    displayResult.value = "Error";
+                }
+            }
+            function clearDisplay() {
+                document.form.displayresult.value = "0";
+            }
+        </script>
+    
+    </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Float Label HTML+CSS Only!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="float-label" spellcheck="false">
+  <legend>Float Label Demo</legend>
+  
+  <!-- we need a wrapping element for positioning the label -->
+  <!-- the required attribute is ... required! -->
+  <div class="control">
+    <input type="text" name="title" placeholder="Title" required />
+    <!-- yes, this is not nice, in real live, do it with JS -->
+    <label for="title">Title</label>
+  </div>
+ 
+  <div class="control small">
+    <input type="text" name="price" placeholder="Price" required />
+    <label for="price">Price</label>
+  </div>
+  <div class="control medium">
+    <input type="text" name="location" placeholder="Specific location (optional)" required />
+    <label for="location">Specific location (optional)</label>
+  </div>
+  
+  <div class="control">
+    <textarea name="description" placeholder="Description" required></textarea>
+    <label for="description">Description</label>
+  </div>
+  
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

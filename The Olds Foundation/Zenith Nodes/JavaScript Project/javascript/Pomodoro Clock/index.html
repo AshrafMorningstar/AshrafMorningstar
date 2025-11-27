@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Clock</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans|Lato" rel="stylesheet">
+
+  </head>
+  <body>
+    <main class="container">
+
+      <div clss="row">
+        <div class="center-block text-center" id="pomodoro-clock-body">
+          <h1 id="calculator-title">Pomodoro Timer</h1>
+          <div class="row row-eq-height">
+            <div class="col-xs-4 col-xs-offset-1 time-setting" id="">
+              <p>Work: <strong><span id="workTimeLabel">25</span></strong> mins</p>
+            </div>
+            <div class="col-xs-6">
+              <input class="slider" id="workTime" type="range" min="1" max="60" value="25" step="1" onchange="setWorkTime(this.value)" />
+            </div>
+          </div>
+
+          <div class="row row-eq-height">
+            <div class="col-xs-4 col-xs-offset-1 time-setting" id="">
+              <p>Break: <strong><span id="breakTimeLabel">05</span></strong> mins</p>
+            </div>
+            <div class="col-xs-6">
+              <input class="slider" id="breakTime" type="range" min="1" max="20" value="5" step="1" onchange="setBreakTime(this.value)" />
+            </div>
+          </div>
+
+          <!-- <div class="row" id="timer-container-background">
+          </div> -->
+
+          <div class="row" id="timer-container">
+            <img src="http://www.insidetheapp.com/wp-content/uploads/2016/08/pomodoro-timer-vs-pomodoro-keeper.png" alt="background image" id="background-image">
+            <p id="timer">25:00</p>
+          </div>
+
+          <div class="row" id="timer-control">
+            <div class="center-block" id="inner-timer-control">
+              <div class="col-xs-4 text-center">
+                <p><i class="fa fa-play-circle-o fa-3x btn" id="play"></i></p>
+              </div>
+              <div class="col-xs-4 text-center">
+                <p><i class="fa fa-pause-circle-o fa-3x btn" id="pause"></i></p>
+              </div>
+              <div class="col-xs-4 text-center">
+                <p><i class="fa fa-repeat fa-3x btn" id="reset"></i></p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end of "clock-body" div -->
+
+      </div> <!-- End of "row" div -->
+
+    </main> <!-- End of "container" -->
+
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center" id="mysocial">
+          <a href="https://github.com/AshrafMorningstar" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+          <a href="Ashraf Morningstar" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a href="mailto:xiazhuangz@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="text-center">
+        <p>For <a href="https://www.freecodecamp.com/challenges/build-a-pomodoro-clock" target="_blank">Free Code Camp project</a></p>
+        <p> This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar<a href="https://www.freecodecamp.com/asimolovegym" target="_blank">Joey Xia</a>. All right reserved. </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

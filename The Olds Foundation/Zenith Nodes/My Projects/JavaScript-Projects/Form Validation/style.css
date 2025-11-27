@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    /* color: white; */
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* .fa-paper-plane {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  } */
+
+.contain{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* backdrop-filter: blur(10px); */
+    position: relative;
+    margin-top: 40px; /* Add space for the icon */
+}
+ .inputTag{
+    position: relative;
+}
+.inputTag label{
+    margin-bottom: 0.25rem;
+    cursor:pointer;
+    /* color: black; */
+    transition: color 0.3s ease;
+}
+.inputTag input{
+    /* background-color: white; */
+    transition: all 0.3s ease;
+    padding: 0 10px;
+}
+.inputTag input:focus {
+    border-color: #79F1A4;
+    box-shadow: 0 0 0 3px rgba(121, 241, 164, 0.1);
+}
+.inputTag input:hover{
+    border-color: #505050;
+}
+.inputTag span{
+    font-size: 0.875rem;
+    font-weight:600;
+    color: #dc2626;
+    min-height: 1.25rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+ .submit {
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    padding: 18px 0;
+}
+ .submit:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/*  popup css  */
+.popUp{
+    background-color: white;
+    width: 300px;
+    max-width: 90vw;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: all 0.35s ease-in-out;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+   }
+
+   .popUp::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    }
+
+   .popup-heading{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #0E5CAD;
+   }
+   .open{
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    top: 35%;
+  }
+  .popUp img{
+    width: 80px;
+    height: 80px;
+    margin: -60px auto 10px;
+    display: block;
+  }
+  .popup-contain{
+  padding-block: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.4;
+  
+  }
+  
+  .closeBtn{
+    background-color: green;
+    color: white;
+    padding: 12px 30px;
+    /* max-width: fit-content; */
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .closeBtn:hover{
+    background-color:rgb(34, 137, 34);
+    font-size: 20.5px;
+  }
+
+ /* #eyeIcon{
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 39px;
+  } */
+
+
+
+  /* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    .popUp {
+        width: 85vw;
+        padding: 15px;
+    }
+    
+    .popup-heading {
+        font-size: 22px;
+    }
+    
+    .popup-contain {
+        font-size: 16px;
+    }
+    
+    .closeBtn {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+  
+
+/* Mobile-first media queries */
+@media screen and (max-width: 640px) {
+    .contain {
+        padding: 1rem;
+    }
+    
+    .inputTag input {
+        font-size: 16px;
+    }
+    
+    .inputTag label {
+        font-size: 1rem;
+    }
+    
+    .icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .icon-container i {
+        font-size: 1.75rem;
+    }
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+    .contain {
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .contain {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .contain {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .icon-container {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .icon-container i {
+        font-size: 2.25rem;
+    }
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for form appearance */
+@keyframes formAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Icon and heading spacing */
+header i {
+    margin-bottom: 0.5rem;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(5deg);
+    }
+}
+
+/* Add these styles for the icon container */
+.icon-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container i {
+    font-size: 2rem;
+    color: white;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

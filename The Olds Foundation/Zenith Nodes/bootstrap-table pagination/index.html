@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - bootstrap-table  pagination</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<table id="table"  data-show-header="true" data-pagination="true"
+           data-id-field="name"
+           data-page-list="[5, 10, 25, 50, 100, ALL]"
+           data-page-size="5">
+    <thead>
+    <tr>
+        <th data-field="name" data-formatter="nameFormatter">Name</th>
+        <th data-field="stargazers_count" data-formatter="starsFormatter">Stars</th>
+        <th data-field="forks_count" data-formatter="forksFormatter">Forks</th>
+        <th data-field="description">Description</th>
+    </tr>
+    </thead>
+  <tbody>
+	</tbody>
+</table>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

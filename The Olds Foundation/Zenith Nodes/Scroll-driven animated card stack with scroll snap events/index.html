@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main data-active-index="0" data-debug="false">
+        <div class="card-stack">
+          <div class="card"><img src="https://assets.codepen.io/215059/card-stack-demo-05.jpg" /></div>
+          <div class="card"><img src="https://assets.codepen.io/215059/card-stack-demo-04.jpg" /></div>
+          <div class="card"><img src="https://assets.codepen.io/215059/card-stack-demo-06.jpg" /></div>
+          <div class="card"><img src="https://assets.codepen.io/215059/card-stack-demo-07.jpg" /></div>
+          <div class="card"><img src="https://assets.codepen.io/215059/card-stack-demo-08.jpg" /></div>
+        </div>
+        <div class="scroller">
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+        </div>
+      </main>
+      
+      <!-- Everything below this line is for the demo only -->
+      <div class="warning">
+        <span>Mouse drag not supported. Use responsive mode or a touch pad to scroll.</span>
+      </div>
+      
+      <div class="explainer">
+        <input type="checkbox"></input>
+        <div>
+          <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1{fill:none;}</style></defs><title>help</title><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z" fill="white"/><circle cx="16" cy="23.5" r="1.5" fill="white"/><path d="M17,8H15.5A4.49,4.49,0,0,0,11,12.5V13h2v-.5A2.5,2.5,0,0,1,15.5,10H17a2.5,2.5,0,0,1,0,5H15v4.5h2V17a4.5,4.5,0,0,0,0-9Z" fill="white"/></svg>
+        </div>
+      <p>Inspired by original <a href="https://x.com/AMS_Morningstar">Nate Smith</a> demo.</p>
+        <p>
+          Demo of CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/scroll#browser_compatibility">scroll()</a> function with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type">scroll-snap</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline">animation-timeline</a>, and <a href="https://developer.chrome.com/blog/scroll-snap-events">scroll snap events</a>.
+        </p>
+        <p>
+          Requires Chrome 129+. Try in Chrome on Android or in Chrome Desktop responsive mode (use <a href="https://codepen.io/ashraf_morningstar">debug view</a>) or with a trackpad for best scrolling experience.
+        </p>
+        <p>
+       <a href="https://x.com/AMS_Morningstar">paul_uiux@</a></p>
+      </div>
+      
+      <!-- Warn pointer down -->
+      <script>
+       const warn = () => {
+         document.querySelector('.warning').classList.toggle('show');
+         setTimeout(() => document.querySelector('.warning').classList.toggle('show'), 3000);
+       };
+        document.querySelector('main').addEventListener('mousedown', warn);
+      </script>
+    <script  src="main.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

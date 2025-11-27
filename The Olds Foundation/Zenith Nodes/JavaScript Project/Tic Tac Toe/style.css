@@ -1,0 +1,181 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  margin-top: 5%;
+  margin-bottom: 1em;
+}
+
+#game-body {
+
+  position: relative;
+
+  width: 100mm;
+  height: 120mm;
+  background-color: #e1e8f0;
+  border: solid 2px #e1e8f0;
+  /*padding: 5mm;*/
+  border-radius: 5mm;
+  margin-bottom: 2em;
+  box-shadow: 4px 0 5px gray, 0 4px 5px gray;
+}
+
+#game-title {
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /*font-family: 'Baloo Bhai', cursive;*/
+  font-family: 'Wendy One', sans-serif;
+}
+
+.black-button {
+  background-color: #3b3a36;
+  border-color: #3b3a36;
+  color: white;
+}
+
+.normal-button {
+  height: 25mm;
+  width: 25mm;
+  margin-bottom: 5mm;
+  font-size: 60px;
+}
+
+#game-zone {
+  position: relative;
+}
+
+#game-over {
+  display: none;
+  position: absolute;
+  /*margin: 0 auto;*/
+  top: -9mm;
+  left: -0.5mm;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100mm;
+  height: 100mm;
+
+  border-radius: 5mm;
+
+  padding-top: 40mm;
+}
+
+#game-mode-choose {
+  /*display: none;*/
+  position: absolute;
+  /*margin: 0 auto;*/
+  top: -9mm;
+  left: -0.5mm;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100mm;
+  height: 100mm;
+
+  border-radius: 5mm;
+
+  padding-top: 40mm;
+}
+
+#game-difficulties-choose {
+  display: none;
+  position: absolute;
+  /*margin: 0 auto;*/
+  top: -9mm;
+  left: -0.5mm;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100mm;
+  height: 100mm;
+
+  border-radius: 5mm;
+
+  padding-top: 40mm;
+}
+
+#player-choose {
+  display: none;
+  position: absolute;
+  /*margin: 0 auto;*/
+  top: -9mm;
+  left: -0.5mm;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100mm;
+  height: 100mm;
+
+  border-radius: 5mm;
+
+  padding-top: 40mm;
+}
+
+#game-over-X-win {
+  display: none;
+}
+
+#game-over-O-win {
+  display: none;
+}
+
+#game-over-draw {
+  display: none;
+}
+
+#game-over-you-win {
+  display: none;
+}
+
+#game-over-you-lose {
+  display: none;
+}
+
+
+
+#start-over-div {
+  /*display: none;*/
+  position: absolute;
+  /*margin: 0 auto;*/
+  top: 0;
+  right: 0;
+}
+
+#start-over {
+  border-radius: 5mm;
+  border: solid 2px #e1e8f0;
+}
+
+
+
+#game-over-title, #game-over-X-win, #game-over-O-win, #game-over-draw, #game-over-you-win, #game-over-you-lose  {
+  color: white;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Amatic SC', cursive;
+}
+
+#game-mode-choose-title, #game-difficulties-title, #game-player-choose-title {
+  color: white;
+  font-size: 1.5em;
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: 'Pacifico', cursive;
+  /*font-family: 'Amatic SC', cursive;*/
+}
+
+#cross, #nought {
+  font-size: 1.5em;
+}
+
+/*#game-mode-choose, #game-difficulties-choose, #player-choose {
+  color: white;
+  font-size: 1.5em;
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family: 'Pacifico', cursive;
+  /*font-family: 'Amatic SC', cursive;*/
+}*/

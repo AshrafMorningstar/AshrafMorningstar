@@ -1,0 +1,96 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+/* Tab Settings */
+/* Tab Toggle Defaults */
+.oddbirds [id*="mia"], .oddbirds [id*="carl"], .oddbirds [id*="jonny"] {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  /* Tab Content Defaults */
+  .oddbirds [class*="mia"], .oddbirds [class*="carl"], .oddbirds [class*="jonny"] {
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    opacity: 0;
+    /* Hide */
+    float: left;
+    /* Isolation */
+    width: 100%;
+    /* Isolation */
+    margin-right: -100%;
+    /* Isolation */
+  }
+  
+  .oddbirds [id*="mia"]:checked ~ .content [class*="mia"], .oddbirds [id*="carl"]:checked ~ .content [class*="carl"], .oddbirds [id*="jonny"]:checked ~ .content [class*="jonny"] {
+    opacity: 1;
+    /* Show */
+    position: relative;
+    /* Bring to top */
+    z-index: 10;
+    /* Bring to top */
+  }
+  
+  .oddbirds [id*="mia"]:checked ~ .tabs [for*="mia"], .oddbirds [id*="carl"]:checked ~ .tabs [for*="carl"], .oddbirds [id*="jonny"]:checked ~ .tabs [for*="jonny"] {
+    background: none;
+    border-bottom-color: transparent;
+  }
+  
+  /* Tabs Mixin */
+  /* Creating Tabs */
+  /* Paint Job */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.65em;
+    padding: 1.5em;
+    background: #437691;
+  }
+  
+  .oddbirds {
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.5em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.5em;
+    width: 80%;
+    max-width: 40em;
+    margin: 0 auto;
+    background: lightblue;
+  }
+  
+  [for] {
+    border-width: 0.0625em;
+    border-style: solid;
+    padding: 0.3125em;
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    background: #7ac;
+  }
+  [for] ~ [for] {
+    border-left: 0;
+  }
+  [for]:last-child {
+    float: right;
+  }
+  
+  .content {
+    overflow: hidden;
+    *zoom: 1;
+    border-width: 0.0625em;
+    border-style: solid;
+    padding: 0.6875em;
+    clear: both;
+    border-top: 0;
+  }
+  .content ul {
+    list-style: disc;
+    padding-left: 1.5em;
+  }

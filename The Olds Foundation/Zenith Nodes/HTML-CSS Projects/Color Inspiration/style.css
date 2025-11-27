@@ -1,0 +1,168 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F0F2F5;
+}
+
+section.container {
+	width: 592px;
+	height: auto;
+	margin: 0 auto;
+}
+
+section.container header {
+	margin: 25px 0;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted #AAB2BD;
+}
+
+section.container header h1 {
+	font-weight: 200;
+	font-size: 3em;
+	color: #656D78;
+	text-align: center;
+}
+
+section.box {
+	width: 128px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 6px #CCC;
+	border-radius: 5px;
+	display: block;
+	float: left;
+	margin: 10px;
+}
+
+section.box h1 {
+	font-weight: 400;
+	font-size: 14px;
+	color: #494A4A;
+	display: block;
+	float: left;
+	padding: 5px 0px 0px 5px;
+}
+
+section.box p {
+	font-weight: 300;
+	font-size: 11px;
+	color: #999999;
+	display: block;
+	float: left;
+	padding: 5px 0px 5px 5px;
+}
+
+section.color-left {
+	width: 64px;
+	height: 50px;
+	background-color: #000;
+	border-top-left-radius: 5px;
+	display: block;
+	float: left;
+}
+
+section.color-right {
+	width: 64px;
+	height: 50px;
+	background-color: #000;
+	border-top-right-radius: 5px;
+	display: block;
+	float: left;
+}
+
+/* Grapefruit */
+section.color-left.grapefruit-light {background-color:#ED5565;}
+section.color-right.grapefruit-dark {background-color:#DA4453;}
+
+/* Bittersweet */
+section.color-left.bittersweet-light {background-color:#FC6E51;}
+section.color-right.bittersweet-dark {background-color:#E9573F;}
+
+/* Sunflower */
+section.color-left.sunflower-light {background-color:#FFCE54;}
+section.color-right.sunflower-dark {background-color:#F6BB42;}
+
+/* Grass */
+section.color-left.grass-light {background-color:#A0D468;}
+section.color-right.grass-dark {background-color:#8CC152;}
+
+/* Mint */
+section.color-left.mint-light {background-color:#48CFAD;}
+section.color-right.mint-dark {background-color:#37BC9B;}
+
+/* Aqua */
+section.color-left.aqua-light {background-color:#4FC1E9;}
+section.color-right.aqua-dark {background-color:#3BAFDA;}
+
+/* Blue Jeans */
+section.color-left.blueJeans-light {background-color:#5D9CEC;}
+section.color-right.blueJeans-dark {background-color:#4A89DC;}
+
+/* Lavander */
+section.color-left.lavander-light {background-color:#AC92EC;}
+section.color-right.lavander-dark {background-color:#967ADC;}
+
+/* Pink Rose */
+section.color-left.pinkRose-light {background-color:#EC87C0;}
+section.color-right.pinkRose-dark {background-color:#D770AD;}
+
+/* Light Gray */
+section.color-left.lightGray-light {background-color:#F5F7FA;}
+section.color-right.lightGray-dark {background-color:#E6E9ED;}
+
+/* Medium Gray */
+section.color-left.mediumGray-light {background-color:#CCD1D9;}
+section.color-right.mediumGray-dark {background-color:#AAB2BD;}
+
+/* Dark Gray */
+section.color-left.darkGray-light {background-color:#656D78;}
+section.color-right.darkGray-dark {background-color:#434A54;}

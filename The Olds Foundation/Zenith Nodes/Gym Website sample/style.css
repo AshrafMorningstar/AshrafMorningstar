@@ -1,0 +1,110 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body{
+    background-image: url('https://source.unsplash.com/FodEsaNZs48');
+   /* background-image: url('img/bg.jpg'); */
+    background-size:100% ;
+  
+    margin: 0px;
+    border: 0px;
+    color: white;
+    
+}
+.left{
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px; 
+    
+}
+.left img{
+    display: block;
+    width: 80px;
+    margin: auto;
+
+}
+.left div{
+    text-align: center;
+    font-size: 25px;
+}
+.mid{
+     /* border: 2px solid green; */
+     display: block;
+     width: 36%;
+     margin: 20px auto;
+
+}
+.right{
+     /* border: 2px solid yellow; */
+     display: inline-block;
+     
+    position: absolute;
+    right: 34px;
+    top: 20px;
+}
+.btn{
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 9px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:slategray;
+
+}
+.navbar{
+    display: inline-block;
+   
+}
+.navbar li {
+    
+    display: inline-block;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    margin: auto;
+    
+}
+.navbar li a:hover {
+    font-weight: bolder;
+    color: slategray;
+}
+.container{
+    border: 2px solid white;
+    margin: 150px 50px;
+    padding: 30px;
+    width: 33%;
+    border-radius: 10px;
+}
+.formgrp input{
+    width: 100%;
+    text-align: center;
+    display:block;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+.container h1{
+      text-align: center;
+}
+.container button{
+       display:block;
+       width: 105%;
+       margin: 15px auto;
+       background-color: black;
+       font-size: 23px;
+
+}

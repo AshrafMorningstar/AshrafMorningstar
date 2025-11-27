@@ -1,0 +1,102 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  box-sizing: border-box;
+  color: #000000;
+}
+  
+.align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  background-image: linear-gradient(to right, #c79081 0%, #dfa579 100%);  
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.turn-container{
+  width: 170px;
+  height: 80px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr  1fr;
+  position: relative;
+}
+
+.turn-container h1{
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.turn-container .turn-box{
+  margin-top: 10px;
+  border: 5px solid black;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even){
+  border-right: none;
+}
+
+.bg{
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 85px;
+  height: 40px;
+  background-color: #ff2E63;
+  z-index: -1;
+}
+
+.main-grid{
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(240, 236, 236, 0.09) 0px 4px 2px, rgba(246, 246, 246, 0.09) 0px 8px 4px, rgba(243, 240, 240, 0.09) 0px 16px 8px, rgba(249, 247, 247, 0.09) 0px 32px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 350px;
+  width: 350px;
+  margin: 50px auto;
+  border: 3px solid black;
+}
+
+.box{
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.box:hover{
+  background-color: #ff2E63;
+}
+
+#play-again{
+  background-color: #ff2E63;
+  padding: 10px 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#play-again:hover{
+  padding: 10px 30px;
+  background-color: aqua;
+  color: blaCK;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

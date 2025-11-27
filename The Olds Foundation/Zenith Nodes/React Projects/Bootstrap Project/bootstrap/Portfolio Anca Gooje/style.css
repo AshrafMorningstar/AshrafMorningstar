@@ -1,0 +1,45 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+.navbar-brand{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body{
+  font-family: fantasy;
+}
+.nav-item{font-style: normal;
+font-size: 25px;}
+
+.navbar-text{font-size: 20px;
+}
+.block_1{ width:100%;
+font-weight: bold;
+  height:7px; background: #fff }
+
+  .hero-image {
+    padding-bottom: 20px;
+  }
+.display-4{
+text-align: right;
+  padding-top: 20px;
+}
+.lead{
+  text-align: right;
+}
+.portfolio{
+  text-align: center;
+}
+.col-sm-4{
+  padding-top: 20px;
+  padding-bottom:40px;
+}
+/* I found an answer in this forum discussion regarding how to display images same size in the Bootstrap grid using "object-fit"
+ https://github.com/AshrafMorningstar */
+.img-thumbnail{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}

@@ -1,0 +1,73 @@
+{
+  "user": {
+    "name": "Ashraf Siddiqui",
+    "github": "https://github.com/AshrafMorningstar",
+    "email": "ashraf@example.com"
+  },
+  "bot": {
+    "name": "Multi-Language Project Generator Bot",
+    "version": "1.0.0",
+    "description": "Automated bot that generates fully working projects across multiple programming languages"
+  },
+  "output": {
+    "base_directory": "generated_projects",
+    "organize_by_language": true,
+    "create_timestamps": true
+  },
+  "generation": {
+    "auto_mode": true,
+    "parallel_generation": false,
+    "validate_projects": true,
+    "create_readme": true,
+    "add_license": true,
+    "license_type": "MIT"
+  },
+  "languages": {
+    "web": {
+      "enabled": true,
+      "projects": ["portfolio", "task_manager", "weather_dashboard", "game"]
+    },
+    "python": {
+      "enabled": true,
+      "projects": ["rest_api", "data_analyzer", "web_scraper", "cli_tool", "automation_bot"]
+    },
+    "swift": {
+      "enabled": true,
+      "projects": ["todo_app", "weather_app", "calculator", "notes_app"]
+    },
+    "ruby": {
+      "enabled": true,
+      "projects": ["sinatra_app", "rails_api", "gem_package", "cli_tool"]
+    },
+    "java": {
+      "enabled": true,
+      "projects": ["spring_boot_api", "console_app", "javafx_gui", "maven_library"]
+    },
+    "go": {
+      "enabled": true,
+      "projects": ["http_server", "cli_tool", "microservice", "concurrent_worker"]
+    },
+    "rust": {
+      "enabled": true,
+      "projects": ["cli_tool", "web_server", "system_utility", "library_crate"]
+    },
+    "cpp": {
+      "enabled": true,
+      "projects": ["console_game", "data_structures", "file_processor", "cmake_library"]
+    },
+    "php": {
+      "enabled": true,
+      "projects": ["laravel_api", "wordpress_plugin", "mvc_app", "composer_package"]
+    },
+    "typescript": {
+      "enabled": true,
+      "projects": ["react_dashboard", "nextjs_blog", "express_api", "react_native_app"]
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "file": "project_generator.log",
+    "console_output": true
+  }
+}

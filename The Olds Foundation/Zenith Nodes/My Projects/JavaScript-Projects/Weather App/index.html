@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- this is FontAwesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- this is Logo adding link -->
+   <link rel="icon" href="./Assets/logo.webp">
+
+  <!-- this is css file linked  -->
+   <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+    <!-- heading Div -->
+<div class="heading_container">
+  <h1 class="weather_heading"> Weather App
+    <div class="h_underline"></div>
+  </h1>
+</div>
+
+<!-- main section start here -->
+<main>
+  <div class="container">
+    <!-- this is search bar div -->
+    <div class="search">
+      <input class="search_bar" type="text" placeholder="Enter City Name" spellcheck="false">
+      <button class="search_btn"><i class="fa-solid fa-magnifying-glass "></i></button>
+    </div>
+    <div class="error">
+      <p>Invalid City Name</p>
+    </div>
+    <!-- this is temp div -->
+     <div class="weather">
+       <img class="weather_img" src="./Assets/rain.png" alt="Weather Cloud img">
+       <h1 class="temp">22°C</h1>
+       <h2 class="city">Mumbai</h2>
+
+       <!-- here start detail div -->
+       <div class="details">
+        <!-- this is for humidity col -->
+        <div class="col">
+          <img class="col_img" src="./Assets/humidity.png" alt="humidity image">
+          <div>
+            <p class="humidity">50%</p>
+            <p class="title">Humidity</p>
+          </div>
+        </div>
+        <!-- this is for wind col -->
+        <div class="col">
+          <img class="col_img" src="./Assets/wind.png" alt="wind image">
+          <div>
+            <p class="wind">15km</p>
+            <p class="title">Wind Speed </p>
+         </div>
+        </div>
+        </div>
+        
+       </div>
+     </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

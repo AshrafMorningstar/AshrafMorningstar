@@ -1,0 +1,14 @@
+{
+  "name": "web-ninja",
+  "version": "1.0.0",
+  "description": "This Project only for Tailwind CSS Practice Purpose",
+  "main": "index.html",
+  "scripts": {
+    "test": "we are try to understand tailwind css"
+  },
+  "author": "Vikram Suraj Pal",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  }
+}

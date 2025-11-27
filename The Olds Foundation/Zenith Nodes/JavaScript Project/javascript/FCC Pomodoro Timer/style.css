@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "Open Sans" sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.5em 0;
+  background: darkgray;
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 5px white;
+}
+
+#pomodoro {
+  margin: 3em auto;
+  width: 30em;
+  height: 30em;
+}
+
+#clockBody {
+  float: left;
+  background: transparent;
+  width: 19em;
+  height: 19em;
+  border: 0.5em solid white;
+  border-radius: 50%;
+}
+
+#timer {
+  position: relative;
+  top: 1em;
+  font-size: 6em;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input {
+  margin: 0 0.5em;
+  width: 3em;
+  background: black;
+  color: white;
+  padding: 0.25em;
+  font-size: 2em;
+  text-align: center;
+  border: none;
+}
+
+button {
+  display: block;
+  margin: 0 1em;
+  width: 7.2em;
+  height: 3em;
+}
+
+#reset {
+  background: #9b0000;
+  color: white;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+#reset:hover {
+  opacity: 0.8;
+}
+
+#settings {
+  float: right;
+}
+
+/* small devices */
+@media screen and (max-width: 20em) {
+  input {
+    width: 90%;
+  }
+
+  button {
+    width: 98%;
+  }
+
+  #clockBody,
+#settings {
+    float: none;
+  }
+
+  #pomodoro {
+    margin: 2em 0;
+    width: 100%;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

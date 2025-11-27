@@ -1,0 +1,28 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body,html {
+	background: #141415;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding:0;
+}
+.knob, .bg{
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.knob {
+	z-index: 1;
+	-webkit-animation: turn 3s linear infinite;
+}
+
+@-webkit-keyframes turn {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}

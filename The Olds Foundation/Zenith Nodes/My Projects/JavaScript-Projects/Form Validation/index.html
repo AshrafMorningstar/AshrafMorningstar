@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss css file link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- this is for title icon -->
+     <link rel="icon" href="Assets/form-icon.png">
+
+    <!-- fontAwesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>From Validation: V.2</title>
+  </head>
+  <body>
+    <div class="container min-h-screen flex justify-center items-center">
+      <!-- <i class="fa-solid fa-paper-plane"></i> -->
+      <div
+        class="contain w-[95%] sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] rounded-2xl relative"
+      >
+        <header>
+          <h1
+            class="text-center text-[#79F1A4] font-bold text-2xl sm:text-3xl mt-14"
+          >
+            Sign Up
+          </h1>
+        </header>
+
+        <main class="px-4 sm:px-6">
+          <form action="#" class="space-y-4">
+            <!-- Name input -->
+            <div class="inputTag flex flex-col space-y-2 mb-">
+              <label class="text-lg sm:text-xl text-black" for="name"
+                >Name *</label
+              >
+              <input
+                class="py-3 border-2 w-[100%] border-gray-300 rounded-xl focus:outline-none focus:border-[#79F1A4] text-base sm:text-lg text-black transition-all"
+                type="text"
+                id="name"
+                name="name"
+                onblur="validateName()"
+                placeholder="Your Name"
+              />
+              <span id="nameError"></span>
+            </div>
+
+            <!-- Phone input -->
+            <div class="inputTag flex flex-col space-y-2 mb-">
+              <label class="text-lg sm:text-xl text-black" for="phone"
+                >Phone No. *</label
+              >
+              <input
+                class="px-4 py-3 w-[100%] border-2 border-gray-300 rounded-xl focus:outline-none focus:border-[#79F1A4] text-base sm:text-lg text-black transition-all"
+                type="tel"
+                id="phone"
+                name="phone"
+                onblur="validatePhone()"
+                oninput="restrictPhoneInput(this)"
+                placeholder="Your Phone No."
+              />
+              <span id="phoneError"></span>
+            </div>
+
+            <!-- Email input -->
+            <div class="inputTag flex flex-col space-y-2 mb-">
+              <label class="text-lg sm:text-xl text-black" for="email"
+                >Email *</label
+              >
+              <input
+                class="px-4 py-3 w-[100%] border-2 border-gray-300 rounded-xl focus:outline-none focus:border-[#79F1A4] text-base sm:text-lg text-black transition-all"
+                type="email"
+                id="email"
+                name="email"
+                onblur="validateEmail()"
+                placeholder="sample123@gmail.com"
+              />
+              <span id="emailError"></span>
+            </div>
+            
+
+             <!-- Password input  -->
+            <div class="inputTag flex flex-col relative w-full max-w-md mx-auto">
+              <label class="text-lg sm:text-xl text-black" for="password"
+                >Password *</label>
+
+                  <input
+                  class="px-4 py-4 border-2 w-full border-gray-300 rounded-xl focus:outline-none focus:border-[#79F1A4] text-base sm:text-lg text-black transition-all"
+
+                  type="password"
+                  id="password"
+                  name="password"
+                  onblur="validatePassword()"
+                  placeholder="At Least 8 Character"
+                />
+                <img id="eyeIcon"
+                class="w-6 cursor-pointer absolute right-4 top-[33px] sm:top-[39px]"
+                src="Assets/eye-close.png" />
+
+            
+              <span id="passwordError"></span>
+            </div>
+
+            <!-- Submit button -->
+            <div class="inputTag">
+              <input
+                id="submitBtn"
+                class="submit w-full bg-[#1769AC] hover:bg-[#000000] text-xl sm:text-2xl text-white font-bold rounded-xl transition-all duration-300 cursor-pointer"
+                type="submit"
+                value="Create Account"
+              />
+            </div>
+          </form>
+        </main>
+
+        <footer >
+          <p class="text-center mt-10 text-sm sm:text-base text-black">
+            Already Have An Account?
+            <span
+              class="text-[#1A6DAC] hover:text-[#1557a8] font-bold cursor-pointer transition-colors"
+              >Login</span
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- this is for popUp  -->
+    <div class="popUp" id="popUp">
+      <img src="Assets/404-tick.png" alt="popup image" />
+      <h1 class="popup-heading">SuccessFull !</h1>
+      <p class="popup-contain">
+        Congratulations! Your Account Is Created And Data Saved To localStorage
+      </p>
+      <button class="closeBtn" onclick="closePopUp()" type="button">OK</button>
+    </div>
+
+    <!-- Script link  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

@@ -1,0 +1,221 @@
+/*@keyframes checkboxAnimBack {
+  0% {
+    border-radius: 6.25rem;
+    border-top-right-radius: 6.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    width: 1rem;
+    height: 2rem;
+  }
+  
+  50% {
+    border-radius: 6.25rem;
+    
+    width: 2rem;
+    height: 1rem;
+    
+    margin-right: 0;
+  }
+  
+  100% {
+    border-top-left-radius: 6.25rem;
+    border-bottom-left-radius: 6.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    width: 1rem;
+    height: 2rem;
+    
+    margin-right: 1rem;
+  }
+}
+
+@keyframes checkboxAnim {
+  0% {
+    border-top-left-radius: 6.25rem;
+    border-bottom-left-radius: 6.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    width: 1rem;
+    height: 2rem;
+  }
+  
+  50% {
+    border-radius: 6.25rem;
+    
+    width: 2rem;
+    height: 1rem;
+    
+    margin-right: 0;
+  }
+  
+  100% {
+    border-radius: 6.25rem;
+    border-top-right-radius: 6.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    width: 1rem;
+    height: 2rem;
+    
+    margin-right: -1rem;
+  }
+}*/
+
+
+@keyframes checkboxAnim {
+  0% {
+    transform: rotate(0deg);
+    margin-right: 1rem;
+  }
+  
+  100% {
+    transform: rotate(180deg);
+    margin-right: -1rem;
+  }
+}
+
+@keyframes checkboxAnimBack {
+  0% {
+    transform: rotate(180deg);
+    margin-right: -1rem;
+  }
+  
+  100% {
+    transform: rotate(0deg);
+    margin-right: 1rem;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainBody {
+  height: 100vh;
+  width: 100%;
+  
+  transition: .4s;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.toggleContainer {
+  width: fit-content;
+  height: fit-content;
+  min-width: 6rem;
+  min-height: 6rem;
+  
+  transform: scale(2);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#checkbox {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100px;
+  
+  -webkit-appearance: none;
+  appearance: none;
+  
+  background: #000322;
+  outline: none;
+  border-radius: 30px;
+  
+  cursor: pointer;
+  
+  transition: .3s;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#checkbox:hover {
+  box-shadow: 0px 4px 26px 6px rgba(0, 0, 0, 0.25);
+  margin-bottom: .5rem;
+}
+
+#checkbox::before {
+  content: "";
+  position: relative;
+  
+  width: 2.5rem;
+  height: 2.5rem;
+  
+  background: #f6f6f6;
+  border-radius: 100px;
+  transition: .3s;
+}
+
+#checkbox::after {
+  content: "";
+  position: absolute;
+  background: #000322;
+  
+  width: 1rem;
+  height: 2rem;
+  
+  margin-right: 1rem;
+  
+  transform: rotate(0deg);
+  
+  
+  border-top-left-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  border-right: 0;
+  
+  transition: .4s border-radius;
+  animation: checkboxAnimBack .4s;
+}
+
+
+
+
+#checkbox:checked::before {
+  background: #000322;
+}
+
+#checkbox:checked::after {
+  animation: checkboxAnim .4s;
+  
+  content: "";
+  position: absolute;
+  
+  transform: rotate(-180deg);
+  
+  width: 1rem;
+  height: 2rem;
+  
+  margin-right: -1rem;
+}
+
+#checkbox:checked, #checkbox:checked::after {
+  background: #f6f6f6;
+}
+
+
+
+.darkBg {
+ background: #000322; 
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

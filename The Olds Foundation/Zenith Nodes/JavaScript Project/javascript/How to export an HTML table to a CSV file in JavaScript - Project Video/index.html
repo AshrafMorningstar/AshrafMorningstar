@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - How to export an HTML table to a CSV  file in JavaScript - Project Video</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<table id="dataTable" class="table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Steven Soto</td>
+                <td>2,462</td>
+                <td>Blue</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alfred, Hines</td>
+                <td>1,930</td>
+                <td>Blue</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jeff, "The Champion" Foster</td>
+                <td>1,656</td>
+                <td>Red</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="btnExportToCsv" type="button" class="button">Export to CSV</button>
+    <script>
+        const dataTable = document.getElementById("dataTable");
+        const btnExportToCsv = document.getElementById("btnExportToCsv");
+
+        btnExportToCsv.addEventListener("click", () => {
+            const exporter = new TableCSVExporter(dataTable);
+            const csvOutput = exporter.convertToCSV();
+            const csvBlob = new Blob([csvOutput], { type: "text/csv" });
+            const blobUrl = URL.createObjectURL(csvBlob);
+            const anchorElement = document.createElement("a");
+
+            anchorElement.href = blobUrl;
+            anchorElement.download = "table-export.csv";
+            anchorElement.click();
+
+            setTimeout(() => {
+                URL.revokeObjectURL(blobUrl);
+            }, 500);
+        });
+    </script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

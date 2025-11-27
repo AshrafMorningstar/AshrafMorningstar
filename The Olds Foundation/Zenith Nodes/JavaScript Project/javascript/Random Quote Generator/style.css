@@ -1,0 +1,139 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  width: auto;
+  max-width: 700px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+h1 {
+  margin-top: 5px;
+  font-weight: 900;
+}
+
+.large {
+  font-size: 1.3em;
+}
+
+p,
+button {
+  font-weight: 400 !important;
+}
+
+img {
+  height: 175px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+}
+
+#hitler {
+  -ms-transform: rotate(15deg);
+  /* IE 9 */
+  -webkit-transform: rotate(15deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(15deg);
+}
+
+#trump {
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  height:178px;
+}
+
+.about,
+blockquote {
+  font-family: 'Lora', serif;
+}
+
+.about {
+  margin-top: -10px;
+  max-width: 400px;
+}
+
+.quote {
+  padding-top: 12px;
+  max-width: 500px;
+}
+
+.author {
+  display: none;
+}
+
+cite:hover .guess,
+.hover_effect {
+  display: none;
+}
+
+cite:hover .author,
+.hover_effect {
+  display: inline;
+}
+
+blockquote {
+  padding-top: 2px;
+  max-width: 600px;
+  border: 0;
+  box-shadow: -10px 10px 5px #888888;
+}
+
+.btn {
+  border-radius: 0;
+  background-color: white;
+  border: 2px solid;
+  outline: none !important;
+}
+
+button {
+  font-weight: 700 !important;
+}
+
+.quote,
+.about,
+blockquote {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#click {
+  margin-top: 15px;
+  text-decoration: none;
+  background-color: #616161;
+  color: white;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+@media (max-width:767px) {
+  body {
+    max-width: 465px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    max-width: 350px;
+  }
+  blockquote {
+    max-width: 350px;
+  }
+  .large {
+    font-size: 1.1em;
+  }
+  #or {
+    font-size: .9em;
+  }
+  img,
+  #trump{
+  height: 140px;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

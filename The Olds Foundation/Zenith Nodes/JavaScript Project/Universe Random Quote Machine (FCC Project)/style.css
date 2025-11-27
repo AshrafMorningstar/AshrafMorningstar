@@ -1,0 +1,119 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@font-face{
+  font-family:'crewniverse_font';
+  src: url( 'https://raw.githubusercontent.com/ameliavoncat/su-quote-generator/master/crewniverse_font.ttf');
+}
+
+body {
+  color:orange;
+  font-family:'crewniverse_font';
+  background-image: url('https://raw.githubusercontent.com/ameliavoncat/su-quote-generator/portraits/R8POM2a%5B1%5D.png');
+  background-size:100%;
+  background-repeat:no-repeat;
+ 
+  
+}
+.red-text{
+  margin-top:.2em;
+  color:#d24111;
+  
+}
+#quote-body{
+  font-size:1.1em;
+}
+#quote-attribution{
+  font-size:1.3em;
+}
+.title-box{
+  text-align:center;
+  margin-top:2.2%;
+}
+#quote-box{
+  border:solid;
+  padding-top:1em;
+  margin-top:1.6%;
+  margin-left:20%;
+  margin-right:20%;
+  text-align:center;
+  
+}
+.default-style{
+  color:#d24111;
+  border-color:#d24111;
+  background-color:#ffe79e;
+}
+
+#character-image{
+  border-radius:100%;
+  text-align:center;
+  width:35%;
+}
+.button-bar{
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+}
+
+.Amethyst{
+  background-color:#B090B1;
+  border-color:#766177;
+  color:#553A56;
+}
+.Connie{
+  background-color:#C5FFE9;
+  border-color:#89B2A3;
+  color:#6D8E82;
+}
+.Garnet{
+  background-color:#B94C5C;
+    border-color:#511921;
+    color:#3E0009;
+}
+.Greg{
+  background-color:#FABD5A;
+  border-color:#C89748;
+  color:#3C2A2A;
+}
+.Lapis{
+  background-color:#8FC2F1;
+  border-color:#729BC0;
+  color:#516F89;
+}
+.Pearl{
+  background-color:#F2DCDD;
+    border-color:#E1ADB0;
+    color:#E1ADB0;
+}
+.Peridot{
+  background-color:#A7EEA7;
+    border-color:#85BE85;
+    color:#568F56;
+}
+.Rose{
+  background-color:#FCC9C3;
+    border-color:#E2B4AF;
+    color:#DE5A61;
+}
+.Ruby{
+  background-color:#FF4343;
+    border-color:#A5192E;
+    color:#56000C;
+}
+.Sapphire{
+  background-color:#A3DFF7;
+    border-color:#82B2C5;
+    color:#066589;
+}
+.Steven{
+  background-color:#E15D8A;
+    border-color:#934B63;
+    color:#873752;
+}
+.Stevonnie{
+  background-color:#C5FFE9;
+    border-color:#6f9a94;
+    color:#326F67;
+}

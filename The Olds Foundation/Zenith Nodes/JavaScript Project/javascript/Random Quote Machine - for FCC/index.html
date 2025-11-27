@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Random Quote Machine - for FCC</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+generate a new random quote
+generate a random color for background
+enable sharing buttons for twitter (half enabled) and tumbler
+-->
+<div class="container quoteFrame">
+    <div class="quote">
+    <p><i class="fa fa-quote-left"></i>
+			<span id="quoteText">Problems worthy of attack prove their worth by fighting back.</span></p>
+			<footer class="blockquote-footer"><span id="quoteAuthor">Someone Famous</span></footer>
+    </div>
+    <div class="buttons">
+			<div class="btn btn-primary">
+				<a id="shareTwitter" href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+			<div class="btn btn-primary">
+				<a id="shareTumblr" href="#"><i class="fa fa-tumblr"></i></a>
+			</div>
+      <a id="getNewQuote" class="btn btn-primary" style="float:right;">New quote</a>
+    </div>  
+</div>
+<div class="footer text-center">
+	<p class="smaller">by <a href="https://codepen.io/ashraf_morningstar">aram</a></p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

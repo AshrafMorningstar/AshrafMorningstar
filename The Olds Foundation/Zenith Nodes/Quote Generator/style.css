@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: "Playfair Display", serif;
+}
+
+body{
+  background-color: #792828;
+}
+
+/* main section start */
+
+.quote-box{
+  background-color:#a2a2a2;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.quote-box .title{
+  font-size: 35px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quote-box .title::after{
+  content:'';
+  width: 150px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: rgb(45, 53, 59);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-box blockquote{
+  font-size: 23px;
+  font-weight: 600;
+  min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+  content: '"';
+}
+
+.quote-box span{
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.quote-box span::before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: rgb(27, 47, 68);
+  position: absolute;
+  top: 50%;
+  left: -38px;
+
+}
+
+
+.quote-box div{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-box button{
+  background: rgb(143, 143, 143);
+  color: #000000;
+  border-radius: 25px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+}
+.quote-box button:hover{
+  background: rgb(92, 97, 102);
+}
+
+.quote-box button .twiter-icon{
+  width: 20px;
+  margin-right: 10px;
+
+}
+.quote-box button:nth-child(2){
+  background: transparent;
+  color: #333;
+}
+
+
+/* Responsive styles for tablet */
+@media (max-width: 768px) {
+  .quote-box {
+    width: 90%;
+    padding: 30px;
+  }
+  .heading h1 {
+    font-size: 40px;
+  }
+  .quote-box .title {
+    font-size: 30px;
+  }
+  .quote-box blockquote {
+    font-size: 20px;
+  }
+  .quote-box button {
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  .quote-box {
+    width: 95%;
+    padding: 20px;
+  }
+  .heading h1 {
+    font-size: 35px;
+  }
+  .quote-box .title {
+    font-size: 25px;
+  }
+  .quote-box blockquote {
+    font-size: 18px;
+  }
+  .quote-box button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

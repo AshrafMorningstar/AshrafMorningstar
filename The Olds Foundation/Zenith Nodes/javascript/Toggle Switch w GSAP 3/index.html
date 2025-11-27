@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Toggle Switch w GSAP 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" xml:space="preserve">
+<defs>
+   <filter id="dropShadow" width="125%" height="125%">
+      <feOffset result="offOut" in="SourceGraphic" dx="0" dy="-2" />
+      <feGaussianBlur in="offOut" stdDeviation="2" result="blur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.6" intercept="0" />
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" operator="over" />
+    </filter>
+</defs>  
+<path fill="#FEFDFF" d="M348,340h75c22.091,0,40-17.909,40-40v0c0-22.091-17.909-40-40-40h-75c-22.091,0-40,17.909-40,40v0C308,322.091,325.909,340,348,340z"/>
+<g id="toggleContainer">  
+  <circle id="toggleCircle" fill="#F3E5D3" cx="348.5" cy="300" r="34"/>  
+		<line id="shortStroke" fill="#6D00DD" stroke="#FEFDFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="338.5" y1="290" x2="358.5" y2="310"/>
+		<line id="longStroke" fill="#6D00DD" stroke="#FEFDFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="328" y1="320" x2="358.5" y2="290"/>
+</g>  
+</svg>
+<!-- partial -->
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

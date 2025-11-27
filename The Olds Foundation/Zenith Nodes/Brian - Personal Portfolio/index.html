@@ -1,0 +1,465 @@
+<!--
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Brian - Personal Portfolio</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.010/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script|Roboto'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+For best view switch to full view.
+
+NOTE: For some reason the client section is not loading but does work on the live demo on my website and download version
+
+This is a portfolio I decided to create for people to show off their work. This portfolio includes a working ajax form.  For some reason, I can't get font awesome to show up and will try to get that fix.  As of right now, the ajax will not work in codepen.
+
+Also if feel free to rename it to whatever you want.
+
+To download this portfolio for free or pay what you want by making a small donation using paypal please visit my website,
+http://www.bricho.com/reviews/brian.html
+
+Features
+-working ajax form
+-sass files when downloaded on the website
+-takes advantage of sass variable for easier customization
+-Readme files and commented for easy customization
+
+Sources
+-Scroll Magic
+-Magnific-Popup
+-Owl Carousel 2
+-Font Awesome
+-Flex Box Grid
+
+Images
+-Unsplash - pics will be replace with image holder if download on site but can easily be found on unsplash.com
+
+License
+-Footer with credit must remain on.  If you really want the footer off then please contact me on my website about making a small donation and I will allow the footer to come off.  If you are taking it for free then please keep the footer with credit on.
+
+For best view switch to full view.
+
+-->
+
+<body>
+
+<!--------------------------------------PRELOAD PAGE-------------------------------------->
+<!--
+<div id="preload-overlay">
+    <div class="loader-frame">
+        <div class="loader1" id="loader1"></div>
+        <div class="loader2" id="loader2"></div>
+    </div>
+</div>
+   -->
+<!--------------------------------------HEADER-------------------------------------->
+
+  <div class="link-header">
+    <a href="http://www.bricho.com/reviews/brian.html" target="_blank">To download the full website for free or paid what you want (donation) without this top link please visit my site.</a>
+  </div>
+
+<header id="main-header">
+    <div class="header-wrapper">
+        <a class="logo" href="#">Brian</a>
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <!--Main nav to navigate to different parts of the page-->
+                <li><a id="hero-link" href="#hero">Home</a></li>
+                <li><a id="about-link" href="#about">About</a></li>
+                <li><a id="services-link" href="#services">Services</a></li>
+                <li><a id="portfolio-link" href="#portfolio">Portfolio</a></li>
+                <li><a id="client-link" href="#client">Clients</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--------------------------------------HERO IMAGE-------------------------------------->
+
+<<section id="hero">
+    <div id="particles-js">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="hero-content">
+                    <img src="http://www.bricho.com/demo/brian/with-particles/img/profile-pic2.jpeg">
+                    <h1>Hi! I'm Brian</h1>
+                    <h2 id="hero-text-animation">Web Designer/Web Developer</h2>
+                    <button class="download"><a download href="downloads/example.txt">Download CV</a></button><!--To add your file simply replace example.txt with whatever file you want-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------ABOUT SECTION-------------------------------------->
+
+<section id="about">
+    <div class="container">
+        <div class="row left-xs left-sm left-md left-lg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-text">
+                    <h2>Hi, I'm <span class="accent-text">Brian</span></h2>
+                    <p>I am Brian fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <ul class="about-social">
+                        <!--Social icons for the about section-->
+                        <!--These icons are font-awesome icons and more can be looked up at https://fontawesome.com/icons?d=gallery-->
+                        <li><a href="http://www.google.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <!--Simply replace the google link with your social media link-->
+                        <li><a href="http://www.google.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="http://www.google.com"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="about-resume">
+                    <div class="skills">
+                        <h2>My Skills</h2>
+
+                        <div class="skill-progress-container">
+                            <p>Web Development</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent development"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-container">
+                            <p>Web Design</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent design"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-container">
+                            <p>Marketing</p>
+                            <div class="skill-bar">
+                                <div class="bar-percent marketing"><div class="inner-percent"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education">
+                        <h2>My Education</h2>
+                        <div class="eduction-block">
+                            <h4>Iowa State University</h4>
+                            <p>Bachelor of Engineering</p>
+                        </div>
+                        <div class="eduction-block">
+                            <h4>University of Design</h4>
+                            <p>Bachelor of Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------SERVICES SECTION-------------------------------------->
+
+<section id="services">
+    <div class="container">
+        <div class="section-title">
+            <h1>My <span class="accent-text">Services</span></h1>
+        </div>
+
+        <div class="row center-xs center-sm center-md center-lg trigger"><!--Row 1-->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon fas fa-laptop"></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon fas fa-mobile-alt"></i>
+                    <h3>Fully Responsive</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon far fa-file-alt"></i>
+                    <h3>Well Documented</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon far fa-copy"></i>
+                    <h3>Clean Code</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
+                <div class="service-block">
+                    <i class="icon fas fa-cogs"></i>
+                    <h3>Custom Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--------------------------------------PORTFOLIO SECTION-------------------------------------->
+
+<section id="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h1>My <span class="accent-text">Portfolio</span></h1>
+        </div>
+
+        <div id="filter-btn" class="button-group">
+            <ul>
+                <!--Buttons for the image filter-->
+                <!--data-filter="What ever you want your image to be filter by"-->
+                <li><button class="button is-checked" data-filter="*">All</button></li>
+                <li><button class="button" data-filter=".graph">Graph</button></li>
+                <li><button class="button" data-filter=".design">Design</button></li>
+                <li><button class="button" data-filter=".brand">Brand</button></li>
+                <!--End of image filter buttonimg/ports-->
+            </ul>
+        </div>
+
+        <div class="img-grid">
+            <div class="img-container graph" data-category="graph">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container brand" data-category="brand">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container design" data-category="design">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container graph" data-category="graph">
+                <img src="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="http://www.bricho.com/demo/brian/with-particles/img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--To add more images simply copy and paste the block of code below not including the comments for each new image.
+            If adding more images and you decide that you want a max-height and a overlay of auto meaning a scroll bar will display once you go past the max
+            height simply comment out the two blocks of code in styles.scss in the PORTFOLIO section in .img-grid.
+
+            <div class="img-container graph" data-category="graph">
+                <img src="img/portfolio-img.jpeg">
+                <div class="img-overlay popup-gallery" href="img/portfolio-img.jpeg">
+                    <div class="img-overlay-text">
+                        <p>Category</p>
+                        <h3>Project Title</h3>
+                    </div>
+                </div>
+            </div>
+
+            End of bock of code for copying and pasting-->
+
+        </div>
+
+    </div>
+</section>
+
+<!--------------------------------------CLIENT SECTION-------------------------------------->
+
+<section id="client">
+    <div class="container">
+        <div class="section-title">
+            <h1>My Clients</h1>
+        </div>
+
+        <div class="loop owl-carousel owl-theme">
+            <!--To add more testimonial simply and copy and paste another testimonial what is the block of code inbetween these comments-->
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+            <!--End of testimonial-->
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+            <div class="testimonial-block">
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy, when an unknown printer took a galley of type a type specimen book.</p>
+                <p>Brian Chodur | Evato Author</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------CONTACT SECTION-------------------------------------->
+
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h1>Contact <span class="accent-text">Me</span></h1>
+        </div>
+
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="contact-info">
+
+                    <div class="contact-block">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="contact-text">
+                            <p>Call</p>
+                            <p>+1-641-1234</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-block">
+                        <i class="far fa-envelope"></i>
+                        <div class="contact-text">
+                            <p>Email</p>
+                            <p>myEmail@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-block">
+                        <i class="fas fa-location-arrow"></i>
+                        <div class="contact-text">
+                            <p>Address</p>
+                            <p>Osage, IA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <form id="contact-form" onsubmit="submitForm(); return false;">
+                    <div class="field">
+                        Name<br>
+                        <input type="text" id="name" value="Mickey" required>
+                    </div>
+                    <div class="field">
+                        Email<br>
+                        <input type="text" id="email" value="Mickey@gmail.com" required>
+                    </div>
+                    <div class="field">
+                        Subject<br>
+                        <input type="text" id="subject" value="Your subject" required>
+                    </div>
+                    <div class="field">
+                        Message<br>
+                        <textarea id="message" rows="10" cols="75" required>The cat was playing in the garden.</textarea>
+                    </div>
+                    <div class="field">
+                        <input type="submit" id="contact-submit" value="Submit Form"><span id="status"></span>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------FOOTER SECTION-------------------------------------->
+
+<footer>
+    <p>This This This This This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

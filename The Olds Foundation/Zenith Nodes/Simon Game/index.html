@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game - Welcome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-center p-4">
+    <div id="content">
+      <h1>Welcome to Simon Game!</h1>
+      <p>Please enter your name to begin:</p>
+
+      <input
+        type="text"
+        id="playerName"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+      function saveNameAndStartGame() {
+        const name = document.getElementById("playerName").value;
+        if (name.trim() !== "") {
+          localStorage.setItem("playerName", name);
+          window.location.href = "game.html";
+        } else {
+          alert("Please enter your name!");
+        }
+      }
+    </script>
+
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

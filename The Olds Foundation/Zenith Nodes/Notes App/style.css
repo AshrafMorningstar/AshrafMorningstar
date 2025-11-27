@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+}
+
+.container h1{
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.container h1 img{
+  width: 60px;
+}
+
+.container button img{
+  width: 25px;
+  margin-right: 8px;
+}
+
+.container button {
+display: flex;
+align-items: center;
+color: #fff;
+outline: none;
+border: none;
+border-radius: 20px;
+padding: 15px 25px;
+margin: 30px 0 20px;
+font-size: 20px;
+font-weight: 700;
+cursor:pointer;
+background: linear-gradient(#9418fd, #571094);
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  max-width:500px;
+  min-height: 150px;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-box img{
+  position: absolute;
+  width: 25px;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+/* Media Queries for Tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 5%;
+    padding-top: 3%;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .container h1 img {
+    width: 50px;
+  }
+
+  .container button {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  .container button img {
+    width: 20px;
+  }
+
+  .input-box {
+    font-size: 18px;
+    max-width: 400px;
+  }
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-left: 3%;
+    padding-top: 2%;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container h1 img {
+    width: 40px;
+  }
+
+  .container button {
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 15px;
+  }
+
+  .container button img {
+    width: 18px;
+  }
+
+  .input-box {
+    font-size: 16px;
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

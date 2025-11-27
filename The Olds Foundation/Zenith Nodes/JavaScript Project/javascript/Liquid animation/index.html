@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Michal</title>
+  <script>
+function dist(...args) {
+    let xpart, ypart;
+    if (args.length == 2) {
+      if (typeof args[0] == "object" && typeof args[1] == "object") {
+        xpart = args[1].x - args[0].x;
+        ypart = args[1].y - args[0].y;
+      } else if (typeof args[0] == "number" && typeof args[1] == "number") {
+        xpart = args[0];
+        ypart = args[1];
+      } else {
+        console.error("incorrect types of parameters");
+      }
+    } else if (args.length == 4) {
+      if (
+        typeof args[0] == "number" &&
+        typeof args[1] == "number" &&
+        typeof args[2] == "number" &&
+        typeof args[3] == "number"
+      ) {
+        xpart = args[2] - args[0];
+        ypart = args[3] - args[1];
+      } else {
+        console.error("incorrect types of parameters");
+      }
+    } else {
+      console.error("invalid number of parameters");
+    }
+    return Math.sqrt(Math.pow(xpart, 2) + Math.pow(ypart, 2));
+  }
+</script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<canvas id="C"></canvas>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

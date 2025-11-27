@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(229, 236, 105);
+}
+body{
+    overflow-x: hidden;
+}
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  /* background-color: rgb(5, 12, 67); */
+  border-top:5px solid black ;
+}
+#link ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 20px;
+}
+ul li {
+  list-style: none;
+}
+
+/* #page1 {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page1 #box {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+}
+#page1 h1 {
+  text-align: center;
+  margin:70px;
+  padding: 10px;
+  font-size: 80px;
+  background-color: cadetblue;
+  color: blanchedalmond;
+  border-radius: 20px;
+} */
+
+/* #page2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 106, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page2 #box {
+  width: 500px;
+  height: 300px;
+  background-color: rgb(173, 176, 37);
+  border-radius: 30px;
+} */
+/* #page2 h1 {
+  text-align: center;
+  margin: 40px;
+  padding: 10px;
+  font-size: 50px;
+  background-color: rgb(61, 81, 5);
+  border-radius: 20px;
+}
+#page2 h2 {
+  text-align: center;
+  margin: 40px;
+  padding: 10px;
+  font-size: 50px;
+  background-color: rgb(179, 224, 56);
+  border-radius: 20px;
+  white-space: nowrap;
+} */
+
+/* #page3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 13, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page3 #box {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(241, 141, 0);
+} */
+
+#page1{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 203, 144);
+}
+#page2{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(239, 180, 91);
+  padding: 5vw 0;
+}
+#page2 h1{
+  font-size: 40vw;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+#page3{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(103, 64, 5);
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

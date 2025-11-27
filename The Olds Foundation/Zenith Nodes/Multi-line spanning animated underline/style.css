@@ -1,0 +1,37 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+body {
+  background-color: #ffb7b0;
+  min-height: 70vh;
+  padding: 40vh 30vw;
+  color: hsl(198, 1%, 29%);
+  font-family: 'Gochi Hand', cursive;
+  text-align: left;
+  font-size: 130%;  
+}
+
+h2 {
+  line-height: 1.5;
+  display: inline;
+  background-image: linear-gradient(
+        transparent 50%,
+        #e1fffe 50%,
+        #b0f8ff 85%,
+        transparent 85%,
+        transparent 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+}
+
+@keyframes animatedBackground {
+    to {
+        background-size: 100% 100%;
+    }
+}

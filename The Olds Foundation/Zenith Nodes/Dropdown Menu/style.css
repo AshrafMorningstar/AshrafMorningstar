@@ -1,0 +1,144 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+    background: #ebf0f5;
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    word-wrap: break-word !important;
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    color: #fff;
+}
+#container {
+    margin: 0 auto;
+}
+nav {
+    margin: 50px 0;
+    background-color: #0f131f;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    background-color: #0f131f;
+}
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #5f5c5c;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+h1 {
+    width: 670px;
+    color: black;
+    font-size: 1.4rem;
+}
+li > a:after {
+    content: " +";
+}
+li > a:only-child:after {
+    content: "";
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+    background: #ebf0f5;
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    word-wrap: break-word !important;
+    font-family: "Open Sans", sans-serif;
+}
+#container {
+    margin: 0 auto;
+}
+nav {
+    margin: 50px 0;
+    background-color: #0f131f;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+    display: inline-block;
+    background-color: #0f131f;
+}
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #5f5c5c;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+nav ul li:hover > ul {
+    display: inherit;
+}
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+h1 {
+    width: 670px;
+    color: black;
+    font-size: 1.4rem;
+}
+li > a:after {
+    content: " +";
+}
+li > a:only-child:after {
+    content: "";
+}

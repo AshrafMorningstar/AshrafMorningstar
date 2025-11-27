@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed&display=swap" rel="stylesheet">
+         
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+         
+    <!-- line for swiper js -->
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--boxicone -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+ 
+      <!-- insert logo  -->
+     <link rel="icon" href="./Assets/logo.png">
+
+    <!-- style sheet insert  -->
+    <link rel="Stylesheet" href="style.css">
+    <title>Vikram Portfilio</title>
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- tailwind  -->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  Home page Animation link -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+<body>
+
+  
+<!-- ========== Start Home Page Section ========== -->
+<!-- ========== Start header and Navbar Section ========== -->
+   <header>
+    <nav class="Home_nav  customContainer h-[70px] ">
+        <div class="right flex items-center "><img src="./Assets/vikram logo.png" alt="Name Logo image" class="logoName"></div>
+        <div class="left">
+        <ul class="navLinks">
+            <div class="navContainer">
+            <li><a class="home"  href="/"> Home </a></li>
+            <li><a class="about" href="#About_Page"> About </a></li>
+            <li><a class="skill" href="#Skill_Page"> Skills </a></li>
+            <li><a class="education" href="#Adventure_Page"> Adventure </a></li>
+            <li><a class="contact" href="#Project_Page"> Projects </a> </a></li>
+            <li><a class="contact" href="#Contact_page"> Contact </a> </a></li>
+            <div class="close" onclick="toggleMenu()" ><i class="fa-solid fa-xmark"></i></div>
+    </div>
+        </ul>
+            </div>
+                  <div class="menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>   
+        </nav>  
+    </header>
+    <!-- ========== End header and Navbar Section ========== -->
+
+     <!-- ========== Start main Section ========== -->
+           <main id="contact">
+            <div class="firstSection customContainer">
+            <div class="leftSection" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <!-- ========== Start introduction part Section ========== -->
+                <div class="selfIntro">
+                        <div class="hello">Hi I'm,</div>
+                        <div class="name">Vikram Suraj Pal</div>
+                        <h3 class="detail"> </h3>
+                        <div class="moreabout">Hello, I'm dedicated and enthusiastic web developer with a solid foundation in HTML, CSS, JavaScript, and React. I am eager to apply my skills in real-world projects, learn new technologies, and grow within a dynamic development team. I am update my self day by day...</div>
+                 </div>
+<!-- ========== End introduction part Section ========== -->
+ 
+<!-- ========== button div  Section ========== -->
+                <div class="buttons">
+                    <button><a href="./Assets/VikramPal (CV).pdf" target="_blank"> Download CV </a></button>
+                    <button><a href="#Contact_page"> Contact Me </a> </button>
+                </div>
+<!-- =========button div  Section ========== -->
+
+<!-- ========== Start icone  Section ========== -->
+                <div class="homesocial">
+                    <a href="https://github.com/AshrafMorningstar" target="_blank"><i class="fa-brands fa-github icones"></i></a>
+                    <a href="Ashraf Morningstar"  target="_blank"><i class="fa-brands fa-linkedin icones"></i></a>
+                </div>
+<!-- ========== End icone  Section ========== -->
+                </div>
+            <div class="rightSection" data-aos="zoom-out" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+              <img src="./Assets/profile.webp" alt="employe image">
+            </div> 
+                </main>
+             <!-- ========== End  Main Section ========== -->
+<!-- ========== End Home Page Section ========== -->
+
+
+
+<!-- ========== Start About Me Section ========== -->
+    <section id="About_Page" class="aboutsection customContainer">
+      <!-- heading of the page  -->
+      <div class="heading">
+        <h2>Get To Know More</h2>
+        <h1><span>About</span> Me</h1>
+      </div>
+
+      <!-- Bid Container -->
+      <div class="aboutcontainer grid  grid-cols-1  md:grid-cols-2 items-center">
+        <!-- left employe img -->
+        <div
+          class="Imgcontainer flex justify-center" data-aos="zoom-in-right" data-aos-duration="2000">
+          <img src="./Assets/vikram.png" />
+        </div>
+
+        <!-- right section -->
+        <div class="rightsection">
+          <div class="intro grid  grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- this  experience div section  -->
+            <div
+              class="experience_and_education"
+              data-aos="fade-down-right"
+              data-aos-duration="2500"
+            >
+              <div class="content flex flex-col items-center">
+                <span><i class="fa-solid fa-medal"></i></span>
+                <span>Experience</span>
+                <span>1+ Years</span>
+                <span>Full stack Development</span>
+              </div>
+            </div>
+
+            <!-- this education div section  -->
+            <div
+              class="experience_and_education"
+              data-aos="fade-down-left"
+              data-aos-duration="2500"
+            >
+              <div class="content flex flex-col items-center">
+                <span><i class="fa-solid fa-user-graduate"></i></span>
+                <span>Education</span>
+                <span>MSC-IT</span>
+                <span>DTSS College</span>
+              </div>
+            </div>
+          </div>
+          <!-- this is More detail div -->
+          <div class="more" data-aos="flip-down" data-aos-duration="2500">
+            <span class="emojicontainer"> <span>👋</span> </span>
+            Hi there ! I'm Full stack Developer passionate about crafting
+            visually appealing and user-friendly websites. with a keen eye for
+            design and exoertise in HTML, CSS, and JavaScript. I sepcialize in
+            creating seamless digital experiences that captivate and engage
+            users. let's collaborate to bring your web projects to life!
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ========== End About Me Section ========== -->
+
+
+<!-- ========== Start Skill Page  Section ========== -->
+    <section id="Skill_Page" class="skill_container customContainer">
+      <h1 class="skill_title">My Skills</h1>
+
+      <div class="skill_box">
+
+        <!-- this is for UI design -->
+        <div class="skill_content">
+          <h3>UI/UX DESIGN</h3>
+          <div class="content">
+            <span class="figma"><i class="bx bxl-figma" data-aos="flip-up" data-aos-duration="2000"></i>Figma</span>
+          </div>
+        </div>
+
+        <!-- this is for front-end -->
+        <div class="skill_content">
+          <h3>Front-End</h3>
+            <div class="content">
+              <span class="css"><i class="bx bxl-css3" data-aos="flip-down" data-aos-duration="2000"></i>CSS</span>
+              <span class="js"><i class="bx bxl-javascript" data-aos="flip-down" data-aos-duration="2000"></i>JavaScript</spa>
+              <span class="html"><i class="bx bxl-html5" data-aos="flip-down" data-aos-duration="2000"></i>HTML</span>
+              <span class="tail"><i class="bx bxl-tailwind-css" data-aos="flip-down" data-aos-duration="2000"></i>TailWind</spa>
+              <span class="react"><i class="bx bxl-react" data-aos="flip-down" data-aos-duration="2000"></i>React</span>
+              <span class="boot"><i class="bx bxl-bootstrap" data-aos="flip-down" data-aos-duration="2000"></i>Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- this is for back-end -->
+        <div class="skill_content">
+          <h3>Back-End</h3>
+          <div class="content">
+            <span class="py"><i class="bx bxl-python" data-aos="flip-down" data-aos-duration="2000"></i>Python</span>
+            <span class="php"><i class="bx bxl-php" data-aos="flip-down" data-aos-duration="2000"></i>PHP</span>
+            <span class="sql"><i class="bx bxl-postgresql" data-aos="flip-down" data-aos-duration="2000"></i>MySql</span>
+            <span class="node"><i class="bx bxl-nodejs" data-aos="flip-down" data-aos-duration="2000"></i>Node.Js</span>
+            <span class="mongo"><i class="bx bxl-mongodb" data-aos="flip-up" data-aos-duration="2000"></i>MongoDb</span>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- ========== End About Me Section ========== -->
+
+
+
+<!-- ========== Start Education Page Section ========== -->
+<section id="Adventure_Page" class="education_Container customContainer">
+        <div class="education_heading">
+                 <h2>Explore</h2>
+            <h1>My <span>Adventure</span></h1>
+        </div>
+
+        <div class="education_row">
+            <div class="education_column">
+                <h3 class="title">EDUCATION</h3>
+                <div class="education_box">
+
+            <!--  this section for MSC-IT -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023 - 2024 </div>
+                            <h3> MSC-IT Form Mumbai University </h3>
+                            <p>I am currently pursuing a Master of Science in Information Technology from Mumbai University. My result for the last semester is CGPA:8.24 </p>
+                        </div>
+                    </div>
+             <!-- this section for BSC-It -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023 - 2023 </div>
+                            <h3> BSC-IT Form Mumbai University </h3>
+                            <p>I completed my Bachelor of Science in Information Technology in 2023 with a CGPA of 8.80 from Mumbai University. </p>
+                        </div>
+                    </div>
+             <!-- this section for HSC detail -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2019 - 2020 </div>
+                            <h3>HSC form Maharashtra Board</h3>
+                            <p>I completed my 12th grade in 2020 in the science field with a 60% score from Maharashtra Board. My specialties were Physics and Information Technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- this is Experience Section -->
+            <div class="education_column">
+                <h3 class="title">EXPERIENCE</h3>
+                <div class="education_box">
+
+                      <!-- this secction for web-developer detail -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023 </div>
+                            <h3>Web-Developer: LiveTechIndia</h3>
+                            <p>At LiveTechIndia, I have been appointed as a Web Developer specializing in JavaScript for a one-month internship. </p>
+                        </div>
+                    </div>
+                <!-- this section for Dunzo operter detail -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2022 - 2023 </div>
+                            <h3> Dunzo-Operater: Indic-Wisdom</h3>
+                            <p> I worked at IndicWisdom for 2 months In  Data Entry and Daunzo Operator, and I also have experience with Excel.</p>
+                        </div>
+                    </div>
+                <!-- this section for Store-incharge detaial -->
+                    <div class="education_content">
+                        <div class="min_content">
+                            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2021 - 2022 </div>
+                            <h3>Store-Incharger: D-mart Ready</h3>
+                            <p>I worked at D-Mart Ready for 1 year as a Store Incharge, and I have experience working with R-Soft and SAP software. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- ========== End Education Page Section ========== -->
+
+
+<!-- ========== Start Project Page Section ========== -->
+    <section id="Project_Page" class="pro_section ">
+      <!-- this container only for heading container -->
+      <div class="heading-container">
+        <h2> Browse My Recent</h2>
+        <h1 class="pro_title"> Projects </h1>
+      </div>
+      <!-- this container only forMain contain container -->
+      <div class="Container swiper ">
+        <div class="pro-slider-wrapper slider-wrapper">
+          <div class="Pro-list swiper-wrapper">
+            <!-- this is for Web ninja  -->
+            <div class="pro_item swiper-slide">
+                  <h3>TIC-TAC-TOE </h3>
+                  <a href="https://vikram-tic-tac-toe.netlify.app/" target="_blank">
+                    <img src="./Assets/card-1.webp" alt="tic-tac-toe"/></a>
+                    <p>      
+                      Tic-Tac-Toe is a classic two-player strategy game where players alternate marking Xs and Os to win by aligning three.
+                    </p>
+                    <a href= "https://github.com/AshrafMorningstar" target="_blank" class="btn"
+                      ><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+            <!-- this is for cimon game-->
+             <div class="pro_item swiper-slide">
+                  <h3>Cimon Game</h3>
+                  <a href="https://simon-game-by-vikram.netlify.app/" target="_blank">
+                    <img src="./Assets/card-2.png" alt="cimon-Game img"/></a>
+                    <p>
+                      Simon Game is a memory game where players repeat sequences of colors and sounds.
+                    </p>
+                    <a href="https://github.com/AshrafMorningstar" target="_blank" class="btn"
+                      ><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+            <!-- this is for to-do list -->
+            <div class="pro_item swiper-slide">
+                  <h3>To-Do List</h3>
+                  <a href="https://vikram-todo-list.netlify.app" target="_blank">
+                  <img src="./Assets/card-3.jpg" alt="to-do list img"/></a>
+                  <p>
+                    Efficient to-do list app designed to help manage daily tasks and
+                    boost productivity effectively.
+                  </p>
+                  <a href="https://github.com/AshrafMorningstar" target="_blank" class="btn"
+                  ><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+            <!-- this is for Calculator  -->
+            <div class="pro_item swiper-slide">
+              <h3>Calculator</h3>
+              <a href="https://calculator-by-vikrampal.netlify.app" target="_blank">
+              <img src="./Assets/card-4.png" alt="to-do list img"/></a>
+              <p>
+              A simple, stylish calculator with basic operations and responsive design for all screen sizes.
+              </p>
+              <a href= "https://github.com/AshrafMorningstar" target="_blank" class="btn"
+              ><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+            <!-- this is for Weather App  -->
+            <div class="pro_item swiper-slide">
+              <h3>Weather App</h3>
+              <a href="https://vikram-weather-app.netlify.app/" target="_blank">
+              <img src="./Assets/card-5.png" alt="to-do list img"/></a>
+              <p>
+              My weather app provides real-time weather updates, including temperature, humidity, and forecasts for any location. Stay prepared with accurate and user-friendly weather information.
+              </p>
+              <a href= "https://github.com/AshrafMorningstar" target="_blank" class="btn"
+              ><i class="fa-brands fa-github"></i>Github</a>
+            </div>
+          </div>
+          <!-- this is swipper pagination din--> 
+          <div class="swiper-pagination"></div>
+          <!-- this is swipper button -->
+          <div class="swiper-slide-button swiper-button-prev project-btn-prev"></div>
+          <div class="swiper-slide-button swiper-button-next  project-btn-next"></div>
+        </div>
+      </div>
+    </section>
+<!-- ========== End Project Page  Section ========== -->
+
+
+<!-- ========== Start Contact page Section ========== -->
+ <section id="Contact_page" class="customContainer newcont">
+
+        <div class="element">
+            <h1> CONTACT ME</h1>
+            <P>We Would love to respond to your queries and help you succeed.
+            Feel free to get in touch with us.</P>
+        </div>
+   <form action="https://api.web3forms.com/submit" method="POST">
+     <input type="hidden" name="access_key" value="d192ba02-380c-4af4-a574-05496b5ed22f">
+            <div class="contact-box">
+                <div class="contact-left" data-aos="zoom-in-down" data-aos-duration="500" >
+                    <h3>Send Your Request</h3>
+                <!-- ========== Start this is input Section for deatils ========== -->
+                <!-- form here start first col -->
+                        <div class="input-row">
+                 <!-- this input for name label -->
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" id="name" placeholder="Your Name" name="firstname" required>
+                            </div>
+
+                <!-- this input for Phone no. label -->
+                            <div class="input-group">
+                                <label>Phone No</label>
+                                <input type="number" maxlength="10" id="number"  placeholder="Your Number" name="number" required>
+                            </div>
+                        </div>
+
+                 <!-- form here start second col -->
+                           <div class="input-row">
+                <!-- this input for email label -->
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" id="email"  placeholder="Your Email"  name="email" required>
+                            </div>
+
+                <!-- this input for subject label -->
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" id="subject"  placeholder="Product Name" name="subject" required>
+                            </div>
+                        </div>
+
+            <!-- this textarea for message label -->
+                        <label>Message</label>
+                        <textarea rows="5" id="message"  placeholder="Enter Your Message"  name="messgae"></textarea>
+                        
+                        <!-- this is submit button -->
+                         <div class="buttonContainer">
+                            <button onclick="openModal()" type="submit" class="Conbutton">SEND</button>
+                         </div>
+                </div>
+                </form>
+<!-- ========== End this is input Section for deatils ========== -->
+
+        <!-- now form here start right section for details -->
+                  
+                <div class="contact-right"  data-aos="zoom-in-up"" data-aos-duration="500">
+                    <h3>Reach Us</h3>
+
+         <!-- ========== Start table for details Section ========== -->
+                    <table class="contain">
+                        <!-- this tr for email section -->
+                        <tr>
+                            <td>Email:</td>
+                            <td>vikrampal038@gmail.com</td>
+                        </tr>
+                        <!-- this tr for phone section -->
+                        <tr>
+                            <td>Phone:</td>
+                            <td>+91 996 731 9725</td>
+                        </tr>
+                    <!-- this tr for address section -->
+                        <tr>
+                            <td>Address:</td>
+                            <td>B.M.C Colony Santosh Nagar<br>
+                            Goregaon (East) Mumbai-400065<br>
+                            Maharashtra India</td>
+                        </tr>
+                    </table>
+        <!-- ========== End table for details Section ========== -->
+
+
+<!-- ========== Start social icons  Section ========== -->
+                    <!-- this is sicual icons -->
+                    <div class="Social">
+                        <a href="https://github.com/AshrafMorningstar" target="_blank"><i class="fa-brands fa-github icone"></i></a>
+                     <a href="Ashraf Morningstar" target="_blank"><i class="fa-brands fa-linkedin icone"></i></a>
+                        <a href="https://x.com/AMS_Morningstar" target="_blank"><i class="fa-brands fa-twitter icone"></i></a>
+                        <a href="Ashraf Morningstar" target="_blank"><i class="fa-brands fa-facebook icone"></i></a>
+                        <a href="Ashraf Morningstar" target="_blank"><i class="fa-brands fa-instagram icone"></i></a>
+                    </div>
+<!-- ========== End social icons Section ========== -->
+                </div>
+
+            </div>
+        </div>
+<!--  Arrow Button -->
+        <!-- <div class="arrow arrow-up" id="scrollUp" onclick="location.href='./#'"><i class="fa-solid fa-angles-up"></i></div> -->
+         <!-- <div class="arrow" id="scrollDown"><i class="fa-solid fa-angles-down"></i></div> --> 
+    </section>
+<!-- ========== End contact page Section ========== -->
+
+<!-- ========== Start footer Section ========== -->
+<footer>
+ <div class="footer_container">
+   <div class="footer_logo&batch">
+    <img class="footer_logoName" src="./Assets/vikram logo.png" alt="footer Logo Name">
+    <!-- <img class="footer_batch1" src="./Assets/Batch-1.png" alt="footer Batch1"> -->
+  </div>
+  <nav class="F-NAV">
+    <div class="footer_nav">
+      <ul class="footer_link">
+        <li><a class="home" href="#"> Home</a></li>
+        <li><a class="About Me" href="#About_Page"> About Me </a></li>
+        <li><a class="Skills" href="#Skill_Page"> Skills </a></li>
+        <li><a class="Adventure" href="#Adventure_Page"> Adventure</a></li>
+        <li><a class=" Projects" href="#Project_Page"> Projects</a></li>
+      </ul>
+  </nav>
+   <!-- <div class="footer_batch2">
+    <img class="footer_batch2" src="./Assets/ganpati.jpg" alt="footer Batch2">
+  </div> -->
+ </div>
+  <div class="footer_para">
+      <p class="text-center">This This This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar.</p>
+      <div class="arrow arrow-up" id="scrollUp" onclick="location.href='./#'"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+  </div>
+</footer>
+  <!-- ========== End footer Section ========== -->
+
+  
+ <!-- ========== Start scripting Section ========== -->
+  <!-- this script line for Swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+   <!-- ========== End scripting Section ========== -->
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

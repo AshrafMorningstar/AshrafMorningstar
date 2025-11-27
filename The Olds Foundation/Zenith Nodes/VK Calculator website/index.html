@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MORNINGSTAR CALCULATOR</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="calculator-container">
+            <div class="calculator">
+                <div class="display">
+                    <input type="text" id="displayResult" readonly >
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <button class="btn special" onclick="clearDisplay()">C</button>
+                        <button class="btn special" onclick="deleteLast()">←</button>
+                        <button class="btn operator" onclick="func('%')">%</button>
+                        <button class="btn operator" onclick="func('/')">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="func('7')">7</button>
+                        <button class="btn" onclick="func('8')">8</button>
+                        <button class="btn" onclick="func('9')">9</button>
+                        <button class="btn operator" onclick="func('*')">×</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="func('4')">4</button>
+                        <button class="btn" onclick="func('5')">5</button>
+                        <button class="btn" onclick="func('6')">6</button>
+                        <button class="btn operator" onclick="func('-')">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="func('1')">1</button>
+                        <button class="btn" onclick="func('2')">2</button>
+                        <button class="btn" onclick="func('3')">3</button>
+                        <button class="btn operator" onclick="func('+')">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn" onclick="func('0')">0</button>
+                        <button class="btn" onclick="func('.')">.</button>
+                        <button class="btn equals" onclick="calculate()">=</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn function" onclick="func('Math.sin(')">sin</button>
+                        <button class="btn function" onclick="func('Math.cos(')">cos</button>
+                        <button class="btn function" onclick="func('Math.tan(')">tan</button>
+                        <button class="btn function" onclick="func('Math.log(')">log</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn special" onclick="func('Math.PI')">π</button>
+                        <button class="btn special" onclick="func('Math.E')">e</button>
+                        <button class="btn special" onclick="func('Math.sqrt(')">√</button>
+                        <button class="btn operator" onclick="func('**')">^</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

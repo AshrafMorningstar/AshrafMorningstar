@@ -1,0 +1,517 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Pattaya|Rubik+Mono+One|Varela+Round');
+
+/* css reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/*end of reset*/
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1em;
+  color: hsla(0, 0%, 80%, 1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: hsla(0, 0%, 90%, 1);
+}
+
+
+header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  min-height: 70px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-weight: 700;
+  color: hsla(0, 0%, 80%, 1);
+  -webkit-transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+  transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+}
+
+header a:hover {
+  color: hsla(0, 100%, 40%, 1);
+  transition: color 0.3s;
+}
+
+#logo {
+  border: white solid;
+
+}
+
+header img {
+  width: 10vw;
+  height: auto;
+  -webkit-transition: width 1.3s;
+  transition: width 1.3s;
+}
+
+body.scrolled header {
+  background-color: hsla(0,0%,80%,1);
+  color: hsla(0,0%,30%,1);
+  min-height: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body.scrolled header img {
+  width: 4vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  padding-left: 20px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+#home {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg") fixed center/cover no-repeat;
+  display: grid;
+  grid-template-columns: 4fr 10fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#hero {
+  grid-area: 5 / 1 / 6 / 2;
+  color: #fff;
+  padding-left: 30px;
+}
+
+#hero h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  text-transform: uppercase;
+  font-size: 8vw;
+  text-align: left;
+  text-shadow: 5px 5px #000;
+}
+
+#about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsla(0, 0%, 10%, 1);
+}
+
+.about_inner{
+  display: flex;
+  min-height: 40vh;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: hsla(0, 0%, 80%, 1);
+}
+
+.about_inner p{
+  margin-right: 20px;
+  max-width: 500px; 
+}
+
+#subscribe {
+  height: 100vh;
+  background: url("https://image.ibb.co/kJ71od/bigcoffee2.jpg") fixed center/cover no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+}
+
+#email_div{
+    grid-area: 2 / 2 / 4 / 3;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 10px;
+    color: hsla(0, 0%, 80%, 1);
+    background-color: hsla(0, 0%, 10%, .6);
+    text-align: center;
+    border-radius: 3px;
+}
+
+#email{
+  margin: 20px 0;
+  height: 35px;
+  width: 75%;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+#email.valid{
+  border: green solid 2px;
+}
+
+#email.invalid{
+  border: red solid 2px;
+}
+
+#submit{
+  border-radius: 3px;
+  padding: 10px;
+  background-color: hsla(0, 100%, 60%, 1);
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 80%, 1);
+  border: none;
+}
+
+#submit:hover {
+    background-color: hsla(0, 100%, 80%, 1);
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-areas: "contact map hours"
+                        ". copy .";
+  padding-top: 15px;
+  background-color: hsla(0, 0%, 12%, 1);
+  color: hsla(0, 0%, 70%, 1);
+}
+
+#footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#footer p {
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+#footer p:last-child {
+  margin-bottom: 0px;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#map{
+  grid-area: map;
+  border-left:  hsla(0, 0%, 20%, 1) solid 1px;
+  border-right: hsla(0, 0%, 20%, 1) solid 1px;
+}
+
+#gmap_canvas {
+  margin:  auto;
+  overflow: hidden;
+  height: 85%;
+  border: 1px hsla(0, 0%, 70%, 1) solid;
+}
+
+#hours ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+#copy{
+  grid-area: copy;
+  text-align: center;
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 750px) {
+
+  
+  
+#about{
+    display: flex;
+    flex-direction: column;
+}
+  
+.about_inner {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+}
+  
+.about_inner p{
+    max-width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about_inner h2 {
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 26px;
+}
+  
+.video-container {
+  display: flex;
+  justify-content: center;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+  box-sizing: border-box;
+  margin: auto;
+	position: absolute;
+	top: 0;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+  
+#footer {
+  height:1170px;
+  grid-template-columns: 100%;
+  grid-template-areas: "contact" 
+                        "map" 
+                        "hours"
+                        "copy";
+  background-color: hsla(0, 0%, 12%, 1);
+  color: hsla(0, 0%, 70%, 1);
+  text-align: center;
+  font-size: 1.3em; 
+}
+
+#footer section{
+    padding: 20px 0;
+    align-self: center;
+}
+  
+#map {
+  border-top:  hsla(0, 0%, 20%, 1) solid 1px;
+  border-bottom: hsla(0, 0%, 20%, 1) solid 1px;
+}
+  
+#map h2{
+  padding-top: 10px;
+}
+  
+#gmap_canvas {
+   width: 90%;
+   height: 300px;
+   margin: 20px auto;
+}
+  
+#hours {
+  border-bottom: hsla(0, 0%, 20%, 1) solid 1px;
+}
+  
+  
+#hours ul li{
+  line-height: 40px;
+}
+   
+#copy{
+  font-size: 10px;
+}
+  
+}
+
+@media only screen and (max-width: 650px){
+  
+header {
+  height: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+/*   align-items: start; */
+  z-index: 1;
+  font-weight: 700;
+  color: hsla(0, 0%, 80%, 1);
+  -webkit-transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+  transition: background-color 1.3s, min-height 1.3s, padding 1.3s;
+}
+
+#header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+  
+#burger {
+  display: block;
+  width: 65px;
+  height: 50px;
+  padding: 10px;
+  background: url(https://image.ibb.co/jBfT8o/burger_nav_40.png) no-repeat center;
+  cursor: pointer;
+}
+
+  
+ header img{
+    width: 70px;
+}
+
+nav {
+  background-color: hsla(0,0%,80%,1);
+  color: hsla(0,0%,30%,1);
+  width: 100%;
+}  
+  
+nav ul {
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  height: 0;
+}
+
+nav ul li{
+  border-bottom:hsla(0,0%,30%,1) solid;
+} 
+
+nav ul li:hover{
+  background-color: hsla(0,0%,30%,1);
+}
+ 
+nav ul li a{
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 25px;
+}
+  
+nav ul li a:hover{
+  background-color: hsla(0,0%,30%,1);
+  color: hsla(0,0%,90%,1);
+}
+  
+#header-wrapper.open{
+ background-color: hsla(0,0%,50%,1);
+}
+  
+nav ul.open {
+    height: auto;
+}
+
+body.scrolled header {
+  background-color: hsla(0,0%,50%,.8);
+  color: hsla(0,0%,30%,1);
+  min-height: 0;
+  padding-top: inherit;
+  padding-bottom: inherit;
+}
+
+body.scrolled header img {
+  width: 60px;
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+  
+#home {
+  grid-template-columns: 100%;
+}
+
+#hero h1 {
+  font-size: 40px;
+}
+  
+#subscribe {
+  grid-template-columns: 1fr 95% 1fr;
+}
+  
+#email_div{
+  width: 100%;
+  padding: 5px;
+}
+
+#email{
+  height: 50px;
+  width: 95%;
+}
+
+#submit{
+  width: 95%;
+  height 40px;
+  font-size: 20px;
+}
+  
+}

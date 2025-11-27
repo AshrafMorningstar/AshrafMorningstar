@@ -1,0 +1,41 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body {
+  background: #222;
+  color: #FFF;
+}
+
+.skewed-bg {
+  background: #00B285;
+  padding: 200px 0;
+  transform: skew(0deg, -10deg);
+  margin-top: -200px;
+}
+.skewed-bg .content {
+  transform: skew(0deg, 10deg);
+  text-align: center;
+}
+.skewed-bg .content .title {
+  padding-top: 100px;
+  font-weight: normal;
+}
+.skewed-bg .content .text {
+  width: 60%;
+  margin: 25px auto;
+  color: #ccfff2;
+}
+
+.footer {
+  padding-top: 300px;
+}
+.footer .credits {
+  text-align: center;
+  color: #666;
+}
+.footer .credits .link {
+  color: #00B285;
+  text-decoration: none;
+}

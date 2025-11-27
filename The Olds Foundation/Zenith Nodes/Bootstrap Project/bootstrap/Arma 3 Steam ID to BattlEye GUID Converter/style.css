@@ -1,0 +1,56 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+body { background: #f2f2f2; }
+
+.wrapper {
+  margin: 20px auto;
+  width: 500px;
+}
+
+.form-input {
+  border: 1px solid #ebebeb;
+  font-size: 2rem;
+  position: relative;
+}
+
+.form-input + .form-input {
+  margin-top: .8em;
+}
+
+.form-input .input {
+  background: #fff;
+  border: none;
+  padding: .4em .7em;
+  width: 100%;
+}
+.form-input .input:focus {
+  background: #ffc;
+}
+
+.form-input .icon {
+  left: 0;
+  margin: .5em;
+  position: absolute;
+  top: 0;
+}
+
+.form-input .icon ~ .input {
+  padding-left: 2em;
+}
+
+.form-input .button {
+  background: none;
+  border: none;
+  margin: .5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form-input .button ~ .input {
+  padding-right: 2em;
+}

@@ -1,0 +1,146 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+.range {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.range span {
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+.range .container {
+  height: 60px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid rgb(231, 231, 231);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.range .container .slider {
+  position: relative;
+  width: 100%;
+}
+.range .container .slider .slider__track {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 3px;
+  max-height: 2px;
+  height: 2px;
+  background: rgb(236, 236, 236);
+  width: 100%;
+  z-index: 1;
+}
+.range .container .slider .slider__range {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 3px;
+  max-height: 2px;
+  height: 2px;
+  background-color: rgb(33, 162, 226);
+  z-index: 2;
+}
+.range .container .leftvalue {
+  position: absolute;
+  border: 1px solid rgb(113, 155, 255);
+  color: rgb(33, 162, 226);
+  border-radius: 40px;
+  cursor: pointer;
+  height: 15px;
+  width: auto;
+  pointer-events: all;
+  background: white;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  padding: 10px;
+  padding-left: 1%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.range .container .leftvalue span {
+  position: relative;
+  min-width: 20px;
+  height: 20px;
+  background-color: rgb(33, 162, 226);
+  border-radius: 50%;
+  margin-left: 5%;
+}
+.range .container .rightvalue {
+  position: absolute !important;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 1px solid rgb(113, 155, 255);
+  color: rgb(33, 162, 226);
+  border-radius: 40px;
+  cursor: pointer;
+  height: 15px;
+  width: auto;
+  pointer-events: all;
+  background: white;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  padding: 10px;
+  font-size: 15px;
+}
+.range .container .rightvalue span {
+  position: relative;
+  min-width: 20px;
+  height: 20px;
+  background-color: rgb(33, 162, 226);
+  border-radius: 50%;
+  margin-right: 5%;
+}
+.range .container .thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+  z-index: 40;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.range .container .thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  pointer-events: all;
+  position: relative;
+}
+.range .container .thumb::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+  background: transparent;
+}
+.range .container .thumb.thumb--left {
+  z-index: 5;
+}
+.range .container .thumb.thumb--right {
+  z-index: 6;
+}/*# sourceMappingURL=App.css.map */

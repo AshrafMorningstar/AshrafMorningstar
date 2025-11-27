@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.container .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .gallery .img-box {
+  width: 80px;
+  height: 500px;
+  margin: 5px;
+  border: 0.5px solid lightgray;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: url(img11.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  transition: width 0.4s;
+}
+.container .gallery .img-box h2 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 100%;
+  background-color: rgba(238, 247, 255, 0.5882352941);
+  padding: 2% 5%;
+  border-radius: 8px 0 0 8px;
+  transition: bottom 0.4s, opacity;
+}
+.container .gallery .img-box:nth-child(2) {
+  background: url(img2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container .gallery .img-box:nth-child(3) {
+  background: url(img3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container .gallery .img-box:nth-child(4) {
+  background: url(img4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container .gallery .img-box:hover {
+  width: 300px;
+}
+.container .gallery .img-box:hover h2 {
+  opacity: 1;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .img-box {
+    height: 300px;
+  }
+  .img-box:hover {
+    width: 220px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    font-size: 0.9rem !important;
+  }
+  .img-box {
+    width: 50px !important;
+    height: 200px !important;
+    border-radius: 20px !important;
+  }
+  .img-box:hover {
+    width: 110px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

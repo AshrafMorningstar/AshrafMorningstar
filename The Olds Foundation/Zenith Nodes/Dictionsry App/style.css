@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: #7b4019;
+    color: #3b060a;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+  }
+  
+  /* ✅ Result Box */
+  .bg-result {
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: #ffbf78;
+  }
+  
+  /* ✅ Text & Lists */
+  #result p {
+    margin-top: 5px;
+  }
+  
+  #result li {
+    margin-left: 30px;
+    text-transform: capitalize;
+  }
+  
+  #result p[class="speech"] {
+    font-style: italic;
+    color: gray;
+    margin: 2px;
+    font-weight: bold;
+    text-decoration: dashed;
+  }
+  
+  #result div {
+    margin-top: 20px;
+  }
+  
+  #result div a {
+    display: inline;
+    align-items: last baseline;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-right: 50px;
+    border-radius: 10px;
+    color: #3b060a;
+    background-color: #d05d10;
+  }
+  
+  #result div a i {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  #result div a:hover {
+    color: antiquewhite;
+    background-color: #7b4019;
+    font-size: 24px;
+    font-style: italic;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  /* --------------------------------------------
+     ✅ Responsive Code Starts Here (Only Additions)
+  -------------------------------------------- */
+  
+  @media (max-width: 768px) {
+    .bg-result {
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+  
+    #result div a {
+      font-size: 18px;
+      margin-right: 20px;
+      padding: 6px 12px;
+    }
+  
+    #result div a i {
+      font-size: 18px;
+    }
+  
+    #result div a:hover {
+      font-size: 20px;
+    }
+  
+    #result li {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bg-result {
+      padding: 12px 15px;
+      font-size: 16px;
+    }
+  
+    #result h1 {
+      font-size: 22px;
+    }
+  
+    #result p {
+      font-size: 14px;
+    }
+  
+    #result div a {
+      font-size: 16px;
+      margin-right: 10px;
+      padding: 5px 8px;
+    }
+  
+    #result div a i {
+      font-size: 16px;
+    }
+  
+    #result div a:hover {
+      font-size: 18px;
+    }
+  
+    #result li {
+      margin-left: 15px;
+      font-size: 14px;
+    }
+  }
+  
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

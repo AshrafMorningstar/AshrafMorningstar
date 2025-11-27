@@ -1,0 +1,51 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+body {
+  font-family: 'Noto Sans', sans-serif; 
+ background: radial-gradient(circle , #892cdc, #36159a );
+            
+        }
+        .element {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            margin-top:110px;
+        }
+        .element input {
+            padding: 20px;
+            font-size: 40px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color:#bbb;
+        }
+        .element input::active {
+            border: 1px solid #fff;
+        }
+        .element p {
+            font-size: 36px;
+            margin-top: 30px;
+            text-transform: capitalize;
+            color: #fff
+        }
+        .element h2 {
+            margin-bottom: 70px;
+            color: #fff;
+            text-align: center
+        }
+         .yellow-bg {
+            background-color: #EFC30A;
+            padding: 10px;
+             color: #000
+        }
+        h1 {
+            color: #fff;
+            margin-top: 94px;
+           text-align: center
+        }
+        .project {
+            margin-left:10px;
+            font-size: 24px
+        }

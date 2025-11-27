@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+html {
+  background: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem;
+}
+
+.fl-right {
+  float: right;
+}
+
+.fl-left {
+  float: left;
+}
+
+body {
+  font-size: 1.5em;
+  color: #222;
+  background: #fff;
+  height: 0.25rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  width: 0%;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0.5rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 3em;
+  border-bottom: 0.25rem solid #222;
+}
+
+.wrap {
+  max-width: 60%;
+  min-width: 61.25rem;
+  margin: 2rem auto 0;
+  opacity: 0;
+}
+
+@media (max-width: 63rem) {
+  html {
+    font-size: 13px;
+  }
+
+  .wrap {
+    max-width: none;
+    min-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 45rem) {
+  img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .fl-left,
+.fl-right {
+    display: block;
+    float: none;
+  }
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

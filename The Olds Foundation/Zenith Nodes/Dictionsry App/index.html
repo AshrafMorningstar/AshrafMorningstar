@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwindcss Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- site Icon -->
+    <link rel="Icon" href="./Assets/Dictionary_Icon.png" />
+
+    <!-- Css Link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- project title  -->
+    <title>Dictionary App</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="py-2 px-4 sm:px-6 md:px-10 bg-[#FFBF78]">
+      <h1 class="fond-1000 text-3xl sm:text-4xl md:text-5xl">Dictionary App</h1>
+    </header>
+
+    <main class="flex-grow p-4 sm:p-6 md:p-10 mx-auto w-full max-w-[800px]">
+      <form class="flex flex-col sm:flex-row justify-center sm:items-center gap-3 sm:gap-0">
+        <!-- Input -->
+        <input
+          class="flex-1 p-2 text-base sm:text-lg md:text-xl border-2 border-transparent font-bold rounded-xl sm:rounded-r-none focus:outline-none focus-visible:bg-slate-200 focus-visible:text-black focus:placeholder:text-black placeholder:text-black"
+          type="text"
+          id="input"
+          placeholder="Enter Your Text"
+        />
+
+        <!-- for search Button -->
+        <button
+          class="hidden md:inline-block py-2.5 px-5 cursor-pointer text-base sm:text-lg md:text-xl font-bold rounded-xl bg-[#FFBF78] rounded-tl-none rounded-bl-none text-black hover:bg-[#d05d10] transition duration-700 ease-in-out"
+          type="submit"
+          value="submit"
+          id="submit-btn"
+        >
+          Search
+        </button>
+
+        <!-- for search Icon
+        <button
+          class="inline-block md:hidden py-2.5 px-5 cursor-pointer text-base sm:text-lg md:text-xl font-bold rounded-xl bg-[#FFBF78] rounded-tl-none rounded-bl-none text-black hover:bg-[#d05d10] transition duration-700 ease-in-out"
+          type="submit"
+          value="submit"
+          id="submit-icon"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button> -->
+      </form>
+
+      <!-- Error P -->
+      <p id="textError" class="mt-2 text-base sm:text-lg md:text-xl ml-3 font-bold p-2 text-red-600 w-fit rounded-xl"></p>
+
+      <!-- Result Div -->
+      <div id="result" class="mt-4 text-base sm:text-lg md:text-xl"></div>
+    </main>
+
+    <footer class="w-full bg-[#FFEEA9] text-center p-2 text-base sm:text-lg md:text-xl font-bold">
+      This This This copyrighted all rights reserved by Ashraf Morningstar by Ashraf Morningstar by Ashraf Morningstar
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

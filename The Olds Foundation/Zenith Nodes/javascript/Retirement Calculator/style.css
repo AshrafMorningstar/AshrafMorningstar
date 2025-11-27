@@ -1,0 +1,19 @@
+html { 
+         font-family: sans-serif; 
+      } 
+ 
+      body { 
+         width: 50%; 
+        max-width: 800px; 
+         min-width: 480px; 
+        margin: 0 auto; 
+        background-color: #838689;
+      } 
+ 
+       .response { 
+         color: #000; 
+        padding: 3px; 
+       }
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

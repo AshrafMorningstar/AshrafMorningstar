@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #11131e;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    max-width: 350px;
+    width: 100%;
+    background: #11131e;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #656871;
+    box-shadow: 0px 1px 26px -10px white;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .img {
+    height: 75px;
+    width: 75px;
+    background: #656871;
+    border-radius: 50%;
+  }
+  
+  .details {
+    margin-left: 20px;
+  }
+  
+  .details span {
+    display: block;
+    background: #656871;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .details .name {
+    height: 15px;
+    width: 100px;
+  }
+  
+  .details .about {
+    height: 13px;
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .description .line {
+    background: #656871;
+    border-radius: 10px;
+    height: 13px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .description .line-1 {
+    width: calc(100% - 15%);
+  }
+  
+  .description .line-2 {
+    width: calc(100% - 40%);
+  }
+  
+  .description .line-3 {
+    width: calc(100% - 60%);
+  }
+  
+  .btns {
+    display: flex;
+  }
+  
+  .btn {
+    height: 45px;
+    width: 100%;
+    background: #656871;
+    border-radius: 25px;
+    margin-top: 10px;
+  }
+
+  .btn-1{
+    margin-right: 5px;
+  }
+  
+  .shimmer {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 100%);
+    background-size: 200% auto;
+    animation: shimmerAnimation 2s infinite linear;
+  }
+  
+  @keyframes shimmerAnimation {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

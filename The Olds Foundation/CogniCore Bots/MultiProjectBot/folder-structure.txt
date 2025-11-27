@@ -1,0 +1,29 @@
+MultiProjectBot/
+├─ README.md
+├─ LICENSE
+├─ banner.svg
+├─ logo.svg
+├─ create_repos.sh
+├─ folder-structure.txt
+├─ html-starter/
+│  ├─ index.html
+│  ├─ styles/
+│  │  └─ main.css
+│  └─ scripts/
+│     └─ app.js
+├─ python-starter/
+│  ├─ README.md
+│  ├─ src/
+│  │  └─ app.py
+│  └─ tests/
+│     └─ test_app.py
+├─ js-starter/
+│  ├─ package.json
+│  └─ src/
+│     └─ server.js
+├─ swift-starter/
+│  └─ Package.swift
+└─ ruby-starter/
+   ├─ Gemfile
+   └─ lib/
+      └─ main.rb

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Pomodoro Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <h1>Pomodoro Timer</h1>
+  <section id="pomodoro">
+    <div id="clockBody">
+      <div id="ring">
+        <div id="timer">25:00</div>
+      </div>
+    </div>
+    <div id="settings">
+      <label for="work">Work</label>
+      <input id="work" type="number" value="25" max="60" min="0" />
+      <button onclick="workCountdown()">Start</button>
+      <label for="breakT">Break</label>
+      <input id="breakT" type="number" value="5" max="60" min="0" />
+      <button onclick="breakCountdown()">Start</button>
+      <button id="reset" type="reset" onclick="reset()">Reset</button>
+    </div>
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar -->

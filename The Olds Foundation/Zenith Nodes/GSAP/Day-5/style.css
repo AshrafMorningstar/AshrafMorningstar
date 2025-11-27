@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+#nav h1{
+    color:rgb(227, 129, 0) ;
+    font-size: 30px;
+    font-weight: 900;
+}
+#nav i{
+    color:rgb(39, 29, 16) ;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#sidebar{
+    height: 88%;
+    width: 20%;
+    background-image: url(https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 12%;
+    right: -20%;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    padding: 150px 70px;
+    border-top-left-radius: 20px;
+}
+
+#sidebar h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color:#07191D ;
+}
+
+#sidebar i{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-weight: 900;
+    font-size:20px;
+    background-color: rgb(77, 77, 77) ;
+    border-radius: 50%;
+    padding: 2%;
+}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

@@ -1,0 +1,26 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+html, body {
+  height: 100%;
+}
+body {
+  font: 12px/1.2 Helvetica;
+  perspective: 600px;
+  perspective: 600px;
+  background: #ffffff;
+  background: linear-gradient(#cccccc,#cccccc,#efefef);
+  color: #black;
+  text-align:center;
+}
+.threedee {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50% 50%;
+  backface-visibility: hidden;
+  
+}

@@ -1,0 +1,244 @@
+/*
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+*/
+
+:root {
+  --main-color: #263238;
+  --del-color: #ff0000;
+  --btn-color: #fff;
+  --list-odd-color: #0000000a;
+  --modal-bg: rgba(0, 0, 0, 0.6);
+  --modal-odd: #fff;
+  --border-color: #ccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-break: break-word;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  height: calc(100vh - 40px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 1px solid var(--border-color);
+}
+.heading h1 {
+  font-size: 29px;
+}
+.heading hr {
+  border: none;
+  height: 4px;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(269deg 100% 21%) 5%,
+    hsl(285deg 100% 21%) 10%,
+    hsl(298deg 100% 21%) 14%,
+    hsl(310deg 100% 25%) 19%,
+    hsl(318deg 100% 29%) 24%,
+    hsl(324deg 100% 32%) 29%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(333deg 100% 39%) 38%,
+    hsl(336deg 100% 42%) 43%,
+    hsl(340deg 99% 45%) 48%,
+    hsl(351deg 86% 55%) 52%,
+    hsl(0deg 93% 61%) 57%,
+    hsl(9deg 100% 61%) 62%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(24deg 100% 57%) 71%,
+    hsl(31deg 100% 54%) 76%,
+    hsl(38deg 100% 50%) 81%,
+    hsl(42deg 100% 50%) 86%,
+    hsl(47deg 100% 50%) 90%,
+    hsl(51deg 100% 50%) 95%,
+    hsl(55deg 100% 50%) 100%
+  );
+  margin: 8px 0;
+}
+.input {
+  display: flex;
+}
+.input .todotaker {
+  padding: 0.7em;
+  border: 1px solid var(--border-color);
+  border-right-color: var(--main-color);
+  font-size: 17px;
+  width: 100%;
+}
+.todotaker:focus {
+  outline: none;
+  border: 1px solid var(--main-color);
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s linear all;
+}
+.input .todobtn {
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  width: 60px;
+}
+.todobtn:active svg {
+  transform: scale(1.3);
+}
+.list {
+  flex-grow: 1;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 45px;
+}
+.listelement {
+  flex-shrink: 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--list-odd-color);
+  cursor: pointer;
+}
+.listelement p {
+  padding: 0 15px;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.listdone {
+  background: var(--del-color);
+  height: 100%;
+  width: 0;
+  flex-shrink: 0;
+}
+.listelement:hover .listdone {
+  width: 45px;
+}
+.listdone:active svg {
+  transform: scale(0.85);
+}
+.clearall .all {
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 10px 20px;
+  float: right;
+  color: var(--btn-color);
+  font-size: 16px;
+}
+.all:hover {
+  opacity: 0.8;
+}
+.all:active {
+  transform: scale(1.1);
+}
+.list::-webkit-scrollbar,
+.cont::-webkit-scrollbar {
+  display: none;
+}
+.emptytodo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--modal-bg);
+  display: none;
+}
+.showModal {
+  display: flex;
+}
+.cont {
+  max-width: 350px;
+  box-shadow: 0px 5px 26px 0px rgb(0 0 0 / 22%),
+    0px 20px 28px 0px rgb(0 0 0 / 30%);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--modal-odd);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  max-height: calc(100% - 40px);
+  overflow: auto;
+}
+.cont svg {
+  min-height: 150px;
+}
+.contdiv {
+  flex-shrink: 0;
+}
+.todoshowbig p {
+  font-size: 25px;
+}
+.datetime p {
+  font-size: 17px;
+}
+.btndelmod {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 10px;
+}
+.btndelmod button {
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 4px;
+}
+.btndelmod button:hover {
+  opacity: 0.8;
+}
+.btndelmod button:active {
+  transform: scale(1.1);
+}
+#removemodalbtn {
+  background: var(--del-color);
+  color: var(--btn-color);
+}
+#closemodalbtn {
+  background: var(--main-color);
+  color: var(--btn-color);
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: none;
+    border: none;
+    height: 100vh;
+  }
+  .cont {
+    border-radius: 0;
+    max-height: none;
+    max-width: none;
+    height: 100%;
+    width: 100%;
+  }
+  .cont svg {
+    min-height: 70px;
+  }
+}

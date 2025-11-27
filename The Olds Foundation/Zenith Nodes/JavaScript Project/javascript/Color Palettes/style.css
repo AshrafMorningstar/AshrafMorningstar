@@ -1,0 +1,93 @@
+body, html{margin:0px; padding:0px;}
+body{font-family: 'Source Code Pro', sans-serif;background:#222; padding:2%; color:#eee;}
+*, *:after, *:before {  
+  -webkit-box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+h1{
+  font-family: 'Dorsa', sans-serif;
+  font-weight:100;
+  letter-spacing:1px;
+  font-size:110px;
+  text-align:center;
+  margin:0px;
+}
+#drop{
+  height: 34px;
+  width: 34px;
+  margin: 0 auto;
+}
+p{
+  text-align: center;
+  margin:0px 0px 2.2em;
+  font-size: 12px;
+  color: #999;
+  line-height: 30px;
+}
+a{color:#28D9E8;text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul {
+  float:left;
+  width:48%;
+  list-style-type: none;
+  margin: 0 1% 1.5%;
+  padding: 0;
+  display: block;
+  padding:15px 15px 7px 15px;
+  background:rgba(0,0,0,0.1);
+}
+li {
+  display: block;
+  float: left;
+  width: 20%;
+}
+ul.x2{
+  width:98%;
+}
+ul.x2 li{
+  width:10%;
+}
+input {
+  font-family: 'Arial', sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 100px;
+  outline:0px;
+  text-align: center;
+  color:#fff;
+  font-size:13px;
+  border-radius:0px;
+  cursor:pointer;
+  position: relative;
+  top:0px;
+}
+input:hover{
+  position: relative;
+  top:-5px;
+}
+span{
+  clear:both;
+  color:#888;
+  font-size:12px;
+  padding-top:5px;
+  display:block;
+}
+span a{
+  font-size:10px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  ul{width:100%;float:none;margin-left:0px;}
+}
+
+.squeeze{line-height:18px;}
+
+/* These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+https://github.com/AshrafMorningstar */

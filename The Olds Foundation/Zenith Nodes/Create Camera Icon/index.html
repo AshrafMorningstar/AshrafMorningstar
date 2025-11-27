@@ -1,0 +1,60 @@
+<!--
+These are personal recreations of existing projects, developed by Ashraf Morningstar for learning and skill development. Original project concepts remain the intellectual property of their respective creators.
+GitHub Profile: https://github.com/AshrafMorningstar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Camera Icon</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<svg id="mainSVG" xmlns="http://www.w3.org/2000/svg" viewBox="200 150 400 300">
+<defs>
+<filter id="glow" x="-100%" y="-100%" width="250%" height="250%">
+<feGaussianBlur stdDeviation="15" result="coloredBlur" />
+<feOffset dx="0" dy="0" result="offsetblur"></feOffset>
+<feFlood id="glowAlpha" flood-color="red" flood-opacity="1"></feFlood>
+<feComposite in2="offsetblur" operator="in"></feComposite>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"></feMergeNode>
+</feMerge>
+</filter>
+<filter id="bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+<feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.125" specularExponent="10" result="specOut" lighting-color="white">
+<fePointLight x="-5000" y="-10000" z="20000"/>
+</feSpecularLighting>
+<feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
+<feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+</filter>
+<filter id="shadow" x="-100%" y="-100%" width="250%" height="250%">
+<feGaussianBlur stdDeviation="5" result="coloredBlur" />
+<feOffset dx="-0" dy="2" result="offsetblur"></feOffset>
+<feFlood id="glowAlpha" flood-color="#000" flood-opacity="0.65"></feFlood>
+<feComposite in2="offsetblur" operator="in"></feComposite>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"></feMergeNode>
+</feMerge>
+</filter>
+</defs>
+<g id="icon" fill="#44484D">
+<rect x=360.73 y=275 width="70.27" height="50" rx="7.5" fill="#555b60"/>
+<path id="lens" d="M419.36,303.25l30.12,17.39a3.75,3.75,0,0,0,5.62-3.25V282.61a3.75,3.75,0,0,0-5.62-3.25l-30.12,17.39A3.75,3.75,0,0,0,419.36,303.25Z" fill="#555b60"/>
+</g>
+<g id="shad" filter="url(#shadow)">
+<g id="mainLine" filter="url(#glow)">
+<line filter="url(#bevel)" x1="360.73" y1="260.73" x2="439.27" y2="343.72" fill="none" stroke="#ed002d" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7"/>
+</g>
+</g>
+</svg>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="app.js"></script>
+</html>
