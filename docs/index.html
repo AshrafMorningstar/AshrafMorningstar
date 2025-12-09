@@ -7,205 +7,292 @@
     <style>
         body { margin: 0; overflow: hidden; background-color: #000; color: #fff; font-family: 'Courier New', Courier, monospace; }
         #canvas-container { width: 100vw; height: 100vh; }
-        #overlay { position: absolute; top: 20px; left: 20px; pointer-events: none; }
-        h1 { margin: 0; text-shadow: 0 0 10px #00ffff; font-size: 2rem; }
-        p { text-shadow: 0 0 5px #ff00ff; }
-        #enter-btn {
-            position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);
-            padding: 15px 30px; background: rgba(0, 0, 0, 0.7); border: 2px solid #00ffff;
-            color: #00ffff; font-size: 1.2rem; cursor: pointer; transition: 0.3s;
-            text-transform: uppercase; letter-spacing: 2px; text-decoration: none;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        #overlay { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;
+            display: flex; flex-direction: column; justify-content: space-between; padding: 40px; box-sizing: border-box;
         }
-        #enter-btn:hover { background: #00ffff; color: #000; box-shadow: 0 0 30px #00ffff; }
+        h1 { 
+            margin: 0; font-size: 4rem; font-weight: 800; letter-spacing: 5px;
+            background: linear-gradient(to right, #00ffff, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5); font-family: sans-serif; text-transform: uppercase;
+        }
+        .subtitle { font-size: 1.5rem; color: #00ffff; text-shadow: 0 0 10px #00ffff; margin-top: 10px; }
+        
+        #enter-btn {
+            pointer-events: auto;
+            align-self: center;
+            padding: 15px 50px; 
+            background: rgba(0, 0, 0, 0.6); 
+            border: 2px solid #00ffff;
+            color: #00ffff; font-size: 1.5rem; font-weight: bold; cursor: pointer; transition: 0.3s;
+            text-transform: uppercase; letter-spacing: 3px; text-decoration: none;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+            border-radius: 30px;
+        }
+        #enter-btn:hover { 
+            background: #00ffff; color: #000; box-shadow: 0 0 50px #00ffff, 0 0 100px #00ffff; transform: scale(1.1);
+        }
+
         .hud-text {
             position: absolute;
-            background: rgba(0, 20, 40, 0.8);
+            background: rgba(0, 10, 20, 0.9);
             border: 1px solid #00ffff;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 15px;
+            border-radius: 10px;
             pointer-events: none;
             display: none;
-            color: #00ffff;
-            box-shadow: 0 0 10px #00ffff;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+            font-family: sans-serif;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            z-index: 10;
         }
+        .hud-title { color: #00ffff; font-weight: bold; font-size: 1.2rem; margin-bottom: 5px; text-transform: uppercase; }
+        .hud-desc { font-size: 0.9rem; color: #b3ffff; }
+
+        #loading {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            color: #00ffff; font-size: 2rem; font-family: sans-serif; text-transform: uppercase;
+            letter-spacing: 5px; animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0.5; } }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- Three.js & Post-Processing -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+          }
+        }
+    </script>
 </head>
 <body>
+    <div id="loading">INITIALIZING QUANTUM CORE...</div>
+
     <div id="overlay">
-        <h1>ASHRAF MORNINGSTAR</h1>
-        <p>Quantum Architect // Level 99 // <span id="status">Scanning Sector...</span></p>
+        <div>
+            <h1>ASHRAF MORNINGSTAR</h1>
+            <div class="subtitle">QUANTUM ARCHITECT // LEVEL 99</div>
+        </div>
+        <a id="enter-btn" href="https://github.com/AshrafMorningstar">RETURN TO GITHUB</a>
     </div>
     
-    <div id="tooltip" class="hud-text"></div>
-    <div id="canvas-container"></div>
-    
-    <a id="enter-btn" href="https://github.com/AshrafMorningstar">RETURN TO BASE</a>
+    <div id="tooltip" class="hud-text">
+        <div class="hud-title">MODULE</div>
+        <div class="hud-desc">Description</div>
+    </div>
 
-    <script>
-        // SCENE SETUP
+    <div id="canvas-container"></div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+        import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+        import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+        import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+        import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+
+        // --- SCENE SETUP ---
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0x020205);
-        scene.fog = new THREE.FogExp2(0x020205, 0.0015);
+        scene.fog = new THREE.FogExp2(0x020205, 0.002);
 
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 15;
+        camera.position.z = 20;
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        const renderer = new THREE.WebGLRenderer({ antialias: false }); // Antialias false for performance with Bloom
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.toneMapping = THREE.ReinhardToneMapping;
         document.getElementById('canvas-container').appendChild(renderer.domElement);
 
-        // LIGHTING
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        // --- POST PROCESSING (BLOOM) ---
+        const renderScene = new RenderPass(scene, camera);
+        const bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
+        bloomPass.threshold = 0;
+        bloomPass.strength = 1.5; // High glow intensity
+        bloomPass.radius = 0.5;
+
+        const composer = new EffectComposer(renderer);
+        composer.addPass(renderScene);
+        composer.addPass(bloomPass);
+
+        // --- LIGHTING ---
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
         scene.add(ambientLight);
 
-        const lights = [];
-        const lightColors = [0x00ffff, 0xff00ff, 0x00ff00];
-        for(let i=0; i<3; i++) {
-            const light = new THREE.PointLight(lightColors[i], 1, 50);
-            light.position.set((Math.random()-0.5)*20, (Math.random()-0.5)*20, (Math.random()-0.5)*20);
-            scene.add(light);
-            lights.push(light);
-        }
+        const pointLight = new THREE.PointLight(0x00ffff, 2, 100);
+        pointLight.position.set(0, 0, 10);
+        scene.add(pointLight);
 
-        // OBJECTS
+        // --- OBJECTS ---
+        const objects = [];
         const techStack = [
-            { name: "React", color: 0x61DAFB },
-            { name: "Node.js", color: 0x68A063 },
-            { name: "Python", color: 0x3776AB },
-            { name: "Rust", color: 0DEA577 },
-            { name: "CyberSec", color: 0xFF0000 },
-            { name: "Unity", color: 0xFFFFFF }
+            { name: "React", desc: "Building Immersive UIs", color: 0x61DAFB, pos: [-8, 0, 0] },
+            { name: "Node.js", desc: "Scalable Backend Systems", color: 0x68A063, pos: [8, 0, 0] },
+            { name: "Python", desc: "AI & Data Wizardry", color: 0x3776AB, pos: [-4, 5, -5] },
+            { name: "Rust", desc: "Blazing Fast Logic", color: 0xE55315, pos: [4, 5, -5] },
+            { name: "Unity", desc: "Interactive 3D Worlds", color: 0xFFFFFF, pos: [-4, -5, -5] },
+            { name: "Security", desc: "Impenetrable Defenses", color: 0xFF0055, pos: [4, -5, -5] },
         ];
 
-        const objects = [];
-        const geometry = new THREE.BoxGeometry(1.5, 1.5, 1.5);
+        // Load 3D Font for Objects
+        const loader = new FontLoader();
+        loader.load('https://threejs.org/examples/fonts/helvetiker_bold.typeface.json', function (font) {
+            document.getElementById('loading').style.display = 'none';
 
-        techStack.forEach((tech, index) => {
-            const material = new THREE.MeshPhongMaterial({ 
-                color: tech.color, 
-                shininess: 100, 
-                wireframe: false,
-                transparent: true,
-                opacity: 0.8
+            // Create Central "A" Core
+            const coreGeo = new THREE.IcosahedronGeometry(3, 1);
+            const coreMat = new THREE.MeshPhongMaterial({ 
+                color: 0x00ffff, 
+                emissive: 0x001133,
+                side: THREE.DoubleSide,
+                flatShading: true
             });
-            const cube = new THREE.Mesh(geometry, material);
-            
-            // Orbit placement
-            const angle = (index / techStack.length) * Math.PI * 2;
-            const radius = 6;
-            cube.position.x = Math.cos(angle) * radius;
-            cube.position.z = Math.sin(angle) * radius;
-            cube.userData = { name: tech.name, originalPos: cube.position.clone() };
-            
-            scene.add(cube);
-            objects.push(cube);
+            const core = new THREE.Mesh(coreGeo, coreMat);
+            scene.add(core);
 
-            // Add wireframe cage
-            const cageGeo = new THREE.BoxGeometry(1.6, 1.6, 1.6);
-            const cageMat = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, transparent: true, opacity: 0.3 });
-            const cage = new THREE.Mesh(cageGeo, cageMat);
-            cube.add(cage);
+            // Create Floating Tech Crystals
+            techStack.forEach((tech) => {
+                // Crystal Shape
+                const geo = new THREE.OctahedronGeometry(1.5, 0);
+                const mat = new THREE.MeshPhongMaterial({ 
+                    color: tech.color, 
+                    emissive: tech.color,
+                    emissiveIntensity: 0.5,
+                    shininess: 100,
+                    transparent: true,
+                    opacity: 0.9
+                });
+                const mesh = new THREE.Mesh(geo, mat);
+                mesh.position.set(...tech.pos);
+                mesh.userData = { ...tech, originalScale: 1 };
+                scene.add(mesh);
+                objects.push(mesh);
+
+                // Add 3D Text Label below crystal
+                const textGeo = new TextGeometry(tech.name, {
+                    font: font,
+                    size: 0.5,
+                    height: 0.1,
+                });
+                textGeo.center();
+                const textMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+                const textMesh = new THREE.Mesh(textGeo, textMat);
+                textMesh.position.y = -2.5;
+                mesh.add(textMesh);
+            });
+
+            // --- ANIMATION LOOP ---
+            const clock = new THREE.Clock();
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                const time = clock.getElapsedTime();
+
+                // Rotate Core
+                core.rotation.x = Math.sin(time * 0.5) * 0.5;
+                core.rotation.y = time * 0.3;
+
+                // Animate Objects (Floating)
+                objects.forEach((obj, i) => {
+                    obj.rotation.y += 0.02;
+                    obj.rotation.z = Math.sin(time + i) * 0.1;
+                    obj.position.y = obj.userData.pos[1] + Math.sin(time * 1.5 + i) * 0.5; // Hover
+                });
+
+                // Camera Float
+                camera.position.x += (mouse.x * 5 - camera.position.x) * 0.05;
+                camera.position.y += (-mouse.y * 5 - camera.position.y) * 0.05;
+                camera.lookAt(0, 0, 0);
+
+                composer.render();
+            }
+            animate();
         });
 
-        // CORE
-        const coreGeo = new THREE.IcosahedronGeometry(2, 1);
-        const coreMat = new THREE.MeshPhongMaterial({ color: 0x00ffff, wireframe: true });
-        const core = new THREE.Mesh(coreGeo, coreMat);
-        scene.add(core);
-
-        // STARFIELD
-        const starsGeometry = new THREE.BufferGeometry();
-        const starsCount = 5000;
+        // --- STARFIELD ---
+        const starsGeo = new THREE.BufferGeometry();
+        const starsCount = 4000;
         const posArray = new Float32Array(starsCount * 3);
-        for(let i = 0; i < starsCount * 3; i++) {
+        const colorArray = new Float32Array(starsCount * 3);
+        
+        for(let i=0; i<starsCount*3; i+=3) {
             posArray[i] = (Math.random() - 0.5) * 100;
+            posArray[i+1] = (Math.random() - 0.5) * 100;
+            posArray[i+2] = (Math.random() - 0.5) * 100;
+            
+            // Random colors (blue/purple/white)
+            const c = Math.random();
+            colorArray[i] = c > 0.8 ? 1 : 0; // r
+            colorArray[i+1] = c > 0.5 ? 1 : 0.5; // g (cyan-ish)
+            colorArray[i+2] = 1; // b
         }
-        starsGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-        const starsMaterial = new THREE.PointsMaterial({ size: 0.05, color: 0xffffff });
-        const starField = new THREE.Points(starsGeometry, starsMaterial);
+        
+        starsGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        starsGeo.setAttribute('color', new THREE.BufferAttribute(colorArray, 3));
+        const starsMat = new THREE.PointsMaterial({ 
+            size: 0.05, 
+            vertexColors: true,
+            transparent: true,
+            opacity: 0.8
+        });
+        const starField = new THREE.Points(starsGeo, starsMat);
         scene.add(starField);
 
-        // RAYCASTER
+        // --- INTERACTION ---
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
         const tooltip = document.getElementById('tooltip');
 
         window.addEventListener('mousemove', (event) => {
+            // Normalized mouse for raycasting
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
             mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-            
-            // Tooltip follow
-            tooltip.style.left = event.clientX + 15 + 'px';
-            tooltip.style.top = event.clientY + 15 + 'px';
-        });
 
-        // ANIMATION
-        let time = 0;
-        const animate = function () {
-            requestAnimationFrame(animate);
-            time += 0.01;
-
-            // Rotate Core
-            core.rotation.x += 0.005;
-            core.rotation.y += 0.01;
-
-            // Rotate Starfield
-            starField.rotation.y -= 0.001;
-
-            // Animate Lights
-            lights.forEach((light, i) => {
-                light.position.y = Math.sin(time + i) * 10;
-                light.position.x = Math.cos(time + i) * 10;
-            });
-
-            // Animate Objects
-            objects.forEach((obj, i) => {
-                obj.rotation.x += 0.01;
-                obj.rotation.y += 0.01;
-                
-                // Bobbing effect
-                obj.position.y = Math.sin(time * 2 + i) * 0.5;
-            });
+            // Tooltip Position
+            tooltip.style.left = event.clientX + 20 + 'px';
+            tooltip.style.top = event.clientY + 20 + 'px';
 
             // Raycasting
             raycaster.setFromCamera(mouse, camera);
             const intersects = raycaster.intersectObjects(objects);
 
-            if (intersects.length > 0) {
-                const intersect = intersects[0];
-                const obj = intersect.object;
+            if(intersects.length > 0) {
+                const obj = intersects[0].object;
+                const data = obj.userData;
                 
                 document.body.style.cursor = 'pointer';
                 tooltip.style.display = 'block';
-                tooltip.innerText = "MODULE: " + obj.userData.name;
-                
-                obj.scale.set(1.2, 1.2, 1.2);
+                tooltip.querySelector('.hud-title').innerText = data.name;
+                tooltip.querySelector('.hud-desc').innerText = data.desc;
+
+                // Scale Effect
+                obj.scale.lerp(new THREE.Vector3(1.5, 1.5, 1.5), 0.1);
+                obj.material.emissiveIntensity = 2; // Super glow
             } else {
                 document.body.style.cursor = 'default';
                 tooltip.style.display = 'none';
-                objects.forEach(obj => obj.scale.set(1, 1, 1));
+                
+                // Reset Scales
+                objects.forEach(obj => {
+                    obj.scale.lerp(new THREE.Vector3(1, 1, 1), 0.1);
+                    obj.material.emissiveIntensity = 0.5;
+                });
             }
+        });
 
-            // Camera drift
-            camera.position.x = Math.sin(time * 0.1) * 2;
-            camera.position.y = Math.cos(time * 0.1) * 2;
-            camera.lookAt(0, 0, 0);
-
-            renderer.render(scene, camera);
-        };
-
-        animate();
-
-        // RESIZE
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
+            composer.setSize(window.innerWidth, window.innerHeight);
         });
+
     </script>
 </body>
 </html>

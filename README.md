@@ -35,7 +35,9 @@
 
 ---
 
-## 🌌 **The Quantum Core (About Me)**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=THE%20QUANTUM%20CORE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 > _System Initialized... Loading Profile Module v9.0..._
 
@@ -48,7 +50,9 @@
 
 ---
 
-## 🧊 **Holographic Tech Stack**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=HOLOGRAPHIC%20TECH%20STACK&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 <div align="center">
 
@@ -75,7 +79,9 @@
 
 ---
 
-## 📈 **3D Contribution Multiverse**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=CONTRIBUTION%20MULTIVERSE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 <div align="center">
   
@@ -96,7 +102,9 @@
 
 ---
 
-## 📊 **System Metrics**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=SYSTEM%20METRICS&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 <div align="center">
 
@@ -108,7 +116,9 @@
 
 ---
 
-## 🏆 **Hall of Fame (Milestones)**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=HALL%20OF%20FAME&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 <div align="center">
   <img src="https://img.shields.io/badge/20+_Years-EXPERIENCE-FF0055?style=for-the-badge&logo=time&logoColor=white" />
@@ -125,7 +135,9 @@
 
 ---
 
-## 🤝 **Establish Neural Link**
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=NEURAL%20LINK&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+</div>
 
 <div align="center">
 
