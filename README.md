@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/quantum_hero.png" alt="Ashraf Morningstar Quantum Workspace" width="100%" style="border-radius: 15px; box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); border: 2px solid #00bfff;">
+  <img src="./assets/quantum_hero.png" alt="Ashraf Morningstar Quantum Workspace" width="100%">
   
   <br />
 
@@ -12,7 +12,7 @@
 
   <!-- 3D Visitor Badge -->
   <a href="https://github.com/AshrafMorningstar">
-    <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?" alt="Visitor Count" style="border-radius: 5px; box-shadow: 0px 0px 10px #ff00ff;">
+    <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?" alt="Visitor Count">
   </a>
 
 <br><br>
