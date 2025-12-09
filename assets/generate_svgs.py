@@ -23,7 +23,6 @@ def create_radar_svg(filename):
     # Background Grid
     svg += f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="#0a0e17" stroke="#00ffff" stroke-width="2" opacity="0.5"/>'
     svg += f'<circle cx="{cx}" cy="{cy}" r="{radius*0.66}" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3"/>'
-    svg += f'<circle cx="{cx}" cy="{cy}" r="{radius*0.33}" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3"/>'
     
     # Crosshairs
     svg += f'<line x1="{cx-radius}" y1="{cy}" x2="{cx+radius}" y2="{cy}" stroke="#00ffff" stroke-width="1" opacity="0.3"/>'
@@ -38,7 +37,6 @@ def create_radar_svg(filename):
         svg += f'<text x="{tx+8}" y="{ty+4}" fill="#ff0055" font-family="monospace" font-size="10" opacity="0.8">TARGET_{i+1}</text>'
 
     # Scanner Line (Gradient Sector)
-    # Using a path for the "sweep"
     svg += f"""
     <g class="scan">
         <defs>
@@ -52,9 +50,6 @@ def create_radar_svg(filename):
     </g>
     """
     
-    # Outer Decor
-    svg += f'<circle cx="{cx}" cy="{cy}" r="{radius+5}" fill="none" stroke="#9d4edd" stroke-width="2" stroke-dasharray="20,10" opacity="0.7"/>'
-
     svg += '</svg>'
     
     with open(filename, 'w') as f:
@@ -62,7 +57,7 @@ def create_radar_svg(filename):
     print(f"Saved {filename}")
 
 def create_helix_svg(filename):
-    width, height = 800, 200
+    width, height = 800, 150
     
     css = """
     <style>
@@ -76,19 +71,15 @@ def create_helix_svg(filename):
     
     svg = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">'
     svg += css
-    
-    # Background Line
+    svg += f'<rect width="{width}" height="{height}" fill="#0a0e17" />'
     svg += f'<line x1="0" y1="{height/2}" x2="{width}" y2="{height/2}" stroke="#1a1f35" stroke-width="2" />'
     
-    # DNA Strands
     num_dots = 40
     for i in range(num_dots):
         x = i * (width / num_dots)
         y = height / 2
         delay = i * 0.1
-        # Top Strand
         svg += f'<circle cx="{x}" cy="{y-20}" r="3" fill="#00ffff" class="dot" style="animation-delay: -{delay}s" />'
-        # Bottom Strand (Opposite phase)
         svg += f'<circle cx="{x}" cy="{y+20}" r="3" fill="#9d4edd" class="dot" style="animation-delay: -{delay+1.0}s; animation-direction: reverse;" />'
         
     svg += '</svg>'
@@ -97,29 +88,32 @@ def create_helix_svg(filename):
         f.write(svg)
     print(f"Saved {filename}")
 
-def create_hud_panel_svg(filename, title="SYSTEM_CORE"):
-    width, height = 600, 300
+def create_card_frame_svg(filename):
+    width, height = 300, 150
     
+    # Sci-fi card frame
     svg = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">'
     
-    # Panel Background
-    svg += f'<path d="M 20 0 L {width-20} 0 L {width} 20 L {width} {height-20} L {width-20} {height} L 20 {height} L 0 {height-20} L 0 20 Z" fill="#0a0e17" stroke="#00ffff" stroke-width="2" fill-opacity="0.8"/>'
+    # Main bg
+    svg += f'<path d="M 10 0 L {width-10} 0 L {width} 10 L {width} {height-10} L {width-10} {height} L 10 {height} L 0 {height-10} L 0 10 Z" fill="#0d1117" stroke="#39ff14" stroke-width="1" stroke-opacity="0.5"/>'
     
-    # Corner Accents
-    svg += f'<path d="M 5 20 L 5 5 L 20 5" fill="none" stroke="#ff0055" stroke-width="3" />'
-    svg += f'<path d="M {width-20} 5 L {width-5} 5 L {width-5} 20" fill="none" stroke="#ff0055" stroke-width="3" />'
-    svg += f'<path d="M {width-5} {height-20} L {width-5} {height-5} L {width-20} {height-5}" fill="none" stroke="#ff0055" stroke-width="3" />'
-    svg += f'<path d="M 20 {height-5} L 5 {height-5} L 5 {height-20}" fill="none" stroke="#ff0055" stroke-width="3" />'
+    # Corner markers
+    marker_len = 15
+    svg += f'<polyline points="{marker_len},2 2,2 2,{marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # TL
+    svg += f'<polyline points="{width-marker_len},2 {width-2},2 {width-2},{marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # TR
+    svg += f'<polyline points="{width-marker_len},{height-2} {width-2},{height-2} {width-2},{height-marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # BR
+    svg += f'<polyline points="{marker_len},{height-2} 2,{height-2} 2,{height-marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # BL
+
+    # Scanline overlay
+    svg += f'<rect x="5" y="5" width="{width-10}" height="{height-10}" fill="url(#scanline)" opacity="0.1"/>'
+    svg += """
+    <defs>
+        <pattern id="scanline" patternUnits="userSpaceOnUse" width="4" height="4">
+            <path d="M 0 2 L 4 2" stroke="#ffffff" stroke-width="0.5"/>
+        </pattern>
+    </defs>
+    """
     
-    # Title Box
-    svg += f'<rect x="{width/2 - 100}" y="-10" width="200" height="30" fill="#00ffff" />'
-    svg += f'<text x="{width/2}" y="10" font-family="Courier New" font-weight="bold" font-size="16" fill="#000000" text-anchor="middle">{title}</text>'
-    
-    # Grid Lines
-    for i in range(1, 10):
-        y = i * (height/10)
-        svg += f'<line x1="20" y1="{y}" x2="{width-20}" y2="{y}" stroke="#1a1f35" stroke-width="1" />'
-        
     svg += '</svg>'
     
     with open(filename, 'w') as f:
@@ -129,4 +123,4 @@ def create_hud_panel_svg(filename, title="SYSTEM_CORE"):
 if __name__ == "__main__":
     create_radar_svg("assets/radar.svg")
     create_helix_svg("assets/helix.svg")
-    create_hud_panel_svg("assets/hud_panel.svg")
+    create_card_frame_svg("assets/card_frame.svg")

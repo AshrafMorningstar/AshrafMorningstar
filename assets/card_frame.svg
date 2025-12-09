@@ -1,0 +1,7 @@
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg"><path d="M 10 0 L 290 0 L 300 10 L 300 140 L 290 150 L 10 150 L 0 140 L 0 10 Z" fill="#0d1117" stroke="#39ff14" stroke-width="1" stroke-opacity="0.5"/><polyline points="15,2 2,2 2,15" fill="none" stroke="#00ffff" stroke-width="2" /><polyline points="285,2 298,2 298,15" fill="none" stroke="#00ffff" stroke-width="2" /><polyline points="285,148 298,148 298,135" fill="none" stroke="#00ffff" stroke-width="2" /><polyline points="15,148 2,148 2,135" fill="none" stroke="#00ffff" stroke-width="2" /><rect x="5" y="5" width="290" height="140" fill="url(#scanline)" opacity="0.1"/>
+    <defs>
+        <pattern id="scanline" patternUnits="userSpaceOnUse" width="4" height="4">
+            <path d="M 0 2 L 4 2" stroke="#ffffff" stroke-width="0.5"/>
+        </pattern>
+    </defs>
+    </svg>
