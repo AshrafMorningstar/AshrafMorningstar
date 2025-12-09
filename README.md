@@ -1,100 +1,109 @@
 <div align="center">
 
+<!-- ANIMATED HEADER SECTION -->
 <img src="./assets/header_3d.gif" alt="ASHRAF MORNINGSTAR" width="100%" />
 
 <br/>
 
 ```text
-    ╔═════════════════════════════════════════════════════════════════╗
-    ║  SYSTEM STATUS: ONLINE          SECURITY LEVEL: OMEGA           ║
-    ║  LOCATION: CYBERSPACE           USER: S-CLASS ARCHITECT         ║
-    ╚═════════════════════════════════════════════════════════════════╝
+    ╔═══════════════════════════════════════════════════════════════════════════╗
+    ║  WARNING: UNAUTHORIZED ACCESS DETECTED...                                 ║
+    ║  INITIATING NEURAL HANDSHAKE...                                           ║
+    ║  IDENTITY VERIFIED: S-CLASS ARCHITECT // [ASHRAF MORNINGSTAR]             ║
+    ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=25&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=QUANTUM+ARCHITECT;FULL+STACK+ENGINEER;CYBERSECURITY+EXPERT;GAME+DEV+VETERAN" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=20&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=ACCESSING+MAINFRAME...;DECRYPTING+DATA_STREAMS...;WELCOME+TO+ THE+VOID." />
 
 </div>
 
 <br/>
 
-<table align="center" width="100%" style="border-collapse: collapse;">
+<!-- MAIN HUD LAYOUT -->
+<table align="center" width="100%" style="border-collapse: collapse; background-color: #0a0e17; border: 2px solid #00ffff;">
     <tr>
-        <td width="40%" align="center" valign="middle">
-            <div style="position: relative;">
-                <img src="./assets/sphere_3d.gif" width="300" alt="Holographic Sphere" />
-            </div>
-        </td>
-        <td width="60%" valign="middle">
-            <h2 align="center">⚡ IDENTITY MATRIX</h2>
-            <p align="center">
-                <i>"Reality is just a compilation error waiting to be fixed."</i>
-            </p>
-            <br/>
-            <code>// CURRENT_OBJECTIVES</code>
-             <br/>
-            > 🛡️ <b>Protocol</b>: Ethical Hacker & Security Specialist <br/>
-            > 🎮 <b>Simulation</b>: Game Developer (Unity/Unreal) <br/>
-            > ⚡ <b>Core</b>: Direct Neural Interface (Rust/Go/Node) <br/>
-            > 🏗️ <b>Legacy</b>: Architect for [Redacted Corporate Entities]
-            <br/><br/>
+        <!-- LEFT RADAR PANEL -->
+        <td width="35%" align="center" valign="top" style="border-right: 2px dashed #9d4edd; padding: 10px;">
             <div align="center">
-            <img src="https://img.shields.io/badge/Level-99-9d4edd?style=for-the-badge&logo=riotgames&logoColor=white" />
-            <img src="https://img.shields.io/badge/Mana-INFINITE-00ffff?style=for-the-badge&logo=azuredevops&logoColor=black" />
+                <h3 style="color: #ff0055;">TARGET ACQUISITION</h3>
+                <img src="./assets/radar.svg" width="90%" alt="Scanning Radar" />
+                <br/><br/>
+                <img src="./assets/sphere_3d.gif" width="60%" alt="Identity Core" />
+                <br/><br/>
+                <div align="left" style="font-family: monospace; color: #00ffff;">
+                    > STATUS: <span style="color:#39ff14">ONLINE</span><br/>
+                    > UPTIME: <span style="color:#ff0055">INFINITE</span><br/>
+                    > THREAT LEVEL: <span style="color:#ff0055">OMEGA</span>
+                </div>
             </div>
         </td>
+
+        <!-- RIGHT DATA PANEL -->
+        <td width="65%" valign="top" style="padding: 20px;">
+            <h2 align="center" style="color: #00ffff; border-bottom: 2px solid #00ffff;">⚡ MISSION BRIEFING</h2>
+
+            <p style="font-family: monospace; color: #ffffff;">
+                <span style="color: #39ff14;">root@morningstar:~$</span> cat mission_objectives.txt<br/><br/>
+                <b>Greetings, Operative.</b> Detailed analysis indicates you are seeking a <b>Technological Singularity</b>.
+                I engineer digital realities, secure critical infrastructure, and architect the future of the web.
+            </p>
+
+            <br/>
+
+            <!-- SKILLS MATRIX -->
+            <h3 align="center" style="color: #9d4edd;">[ WEAPON SYSTEMS ]</h3>
+
+            <table align="center" width="100%">
+                <tr>
+                    <td align="center">
+                        <img src="https://img.shields.io/badge/HEAVY_ARTILLERY-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+                        <br/>
+                        <img src="https://img.shields.io/badge/TACTICAL_OPS-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+                        <br/>
+                        <img src="https://img.shields.io/badge/KINETIC_STRIKE-Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+                    </td>
+                    <td align="center">
+                        <img src="https://img.shields.io/badge/WORLD_BUILDER-Unreal-313131?style=for-the-badge&logo=unreal-engine&logoColor=white" />
+                        <br/>
+                        <img src="https://img.shields.io/badge/PHYSICS_ENGINE-Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
+                        <br/>
+                        <img src="https://img.shields.io/badge/NEURAL_NET-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+                    </td>
+                </tr>
+            </table>
+
+            <br/>
+
+           <!-- 3D CUBE ANIMATION -->
+           <div align="center">
+               <img src="./assets/cube_3d.gif" width="150" alt="Skill Hypercube" />
+               <p style="font-size: 10px; color: #555;">(HYPERCUBE ROTATION CONSTANT)</p>
+           </div>
+
+        </td>
     </tr>
+
 </table>
 
+<!-- DNA STRIP -->
 <div align="center">
+    <img src="./assets/helix.svg" width="100%" alt="DNA Sequence" />
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a0e17&height=50&section=header&text=" width="100%" />
+<!-- CONTRIBUTION SECTOR -->
+<h2 align="center">📊 DATA VISUALIZATION</h2>
 
-## 🧊 SKILL HYPERCUBE
-
-<img src="./assets/cube_3d.gif" width="200" alt="Skill Cube" />
-
-<br/>
-
-<table align="center">
-    <tr>
-        <td align="center"><b>[ CORE_SYSTEMS ]</b></td>
-        <td align="center"><b>[ RENDER_ENGINE ]</b></td>
-        <td align="center"><b>[ NEURAL_NET ]</b></td>
-    </tr>
-    <tr>
-        <td align="center">
-             <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-             <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-             <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
-        </td>
-        <td align="center">
-            <img src="https://img.shields.io/badge/Unreal-313131?style=flat-square&logo=unreal-engine&logoColor=white" />
-            <img src="https://img.shields.io/badge/Unity-100000?style=flat-square&logo=unity&logoColor=white" />
-            <img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" />
-        </td>
-        <td align="center">
-             <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-             <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-             <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
-        </td>
-    </tr>
-</table>
+<div align="center" style="border: 1px solid #333; padding: 10px; border-radius: 10px; background: #010101;">
+    <a href="https://github.com/AshrafMorningstar/AshrafMorningstar/actions">
+        <!-- This image will exist once the action runs -->
+        <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
+    </a>
+    <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" width="100%" />
+</div>
 
 <br/>
 
-## 📊 CONTRIBUTION UNIVERSE
-
-<a href="https://github.com/AshrafMorningstar/AshrafMorningstar/actions">
-    <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
-</a>
-<p align="center"><i>(Awaiting Action Trigger...)</i></p>
-
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" width="100%" />
-
-<br/>
-
-## 📈 SYSTEM METRICS
-
+<!-- STATS TERMINAL -->
 <table align="center">
     <tr>
         <td>
@@ -108,33 +117,24 @@
 
 <br/>
 
-## 🏆 TROPHY CASE
-
+<!-- FOOTER ACCESS -->
 <div align="center">
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=AshrafMorningstar&theme=darkhub&no-frame=true&margin-w=15" />
-</a>
-</div>
-
-<br/>
-
-## 📡 ENCRYPTED CHANNELS
-
-<a href="https://linkedin.com/in/ashraf_morningstar">
-  <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1f35" />
-</a>
-<a href="https://discord.gg/ashraf_morningstar">
-  <img src="https://img.shields.io/badge/DISCORD-JOIN_SERVER-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=1a1f35" />
-</a>
-<a href="https://x.com/ams_morningstar">
-  <img src="https://img.shields.io/badge/X-FOLLOW-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=1a1f35" />
-</a>
-<a href="https://buymeacoffee.com/ashraf_morningstar">
-  <img src="https://img.shields.io/badge/CORE-FUEL_SYSTEM-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=1a1f35" />
-</a>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0a0e17&height=100&section=footer&text=TERMINATING%20SESSION...&fontSize=20&fontAlign=50&fontColor=00ffff" width="100%" />
-
+    <table style="border: 2px solid #00ffff; border-radius: 20px;">
+        <tr>
+            <td style="padding: 10px;">
+                <a href="https://linkedin.com/in/ashraf_morningstar">
+                  <img src="https://img.shields.io/badge/LINKEDIN-UPLINK-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a1f35" />
+                </a>
+                <a href="https://discord.gg/ashraf_morningstar">
+                  <img src="https://img.shields.io/badge/DISCORD-SECURE_CHAT-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=1a1f35" />
+                </a>
+                <a href="https://buymeacoffee.com/ashraf_morningstar">
+                  <img src="https://img.shields.io/badge/ENERGY-RECHARGE-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black&labelColor=1a1f35" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    
+    <br/>
+    <p style="color: #555; font-size: 10px;">TERMINAL SESSION ID: #8X92-ALPHA // END TRANSMISSION</p>
 </div>
