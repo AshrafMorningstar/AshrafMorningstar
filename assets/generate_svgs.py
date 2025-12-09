@@ -88,32 +88,33 @@ def create_helix_svg(filename):
         f.write(svg)
     print(f"Saved {filename}")
 
-def create_card_frame_svg(filename):
+def create_project_card(filename, title, subtitle, color):
     width, height = 300, 150
     
-    # Sci-fi card frame
     svg = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">'
+    # Font import (often ignored but good for local)
+    svg += '<style>.text { font-family: monospace; font-weight: bold; }</style>'
     
-    # Main bg
-    svg += f'<path d="M 10 0 L {width-10} 0 L {width} 10 L {width} {height-10} L {width-10} {height} L 10 {height} L 0 {height-10} L 0 10 Z" fill="#0d1117" stroke="#39ff14" stroke-width="1" stroke-opacity="0.5"/>'
+    # Frame
+    svg += f'<path d="M 10 0 L {width-10} 0 L {width} 10 L {width} {height-10} L {width-10} {height} L 10 {height} L 0 {height-10} L 0 10 Z" fill="#0d1117" stroke="{color}" stroke-width="2" stroke-opacity="0.8"/>'
     
-    # Corner markers
+    # Corners
     marker_len = 15
-    svg += f'<polyline points="{marker_len},2 2,2 2,{marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # TL
-    svg += f'<polyline points="{width-marker_len},2 {width-2},2 {width-2},{marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # TR
-    svg += f'<polyline points="{width-marker_len},{height-2} {width-2},{height-2} {width-2},{height-marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # BR
-    svg += f'<polyline points="{marker_len},{height-2} 2,{height-2} 2,{height-marker_len}" fill="none" stroke="#00ffff" stroke-width="2" />' # BL
+    svg += f'<polyline points="{marker_len},4 4,4 4,{marker_len}" fill="none" stroke="{color}" stroke-width="2" />' 
+    svg += f'<polyline points="{width-marker_len},4 {width-4},4 {width-4},{marker_len}" fill="none" stroke="{color}" stroke-width="2" />' 
+    svg += f'<polyline points="{width-marker_len},{height-4} {width-4},{height-4} {width-4},{height-marker_len}" fill="none" stroke="{color}" stroke-width="2" />' 
+    svg += f'<polyline points="{marker_len},{height-4} 4,{height-4} 4,{height-marker_len}" fill="none" stroke="{color}" stroke-width="2" />' 
 
-    # Scanline overlay
-    svg += f'<rect x="5" y="5" width="{width-10}" height="{height-10}" fill="url(#scanline)" opacity="0.1"/>'
-    svg += """
-    <defs>
-        <pattern id="scanline" patternUnits="userSpaceOnUse" width="4" height="4">
-            <path d="M 0 2 L 4 2" stroke="#ffffff" stroke-width="0.5"/>
-        </pattern>
-    </defs>
-    """
+    # Title
+    svg += f'<text x="{width/2}" y="50" fill="{color}" font-family="Courier New, monospace" font-weight="bold" font-size="18" text-anchor="middle" class="text">{title}</text>'
     
+    # Subtitle
+    svg += f'<text x="{width/2}" y="80" fill="#aaaaaa" font-family="sans-serif" font-size="12" text-anchor="middle">{subtitle}</text>'
+
+    # Status Bar
+    svg += f'<rect x="40" y="{height-30}" width="{width-80}" height="4" fill="#333" rx="2" />'
+    svg += f'<rect x="40" y="{height-30}" width="{width-120}" height="4" fill="{color}" rx="2" />'
+
     svg += '</svg>'
     
     with open(filename, 'w') as f:
@@ -123,4 +124,8 @@ def create_card_frame_svg(filename):
 if __name__ == "__main__":
     create_radar_svg("assets/radar.svg")
     create_helix_svg("assets/helix.svg")
-    create_card_frame_svg("assets/card_frame.svg")
+    # Generate specific cards
+    create_project_card("assets/card_alpha.svg", "PROJECT_ALPHA", "Next-Gen Rust Engine", "#00ffff")
+    create_project_card("assets/card_sentinel.svg", "NET_SENTINEL", "AI Cyber Firewall", "#ff0055")
+    create_project_card("assets/card_void.svg", "VOID_RENDER", "WebGL 2.0 Visualizer", "#9d4edd")
+

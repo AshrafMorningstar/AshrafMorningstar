@@ -95,25 +95,19 @@
 <table align="center" width="100%">
     <tr>
         <td width="33%" align="center">
-             <div style="background-image: url('./assets/card_frame.svg'); background-size: cover; width: 250px; height: 120px; padding: 10px;">
-                <h3 style="color: #00ffff;">PROJECT_ALPHA</h3>
-                <p style="font-size: 10px; color: #ccc;">Next-gen game engine written in Rust.</p>
-                <img src="https://img.shields.io/badge/ACCESS-GRANTED-39ff14?style=flat-square" />
-             </div>
+             <a href="https://github.com/AshrafMorningstar">
+                 <img src="./assets/card_alpha.svg" width="100%" alt="Project Alpha" />
+             </a>
         </td>
         <td width="33%" align="center">
-             <div style="background-image: url('./assets/card_frame.svg'); background-size: cover; width: 250px; height: 120px; padding: 10px;">
-                <h3 style="color: #ff0055;">NET_SENTINEL</h3>
-                <p style="font-size: 10px; color: #ccc;">AI-powered cybersecurity firewall.</p>
-                <img src="https://img.shields.io/badge/STATUS-ACTIVE-ff0055?style=flat-square" />
-             </div>
+             <a href="https://github.com/AshrafMorningstar">
+                 <img src="./assets/card_sentinel.svg" width="100%" alt="Net Sentinel" />
+             </a>
         </td>
         <td width="33%" align="center">
-             <div style="background-image: url('./assets/card_frame.svg'); background-size: cover; width: 250px; height: 120px; padding: 10px;">
-                <h3 style="color: #9d4edd;">VOID_RENDER</h3>
-                <p style="font-size: 10px; color: #ccc;">WebGL 2.0 visualization library.</p>
-                <img src="https://img.shields.io/badge/VERSION-2.0-9d4edd?style=flat-square" />
-             </div>
+             <a href="https://github.com/AshrafMorningstar">
+                 <img src="./assets/card_void.svg" width="100%" alt="Void Render" />
+             </a>
         </td>
     </tr>
 </table>
