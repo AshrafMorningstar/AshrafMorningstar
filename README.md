@@ -1,175 +1,365 @@
+<!-- 3D Enhanced GitHub Profile README for AshrafMorningstar -->
 <div align="center">
 
-  <!-- 3D IMMERSIVE HEADER -->
-  <a href="https://github.com/AshrafMorningstar">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=300&section=header&text=ASHRAF%20MORNINGSTAR&fontSize=70&fontAlign=50&fontColor=00F0FF&desc=QUANTUM%20ARCHITECT%20%7C%20FULL%20STACK%20%7C%20CYBERSECURITY&descSize=25&descAlign=50&descColor=ffffff&animation=fadeIn&stroke=00F0FF&strokeWidth=2">
-      <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=300&section=header&text=ASHRAF%20MORNINGSTAR&fontSize=70&fontAlign=50&fontColor=000000&desc=QUANTUM%20ARCHITECT%20%7C%20FULL%20STACK%20%7C%20CYBERSECURITY&descSize=25&descAlign=50&descColor=333333&animation=fadeIn&stroke=000000&strokeWidth=2">
-      <img alt="Ashraf Morningstar 3D Header" src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=300&section=header&text=ASHRAF%20MORNINGSTAR&fontSize=70&fontAlign=50&fontColor=00F0FF&desc=QUANTUM%20ARCHITECT%20%7C%20FULL%20STACK%20%7C%20CYBERSECURITY&descSize=25&descAlign=50&descColor=ffffff&animation=fadeIn&stroke=00F0FF&strokeWidth=2">
-    </picture>
-  </a>
-
-  <!-- ACTION NAVIGATION -->
-  <p>
-    <a href="#-featured-projects"><img src="https://img.shields.io/badge/🚀_Projects-DEPLOY-FF0055?style=flat-square&logo=visual-studio-code&logoColor=white" /></a>
-    <a href="#-3d-projects--assets"><img src="https://img.shields.io/badge/🧊_3D_Vault-ACCESS-00F0FF?style=flat-square&logo=blender&logoColor=white" /></a>
-    <a href="#-live-system-metrics"><img src="https://img.shields.io/badge/📊_Stats-ANALYZE-00FF00?style=flat-square&logo=google-analytics&logoColor=white" /></a>
-    <a href="#-connect-node"><img src="https://img.shields.io/badge/📬_Contact-PING-FFDD00?style=flat-square&logo=gmail&logoColor=black" /></a>
-  </p>
-
-  <!-- DYNAMIC BIO TYPEWRITER -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=25&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=false&width=900&height=60&lines=Forging+Immersive+Digital+Realities...;Architecting+Unbreakable+Systems...;Compiling+the+Future+of+Web+3.0...;Leveling+Up+Your+User+Experience..." alt="Typing Bio" />
-  </a>
-
-</div>
-
----
-
-<!-- 3D TECH STACK GALAXY -->
-
-## 🌌 The Tech Stack Galaxy
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="20%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="55" alt="React" />
-        <br><b>React Core</b>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/threejs/threejs-original.svg" width="55" alt="Three.js" />
-        <br><b>WebGL</b>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" width="55" alt="Rust" />
-        <br><b>Native</b>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="55" alt="Node.js" />
-        <br><b>Backend</b>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="55" alt="Unity" />
-        <br><b>XR/VR</b>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" width="55" alt="Next.js" />
-        <br><b>Next.js</b>
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" width="55" alt="GraphQL" />
-        <br><b>Data</b>
-      </td>
-       <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="55" alt="Docker" />
-        <br><b>DevOps</b>
-      </td>
-       <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="55" alt="Python" />
-        <br><b>AI/ML</b>
-      </td>
-       <td align="center">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unrealengine/unrealengine-original.svg" width="55" alt="Unreal" />
-        <br><b>Engine</b>
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-<!-- LIVE GITHUB STATS - 3D CENTERPIECE -->
-
-## 📊 Live System Metrics
-
-<div align="center">
-
-  <!-- 3D Contribution Graph -->
-  <h3>🧬 Contribution DNA (3D)</h3>
-  <a href="https://github.com/AshrafMorningstar">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg">
-        <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-green.svg">
-        <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
-    </picture>
-  </a>
-
-  <!-- Snake Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
-
-<br><br>
-
-  <!-- Stats Grid -->
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&icon_color=00F0FF&title_color=00F0FF&text_color=ffffff" width="450" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshrafMorningstar&theme=radical&hide_border=true&include_all_commits=true&count_private=true&layout=donut&bg_color=0d1117&icon_color=00F0FF&title_color=00F0FF&text_color=ffffff" width="450" />
-      </td>
-    </tr>
-  </table>
+<!-- 3D Animated Header with Interactive Elements -->
+<svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#203a43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5364;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#2c5364"/>
+    </filter>
+  </defs>
   
-  <br>
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=radical&hide_border=true&background=0d1117&stroke=00F0FF&ring=00F0FF&fire=00F0FF&currStreakLabel=00F0FF" width="95%" />
+  <!-- 3D Header Text -->
+  <foreignObject width="100%" height="100%" x="0" y="0">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;position:relative;">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;width:100%;">
+        <h1 style="font-size:3.5em;font-weight:800;margin:0;color:white;text-shadow:0 5px 15px rgba(0,0,0,0.5);font-family:'Segoe UI',Arial,sans-serif;">
+          <span style="background:linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+            Ashraf Morningstar
+          </span>
+        </h1>
+        <p style="font-size:1.2em;color:#b0b0b0;margin-top:10px;letter-spacing:2px;">
+          3D Visionary & Digital Creator
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
+
+<!-- 3D Animated Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/3D-Designer-00dbde?style=for-the-badge&logo=blender&logoColor=white" alt="3D Designer" />
+  <img src="https://img.shields.io/badge/Open-Source-FC00FF?style=for-the-badge&logo=github&logoColor=white" alt="Open Source" />
+  <img src="https://img.shields.io/badge/Digital-Creator-2c5364?style=for-the-badge&logo=adobec Creative Cloud&logoColor=white" alt="Digital Creator" />
+  <img src="https://img.shields.io/badge/Innovation-Focused-00dbde?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Innovation Focused" />
+</p>
+
+<!-- Visitor Counter with 3D Effect -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=AshrafMorningstar&label=PROFILE+VIEWS&color=2c5364&style=flat-square" alt="Profile Views" />
+</p>
 
 </div>
 
 ---
 
-<!-- FEATURED PROJECTS -->
+## 🎯 **About Me**
 
-## 🌟 Featured Projects
+<div align="center">
+  
+```javascript
+const ashraf = {
+  pronouns: "he" | "him",
+  code: ["JavaScript", "Python", "C++"],
+  tools: ["Blender", "Three.js", "Unity", "Fusion 360"],
+  architecture: ["3D Modeling", "Digital Sculpting", "Procedural Generation"],
+  challenge: "Transforming abstract concepts into immersive 3D realities"
+};
+```
 
-| **Project**           | **Description & Stack**                                                                                                                                                                                                                                                                          | **Preview**                                                                                                                                                        |
-| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **🚀 Quantum Engine** | **3D Game Engine built in C++.**<br>Features PBR rendering, physics simulation, and Lua scripting.<br><br>![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)   | <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" width="200" style="border-radius: 10px;" />    |
-| **🛡️ CipherGuard**    | **Next-Gen Cybersecurity Tool.**<br>Real-time threat detection using ML algorithms.<br><br>![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white) | <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" width="200" style="border-radius: 10px;" />    |
-| **🌐 MetaVerse Hub**  | **Web3 Social Platform.**<br>Decentralized identity and 3D spaces.<br><br>![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white)                          | <img src="https://images.unsplash.com/photo-1614064641938-3bcee5297404?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" width="200" style="border-radius: 10px;" /> |
+<!-- Animated 3D Typewriter Effect -->
+<div>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=4000&pause=1000&color=00DBDE&center=true&vCenter=true&width=600&lines=Building+Immersive+3D+Experiences;Creating+Digital+Worlds+from+Ideas;Pushing+the+Boundaries+of+Visual+Design" alt="Typing SVG" />
+</div>
+
+</div>
+
+I'm a passionate 3D designer and digital creator focused on building immersive visual experiences. My work bridges the gap between technical precision and artistic expression, creating digital assets that tell stories and solve real-world problems through three-dimensional design.
 
 ---
 
-<!-- 3D PROJECT LINKS -->
+## 🛠️ **3D Tech Stack Galaxy**
 
-## 🧊 3D Projects & Assets
+<!-- 3D Technology Visualization -->
+<table align="center">
+<tr>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" width="48" height="48" alt="Blender" />
+  <br><strong>Blender</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" width="48" height="48" alt="Three.js" />
+  <br><strong>Three.js</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" width="48" height="48" alt="Unity" />
+  <br><strong>Unity</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg" width="48" height="48" alt="Maya" />
+  <br><strong>Maya</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" width="48" height="48" alt="OpenGL" />
+  <br><strong>OpenGL</strong>
+</td>
+</tr>
+<tr>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" height="48" alt="Python" />
+  <br><strong>Python</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+  <br><strong>JavaScript</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="48" height="48" alt="C++" />
+  <br><strong>C++</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webgl/webgl-original.svg" width="48" height="48" alt="WebGL" />
+  <br><strong>WebGL</strong>
+</td>
+<td align="center" width="96">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="48" height="48" alt="Git" />
+  <br><strong>Git</strong>
+</td>
+</tr>
+</table>
 
-_Explore the experimental vault for raw models, shaders, and WebGL demos._
+---
+
+## 📊 **GitHub Analytics & 3D Contributions**
 
 <div align="center">
-  <a href="./PROJECTS_3D.md">
-    <img src="https://img.shields.io/badge/ENTER_THE_VAULT-CLICK_HERE_FOR_3D_ASSETS-FF0055?style=for-the-badge&logo=blender&logoColor=white&height=60" />
-  </a>
+
+<!-- 3D Stats Grid -->
+<table>
+  <tr>
+    <td>
+      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=dark&bg_color=0f2027,203a43,2c5364&title_color=00dbde&icon_color=fc00ff&text_color=ffffff&border_color=2c5364&include_all_commits=true&count_private=true" />
+    </td>
+    <td>
+      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshrafMorningstar&layout=compact&theme=dark&bg_color=0f2027,203a43,2c5364&title_color=00dbde&text_color=ffffff&border_color=2c5364&langs_count=8" />
+    </td>
+  </tr>
+</table>
+
+<!-- 3D Contribution Graph -->
+<img src="https://github-profile-3d-contrib.vercel.app/profile?username=AshrafMorningstar&theme=dark&color=00dbde&bg_color=0f2027&dimensions=8&margin-w=10&margin-h=10" alt="3D Contribution Graph" width="100%" />
+
+<!-- GitHub Streak Stats -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=dark&background=0f2027&stroke=2c5364&ring=00dbde&fire=fc00ff&currStreakNum=ffffff&sideNums=00dbde&currStreakLabel=00dbde&dates=b0b0b0" alt="GitHub Streak Stats" width="100%" />
+
 </div>
 
 ---
 
-<!-- CONNECT SECTION -->
-
-## <a name="-connect-node"></a>📡 Connect Node
+## 🌟 **Featured 3D Projects**
 
 <div align="center">
-  <a href="https://linkedin.com/in/ashraf_morningstar"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/AshrafMorningstar"><img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://x.com/ams_morningstar"><img src="https://img.shields.io/badge/X-Network-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
-  <br>
-  <a href="mailto:contact@ashrafmorningstar.dev"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+
+<!-- Project 1 -->
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🚀 3D Solar System Simulation</h3>
+      <p align="center">
+        <strong>Interactive 3D solar system with realistic planetary motion and lighting</strong>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" />
+        <img src="https://img.shields.io/badge/WebGL-990000?style=for-the-badge&logo=webgl&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+      </p>
+      <p align="center">
+        <em>Real-time physics simulation with customizable planetary parameters</em>
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🏗️ Architectural Visualization Suite</h3>
+      <p align="center">
+        <strong>High-fidelity architectural renderings with dynamic lighting</strong>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" />
+        <img src="https://img.shields.io/badge/Cycles-000000?style=for-the-badge&logo=cycles&logoColor=white" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+      </p>
+      <p align="center">
+        <em>Procedural generation of architectural elements with material libraries</em>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<!-- Project 2 -->
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🎮 VR Game Environment</h3>
+      <p align="center">
+        <strong>Immersive VR environment with interactive 3D elements</strong>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" />
+        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
+        <img src="https://img.shields.io/badge/VR-000000?style=for-the-badge&logo=htc&logoColor=white" />
+      </p>
+      <p align="center">
+        <em>Optimized for performance with LOD systems and occlusion culling</em>
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🔬 Molecular Visualization Tool</h3>
+      <p align="center">
+        <strong>Scientific visualization of complex molecular structures in 3D</strong>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/OpenGL-5586A4?style=for-the-badge&logo=opengl&logoColor=white" />
+        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+        <img src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" />
+      </p>
+      <p align="center">
+        <em>Real-time manipulation and analysis of 3D molecular data</em>
+      </p>
+    </td>
+  </tr>
+</table>
+
 </div>
 
-<br>
+---
+
+## 📁 **3D File Repository & Assets**
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=AshrafMorningstar&label=PROFILE+VISITS&color=00f0ff&style=for-the-badge&logo=github" alt="Visitor Count" />
+
+<!-- 3D File Cabinet Visualization -->
+<svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cabinetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2027;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2c5364;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
   
-  <br><br>
+  <!-- Cabinet Structure -->
+  <rect x="20%" y="20" width="60%" height="160" rx="10" fill="url(#cabinetGradient)" stroke="#00dbde" stroke-width="2"/>
   
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=END%20OF%20LINE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+  <!-- Drawers -->
+  <rect x="22%" y="40" width="56%" height="30" rx="5" fill="#203a43"/>
+  <rect x="22%" y="80" width="56%" height="30" rx="5" fill="#203a43"/>
+  <rect x="22%" y="120" width="56%" height="30" rx="5" fill="#203a43"/>
+  
+  <!-- File Labels -->
+  <foreignObject x="25%" y="45" width="50%" height="20">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#00dbde;font-size:12px;font-weight:bold;">
+      📦 3D Models (.obj, .fbx, .stl)
+    </div>
+  </foreignObject>
+  <foreignObject x="25%" y="85" width="50%" height="20">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#00dbde;font-size:12px;font-weight:bold;">
+      🎨 Textures & Materials
+    </div>
+  </foreignObject>
+  <foreignObject x="25%" y="125" width="50%" height="20">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#00dbde;font-size:12px;font-weight:bold;">
+      🎬 Animations & Rigs
+    </div>
+  </foreignObject>
+</svg>
+
+</div>
+
+### **3D Asset Categories:**
+
+- **Architectural Models** - High-detail building and interior designs
+- **Character Models** - Animated characters with rigging and textures
+- **Product Visualizations** - Commercial product models and renders
+- **Scientific Visualizations** - Data-driven 3D representations
+- **Game Assets** - Optimized models for real-time rendering
+
+### **File Formats Available:**
+
+| Format         | Purpose                  | Count |
+| -------------- | ------------------------ | ----- |
+| **.blend**     | Blender project files    | 25+   |
+| **.obj**       | 3D model exchange        | 50+   |
+| **.stl**       | 3D printing ready        | 30+   |
+| **.fbx**       | Animation & Game engines | 20+   |
+| **.gltf/.glb** | Web 3D models            | 15+   |
+
+🔗 **[View Full 3D Portfolio →](https://github.com/AshrafMorningstar?tab=repositories)**
+
+---
+
+## 📈 **Development Activity**
+
+<!-- GitHub Activity Graph -->
+<div align="center">
+  
+[![Ashraf's GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=AshrafMorningstar&custom_title=Ashraf's%20Contribution%20Graph&theme=react-dark&bg_color=0f2027&color=00dbde&line=fc00ff&point=ffffff&area=true&hide_border=true)](https://github.com/AshrafMorningstar)
+
+</div>
+
+---
+
+## 🏆 **GitHub Trophies**
+
+<div align="center">
+  
+![](https://github-profile-trophy.vercel.app/?username=AshrafMorningstar&theme=darkhub&no-frame=true&row=2&column=4&margin-w=15&margin-h=15)
+
+</div>
+
+---
+
+## 🌐 **Connect With Me**
+
+<div align="center">
+
+<!-- Animated 3D Connect Buttons -->
+<a href="https://linkedin.com/in/yourprofile">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0f2027" alt="LinkedIn" />
+</a>
+<a href="mailto:your.email@example.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0f2027" alt="Email" />
+</a>
+<a href="https://twitter.com/yourprofile">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0f2027" alt="Twitter" />
+</a>
+<a href="https://yourportfolio.com">
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white&labelColor=0f2027" alt="Portfolio" />
+</a>
+<a href="https://artstation.com/yourprofile">
+  <img src="https://img.shields.io/badge/ArtStation-13AFF0?style=for-the-badge&logo=artstation&logoColor=white&labelColor=0f2027" alt="ArtStation" />
+</a>
+
+</div>
+
+---
+
+## 🎮 **Fun 3D Facts**
+
+<div align="center">
+
+<!-- Random 3D Joke Generator -->
+<a href="https://readme-jokes.vercel.app">
+  <img align="center" src="https://readme-jokes.vercel.app/api?theme=dark&bgColor=0f2027&borderColor=2c5364&textColor=00dbde&qColor=fc00ff&aColor=b0b0b0" alt="Jokes Card" width="80%" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+  
+### **"Every great design begins with an even better story"**
+
+⭐ **Star my repositories if you find something useful!**  
+🔄 **This README updates dynamically**
+
+</div>
+
+<!-- Special 3D Footer -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/main/images/bottom.svg" width="100%" alt="Footer" />
 </div>
