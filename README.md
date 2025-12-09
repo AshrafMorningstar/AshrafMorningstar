@@ -10,9 +10,9 @@
 
   <br />
 
-  <!-- 3D Visitor Badge -->
+  <!-- RELIABLE Visitor Badge -->
   <a href="https://github.com/AshrafMorningstar">
-    <img src="https://profile-counter.glitch.me/AshrafMorningstar/count.svg?" alt="Visitor Count">
+    <img src="https://komarev.com/ghpvc/?username=AshrafMorningstar&label=QUANTUM+VISITS&color=00f0ff&style=for-the-badge&logo=github" alt="Visitor Count">
   </a>
 
 <br><br>
@@ -27,7 +27,7 @@
 <br />
 
 <div align="center">
-  <!-- 3D Skyline Link (Illustration of 3D) -->
+  <!-- 3D Skyline Link -->
   <a href="https://github.com/AshrafMorningstar">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=WELCOME%20TO%20THE%20MATRIX&fontSize=40&fontAlign=50&fontColor=ffffff&desc=Designed%20by%20Ashraf%20Morningstar&descSelect=true&descSize=20&descAlign=50" width="100%" />
   </a>
@@ -52,16 +52,23 @@
 
 <div align="center">
 
-<!-- 3D Tech Stack Globe Approximation -->
+<!-- Reliable Shield Badges in a Grid -->
 <a href="https://github.com/AshrafMorningstar">
-  <img src="https://skill-icons-rho.vercel.app/api?username=AshrafMorningstar&theme=dark&perline=8&layout=compact&skills=c,cpp,cs,python,java,js,ts,rust,go,react,next,vue,angular,threejs,unity,unreal,blender,figma,aws,gcp,azure,docker,k8s,linux,git,hackthebox,kali,tensorflow,pytorch,opencv" alt="My Skills" />
-</a>
-
-<br><br>
-
-<!-- 3D Trophies -->
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=AshrafMorningstar&theme=onestar&no-frame=true&no-bg=true&margin-w=15&margin-h=15" alt="Trophies" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Unreal_Engine-313131?style=for-the-badge&logo=unreal-engine&logoColor=white" />
+  <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
+  <br>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
 </a>
 
 </div>
@@ -73,8 +80,12 @@
 <div align="center">
   
   <h3>🔮 The Night Rainbow (3D View)</h3>
-  <!-- NOTE: This image will appear after the GitHub Action runs successfully -->
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
+  <!-- Fallback/Placeholder until automated action runs -->
+  <a href="https://github.com/AshrafMorningstar/AshrafMorningstar/actions">
+      <img src="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph (Click to Generate)" width="100%" />
+  </a>
+  
+  <p><i>(If image is broken, click above to run the Action manually)</i></p>
 
 <br><br>
 
