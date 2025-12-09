@@ -19,39 +19,39 @@
 <br/>
 
 <!-- HUD LAYOUT TABLE -->
-<table align="center" width="100%" style="border-collapse: collapse; background-color: #0a0e17;">
+<table align="center" width="100%">
     <tr>
         <!-- LEFT PANEL: STATUS -->
         <td width="40%" align="center" valign="top">
-            <div style="border: 1px solid #00ffff; padding: 10px; border-radius: 5px;">
-                <h3 align="center" style="color: #ff0055;">TARGET ACQUISITION</h3>
+            <h3 align="center">TARGET ACQUISITION</h3>
+            <div align="center">
                 <img src="./assets/radar.svg" width="90%" alt="Radar" />
                 <br/><br/>
                 <img src="./assets/sphere_3d.gif" width="70%" alt="Core" />
                 <br/><br/>
                 <div align="left">
-                    <code>> SYSTEM: <span style="color:#39ff14">ONLINE</span></code><br/>
-                    <code>> DEFENSES: <span style="color:#00ffff">MAXIMUM</span></code><br/>
-                    <code>> LOCATION: <span style="color:#9d4edd">CYBERSPACE</span></code>
+                    <pre>
+> SYSTEM:   ONLINE
+> DEFENSES: MAXIMUM
+> LOCATION: CYBERSPACE
+                    </pre>
                 </div>
             </div>
         </td>
         
         <!-- RIGHT PANEL: CONTENT -->
-        <td width="60%" valign="top" style="padding-left: 20px;">
+        <td width="60%" valign="top">
              <!-- MISSION LOG -->
-             <div style="border-bottom: 2px solid #00ffff; margin-bottom: 10px;">
-                <h2 style="color: #00ffff; margin: 0;">⚡ MISSION BRIEFING</h2>
-             </div>
+             <h3>⚡ MISSION BRIEFING</h3>
              
-             <p style="color: #ffffff;">
+             <p>
                 <b>Ident:</b> Ashraf Morningstar<br/>
                 <b>Class:</b> Technological Architect<br/>
                 <b>Objective:</b> Constructing the digital singularity.
              </p>
              
-             <code>root@morningstar:~$ cat bio.txt</code>
-             <br/>
+             <pre>root@morningstar:~$ cat bio.txt</pre>
+             
              <blockquote>
                 I am a veteran developer architecting high-performance systems for the world's leading tech giants. My code is secure, scalable, and dimensionally transcendent.
              </blockquote>
@@ -59,7 +59,7 @@
              <br/>
 
              <!-- SKILLS GRID -->
-             <h3 align="center" style="color: #9d4edd;">[ ABILITY MATRIX ]</h3>
+             <h3 align="center">[ ABILITY MATRIX ]</h3>
 
              <table align="center" width="100%">
                 <tr>
