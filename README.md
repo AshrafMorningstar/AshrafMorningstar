@@ -1,4 +1,8 @@
-https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/readme.gif
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/readme.gif">
+</div>
+
+
 <div align="center">
   <img src="./assets/quantum_hero.png" alt="Ashraf Morningstar Quantum Workspace" width="100%">
   
