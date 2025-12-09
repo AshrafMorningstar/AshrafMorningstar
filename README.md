@@ -1,579 +1,150 @@
 <div align="center">
 
-<!-- 3D Animated Banner -->
-<div align="center">
+<!-- HEADER: Animated Typing Text -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=50&duration=3000&pause=1000&color=00FFFF&background=00000000&center=true&vCenter=true&width=800&height=100&lines=ASHRAF+MORNINGSTAR;%E2%9E%87+3D+FULL-STACK+DEV+%E2%9E%87;%E2%9C%A6+DIGITAL+ARCHITECT+%E2%9C%A6" alt="Typing SVG" />
 
-<!-- 3D Rotating ASCII Sphere -->
-<pre style="font-size: 8px; line-height: 1; color: #00ffff;">
-                     oooooooooooooooooooooooooo                    
-                oooooooooooooooooooooooooooooooooooo               
-            oooooooooooooooooooooooooooooooooooooooooooo           
-          ooooooooooooooooooooooooooooooooooooooooooooooooo        
-        ooooooooooooooooooooooooooooooooooooooooooooooooooooo      
-       ooooooooooooooooooooooooooooooooooooooooooooooooooooooo     
-     oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo    
-    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo   
-   oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo  
-  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo 
- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
- oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo 
-   oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo  
-    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo   
-     oooooooooooooooooooooooooooooooooooooooooooooooooooooooooo    
-       ooooooooooooooooooooooooooooooooooooooooooooooooooooooo     
-        ooooooooooooooooooooooooooooooooooooooooooooooooooooo      
-          ooooooooooooooooooooooooooooooooooooooooooooooooo        
-            oooooooooooooooooooooooooooooooooooooooooooooooo           
-                oooooooooooooooooooooooooooooooooooooooo               
-                     oooooooooooooooooooooooooo                    
-</pre>
+<!-- 3D BADGES ROW -->
+<p>
+<img src="https://img.shields.io/badge/DIMENSION-04-9d4edd?style=for-the-badge&logoSize=auto&labelColor=000000" />
+<img src="https://img.shields.io/badge/COORDINATES-42.36%C2%B0_N%2C_71.05%C2%B0_W-39ff14?style=for-the-badge&logoSize=auto&labelColor=000000" />
+<img src="https://img.shields.io/badge/STATUS-ONLINE-00ffff?style=for-the-badge&logoSize=auto&labelColor=000000" />
+</p>
 
-# ⎯⎯∈ <span style="color: #00ffff; text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 2px 2px 2px rgba(0,0,0,0.5)">Ashraf Morningstar</span> ∋⎯⎯
+<br/>
 
-### <span style="color: #9d4edd; text-shadow: 1px 1px 2px #000, 0 0 25px #9d4edd">⎇ 3D Full-Stack Developer ⎇</span>
+<!-- ASCII SPHERE (Uses 'hack' font check implicitly via code block) -->
 
-### <span style="color: #39ff14; text-shadow: 0 0 5px #39ff14">✦ Digital Architect ✦</span>
-
-<br>
-
-<!-- 3D Floating Status Badges -->
-<div align="center">
-
-| <span style="color: #00ffff">◉</span> 3D Status | <span style="color: #9d4edd">⏣</span> Dimension | <span style="color: #39ff14">◈</span> Coordinates |
-| :---------------------------------------------: | :---------------------------------------------: | :-----------------------------------------------: |
-|                  **⎈ ACTIVE**                   |                     **#04**                     |            **42.3601° N, 71.0589° W**             |
-
-</div>
-
-<br>
-
-<!-- 3D Animated Separator -->
-<pre style="font-size: 12px; color: #00ffff;">
-    ╔═══════════════════════════════════════════════════════════════════════╗
-    ║                                                                       ║
-    ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║   ░                                                               ░   ║
-    ║   ░    ✦ WELCOME TO MY 3D GITHUB UNIVERSE ✦    ░   ║
-    ║   ░                                                               ░   ║
-    ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║                                                                       ║
-    ╚═══════════════════════════════════════════════════════════════════════╝
-</pre>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D PROFILE SPHERE ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D Rotating Profile Sphere -->
-<table align="center">
-<tr>
-<td align="center" width="400">
-
-```ascii
-              ╭──────────────────────────────────╮
-             │                                  │
-            │      ╔══════════════════════╗     │
-           │      ║    PROFILE SPHERE    ║      │
-          │       ╚══════════════════════╝       │
-         │                                        │
-        │           ░░░░░░░░░░░░░░░░░░░           │
-       │          ░░░               ░░░          │
-      │         ░░                   ░░         │
-     │         ░░      ◉ ◉ ◉       ░░         │
-    │          ░░     ◉   ◉ ◉     ░░          │
-   │           ░░    ◉ ◉   ◉     ░░           │
-  │             ░░             ░░             │
- │                ░░         ░░                │
-│                    ░░░░░░░                    │
- ╰──────────────────────────────────╯
+```text
+           ..:^~!!77??JJJJJJJJ?77!!~^:..
+       .:^!7?JYY555PPPPPPPPPPPP555YYJ?7!^:.
+     :~7JJY5PGBBBBBBBBBBBBBBBBBBBBGP5YJJ7~:
+   :!JY5PGBBBGGPP555YYYYYYYYY555PPGBBBGP5YJ!:
+  ~J5GBBGPYJ?!~^::...........::^~!7JYPGGGG5J~
+ :YGBGPJ!^:                         :^!JPGGPY:
+ 7GBGY~                                 ~YGBG7
+ JGB5^   [ SYSTEM KERNEL: ACTIVE ]       ^5BGJ
+ JGB5^   [ RENDER ENGINE: THREE.JS ]     ^5BGJ
+ 7GBGY~                                 ~YGBG7
+ :YGBGPJ!^:                         :^!JPGGPY:
+  ~J5GBBGPYJ?!~^::...........::^~!7JYPGGGG5J~
+   :!JY5PGBBBGGPP555YYYYYYYYY555PPGBBBGP5YJ!:
+     :~7JJY5PGBBBBBBBBBBBBBBBBBBBBGP5YJJ7~:
+       .:^!7?JYY555PPPPPPPPPPPP555YYJ?7!^:.
+           ..:^~!!77??JJJJJJJJ?77!!~^:..
 ```
 
-</td>
-<td align="center">
+</div>
 
-### <span style="color: #9d4edd">⎈ SPHERE DATA LAYERS</span>
+<br/>
 
-| **Layer**      | **Data**           | **Status**                                      |
-| :------------- | :----------------- | :---------------------------------------------- |
-| **Surface**    | Active Development | <span style="color: #39ff14">◉ ONLINE</span>    |
-| **Core**       | 42 Projects        | <span style="color: #00ffff">◉ ROTATING</span>  |
-| **Atmosphere** | 15 Technologies    | <span style="color: #9d4edd">◉ EXPANDING</span> |
-| **Orbit**      | 8 Languages        | <span style="color: #ff6b6b">◉ STABLE</span>    |
-| **Gravity**    | 4.0 GPA            | <span style="color: #39ff14">◉ STRONG</span>    |
-
-<br>
+### <div align="center">⎯⎯∈ 🧬 **THE TECH MATRIX** ∋⎯⎯</div>
 
 <div align="center">
-<pre style="color: #00ffff; font-size: 10px;">
-   [██████████░░░░░░░░░░] 65% Sphere Completion
-   [███████████████░░░░░] 85% Code Density
-   [██████████████████░░] 92% Innovation Index
-</pre>
-</div>
+<table align="center" style="border: none;">
+<tr>
+<td align="center" style="border: none;">
+
+**⎈ FRONTEND ARSENAL**
+<br/>
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Three.js-black?style=flat-square&logo=three.js&logoColor=white" />
+<img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" />
+<br/>
+<img src="https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vue.js&logoColor=4FC08D" />
+<img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+
+</td>
+<td align="center" style="border: none;">
+
+**⎈ BACKEND CORE**
+<br/>
+<img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
+<br/>
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
+
+</td>
+<td align="center" style="border: none;">
+
+**⎈ DEVOPS & CLOUD**
+<br/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+<br/>
+<img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
 
 </td>
 </tr>
 </table>
-
 </div>
 
-<br><br>
+<br/>
 
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D TECH CUBE ⎇</span> ∋⎯⎯
+### <div align="center">⎯⎯∈ 🪐 **PROJECT GALAXY** ∋⎯⎯</div>
 
 <div align="center">
 
-<!-- 3D Isometric Tech Cube -->
-<pre style="font-size: 9px; line-height: 1; color: #00ffff;">
-                     ┌─────────────────┐
-                    /│                /│
-                   / │               / │
-                  /  │              /  │
-                 ┌───┼─────────────┘   │
-                 │   │                 │      FRONTEND FACE
-                 │   │    React.js     │      ═════════════
-                 │   │   Vue.js        │      │ React │ Vue │
-                 │   │   Three.js      │      │ Three.js │
-                 │   │   WebGL         │      │ WebGL │ GSAP│
-                 │   │   └─────────────────┘      └──────┴─────┘
-                 │  /                 /
-                 │ /   BACKEND FACE  /
-                 │/   ═════════════  /
-        LEFT     ┌─────────────────┐        RIGHT
-        FACE     │ │ Node.js      ││        FACE
-        ───────> │ │ Python       ││ <───────
-        │Express │ │ Django       ││ FastAPI │
-        │MongoDB │ │ PostgreSQL   ││ Redis   │
-        │GraphQL │ │ REST API     ││ SocketIO│
-        └────────┼─────────────────┼─────────┘
-                 │ /               │ /
-                 │/   DEVOPS FACE  │/
-                 └─────────────────┘
-                 ═════════════
-                 │ Docker │ K8s │
-                 │ AWS │ CI/CD │
-                 │ Nginx │ Git │
-                 └──────────────┘
+| 🔭 **Project**         | 🔮 **Description**                  | 🛠 **Tech Stack**        | 🚀 **Deployment** |
+| :--------------------- | :---------------------------------- | :---------------------- | :---------------: |
+| **[Neural Canvas](#)** | AI-powered 3D design platform.      | `Three.js` `TensorFlow` |   [Launch ⎗](#)   |
+| **[Quantum UI](#)**    | Physics-based UI component library. | `R3F` `Framer Motion`   |   [Launch ⎗](#)   |
+| **[HoloDeploy](#)**    | 3D Infrastructure visualization.    | `Next.js` `WebGPU`      |   [Launch ⎗](#)   |
+
+</div>
+
+<br/>
+
+### <div align="center">⎯⎯∈ 📊 **DATA STREAMS** ∋⎯⎯</div>
+
+<div align="center">
+
+<!-- GitHub Stats Card (Dark Mode, Transparent) -->
+<a href="https://github.com/AshrafMorningstar">
+  <img src="https://github-readme-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=radical&bg_color=0d1117&title_color=00ffff&text_color=c9d1d9&icon_color=9d4edd&hide_border=true" alt="Ashraf's GitHub Stats" width="48%" />
+</a>
+<!-- Top Langs Card -->
+<a href="https://github.com/AshrafMorningstar">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshrafMorningstar&layout=compact&theme=radical&bg_color=0d1117&title_color=39ff14&text_color=c9d1d9&hide_border=true" alt="Top Languages" width="40%" />
+</a>
+
+<!-- Contribution Graph Snake -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=radical&bg_color=0d1117&ring=9d4edd&currStreakLabel=00ffff&hide_border=true" alt="Streak Stats" width="90%" />
+
+</div>
+
+<br/>
+
+### <div align="center">⎯⎯∈ 📡 **HOLOGRAPHIC COMM-LINKS** ∋⎯⎯</div>
+
+<div align="center">
+
+<a href="mailto:contact@ashraf.dev">
+  <img src="https://img.shields.io/badge/EMAIL-contact%40ashraf.dev-00ffff?style=for-the-badge&logo=gmail&logoColor=black&labelColor=000000" />
+</a>
+<a href="https://linkedin.com/in/ashrafmorningstar">
+  <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" />
+</a>
+<a href="https://twitter.com/Ashraf3D">
+  <img src="https://img.shields.io/badge/TWITTER-@Ashraf3D-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=000000" />
+</a>
+
+<br/><br/>
+
+<pre>
+   ╔══════════════════════════════════════════════════════╗
+   ║  "Constructing digital dimensions, one bit at a time" ║
+   ╚══════════════════════════════════════════════════════╝
+              Coordinates: 42.36° N, 71.05° W
 </pre>
 
-<br>
-
-### <span style="color: #9d4edd">⎈ CUBE FACE SPECIALIZATION</span>
-
-<table align="center">
-<tr>
-<td align="center" width="200">
-
-**FRONT FACE**<br>
-<span style="color: #00ffff">✦ 3D WEB ✦</span>
-
-```
-◉ React Three Fiber
-◉ WebGL Shaders
-◉ GSAP Animations
-◉ Canvas API
-```
-
-</td>
-<td align="center" width="200">
-
-**RIGHT FACE**<br>
-<span style="color: #39ff14">✦ BACKEND 3D ✦</span>
-
-```
-◉ 3D Model APIs
-◉ Real-time WebSockets
-◉ Spatial Databases
-◉ GPU Computing
-```
-
-</td>
-<td align="center" width="200">
-
-**TOP FACE**<br>
-<span style="color: #9d4edd">✦ CLOUD 3D ✦</span>
-
-```
-◉ AWS 3D Services
-◉ Docker 3D Containers
-◉ CDN for 3D Assets
-◉ Serverless 3D
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D PROJECTS GALAXY ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D Orbiting Projects -->
-<table align="center">
-<tr>
-<td align="center">
-
-**⎈ INNER ORBIT ⎈**<br>
-<span style="color: #39ff14">✦ Core Projects ✦</span>
-
-```ascii
-     ╭─────────────╮
-     │  ★ 3D AI    │
-     │   AGENT     │
-     ╰─────────────╯
-        ↻ orbit
-```
-
-<br>
-
-**[Neural Canvas](https://github.com/AshrafMorningstar/neural-canvas)**<br>
-AI-powered 3D design platform with real-time rendering
-
-</td>
-<td align="center">
-
-**⎈ MIDDLE ORBIT ⎈**<br>
-<span style="color: #00ffff">✦ Active Projects ✦</span>
-
-```ascii
-       ╭───────────╮
-       │  3D WEB   │
-       │  ENGINE   │
-       ╰───────────╯
-          ↺ orbit
-```
-
-<br>
-
-**[Quantum UI](https://github.com/AshrafMorningstar/quantum-ui)**<br>
-3D component library with physics-based interactions
-
-</td>
-<td align="center">
-
-**⎈ OUTER ORBIT ⎈**<br>
-<span style="color: #9d4edd">✦ Experimental ✦</span>
-
-```ascii
-        ╭─────────╮
-        │  AR/VR  │
-        │  CLOUD  │
-        ╰─────────╯
-           ↷ orbit
-```
-
-<br>
-
-**[HoloDeploy](https://github.com/AshrafMorningstar/holo-deploy)**<br>
-3D visualization of cloud infrastructure and deployments
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<!-- 3D Project Matrix -->
-<div align="center">
-
-| **Project**       |               **3D Level**                | **Tech Stack**                    | **Live Demo**                              |
-| :---------------- | :---------------------------------------: | :-------------------------------- | :----------------------------------------- |
-| **Neural Canvas** | <span style="color: #00ffff">⎈⎈⎈⎈⎈</span> | Three.js · TensorFlow.js · WebGL  | [🌐 View](https://neuralcanvas.vercel.app) |
-| **Quantum UI**    | <span style="color: #00ffff">⎈⎈⎈⎈◉</span> | React Three Fiber · Framer Motion | [🚀 Demo](https://quantum-ui.vercel.app)   |
-| **HoloDeploy**    | <span style="color: #00ffff">⎈⎈⎈◉◉</span> | Next.js · WebGPU · D3.js          | [🔗 Visit](https://holodeploy.vercel.app)  |
-| **Spatial API**   | <span style="color: #00ffff">⎈⎈⎈⎈◉</span> | Node.js · WebSockets · Redis      | [⚡ API](https://api.spatial.dev)          |
-| **3D Portfolio**  | <span style="color: #00ffff">⎈⎈⎈⎈⎈</span> | GSAP · Canvas · GLSL              | [✨ Live](https://ashraf3d.vercel.app)     |
-
-</div>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D CONTRIBUTION UNIVERSE ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D Isometric Contribution Graph -->
-<pre style="font-size: 8px; line-height: 1; color: #39ff14;">
-                     2024 Contribution Map - Isometric View
-                     
-                     Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec
-                    ┌─────────────────────────────────────────────────────────┐
-         High  ████ │ ██  ███ ████ ████ █████ ████ ███ █████ ████ ████ ████  │
-         Med   ███  │ ██  ██  ███  ███  ████  ███  ██  ████  ███  ███  ███   │
-         Low   ██   │ █   █   ██   ██   ███   ██   █   ███   ██   ██   ██    │
-         None  ░    │ ░   ░   ░    ░    ░     ░    ░   ░     ░    ░    ░     │
-                    └─────────────────────────────────────────────────────────┘
-        
-        Side View:          Front View:          Top View:
-        ████                █████                ███████
-        ████                ██████               ████████
-        ███                 █████                ███████
-        ██                  ████                 ██████
-        █                   ███                  █████
-</pre>
-
-<br>
-
-### <span style="color: #9d4edd">⎈ 3D DEVELOPMENT METRICS</span>
-
-<!-- Metrics Display -->
-<table align="center">
-<tr>
-<td align="center">
-
-```json
-{
-  "3D_Projects": 15,
-  "Total_Commits": 842,
-  "Code_Volume": "2.4M lines",
-  "Render_Time": "16ms avg",
-  "Polygon_Count": "8.2M",
-  "Shader_Complexity": "High"
-}
-```
-
-</td>
-<td align="center">
-
-```yaml
-3D Technology Stack:
-  - WebGL: ⚡ Expert
-  - Three.js: ⎈ Advanced
-  - GLSL: ✨ Intermediate
-  - WebGPU: 🚀 Learning
-  - Canvas: ⚫ Professional
-
-Performance Metrics:
-  - FPS: 60+ sustained
-  - Load Time: < 3s
-  - Bundle Size: < 500kb
-  - Lighthouse: 95+
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D SKILLS PYRAMID ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D Pyramid Structure -->
-<pre style="font-size: 9px; line-height: 1; color: #00ffff;">
-                              ╔══════════════╗
-                              ║   AI/ML 3D   ║
-                              ╚══════════════╝
-                           ╔══════════════════════╗
-                           ║    3D Web Dev        ║
-                           ╚══════════════════════╝
-                        ╔══════════════════════════════╗
-                        ║    Full-Stack Development    ║
-                        ╚══════════════════════════════╝
-                     ╔══════════════════════════════════════╗
-                     ║        Cloud & DevOps 3D            ║
-                     ╚══════════════════════════════════════╝
-                  ╔══════════════════════════════════════════════╗
-                  ║           Foundational Technologies          ║
-                  ╚══════════════════════════════════════════════╝
-</pre>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" width="300">
-
-### <span style="color: #39ff14">✦ BASE LAYER ✦</span>
-
-**Foundational Technologies**
-
-```
-JavaScript/TypeScript
-Python/Java
-HTML5/CSS3
-Git/GitHub
-Docker/Kubernetes
-```
-
-</td>
-<td align="center" width="300">
-
-### <span style="color: #00ffff">✦ MID LAYER ✦</span>
-
-**3D Development**
-
-```
-Three.js/React Three Fiber
-WebGL/WebGPU
-GLSL Shaders
-Canvas API
-SVG/Web Animations
-```
-
-</td>
-<td align="center" width="300">
-
-### <span style="color: #9d4edd">✦ APEX LAYER ✦</span>
-
-**Cutting Edge**
-
-```
-AI 3D Generation
-Real-time Ray Tracing
-Spatial Computing
-Quantum Computing UI
-Holographic Interfaces
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D HOLOGRAPHIC CONTACT ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D Floating Contact Buttons -->
-<table align="center">
-<tr>
-<td align="center">
-
-```html
-<!-- 3D Email Hologram -->
-<div class="hologram-3d" data-type="email">✉️ contact@ashraf.dev</div>
-```
-
-</td>
-<td align="center">
-
-```html
-<!-- 3D LinkedIn Portal -->
-<div class="hologram-3d" data-type="linkedin">
-  💼 linkedin.com/in/ashrafmorningstar
-</div>
-```
-
-</td>
-<td align="center">
-
-```html
-<!-- 3D Twitter Dimension -->
-<div class="hologram-3d" data-type="twitter">🐦 @Ashraf3D</div>
-```
-
-</td>
-</tr>
-</table>
-
-<br>
-
-### <span style="color: #39ff14">⎈ REAL-TIME COMMUNICATION CHANNELS</span>
-
-<table align="center">
-<tr>
-<td align="center">
-
-**📡 Primary Channel**<br>
-[![Email](https://img.shields.io/badge/3D_Email-Hologram_Active-00ffff?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ashraf@morningstar.dev)
-
-</td>
-<td align="center">
-
-**🔗 Professional Network**<br>
-[![LinkedIn](https://img.shields.io/badge/3D_LinkedIn-Spatial_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ashrafmorningstar)
-
-</td>
-<td align="center">
-
-**🐦 Code Thoughts**<br>
-[![Twitter](https://img.shields.io/badge/3D_Twitter-Real_time-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Ashraf3D)
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br><br>
-
-## ⎯⎯∈ <span style="color: #00ffff">⎇ 3D SPATIAL FOOTER ⎇</span> ∋⎯⎯
-
-<div align="center">
-
-<!-- 3D ASCII Art Footer -->
-<pre style="font-size: 8px; line-height: 1; color: #9d4edd;">
-    ╔══════════════════════════════════════════════════════════════════════════════════╗
-    ║                                                                                  ║
-    ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║   ░                                                                          ░   ║
-    ║   ░      🌌 THANK YOU FOR EXPLORING MY 3D UNIVERSE 🌌                         ░   ║
-    ║   ░                                                                          ░   ║
-    ║   ░      "In the realm of code, we don't just build applications—             ░   ║
-    ║   ░       we construct entire digital dimensions."                           ░   ║
-    ║   ░                                                                          ░   ║
-    ║   ░      Coordinates: 42°21'24.1"N 71°03'32.1"W                              ░   ║
-    ║   ░      Dimension: 04 | Timezone: EST | Render Engine: Three.js             ░   ║
-    ║   ░                                                                          ░   ║
-    ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-    ║                                                                                  ║
-    ╚══════════════════════════════════════════════════════════════════════════════════╝
-</pre>
-
-<br>
-
-### <span style="color: #39ff14">◉ VISITOR STATS ◉</span>
-
-![3D Profile Views](https://komarev.com/ghpvc/?username=AshrafMorningstar&color=00ffff&style=flat-square&label=3D+VISITORS)
-![GitHub Followers](https://img.shields.io/github/followers/AshrafMorningstar?color=9d4edd&label=3D+FOLLOWERS&style=flat-square)
-![GitHub Stars](https://img.shields.io/github/stars/AshrafMorningstar?color=39ff14&label=3D+STARS&style=flat-square)
-
-<br>
-
-<div align="center">
-
-```javascript
-// 3D Universe Status Check
-const universeStatus = {
-  coordinates: "42.3601° N, 71.0589° W",
-  dimension: 4,
-  renderEngine: "Three.js v152",
-  fps: 60,
-  polygonCount: "8.2M",
-  lastUpdated: new Date().toISOString(),
-  message: "Always expanding the boundaries of digital space.",
-};
-
-console.log(`🌌 Welcome to dimension ${universeStatus.dimension}`);
-```
-
-</div>
-
-<br>
-
-<sub>✨ This README renders best in dark mode with 1080p+ resolution</sub><br>
-<sub>⚡ Optimized for GitHub's markdown processor | 3D effects achieved through Unicode and spacing</sub><br>
-<sub>🚀 Last Updated: $(date) | Next Dimension Update: $(date -d '+7 days')</sub>
+<br/>
+<img src="https://komarev.com/ghpvc/?username=AshrafMorningstar&color=9d4edd&style=flat-square&label=VISITORS" alt="Profile Views" />
 
 </div>
