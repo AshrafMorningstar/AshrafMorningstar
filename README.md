@@ -36,7 +36,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/3D-Designer-00dbde?style=for-the-badge&logo=blender&logoColor=white" alt="3D Designer" />
   <img src="https://img.shields.io/badge/Open-Source-FC00FF?style=for-the-badge&logo=github&logoColor=white" alt="Open Source" />
-  <img src="https://img.shields.io/badge/Digital-Creator-2c5364?style=for-the-badge&logo=adobec Creative Cloud&logoColor=white" alt="Digital Creator" />
+  <img src="https://img.shields.io/badge/Digital-Creator-2c5364?style=for-the-badge&logo=adobe%20creative%20cloud&logoColor=white" alt="Digital Creator" />
   <img src="https://img.shields.io/badge/Innovation-Focused-00dbde?style=for-the-badge&logo=lightbulb&logoColor=white" alt="Innovation Focused" />
 </p>
 
@@ -143,7 +143,7 @@ I'm a passionate 3D designer and digital creator focused on building immersive v
 </table>
 
 <!-- 3D Contribution Graph -->
-<img src="https://github-profile-3d-contrib.vercel.app/profile?username=AshrafMorningstar&theme=dark&color=00dbde&bg_color=0f2027&dimensions=8&margin-w=10&margin-h=10" alt="3D Contribution Graph" width="100%" />
+<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
 
 <!-- GitHub Streak Stats -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=dark&background=0f2027&stroke=2c5364&ring=00dbde&fire=fc00ff&currStreakNum=ffffff&sideNums=00dbde&currStreakLabel=00dbde&dates=b0b0b0" alt="GitHub Streak Stats" width="100%" />
@@ -327,7 +327,7 @@ I'm a passionate 3D designer and digital creator focused on building immersive v
   <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=0f2027" alt="Twitter" />
 </a>
 <a href="https://yourportfolio.com">
-  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white&labelColor=0f2027" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white&labelColor=0f2027" alt="Portfolio" />
 </a>
 <a href="https://artstation.com/yourprofile">
   <img src="https://img.shields.io/badge/ArtStation-13AFF0?style=for-the-badge&logo=artstation&logoColor=white&labelColor=0f2027" alt="ArtStation" />
@@ -361,5 +361,5 @@ I'm a passionate 3D designer and digital creator focused on building immersive v
 
 <!-- Special 3D Footer -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/main/images/bottom.svg" width="100%" alt="Footer" />
+  <!-- <img src="assets/galaxy.svg" width="100%" alt="Footer" /> -->
 </div>
