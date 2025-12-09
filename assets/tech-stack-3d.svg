@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .center-grp {
+        transform-origin: 400px 200px;
+        animation: rotate 20s linear infinite;
+      }
+      .text-glow {
+        filter: drop-shadow(0 0 5px #00F0FF);
+      }
+    </style>
+    
+    <!-- Gradients -->
+    <radialGradient id="core-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background (Dark Void) -->
+  <rect x="0" y="0" width="800" height="400" fill="#0d1117" rx="15" />
+
+  <!-- Orbiting System -->
+  <g class="center-grp">
+    <!-- Orbital Rings -->
+    <circle cx="400" cy="200" r="100" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="10 10" opacity="0.5" />
+    <circle cx="400" cy="200" r="160" fill="none" stroke="#30363d" stroke-width="1" opacity="0.3" />
+
+    <!-- Planet Nodes (Simple Shapes instead of external images) -->
+    <!-- React (Blue) -->
+    <circle cx="500" cy="200" r="20" fill="#61DAFB" opacity="0.9" />
+    <text x="500" y="205" fill="#000" font-size="20" text-anchor="middle" font-weight="bold" font-family="sans-serif">Re</text>
+
+    <!-- Python (Yellow/Blue) -->
+    <circle cx="400" cy="300" r="20" fill="#FFD43B" opacity="0.9" />
+    <text x="400" y="305" fill="#306998" font-size="20" text-anchor="middle" font-weight="bold" font-family="sans-serif">Py</text>
+
+    <!-- Rust (Orange) -->
+    <circle cx="300" cy="200" r="20" fill="#DEA584" opacity="0.9" />
+    <text x="300" y="205" fill="#000" font-size="20" text-anchor="middle" font-weight="bold" font-family="sans-serif">Ru</text>
+
+    <!-- Go (Blue) -->
+    <circle cx="400" cy="100" r="20" fill="#00ADD8" opacity="0.9" />
+    <text x="400" y="105" fill="#000" font-size="20" text-anchor="middle" font-weight="bold" font-family="sans-serif">Go</text>
+  </g>
+
+  <!-- Central Core (Static relative to rotation) -->
+  <circle cx="400" cy="200" r="30" fill="url(#core-grad)">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <text x="400" y="380" text-anchor="middle" fill="#00F0FF" font-family="monospace" font-size="14" class="text-glow">
+     SYSTEM_STATUS::ONLINE
+  </text>
+</svg>
