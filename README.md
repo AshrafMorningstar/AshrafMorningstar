@@ -4,6 +4,49 @@
 
 
 <div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/activity-overview.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/commit-streak.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/code-metrics.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/issue-tracking.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/languages.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/main-stats.gif">
+</div>
+
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/stats.gif">
+</div>
+
+<div align="center">
+   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/top-languages.gif">
+</div>
+
+
+
+
+
+
+<div align="center">
   <img src="./assets/quantum_hero.png" alt="Ashraf Morningstar Quantum Workspace" width="100%">
   
   <br />
