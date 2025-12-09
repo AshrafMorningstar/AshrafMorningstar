@@ -2,75 +2,17 @@
 <div align="center">
 
 <!-- 3D Cinematic Header with Particles & Parallax -->
-<svg width="100%" height="350" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="deepSpace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1E1B4B;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#312E81;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <style>
-      @keyframes float {
-        0% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-20px) rotate(5deg); }
-        100% { transform: translateY(0px) rotate(0deg); }
-      }
-      @keyframes pulse {
-        0% { opacity: 0.5; r: 2; }
-        50% { opacity: 1; r: 4; }
-        100% { opacity: 0.5; r: 2; }
-      }
-      .floating-shape { animation: float 6s ease-in-out infinite; }
-      .star { animation: pulse 3s infinite; }
-    </style>
-  </defs>
-
-  <rect width="100%" height="100%" fill="url(#deepSpace)" />
-
-  <!-- Background Particles/Stars -->
-  <g fill="white" opacity="0.6">
-    <circle cx="10%" cy="20%" r="2" class="star" style="animation-duration: 2s"/>
-    <circle cx="80%" cy="15%" r="3" class="star" style="animation-duration: 4s"/>
-    <circle cx="50%" cy="80%" r="2" class="star" style="animation-duration: 3s"/>
-    <circle cx="90%" cy="70%" r="2" class="star" style="animation-duration: 5s"/>
-    <circle cx="20%" cy="80%" r="3" class="star" style="animation-duration: 2.5s"/>
-  </g>
-
-  <!-- 3D Geometric Shapes -->
-  <g class="floating-shape" style="animation-delay: 0s" opacity="0.2">
-    <polygon points="100,250 150,300 100,350 50,300" fill="#6366F1" transform="translate(50, -50)" />
-  </g>
-  <g class="floating-shape" style="animation-delay: 2s" opacity="0.3">
-    <circle cx="90%" cy="30%" r="40" stroke="#EC4899" stroke-width="2" fill="none" />
-  </g>
-
-  <!-- Main Content Layer -->
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; color:white; font-family: 'Segoe UI', system-ui, sans-serif;">
-      
-      <!-- Name Reveal -->
-      <h1 style="font-size: 4em; margin: 0; font-weight: 800; background: linear-gradient(to right, #6366F1, #EC4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 10px rgba(99,102,241,0.5));">
-        ASHRAF MORNINGSTAR
-      </h1>
-      
-      <!-- Typing Animation Placeholder -->
-      <br/>
-      
-    </div>
-  </foreignObject>
-</svg>
+<!-- 3D Cinematic Header -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0F172A,1E1B4B,312E81&height=300&section=header&text=Ashraf%20Morningstar&fontSize=70&fontColor=6366F1&animation=fadeIn&fontAlignY=35&desc=3D%20Visionary%20&%20Digital%20Creator&descAlignY=55&descAlign=50" alt="Ashraf Morningstar Header" width="100%" />
+</div>
 
 <!-- 3D Typing Animation -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&duration=3000&pause=1000&color=6366F1&multiline=false&width=500&height=50&lines=Full-Stack+Developer+%F0%9F%92%BB;15%2B+Years+Experience+%F0%9F%9A%80;Cybersecurity+Expert+%F0%9F%94%90;Game+Tester+%26+Ethical+Hacker+%F0%9F%8E%AE" alt="Typing SVG" />
-</a>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=EC4899&multiline=false&width=600&height=60&lines=Full-Stack+Developer+%F0%9F%92%BB;15%2B+Years+Experience+%F0%9F%9A%80;Cybersecurity+Expert+%F0%9F%94%90;Game+Tester+%26+Ethical+Hacker+%F0%9F%8E%AE;Building+Digital+Realities+%F0%9F%8C%90" alt="Typing SVG" />
+  </a>
+</div>
 
 <!-- Social & Role Badges -->
 <p align="center">

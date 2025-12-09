@@ -39,11 +39,11 @@ To change colors, look for these hex codes in `README.md` (SVG sections) and `.g
 
 ### 2. **3D Header**
 
-The header is an inline SVG using `foreignObject` for HTML/CSS animations.
+The header uses **Capsule Render**, a dynamic image generator.
 
-- Locate the `<svg>` block at the top of `README.md`.
-- You can modify the text in the `<h1>` tag inside `foreignObject`.
-- Adjust particle animations in the `<style>` block.
+- Locate the `<img>` tag at the top of `README.md`.
+- You can modify the `text=`, `desc=`, and `customColorList=` parameters in the URL to change the text and colors.
+- RGB Hex codes (without `#`) are used in the URL.
 
 ### 3. **Tech Stack & Badges**
 
