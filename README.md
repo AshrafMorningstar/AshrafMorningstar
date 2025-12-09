@@ -1,208 +1,194 @@
 <div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/readme.gif">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:202020&height=180&section=header&text=ASHRAF%20MORNINGSTAR&fontSize=60&fontColor=00f2ff&animation=fadeIn&fontAlign=50&desc=Architecting%20the%20Digital%20Metaverse&descAlign=50&descSize=18&fontStyle=sans-serif" alt="ASRAF MORNINGSTAR HEADER" width="100%" />
 </div>
 
 <div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/activity-overview.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/commit-streak.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/code-metrics.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/issue-tracking.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/languages.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/main-stats.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/stats.gif">
-</div>
-
-<div align="center">
-   <img src="https://raw.githubusercontent.com/AshrafMorningstar/github-stats-remotion/main/out/top-languages.gif">
-</div>
-
-<div align="center">
-  <img src="./assets/quantum_hero.png" alt="Ashraf Morningstar Quantum Workspace" width="100%">
-  
   <br />
-
-  <!-- 3D Typing Effect -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=35&pause=1000&color=00F0FF&multiline=false&width=900&height=80&lines=QUANTUM+ARCHITECT;FULL+STACK+ENGINEER;CYBERSECURITY+EXPERT;GAME+DEV+VETERAN" alt="Typing SVG" />
-  </a>
-
-  <br />
-
-  <!-- RELIABLE Visitor Badge -->
   <a href="https://github.com/AshrafMorningstar">
-    <img src="https://komarev.com/ghpvc/?username=AshrafMorningstar&label=QUANTUM+VISITS&color=00f0ff&style=for-the-badge&logo=github" alt="Visitor Count">
+    <img src="https://img.shields.io/badge/LOCATION-MUMBAI%2C%20INDIA-00f2ff?style=for-the-badge&logo=google-maps&logoColor=black&labelColor=101010" alt="Location" />
   </a>
-
-<br><br>
-
-  <!-- LAUNCH 3D EXPERIENCE BUTTON -->
-  <a href="https://ashrafmorningstar.github.io/AshrafMorningstar/">
-    <img src="https://img.shields.io/badge/LAUNCH_3D_EXPERIENCE-ENTER_THE_VOID-000000?style=for-the-badge&logo=unreal-engine&logoColor=00ffff&labelColor=2a0a29" />
+  <a href="https://github.com/AshrafMorningstar">
+    <img src="https://img.shields.io/badge/EXPERIENCE-15%2B%20YEARS-ff0055?style=for-the-badge&logo=time&logoColor=white&labelColor=101010" alt="Experience" />
   </a>
-
+  <a href="https://github.com/AshrafMorningstar">
+    <img src="https://img.shields.io/badge/FOCUS-3D%20%26%20SECURITY-7000ff?style=for-the-badge&logo=security&logoColor=white&labelColor=101010" alt="Focus" />
+  </a>
+  <br />
+  <br />
+  <b>FULL-STACK ENGINEERING &nbsp;|&nbsp; 3D VISUALIZATION &nbsp;|&nbsp; CYBERSECURITY &nbsp;|&nbsp; GAME DEV</b>
 </div>
 
 <br />
 
+---
+
+<h3 align="center">━━━ ◢ SYSTEM STATUS ◣ ━━━</h3>
+<br />
+
 <div align="center">
-  <!-- 3D Skyline Link -->
-  <a href="https://github.com/AshrafMorningstar">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=WELCOME%20TO%20THE%20MATRIX&fontSize=40&fontAlign=50&fontColor=ffffff&desc=Designed%20by%20Ashraf%20Morningstar&descSelect=true&descSize=20&descAlign=50" width="100%" />
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&icon_color=00f2ff&title_color=00f2ff&text_color=c9d1d9" alt="GitHub Stats" height="150" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=radical&hide_border=true&background=0d1117&ring=ff0055&currStreakLabel=00f2ff" alt="Streak Stats" height="150" />
 </div>
+
+<br />
 
 ---
 
+<h3 align="center">━━━ ◢ TECH MATRIX ◣ ━━━</h3>
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=THE%20QUANTUM%20CORE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
+<table>
+  <tr>
+    <td align="center"><b>🌌 Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
+      <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+      <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" />
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+      <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🎨 Frontend</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+      <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" />
+      <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" />
+      <img src="https://img.shields.io/badge/Astro-BC52EE?style=flat-square&logo=astro&logoColor=white" />
+      <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>⚙️ Backend</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white" />
+      <img src="https://img.shields.io/badge/Web3.js-F16822?style=flat-square&logo=web3.js&logoColor=white" />
+      <img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white" />
+      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>🎲 3D & Game</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white" />
+      <img src="https://img.shields.io/badge/Unreal-313131?style=flat-square&logo=unreal-engine&logoColor=white" />
+      <img src="https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white" />
+      <img src="https://img.shields.io/badge/OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white" />
+    </td>
+  </tr>
+   <tr>
+    <td align="center"><b>🛡️ Stats & CI</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" />
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" />
+    </td>
+  </tr>
+</table>
 </div>
 
-> _System Initialized... Loading Profile Module v9.0..._
-
-**Greetings, Traveler.** You have entered the digital realm of **Ashraf Morningstar**. I am a **Technological Architect** with over **15 years** of experience bending code to my will. My reality consists of **High-Performance Algorithms**, **Immersive 3D Worlds**, and **Unbreakable Security Systems**.
-
-- 🎮 **Dimension**: Game Developer (Unity/Unreal)
-- 🛡️ **Firewall**: Ethical Hacker & Security Specialist
-- ⚡ **Core**: Full Stack Engineer (React/Node/Rust/Go)
-- 🏗️ **Legacy**: Architect of systems for **Netflix**, **Adobe**, and **Meta**.
+<br />
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=HOLOGRAPHIC%20TECH%20STACK&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-</div>
+<h3 align="center">━━━ ◢ DIMENSIONAL LAYERS ◣ ━━━</h3>
 
-<div align="center">
+<h4>&nbsp;&nbsp; 🧬 LAYER 1 :: FULL-STACK ENGINEERING</h4>
+<blockquote>
+  <i>Architecting scalable solutions with a focus on high-performance backends and immersive frontends.</i>
+</blockquote>
+<ul>
+  <li><b>System Design</b>: Building robust APIs and microservices using <b>Node.js, Rust, and Python</b>.</li>
+  <li><b>Web Experience</b>: Crafting responsive, fluid interfaces with <b>React, Astro, and GSAP</b>.</li>
+</ul>
 
-<!-- Reliable Shield Badges in a Grid -->
-<a href="https://github.com/AshrafMorningstar">
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Unreal_Engine-313131?style=for-the-badge&logo=unreal-engine&logoColor=white" />
-  <img src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" />
-  <br>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" />
-</a>
+<h4>&nbsp;&nbsp; 🎨 LAYER 2 :: 3D VISUALIZATION & DESIGN</h4>
+<blockquote>
+  <i>Bridging the gap between code and visual storytelling.</i>
+</blockquote>
+<ul>
+  <li><b>Tools</b>: Expert proficiency in <b>Adobe Creative Cloud, Blender, and Rhino</b>.</li>
+  <li><b>Application</b>: Creating 3D assets, motion graphics, and UI/UX designs that feel alive.</li>
+</ul>
 
-</div>
+<h4>&nbsp;&nbsp; 🔐 LAYER 3 :: SECURITY & ETHICAL HACKING</h4>
+<blockquote>
+  <i>Defending digital frontiers through rigorous testing and defense protocols.</i>
+</blockquote>
+<ul>
+  <li><b>Focus Areas</b>: Anti-piracy measures, secure streaming benchmarks, and vulnerability assessment.</li>
+  <li><b>Track Record</b>: Contributing to security for media platforms (e.g., SonyLIV) and aiding in takedowns of malicious entities.</li>
+  <li><b>Ethical Hacking</b>: Former interaction with groups like MFX to combat fraud and exploitation.</li>
+</ul>
+
+<br />
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=CONTRIBUTION%20MULTIVERSE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-</div>
+<h3 align="center">━━━ ◢ PROJECT HIGHLIGHTS ◣ ━━━</h3>
 
 <div align="center">
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <h3>🛡️ Security</h3>
+      <p>Developed <b>Anti-Piracy</b> protection layers for streaming services & major media platforms.</p>
+    </td>
+    <td width="33%" align="center">
+      <h3>🤖 Automation</h3>
+      <p>Contributed to <b>260+ bots</b> and automation scripts for community management and testing.</p>
+    </td>
+    <td width="33%" align="center">
+      <h3>🤝 Open Source</h3>
+      <p>Active contributor to <b>380+ repos</b> ranging from developer tools to game mods.</p>
+    </td>
+  </tr>
+</table>
+</div>
+
+<br />
+
+---
+
+<h3 align="center">━━━ ◢ GAME DEV & TESTING LOG ◣ ━━━</h3>
+
+<div align="center">
+  <i>Quality Assurance and engine testing for high-profile interactive entertainment.</i>
+  <br /><br />
+  <img src="https://img.shields.io/badge/PUBG_Mobile-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Genshin_Impact-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LifeAfter-Completed-inactive?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Pokémon_Unite-Beta_Test-yellow?style=for-the-badge" />
+</div>
+
+<br />
+
+---
+
+<h3 align="center">━━━ ◢ CONNECT ◣ ━━━</h3>
+
+<div align="center">
+  <p>Available for <b>Collaborations</b>, <b>Security Audits</b>, and <b>Design Commissions</b>.</p>
   
-  <h3>🔮 The Night Rainbow (3D View)</h3>
-  <!-- Fallback/Placeholder until automated action runs -->
-  <a href="https://github.com/AshrafMorningstar/AshrafMorningstar/actions">
-      <img src="https://raw.githubusercontent.com/AshrafMorningstar/AshrafMorningstar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph (Click to Generate)" width="100%" />
+  <a href="mailto:contact@ashrafmorningstar.dev">
+    <img src="https://img.shields.io/badge/EMAIL-INITIATE_LINK-00f2ff?style=for-the-badge&logo=gmail&logoColor=black" />
   </a>
-  
-  <p><i>(If image is broken, click above to run the Action manually)</i></p>
-
-<br><br>
-
-  <h3>🐍 The Infinite Serpent</h3>
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%" />
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=SYSTEM%20METRICS&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-</div>
-
-<div align="center">
-
-|                                                                                                                          **Power Level**                                                                                                                           |                                                                                                                             **Language Core**                                                                                                                              |                                                                                                **Streak Reactor**                                                                                                 |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github-readme-stats.vercel.app/api?username=AshrafMorningstar&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&icon_color=00F0FF&title_color=00F0FF&text_color=ffffff" height="200" /> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshrafMorningstar&theme=radical&hide_border=true&include_all_commits=true&count_private=true&layout=donut&bg_color=0d1117&icon_color=00F0FF&title_color=00F0FF&text_color=ffffff" height="200" /> | <img src="https://github-readme-streak-stats.herokuapp.com/?user=AshrafMorningstar&theme=radical&hide_border=true&background=0d1117&stroke=00F0FF&ring=00F0FF&fire=00F0FF&currStreakLabel=00F0FF" height="200" /> |
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=HALL%20OF%20FAME&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/20+_Years-EXPERIENCE-FF0055?style=for-the-badge&logo=time&logoColor=white" />
-  <img src="https://img.shields.io/badge/Top_0.1%25-DEVELOPER-00F0FF?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Security-CLEARED-00FF00?style=for-the-badge&logo=shield&logoColor=white" />
-  
-  <br><br>
-
-  <img src="https://img.shields.io/badge/Netflix-Contributor-E50914?style=flat-square&logo=netflix&logoColor=white" />
-  <img src="https://img.shields.io/badge/Adobe-Design_Lead-FF0000?style=flat-square&logo=adobe&logoColor=white" />
-  <img src="https://img.shields.io/badge/Meta-Architect-0668E1?style=flat-square&logo=meta&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google-Expert-4285F4?style=flat-square&logo=google&logoColor=white" />
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&text=NEURAL%20LINK&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-</div>
-
-<div align="center">
-
-  <a href="https://linkedin.com/in/ashraf_morningstar">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <a href="https://linkedin.com/in/ashrafmorningstar">
+    <img src="https://img.shields.io/badge/LINKEDIN-NETWORK-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://discord.gg/ashraf_morningstar">
-    <img src="https://img.shields.io/badge/Discord-Join_Server-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  <a href="https://twitter.com/ashmorningstar">
+    <img src="https://img.shields.io/badge/X-FOLLOW-000000?style=for-the-badge&logo=x&logoColor=white" />
   </a>
-  <a href="https://x.com/ams_morningstar">
-    <img src="https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white" />
-  </a>
-  <a href="https://youtube.com/@ashraf_morningstar">
-    <img src="https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-  </a>
-
-<br><br>
-
-  <h3>⛽ Power the System</h3>
-  <a href="https://buymeacoffee.com/ashraf_morningstar">
-    <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-DONATE-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
-  </a>
-
 </div>
 
----
+<br />
+<br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&text=END%20OF%20LINE&fontSize=30&fontAlign=50&fontColor=ffffff" width="100%" />
-  
-  <p>© 2025 Ashraf Morningstar. The Code is the Law.</p>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:202020,100:000000&height=5&section=footer&w=1000" width="100%" />
+  <br />
+  <sub><b>ASHRAF MORNINGSTAR</b> &nbsp; // &nbsp; SYSTEMS ONLINE &nbsp; // &nbsp; END OF LINE</sub>
 </div>
